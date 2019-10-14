@@ -1,0 +1,1 @@
+<!-- Emilia: página para criação do footer padrãopara todas as outras páginas do portal. Fazer esta e o header primeiros, por favor. -->
