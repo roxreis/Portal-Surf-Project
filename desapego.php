@@ -13,14 +13,12 @@
 <body>
     <?php include_once("header.php") ?>  
     <main class="container">
-        <section>
-        
-        </section>
+       
         <div class="text-center">
             <h1>Estão Desapegando!</h1>
         </div>
-        <section class="row justify-content-between align-center p-3 w-100">
-            <!-- cards para seção desapego         -->
+        <section class="cardsDesap row justify-content-between align-center p-3">
+            <!-- cards para seção desapego  -->
                 <div class="card" style="width: 18rem;">
                 <img src="css/img-desapego/prancha.jpg" class="card-img-top" alt="imagem de prancha">
                     <div class="card-body">
@@ -29,9 +27,9 @@
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card rounded" style="width: 18rem;">
                 <img src="css/img-desapego/roupas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h5 class="card-title text-center">ROUPAS</h5>
                         <p class="card-text">Roupas em geral para pratica do Surf</p>
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
@@ -41,14 +39,33 @@
                 <img src="css/img-desapego/acessorios.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">ACESSÓRIOS EM GERAL</h5>
-                        <p class="card-text">Encontre de tudo</p>
+                        <p class="card-text">Parafinas, capas e mais</p>
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
-               
-        
-        
-        </section>
+            </section>
+            <div class="text-center">
+                    <h1>Quer Desapegar =)?</h1> 
+             </div>
+             <section class ="col-12 p-5">
+                <form action="" method= "post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" class= "form-control" name="nomeProduto" placeholder= "Nome do Produto">
+                    </div>   
+                    <div class="form-group">
+                        <input type="text" class= "form-control" name="descProduto" placeholder= "Descrição do Produto">
+                    </div> 
+                    <div class="form-group">
+                        <input type="file" class= "form-control" name="imgProduto" placeholder= "Imagem do Produto">
+                    </div> 
+                    <div class="form-group">
+                        <input type="number" class= "form-control" name="precoProduto" placeholder= "Preço do Produto">
+                    </div> 
+                    <button class= "btn btn-success">Cadastrar Produto</button>
+                </form>           
+             
+
+             </section>
     
     
     </main> 
