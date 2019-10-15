@@ -17,10 +17,10 @@
         
         </section>
         <div class="text-center">
-            <h1>Desapego!</h1>
+            <h1>Estão Desapegando!</h1>
         </div>
-        <section class="row d-flex justify-content-between p-3">
-                
+        <section class="row justify-content-between align-center p-3 w-100">
+            <!-- cards para seção desapego         -->
                 <div class="card" style="width: 18rem;">
                 <img src="css/img-desapego/prancha.jpg" class="card-img-top" alt="imagem de prancha">
                     <div class="card-body">
@@ -30,45 +30,22 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="css/img-desapego/roupas.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title text-center">ROUPAS</h5>
+                        <p class="card-text">Roupas em geral para pratica do Surf</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="css/img-desapego/acessorios.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">ACESSÓRIOS EM GERAL</h5>
+                        <p class="card-text">Encontre de tudo</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+               
         
         
         </section>
