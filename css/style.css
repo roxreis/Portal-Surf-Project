@@ -1,3 +1,15 @@
+/* css para header */
+
+header img{
+    width: 100px;
+    position: fixed;
+    z-index: 100;
+    margin-top: 20px;
+}
+
+
+
+
 /* css para section desapego */
 
 .cardsDesap{
@@ -6,6 +18,3 @@
     
 }
 
-
-
-}
