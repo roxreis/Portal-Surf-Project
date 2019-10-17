@@ -16,34 +16,47 @@
     
         <div class="jumbotron col-12" id= "bannerDesap"></div>
         <h1 Class="textBanner">Estão Desapegando!</h1>
-        <section class="cardsDesap row justify-content-between align-center p-3">
+        <section class="Desapego">
             <!-- cards para seção desapego  -->
-                <div class="card" style="width: 18rem;">
-                <img src="css/img-desapego/prancha.jpg" class="card-img-top" alt="imagem de prancha">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">PRANCHAS</h5>
-                        <p class="card-text">Pranchas usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
+                <div class="col-12 d-flex pranchas" >
+                    <div class="infOfertas mb-3">
+                        <h2>Pranchas</h2>
+                        <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                    <div id="imagensPranchas">
+                        <div class="d-flex pranchasMaiores">
+                            <img id="prancha-um" class="border border-dark"src="img-desapego-raiz/prancha_4.jpeg" alt="imagem prancha">
+                            <img id="prancha-dois"class="border border-dark"src="img-desapego-raiz/prancha_3.jpg" alt="imagem prancha">
+                        </div>
+                        <div class="d-flex pranchasMenores">
+                            <div class="d-flex pranchasMenoresUm">
+                                <img id="prancha-tres"src="img-desapego-raiz/prancha_1.jpg" alt="imagem prancha">
+                                <img id="prancha-quatro"src="img-desapego-raiz/prancha_2.jpg" alt="imagem prancha">
+                            </div>
+                            <div class="d-flex pranchasMenoresDois">
+                                <img id="prancha-cinco"src="img-desapego-raiz/prancha_5.jpg" alt="imagem prancha">
+                                <img id="prancha-seis" src="img-desapego-raiz/prancha_6.jpg" alt="imagem prancha">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card rounded" style="width: 18rem;">
-                <img src="css/img-desapego/roupas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center">ROUPAS</h5>
-                        <p class="card-text">Roupas em geral para pratica do Surf</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+               
+                <div class="col-12" class="ofertasDesapego" >
+                    <h2>Pranchas</h2>
+                    <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                   
                 </div>
-                <div class="card" style="width: 18rem;">
-                <img src="css/img-desapego/acessorios.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">ACESSÓRIOS EM GERAL</h5>
-                        <p class="card-text">Parafinas, capas e mais</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+                <div class="col-12" class="ofertasDesapego" >
+                    <h2>Pranchas</h2>
+                    <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    <img src="  " alt="imagem prancha">
+                    
                 </div>
             </section>
-            <div class="text-center">
+            <div class="text-center ">
                     <h1>Quer Desapegar =)?</h1> 
              </div>
              <section class ="col-12 p-5">
