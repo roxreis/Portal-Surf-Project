@@ -13,10 +13,9 @@
 <body>
     <?php include_once("header.php") ?>  
     <main class="container">
-       
-        <div class="text-center">
-            <h1>Estão Desapegando!</h1>
-        </div>
+    
+        <div class="jumbotron col-12" id= "bannerDesap"></div>
+        <h1 Class="textBanner">Estão Desapegando!</h1>
         <section class="cardsDesap row justify-content-between align-center p-3">
             <!-- cards para seção desapego  -->
                 <div class="card" style="width: 18rem;">
