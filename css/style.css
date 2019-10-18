@@ -1,10 +1,34 @@
 /* css para header */
-
 header img{
     width: 100px;
     position: fixed;
     z-index: 100;
     margin-top: 20px;
+}
+
+header form{
+    text-shadow: #bbb6b6 2px 2px 2px;
+}
+
+#headerNavbar{
+    text-decoration: none;
+    text-shadow: #bbb6b6 2px 2px 2px; 
+}
+
+/* css para footer */
+footer{
+    background-color: #dceaec;
+}
+
+#footerlogo{
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    width: 280px;
+    z-index: 100;
+    margin-top:35px;
+    margin-bottom: 40px;
 }
 
 

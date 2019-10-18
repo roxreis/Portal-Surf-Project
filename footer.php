@@ -1,1 +1,16 @@
-<!-- Emilia: página para criação do footer padrãopara todas as outras páginas do portal. Fazer esta e o header primeiros, por favor. -->
+<!-- Footer padrão para todas as outras páginas do portal.-->
+
+<footer>
+    <section>
+    </section>
+    
+    <section id="footerlogo">
+        <img src="imagens/Logo_degrade.png" alt="logo portal do surf">  
+    </section>
+    
+    <section>
+    </section>
+
+
+
+</footer>
