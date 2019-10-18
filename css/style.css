@@ -8,10 +8,6 @@ header img{
 }
 
 
-body{
-    background-color: cadetblue;;
-}
-
 /* css para section desapego */
 #bannerDesap{
     background-image: url(img-desapego/prancha.jpg);
@@ -51,18 +47,20 @@ body{
     display: flex;
     width: 100%;
     height: 500px;
-    justify-content: right;
+     
 }
 
 .pranchasMaiores{
     height: 450px;
     width: 570px;
-    margin-right: 189px;
+    flex-direction: row;
+    
 }
 
 #prancha-um{
     width: 360px;
     height: 400px;
+    margin-right: 10px;
 }
 
 #prancha-dois{
@@ -77,14 +75,14 @@ body{
 .pranchasMenoresUm{
     height: 450px;
     width: 45%;
-    flex-direction: column;
+    
    
 }
 
 .pranchasMenoresDois{
     height: 450px;
     width: 45%;
-    flex-direction: column;
+    
 }
 
 #prancha-tres{
