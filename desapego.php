@@ -24,7 +24,7 @@
                         <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
-                    <div id="imagensPranchas">
+                    <!-- <div id="imagensPranchas">
                         <div class="d-flex pranchasMaiores">
                             <img id="prancha-um" class="border border-dark"src="img-desapego-raiz/prancha_4.jpeg" alt="imagem prancha">
                             <img id="prancha-dois"class="border border-dark"src="img-desapego-raiz/prancha_3.jpg" alt="imagem prancha">
@@ -40,8 +40,30 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+
+                <div id="imagensPranchas">
+                    <div class="card pranchasMaiores" style="width: 18rem;">
+                    <img id="prancha-um" src="img-desapego-raiz/prancha_4.jpeg" class="card-img-top border border-dark" alt="imagem prancha">
+                    <img id="prancha-dois"class="card-img-top border border-dark"src="img-desapego-raiz/prancha_3.jpg" alt="imagem prancha">
+                    </div>
+
+                    <div class="card pranchasMenores" style="width: 18rem;">
+                        <img id="prancha-tres"src="img-desapego-raiz/prancha_1.jpg" class="card-img-top border border-dark" alt="imagem prancha">
+                        <img id="prancha-quatro"src="img-desapego-raiz/prancha_2.jpg" class="card-img-top border border-dark" alt="imagem prancha">
+                        <img id="prancha-cinco"src="img-desapego-raiz/prancha_5.jpg"class="card-img-top border border-dark" alt="imagem prancha">
+                        <img id="prancha-seis" src="img-desapego-raiz/prancha_6.jpg" class="card-img-top border border-dark" alt="imagem prancha">
+                    </div>
                 </div>
-               
+
+
+
+
+
+
+
+
+
                 <div class="col-12" class="ofertasDesapego" >
                     <h2>Pranchas</h2>
                     <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
