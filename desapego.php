@@ -18,64 +18,88 @@
         <h1 Class="textBanner">Estão Desapegando!</h1>
         <section class="Desapego">
             <!-- cards para seção desapego  -->
-                <div class="col-12 d-flex pranchas" >
+                <div class="col-12 d-flex containerOfertas" >
                     <div class="infOfertas mb-3">
                         <h2>Pranchas</h2>
                         <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
-                    <!-- <div id="imagensPranchas">
-                        <div class="d-flex pranchasMaiores">
-                            <img id="prancha-um" class="border border-dark"src="img-desapego-raiz/prancha_4.jpeg" alt="imagem prancha">
-                            <img id="prancha-dois"class="border border-dark"src="img-desapego-raiz/prancha_3.jpg" alt="imagem prancha">
+     
+                    <div id="imagensOfertasDesapego">
+                        <div class="card imagensMaiores" >
+                            <img id="imagem-um" src="imagens/img-desapego/prancha_4.jpeg" class="card-img border border-dark" alt="imagem prancha">
+                            <img id="imagem-dois"src="imagens/img-desapego/prancha_3.jpg" class="card-img border border-dark" alt="imagem prancha">
                         </div>
-                        <div class="d-flex pranchasMenores">
-                            <div class="d-flex pranchasMenoresUm">
-                                <img id="prancha-tres"src="img-desapego-raiz/prancha_1.jpg" alt="imagem prancha">
-                                <img id="prancha-quatro"src="img-desapego-raiz/prancha_2.jpg" alt="imagem prancha">
+
+                        <div class="card imagensMenores">
+                            <div class="d-flex imagensMenoresUm">  
+                                <img id="imagem-tres"src="imagens/img-desapego/prancha_1.jpg" class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-quatro"src="imagens/img-desapego/prancha_2.jpg" class="card-img border border-dark" alt="imagem prancha">
                             </div>
-                            <div class="d-flex pranchasMenoresDois">
-                                <img id="prancha-cinco"src="img-desapego-raiz/prancha_5.jpg" alt="imagem prancha">
-                                <img id="prancha-seis" src="img-desapego-raiz/prancha_6.jpg" alt="imagem prancha">
+                            <div class="d-flex imagensMenoresDois">    
+                                <img id="imagem-cinco"src="imagens/img-desapego/prancha_5.jpg"class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-seis" src="imagens/img-desapego/prancha_6.jpg" class="card-img border border-dark" alt="imagem prancha">
                             </div>
                         </div>
-                    </div>
-                </div> -->
-
-                <div id="imagensPranchas">
-                    <div class="card pranchasMaiores" style="width: 18rem;">
-                    <img id="prancha-um" src="img-desapego-raiz/prancha_4.jpeg" class="card-img-top border border-dark" alt="imagem prancha">
-                    <img id="prancha-dois"class="card-img-top border border-dark"src="img-desapego-raiz/prancha_3.jpg" alt="imagem prancha">
-                    </div>
-
-                    <div class="card pranchasMenores" style="width: 18rem;">
-                        <img id="prancha-tres"src="img-desapego-raiz/prancha_1.jpg" class="card-img-top border border-dark" alt="imagem prancha">
-                        <img id="prancha-quatro"src="img-desapego-raiz/prancha_2.jpg" class="card-img-top border border-dark" alt="imagem prancha">
-                        <img id="prancha-cinco"src="img-desapego-raiz/prancha_5.jpg"class="card-img-top border border-dark" alt="imagem prancha">
-                        <img id="prancha-seis" src="img-desapego-raiz/prancha_6.jpg" class="card-img-top border border-dark" alt="imagem prancha">
                     </div>
                 </div>
 
+                <div class="col-12 d-flex containerOfertas" >
+                    <div class="infOfertas mb-3">
+                        <h2>Roupas</h2>
+                        <p>Vários modelos e tamanhos</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+     
+                    <div id="imagensOfertasDesapego">
+                        <div class="card imagensMaiores" >
+                            <img id="imagem-um" src="imagens/img-desapego/roupas3.jpg" class="card-img border border-dark" alt="imagem prancha">
+                        </div>
+                        <div class="d-flex imagensMenoresDois">    
+                            <img id="imagem-cinco"src="imagens/img-desapego/roupas4.jpg"class="card-img border border-dark" alt="imagem prancha">
+                            <img id="imagem-seis" src="imagens/img-desapego/roupas5.jpg" class="card-img border border-dark" alt="imagem prancha">
+                        </div>
+                        <div class="card imagensMaiores" >
+                            <img id="imagem-dois"src="imagens/img-desapego/roupas7.png" class="card-img border border-dark" alt="imagem prancha">
+                        </div>
+                        
 
-
-
-
-
-
-
-
-                <div class="col-12" class="ofertasDesapego" >
-                    <h2>Pranchas</h2>
-                    <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
-                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        <div class="card imagensMenores">
+                            <div class="d-flex imagensMenoresUm">  
+                                <img id="imagem-tres"src="imagens/img-desapego/roupas.jpg" class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-quatro"src="imagens/img-desapego/roupas1.jpg" class="card-img border border-dark" alt="imagem prancha">
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
                    
-                </div>
-                <div class="col-12" class="ofertasDesapego" >
-                    <h2>Pranchas</h2>
-                    <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
-                    <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    <img src="  " alt="imagem prancha">
-                    
+             
+                <div class="col-12 d-flex containerOfertas" >
+                    <div class="infOfertas mb-3">
+                        <h2>Pranchas</h2>
+                        <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+     
+                    <div id="imagensOfertasDesapego">
+                        <div class="card imagensMenores">
+                            <div class="d-flex imagensMenoresUm">  
+                                <img id="imagem-tres"src="imagens/img-desapego/acessorios6pequeno.jpg" class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-quatro"src="imagens/img-desapego/acessorios3.jpg" class="card-img border border-dark" alt="imagem prancha">
+                            </div>
+                            <div class="d-flex imagensMenoresDois">    
+                                <img id="imagem-cinco"src="imagens/img-desapego/acessorios5.jpg"class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-seis" src="imagens/img-desapego/acessorios4.jpg" class="card-img border border-dark" alt="imagem prancha">
+                            </div>
+                        </div>
+                        <div class="card imagensMaiores" >
+                            <img id="imagem-um" src="imagens/img-desapego/acessorios.jpg" class="card-img border border-dark" alt="imagem prancha">
+                            <img id="imagem-dois"src="imagens/img-desapego/acessorios1.jpg" class="card-img border border-dark" alt="imagem prancha">
+                        </div>
+
+                     
+                    </div>
                 </div>
             </section>
             <div class="text-center ">
