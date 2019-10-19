@@ -20,6 +20,16 @@ footer{
     background-color: #dceaec;
 }
 
+/* #footerMessage{
+    display: flex;
+    
+} */
+
+footer p{
+    font-color: #140b63;
+    
+}
+
 #footerlogo{
     display: flex;
     justify-content: center;
