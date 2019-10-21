@@ -1,4 +1,5 @@
 <!-- Footer padrão para todas as outras páginas do portal.-->
+<!-- Falta incluir os ícones para as redes sociais (Facebook, Instagram, Twitter (?)).-->
 
 <footer>
     <div class="container">

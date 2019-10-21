@@ -1,4 +1,4 @@
-<!-- Caio: página de cadastro de uma nova oferta pelo usuário logado, acessadapor link na página de desapego principal (do Rodrigo). -->
+<!-- Caio: página de cadastro de uma nova oferta pelo usuário logado, acessada por link na página de desapego principal (do Rodrigo). -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,53 @@
 </head>
 <body>
     <?php include_once("header.php") ?>   
+
+    <main class= "container">
+        <div class = "row">
+            <div class = "col-12">
+                <h1>Cadastro de Ofertas</h1>
+            </div>
+
+            <div class="col-12">
+            
+                <br>
+                    <label for="seg"><b>Segmento do Produto</b></label>
+                        <select class="form-control" id="seg" name="segmento">
+                            <option>Selecione uma opção</option>
+                            <option>Acessórios</option>
+                            <option>Vestuário</option>
+                            <option>Wetsuits</option>
+                            <option>Pranchas</option>                                 
+                        </select>
+                <br>                    
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" class ="form-control" name="nomeProduto" placeholder="Nome do Produto"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class ="form-control" name="descProduto" placeholder="Descrição do Produto"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class ="form-control" name="localEntrega" placeholder="Local de Entrega/Retirada do Produto"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="file" class ="form-control" name="imgProduto" placeholder="Imagem do Produto"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class ="form-control" name="precoProduto" placeholder="Preço do Produto"/>
+                    </div>
+
+                    <button class= "btn btn-success">Cadastrar Oferta</button>
+            
+                </form>
+            </div>  
+        </div>
+    </main> 
 
     <?php include_once("footer.php") ?>   
 </body>

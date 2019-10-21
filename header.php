@@ -1,14 +1,14 @@
 <!-- header padrão para todas as outras páginas do portal.-->
+<!-- Falta aumentar um pouco o tamanho do campo de busca, e melhorar a posição da navbar, deixano o logo como um aside ao lado das duas linhas do header.-->
 
 <?php include_once("config/variaveis.php") ?>
 
 <header>
     <section class="navbar">
-        <img src="imagens/Logo_degrade.png" alt="logo portal do surf">
-        <!-- preciso de ajuda para centralizar a barra de pesquisa, e para estilizá-la. Se alguém souber, favor me avisar (Elke) -->
+        <a href="./index.php"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
         <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center">
-            <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+            <input class="form-control mr-sm-4" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Busca</button>
         </form>
         <nav>
             <ul class="nav font-weight-bold">
@@ -30,9 +30,9 @@
             </ul>
         </nav>
     </section>
-    <section class="container mt-3">
+    <section class="container mt-3 mb-3">
         <nav class="nav-bar d-flex justify-content-center">
-            <ul class="nav" id="headerNavbar">
+            <ul class="nav font-weight-bold" id="headerNavbar">
                 <li class="nav-item">
                     <a class="nav-link" href="previsao.php">Previsão</a>
                 </li>
