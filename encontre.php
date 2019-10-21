@@ -15,9 +15,9 @@
     <?php include_once("header.php") ?>   
 
     <main>
-        <section class="container d-flex justify-contents-center">
+        <section class="container d-flex justify-contents-center text-info">
             <div class="col-6">
-                <h1 class="p-3 mt-5">Encontre tudo o que você precisa para aproveitar a água!</h1>
+                <h1 class="p-3 mt-5 ">Encontre tudo o que você precisa para aproveitar a água!</h1>
  <!-- linha do label: modelo de form (form control: select) puxado do bootstrap W3C: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_form_select&stacked=h -->
   <!--  <div class="container">  -->
                 <form action="/action_page.php">

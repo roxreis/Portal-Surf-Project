@@ -1,8 +1,8 @@
 /* css para header */
 header img{
-    width: 100px;
-    position: fixed;
-    z-index: 100;
+    width: 150px;
+    /* position: fixed;
+    z-index: 100; */
     margin-top: 20px;
 }
 
@@ -18,26 +18,22 @@ header form{
 /* css para footer */
 footer{
     background-color: #dceaec;
+    margin-top: 5%;
+    height: 300px;
 }
-
-/* #footerMessage{
-    display: flex;
-    
-} */
 
 footer p{
     font-color: #140b63;
-    
 }
 
 #footerlogo{
     display: flex;
     justify-content: center;
 }
+
 footer img{
-    width: 280px;
-    z-index: 100;
-    margin-top:35px;
+    height: 15%;
+    margin-top:55px;
     margin-bottom: 40px;
 }
 
