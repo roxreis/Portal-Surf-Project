@@ -16,10 +16,22 @@
     <main class= "container">
         <div class = "row">
             <div class = "col-12">
-                <h1>Cadastro de Oferta</h1>
+                <h1>Cadastro de Ofertas</h1>
             </div>
 
             <div class="col-12">
+            
+                <br>
+                    <label for="seg"><b>Segmento do Produto</b></label>
+                        <select class="form-control" id="seg" name="segmento">
+                            <option>Selecione uma opção</option>
+                            <option>Acessórios</option>
+                            <option>Vestuário</option>
+                            <option>Wetsuits</option>
+                            <option>Pranchas</option>                                 
+                        </select>
+                <br>                    
+
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" class ="form-control" name="nomeProduto" placeholder="Nome do Produto"/>
@@ -27,6 +39,10 @@
 
                     <div class="form-group">
                         <input type="text" class ="form-control" name="descProduto" placeholder="Descrição do Produto"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class ="form-control" name="localEntrega" placeholder="Local de Entrega/Retirada do Produto"/>
                     </div>
 
                     <div class="form-group">
