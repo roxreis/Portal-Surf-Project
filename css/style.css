@@ -20,7 +20,7 @@ footer{
     height: 400px;
 }
 footer p{
-    font-color: #140b63;
+    color: #140b63;
 }
 #footerlogo{
     display: flex;
