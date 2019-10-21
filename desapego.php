@@ -26,20 +26,28 @@
                     </div>
      
                     <div id="imagensOfertasDesapego">
-                        <div class="card imagensMaiores" >
-                            <img id="imagem-um" src="imagens/img-desapego/prancha_4.jpeg" class="card-img border border-dark" alt="imagem prancha">
-                            <img id="imagem-dois"src="imagens/img-desapego/prancha_3.jpg" class="card-img border border-dark" alt="imagem prancha">
-                        </div>
-
-                        <div class="card imagensMenores">
-                            <div class="d-flex imagensMenoresUm">  
-                                <img id="imagem-tres"src="imagens/img-desapego/prancha_1.jpg" class="card-img border border-dark" alt="imagem prancha">
-                                <img id="imagem-quatro"src="imagens/img-desapego/prancha_2.jpg" class="card-img border border-dark" alt="imagem prancha">
+                       
+                            <div class="card imagensMaioresUm" >
+                                <img id="imagem-um" src="imagens/img-desapego/prancha_4.jpeg" class="card-img " alt="imagem prancha">
                             </div>
-                            <div class="d-flex imagensMenoresDois">    
-                                <img id="imagem-cinco"src="imagens/img-desapego/prancha_5.jpg"class="card-img border border-dark" alt="imagem prancha">
-                                <img id="imagem-seis" src="imagens/img-desapego/prancha_6.jpg" class="card-img border border-dark" alt="imagem prancha">
+                            <div class="card imagensMaioresDois">
+                                <img id="imagem-dois"src="imagens/img-desapego/prancha_3.jpg" class="card-img " alt="imagem prancha">
                             </div>
+                        
+                        <div class="d-flex imagensMenores">
+                                <div class="card w-50 mb-3 mr-3">  
+                                    <img id="imagem-tres"src="imagens/img-desapego/prancha_1.jpg" class="card-img " alt="imagem prancha">
+                                </div>
+                                <div class="card w-50">
+                                    <img id="imagem-quatro"src="imagens/img-desapego/prancha_2.jpg" class="card-img " alt="imagem prancha">
+                                </div>
+                                <div class="card w-50 mb-3">   
+                                    <img id="imagem-cinco"src="imagens/img-desapego/prancha_5.jpg"class="card-img " alt="imagem prancha">
+                                </div>
+                                <div class="card w-50">   
+                                    <img id="imagem-seis" src="imagens/img-desapego/prancha_6.jpg" class="card-img " alt="imagem prancha">
+                                </div>    
+                                                      
                         </div>
                     </div>
                 </div>
@@ -51,25 +59,31 @@
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
      
-                    <div id="imagensOfertasDesapego">
-                        <div class="card imagensMaiores" >
-                            <img id="imagem-um" src="imagens/img-desapego/roupas3.jpg" class="card-img border border-dark" alt="imagem prancha">
+                    <div id="imagensOfertasDesapegoDois">
+                        
+                            <div class="card imagensMaioresUm" >
+                                <img id="imagem-um" src="imagens/img-desapego/roupas3.jpg" class="card-img " alt="imagem prancha">
+                            </div>
+                        
+                        <div class="d-flex imagensMenores"> 
+                            <div class="card w-50 mb-3 mr-3">  
+                                <img id="imagem-cinco"src="imagens/img-desapego/roupas4.jpg"class="card-img " alt="imagem prancha">
+                            </div>
+                            <div class="card w-50">
+                                 <img id="imagem-seis" src="imagens/img-desapego/roupas5.jpg" class="card-img " alt="imagem prancha">
+                            </div>
                         </div>
-                        <div class="d-flex imagensMenoresDois">    
-                            <img id="imagem-cinco"src="imagens/img-desapego/roupas4.jpg"class="card-img border border-dark" alt="imagem prancha">
-                            <img id="imagem-seis" src="imagens/img-desapego/roupas5.jpg" class="card-img border border-dark" alt="imagem prancha">
-                        </div>
-                        <div class="card imagensMaiores" >
-                            <img id="imagem-dois"src="imagens/img-desapego/roupas7.png" class="card-img border border-dark" alt="imagem prancha">
+                        <div class="card imagensMaioresDois" >
+                            <img id="imagem-dois"src="imagens/img-desapego/roupas7.png" class="card-img " alt="imagem prancha">
                         </div>
                         
-
-                        <div class="card imagensMenores">
-                            <div class="d-flex imagensMenoresUm">  
-                                <img id="imagem-tres"src="imagens/img-desapego/roupas.jpg" class="card-img border border-dark" alt="imagem prancha">
-                                <img id="imagem-quatro"src="imagens/img-desapego/roupas1.jpg" class="card-img border border-dark" alt="imagem prancha">
+                        <div class="d-flex imagensMenores">
+                            <div class="card w-50"> 
+                                <img id="imagem-tres"src="imagens/img-desapego/roupas.jpg" class="card-img " alt="imagem prancha">
+                            </div>    
+                            <div class="card w-50">
+                                <img id="imagem-quatro"src="imagens/img-desapego/roupas1.jpg" class="card-img " alt="imagem prancha">
                             </div>
-                          
                         </div>
                     </div>
                 </div>
@@ -77,55 +91,34 @@
              
                 <div class="col-12 d-flex containerOfertas" >
                     <div class="infOfertas mb-3">
-                        <h2>Pranchas</h2>
+                        <h2>Acessórios</h2>
                         <p>usadas em 3 fases - Pouco uso / Bom uso / Muito uso</p>
                         <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
      
                     <div id="imagensOfertasDesapego">
+
                         <div class="card imagensMenores">
+                            
                             <div class="d-flex imagensMenoresUm">  
-                                <img id="imagem-tres"src="imagens/img-desapego/acessorios6pequeno.jpg" class="card-img border border-dark" alt="imagem prancha">
-                                <img id="imagem-quatro"src="imagens/img-desapego/acessorios3.jpg" class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-tres"src="imagens/img-desapego/acessorios6pequeno.jpg" class="card-img " alt="imagem prancha">
+                                <img id="imagem-quatro"src="imagens/img-desapego/acessorios3.jpg" class="card-img " alt="imagem prancha">
                             </div>
                             <div class="d-flex imagensMenoresDois">    
-                                <img id="imagem-cinco"src="imagens/img-desapego/acessorios5.jpg"class="card-img border border-dark" alt="imagem prancha">
-                                <img id="imagem-seis" src="imagens/img-desapego/acessorios4.jpg" class="card-img border border-dark" alt="imagem prancha">
+                                <img id="imagem-cinco"src="imagens/img-desapego/acessorios5.jpg"class="card-img " alt="imagem prancha">
+                                <img id="imagem-seis" src="imagens/img-desapego/acessorios4.jpg" class="card-img " alt="imagem prancha">
                             </div>
                         </div>
                         <div class="card imagensMaiores" >
-                            <img id="imagem-um" src="imagens/img-desapego/acessorios.jpg" class="card-img border border-dark" alt="imagem prancha">
-                            <img id="imagem-dois"src="imagens/img-desapego/acessorios1.jpg" class="card-img border border-dark" alt="imagem prancha">
+                            <img id="imagem-um" src="imagens/img-desapego/acessorios.jpg" class="card-img " alt="imagem prancha">
+                            <img id="imagem-dois"src="imagens/img-desapego/acessorios1.jpg" class="card-img " alt="imagem prancha">
                         </div>
 
                      
                     </div>
                 </div>
-            </section>
-            <div class="text-center ">
-                    <h1>Quer Desapegar =)?</h1> 
-             </div>
-             <section class ="col-12 p-5">
-                <form action="" method= "post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <input type="text" class= "form-control" name="nomeProduto" placeholder= "Nome do Produto">
-                    </div>   
-                    <div class="form-group">
-                        <input type="text" class= "form-control" name="descProduto" placeholder= "Descrição do Produto">
-                    </div> 
-                    <div class="form-group">
-                        <input type="file" class= "form-control" name="imgProduto" placeholder= "Imagem do Produto">
-                    </div> 
-                    <div class="form-group">
-                        <input type="number" class= "form-control" name="precoProduto" placeholder= "Preço do Produto">
-                    </div> 
-                    <button class= "btn btn-success">Cadastrar Produto</button>
-                </form>           
-             
-
-             </section>
-    
-    
+        </section>
+           
     </main> 
 
     <?php include_once("footer.php") ?>   

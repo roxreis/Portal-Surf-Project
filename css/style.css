@@ -44,7 +44,7 @@ footer img{
 
 /* css para section desapego */
 #bannerDesap{
-    background-image: url(img-desapego/prancha.jpg);
+    background-image: url(../imagens/img-desapego/prancha.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height:300px;
@@ -55,7 +55,6 @@ footer img{
 }
 .Desapego{
     height: 1800px;
-    /* align-content: space-between; */
     margin-top: -64px;
 }
 
@@ -84,18 +83,22 @@ footer img{
     justify-content: center;
 }
 
-.imagensMaiores{
-    height: 320px;
-    width: 50%;
-    flex-direction: row;
-    margin-right: 63px;
-}
 
-#imagem-um{
+
+.imagensMaioresUm{
     width: 270px;
     height: 320px;
     margin-right: 30px;
-    margin-left: -0.5px;
+}
+.imagensMaioresDois{
+    width: 270px;
+    height: 320px;
+    margin-right: 30px;
+}
+
+#imagem-um{
+    width: 260.5px;
+    height: 316.5px;
 }
 
 #imagem-dois{
@@ -104,44 +107,29 @@ footer img{
 }
 
 .imagensMenores{
-    width: 333px;
+    width: 337px;
     height: 320px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.imagensMenoresUm{
-    height: 450px;
-    margin-bottom: 14px;
-    flex-direction: column;
-    
-}
 
-.imagensMenoresDois{
-    height: 450px;
-    flex-direction: column;
-   
-    
-}
 
 #imagem-tres{
-    height: 150px;
-    width: 150px;
-    margin-right: 30px;
-    margin-left: -0.5px;
+    height: 149px;
+    width: 164px;
 }
 #imagem-quatro{
     height: 150px;
-    width: 150px;
+    width: 164px;
 }
 #imagem-cinco{
-    height: 150px;
-    width: 150px;
-    margin-right: 30px;
-    margin-left: -0.5px;
+    height: 149px;
+    width: 164px;
 }
 #imagem-seis{
-    height: 150px;
-    width: 150px;
+    height: 148px;
+    width: 164px;
 }  
  
 
