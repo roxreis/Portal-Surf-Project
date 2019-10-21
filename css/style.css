@@ -5,11 +5,9 @@ header img{
     z-index: 100; */
     margin-top: 20px;
 }
-
 header form{
     text-shadow: #bbb6b6 2px 2px 2px;
 }
-
 #headerNavbar{
     text-decoration: none;
     text-shadow: #bbb6b6 2px 2px 2px; 
@@ -18,24 +16,24 @@ header form{
 /* css para footer */
 footer{
     background-color: #dceaec;
-    margin-top: 5%;
-    height: 300px;
+    /* margin-top: 5%; */
+    height: 400px;
 }
-
 footer p{
     font-color: #140b63;
 }
-
 #footerlogo{
     display: flex;
     justify-content: center;
 }
-
 footer img{
     height: 15%;
-    margin-top:55px;
+    margin-top:100px;
     margin-bottom: 40px;
 }
+
+/* css para home - index */
+index 
 
 
 /* css para section desapego */
