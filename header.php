@@ -30,7 +30,7 @@
             </ul>
         </nav>
     </section>
-    <section class="container mt-3 mb-3">
+    <div class="container mt-3 mb-3">
         <nav class="nav-bar d-flex justify-content-center">
             <ul class="nav font-weight-bold" id="headerNavbar">
                 <li class="nav-item">
@@ -63,7 +63,7 @@
                     </div>
                 </li>
         </nav>
-    </section>
+                </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

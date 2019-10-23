@@ -12,9 +12,8 @@
 </head>
 <body>
     <?php include_once("header.php") ?>   
-
-
-    <div class="form-check">
+   
+<div class="form-check">
   <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
 </div>
 <div class="form-check">
@@ -62,7 +61,6 @@
 
 </section>
 
-
-    <?php include_once("footer.php") ?>   
+  
 </body>
 </html>
