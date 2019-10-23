@@ -14,10 +14,10 @@
     <?php include_once("header.php") ?>   
 
     <main class= "container">
-        <div class = "row">
-            <div class = "col-12">
-                <h1>Cadastro de Ofertas</h1>
-            </div>
+        
+        <div class="jumbotron col-12" id= "bannerDesap"></div>
+        <h1 Class="textBanner">Cadastro de Oferta</h1>
+        <section class="Desapego">
 
             <div class="col-12">
             

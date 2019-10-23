@@ -30,7 +30,11 @@ $produtos= [
     <?php include_once("header.php") ?>   
     
     
-        <main>
+        <main class= "container">
+
+        <div class="jumbotron col-12" id= "bannerDesap"></div>
+        <h1 Class="textBanner">Histórico de oferta!</h1>
+        <section class="Desapego">
                 
             <section class="container mt-4">
                 <div class="row justify-content-around">
