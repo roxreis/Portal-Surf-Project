@@ -3,36 +3,39 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <title>Portal do Surf - Encontre</title>
 </head>
+
 <body>
-    <?php include_once("header.php") ?>   
+    <?php include_once("header.php") ?>
 
     <main>
 
-<!-- original Elke - inicio -->
+        <!-- original Elke - inicio -->
         <!-- <section class="container d-flex justify-contents-center text-info">
             <div class="col-6">
                 <h1 class="p-3 mt-5 ">Encontre tudo o que você precisa para aproveitar a água!</h1> -->
-<!-- original Elke - fim -->
+        <!-- original Elke - fim -->
 
- <!-- linha do label: modelo de form (form control: select) puxado do bootstrap W3C: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_form_select&stacked=h -->
-  <!--  <div class="container">  -->
-                
-                <!-- original Elke - inicio -->
-                <!-- <form action="/action_page.php">
+        <!-- linha do label: modelo de form (form control: select) puxado do bootstrap W3C: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_form_select&stacked=h -->
+        <!--  <div class="container">  -->
+
+        <!-- original Elke - inicio -->
+        <!-- <form action="/action_page.php">
                     <div class="form-group col-6 mt-3">
                         <label>Digite o lugar:</label>
                         <input type="text" name="place"> -->
-                <!-- original Elke - fim -->
+        <!-- original Elke - fim -->
 
-                <!-- <label for="sel1">Escolha a cidade:</label>
+        <!-- <label for="sel1">Escolha a cidade:</label>
                 <select class="form-control" id="sel1" name="cidade">
                     <option></option>
                     <option>Ubatuba</option>
@@ -41,8 +44,8 @@
                     <option>Cidade 04</option>
                 </select> -->
 
-                <!-- original Elke - inicio -->
-                        <!-- <br>
+        <!-- original Elke - inicio -->
+        <!-- <br>
                         <label for="sel1">Escolha o serviço (selecione um):</label>
                             <select class="form-control" id="sel1" name="servico">
                                 <option></option>
@@ -60,28 +63,34 @@
             </div>
         </section> -->
         <!-- original Elke - fim -->
-        
+
         <section class="container text-info">
-        <h2>Encontre tudo o que você precisa para aproveitar a água:</h2>
-        <form action="/action_page.php" class="form-inline">
-                    <div class="form-group mt-5">
-        <!-- <div class="container p-0 mt-5 text-info"> -->
-                <select class="form-control mt-5" name="encontre">
-                    <option disabled selected>Encontre:</option>
-                    <option value=”equipamentos”>Equipamentos</option>
-                    <option value=”manutenção”>Manutenção</option>
-                    <option value=”surfshop”>Surf Shop</option>
-                    <option value=”acomodacao”>Acomodação</option>
-                    <option value=”carona”>Carona</option>
-                </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Encontre</button>
-            </form>
-                <div class="container mt-5 p-0">
+            <h2 class="mt-5">Encontre tudo o que você precisa para aproveitar a água:</h2>
+            <div class="row">
+                <form action="/action_page.php" class="form-inline col-12">
+                    <div class="col-10">
+                        <!-- <div class="form-group mt-5"> -->
+                        <!-- <div class="container p-0 mt-5 text-info"> -->
+                        <select class="form-control mt-5" name="encontre">
+                            <option disabled selected>Selecione:</option>
+                            <option value=”equipamentos”>Equipamentos</option>
+                            <option value=”manutenção”>Manutenção</option>
+                            <option value=”surfshop”>Surf Shop</option>
+                            <option value=”acomodacao”>Acomodação</option>
+                            <option value=”carona”>Carona</option>
+                        </select>
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-2 mt-5 justify-content-flex-end">
+                        <button type="submit" class="btn btn-primary">Encontre</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container mt-5 p-0">
                 <img src="imagens/img-encontre/mapa.png" class="img-fluid" alt="mapa">
             </div>
-        </div>
- </section>
+            </div>
+        </section>
         <div class="container mt-5 mb-5 text-info">
             <h2>Itens a venda nesta área:</h2>
             <div class="row justify-content-between mt-5">
@@ -93,8 +102,9 @@
         </div>
 
         <!-- font-accent tt-input mx-80 -->
-        
+
     </main>
-    <?php include_once("footer.php") ?>   
+    <?php include_once("footer.php") ?>
 </body>
+
 </html>
