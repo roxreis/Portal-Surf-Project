@@ -61,10 +61,12 @@
         </section> -->
         <!-- original Elke - fim -->
         
-        
-        <div class="container p-0 mt-5 text-info">
-                <h2>Encontre tudo o que você precisa para aproveitar a água:</h2>
-                <select class="form-control font-accent tt-input mx-80 mt-5" name="encontre">
+        <section class="container text-info">
+        <h2>Encontre tudo o que você precisa para aproveitar a água:</h2>
+        <form action="/action_page.php" class="form-inline">
+                    <div class="form-group mt-5">
+        <!-- <div class="container p-0 mt-5 text-info"> -->
+                <select class="form-control mt-5" name="encontre">
                     <option disabled selected>Encontre:</option>
                     <option value=”equipamentos”>Equipamentos</option>
                     <option value=”manutenção”>Manutenção</option>
@@ -72,21 +74,25 @@
                     <option value=”acomodacao”>Acomodação</option>
                     <option value=”carona”>Carona</option>
                 </select>
-            </div>
-            <div class="container mt-5 p-0">
+                </div>
+                <button type="submit" class="btn btn-primary">Encontre</button>
+            </form>
+                <div class="container mt-5 p-0">
                 <img src="imagens/img-encontre/mapa.png" class="img-fluid" alt="mapa">
             </div>
         </div>
+ </section>
         <div class="container mt-5 mb-5 text-info">
             <h2>Itens a venda nesta área:</h2>
-            <div class="row justify-content-between mt-5" id="encontredesapego">
-                <img src="imagens/img-desapego/acessorios2.jpg" class="img-fluid" alt="desapego">
-                <img src="imagens/img-desapego/prancha_2.jpg" class="img-fluid" alt="desapego">
-                <img src="imagens/img-encontre/venda1.png" class="img-fluid" alt="desapego">
+            <div class="row justify-content-between mt-5">
+                <img class="encontredesapego" src="imagens/img-desapego/acessorios2.jpg" class="" alt="desapego">
+                <img class="encontredesapego" src="imagens/img-desapego/oculos_1.png" class="" alt="desapego">
+                <img class="encontredesapego" src="imagens/img-desapego/prancha_2.jpg" class="" alt="desapego">
+                <img class="encontredesapego" src="imagens/img-encontre/venda1.png" class="" alt="desapego">
             </div>
         </div>
 
-
+        <!-- font-accent tt-input mx-80 -->
         
     </main>
     <?php include_once("footer.php") ?>   
