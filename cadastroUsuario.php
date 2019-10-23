@@ -13,6 +13,56 @@
 <body>
     <?php include_once("header.php") ?>   
 
+
+    <div class="form-check">
+  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+</div>
+<div class="form-check">
+  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+</div>
+
+<section class="form">
+<form>
+<div class="form-group">
+    <input type="nome" class="form-control" id="inputName" placeholder="Nome">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="nome de usuário" class="form-control" id="inputNameUser" placeholder="Nome de Usário">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="e-mail" class="form-control" id="inputEmail" placeholder="E-mail">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="senha" class="form-control" id="inputPassword4" placeholder="Senha">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="senha" class="form-control" id="inputPassword4" placeholder="Confirmar Senha">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Deseja pegar ou dar carona?
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Concordo com as regras
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+</section>
+
+
     <?php include_once("footer.php") ?>   
 </body>
 </html>
