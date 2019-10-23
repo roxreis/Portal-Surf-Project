@@ -53,7 +53,8 @@
                         <input type="number" class ="form-control" name="precoProduto" placeholder="Preço do Produto"/>
                     </div>
 
-                    <button class= "btn btn-success">Cadastrar Oferta</button>
+                    <button class= "btn btn-success"><a href="desapegoOfertasUsuario.php"> Cadastrar Oferta </a></button>
+                    <button class= "btn btn-danger"><a href="desapego.php"> Cancelar </a></button>
             
                 </form>
             </div>  
