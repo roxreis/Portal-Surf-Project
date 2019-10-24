@@ -11,7 +11,7 @@
     <title>Portal do Surf</title>
 </head>
 <body>
-    <?php include_once("header.php") ?>   
+    <?php include_once("padrao/header.php") ?>   
    
 <div class="form-check">
   <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">

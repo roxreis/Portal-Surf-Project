@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include_once("header.php") ?>
+    <?php include_once("padrao/header.php") ?>
 
     <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -61,7 +61,7 @@
 
     </div>
 
-    <?php include_once("footer.php") ?>
+    <?php include_once("padrao/footer.php") ?>
 </body>
 
 </html>

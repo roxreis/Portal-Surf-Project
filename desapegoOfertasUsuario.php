@@ -27,7 +27,7 @@ $produtos= [
     <title>Portal do Surf - Desapego</title>
 </head>
 <body>
-    <?php include_once("header.php") ?>   
+    <?php include_once("padrao/header.php") ?>   
     
     
         <main class= "container">
@@ -61,6 +61,6 @@ $produtos= [
           
 
 
-    <?php include_once("footer.php") ?>   
+    <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>

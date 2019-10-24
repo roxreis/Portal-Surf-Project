@@ -21,10 +21,10 @@
                 </li>
                 <?php } else { ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="paginaLogin.php">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cadastro</a>
+                    <a class="nav-link" href="cadastroUsuario.php">Cadastro</a>
                 </li>
                 <?php } ?>
             </ul>

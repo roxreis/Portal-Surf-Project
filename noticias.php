@@ -10,8 +10,8 @@
     <title>Portal do Surf - Notícias</title>
 </head>
 <body>
-    <?php include_once("header.php") ?>   
+    <?php include_once("padrao/header.php") ?>   
 
-    <?php include_once("footer.php") ?>   
+    <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>
