@@ -30,7 +30,7 @@
             </ul>
         </nav>
     </section>
-    <div class="container mt-3 mb-3">
+    <div class="container mt-1 mb-3">
         <nav class="nav-bar d-flex justify-content-center">
             <ul class="nav font-weight-bold" id="headerNavbar">
                 <li class="nav-item">

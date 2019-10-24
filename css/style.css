@@ -1,19 +1,20 @@
+
+
 /* css para header */
 header img{
     width: 150px;
-    /* position: fixed;
-    z-index: 100; */
     margin-top: 20px;
 }
 
+/* Por que a class container do bootstrap está no CSS?? 
 .container{
-    /*width: 100px;*/
+    /*width: 100px;
     padding-right: 15px;
-    padding-left: 15px;
-    -webkit-margin-collapse: discard;
+    padding-left: 15px; 
+    -webkit-margin-collapse: discard;   ----> para que serve?
+} */
 
-}
-
+/* não alterou o estilo das fontes
 .h2-carousel{
     margin-bottom: 328px;
     font-size: 1rem;
@@ -21,18 +22,20 @@ header img{
     line-height: 3.2;
 }
 
+* não alterou o estilo das fontes
 .p-carousel{
     font-size: 1rem;
     font-weight: 7.5;
     line-height: 7.5;
+} */
 
-}
-
+/* class do bootstrap, com as mesmas especificações
 .img-fluid{
     max-width: 100%;
     height: auto;
-}
+} */
 
+/*  essa  class pertennce ao bootstrap, ao ser colocada aqui, fez com que os indicadores ficassem embaixo do  texto do carousel.
 .carousel-indicators{
     position: absolute;
     right: 0;
@@ -40,7 +43,7 @@ header img{
     left: 0;
     z-index: 15;
     justify-content: center;
-}
+} */
 
 header form{
     text-shadow: #bbb6b6 2px 2px 2px;
@@ -56,20 +59,6 @@ header form{
     align-items: center;
 }
 
-/* css cadastro */
-
-.form-group{
-   /* display: flex;*/
-    
-
-}
-
-.form-row{
-   /* display: flex;
-    flex-wrap: wrap;
-    margin-right: 200px;
-    margin-left: 200px;*/
-}
 
 /* css para footer */
 footer{
@@ -86,13 +75,41 @@ footer p{
     justify-content: center;
 }
 footer img{
-    height: 15%;
+    height: 150px;
     margin-top:100px;
     margin-bottom: 40px;
 }
 
+
 /* css para home - index */
-index 
+.homeBanner{
+    height: 550px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+p{
+ font-size: 1.5rem;
+}
+
+
+
+/* css cadastro usuario */
+/* .form-group{
+    display: flex;
+ }
+ 
+ .form-row{
+    display: flex;
+     flex-wrap: wrap;
+     margin-right: 200px;
+     margin-left: 200px;
+ } */
+ 
 
 
 /* css para section desapego */
