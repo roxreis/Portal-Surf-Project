@@ -27,8 +27,10 @@
 
         <!-- The slideshow -->
         <div class="carousel-inner">
+            <!-- <div class="carousel-item active"> -->
             <div class="carousel-item active">
-                <img src="./imagens/img-home/carousel_1.png" class="img-fluid d-black homeBanner" alt="Foto Previsão">
+            <div id="carousel_1" class="img-fluid d-black homeBanner"></div>
+                <!-- <img src="./imagens/img-home/carousel_1.png" class="img-fluid d-black homeBanner" alt="Foto Previsão"> -->
                 <div class="carousel-caption">
                     <h2>Será que vai dar pra pegar aquela onda?</h2>
                     <p class>Ondas, ventos, e o que mais você precisa saber antes de entrar no mar</p>
@@ -36,14 +38,16 @@
             </div>
             
             <div class="carousel-item">
-                <img src="./imagens/img-home/carousel_2.png" class="img-fluid d-black homeBanner" alt="Foto Carona">
+            <div id="carousel_2" class="img-fluid d-black homeBanner"></div>
+                <!-- <img src="./imagens/img-home/carousel_2.png" class="img-fluid d-black homeBanner" alt="Foto Carona"> -->
                 <div class="carousel-caption">
                     <h2>Encontre sua carona!</h2>
                     <p>Faça companhia, divida o combustível, estamos todos juntos nessa onda!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./imagens/img-home/carousel_3.png" class="img-fluid d-black homeBanner" alt="Foto Desapego">
+            <div id="carousel_3" class="img-fluid d-black homeBanner"></div>
+                <!-- <img src="./imagens/img-home/carousel_3.png" class="img-fluid d-black homeBanner" alt="Foto Desapego"> -->
                 <div class="carousel-caption">
                     <h2>Está a fim de desapegar?</h2>
                     <p>Vamos ajudar o planeta e por um dinheiro extra no bolso?</p>
