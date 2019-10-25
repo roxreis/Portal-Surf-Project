@@ -89,10 +89,9 @@
         <div class="container mt-5 mb-5 text-info">
             <h2>Itens a venda nesta área:</h2>
             <div class="row justify-content-between mt-5">
-                <img class="encontredesapego" src="imagens/img-desapego/acessorios2.jpg" class="" alt="desapego">
-                <img class="encontredesapego" src="imagens/img-desapego/oculos_1.png" class="" alt="desapego">
-                <img class="encontredesapego" src="imagens/img-desapego/prancha_2.jpg" class="" alt="desapego">
-                <img class="encontredesapego" src="imagens/img-encontre/venda1.png" class="" alt="desapego">
+                <img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego">
+                <img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego">
+                <img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego">
             </div>
         </div>
 
