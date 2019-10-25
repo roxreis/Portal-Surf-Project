@@ -18,7 +18,7 @@
             <div class="d-flex flex-wrap " id="imagens-desapego"> 
             
                 <div id="img-um">
-                    <a href=”localhost/Portal-Surf-Project/desapegoOferta.php”><h1 class="texto-pranchas " >PRANCHAS</h1></a> 
+                    <a href=”http://localhost/Portal-Surf-Project/desapegoOferta.php”><h1 class="texto-pranchas " >PRANCHAS</h1></a> 
                      <h2 id="dropnow-um">Drop Now</h2>
                      <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="rounded imagem-um" alt="imagem de prancha">
                 </div>
