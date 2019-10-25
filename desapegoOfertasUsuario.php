@@ -3,7 +3,7 @@
 <?php
 
 $nomeSistema ="Portal do Surf";
-$usuario = ["nome"=>"Stephania"];
+$usuario = ["nome"=>""];
 $produtos= [
       ["nome"=>"Acessório para prancha","preco"=>"R$"." ". 90.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/acessorios3.jpg"],
       ["nome"=>"kit acessório para camera","preco"=>"R$"." ". 150.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/acessorios1.jpg"],
@@ -14,6 +14,7 @@ $produtos= [
       ["nome"=>"Wetsuit Long John","preco"=>"R$"." ". 990.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/roupas2.jpg"], 
 ];
 ?>
+
 
 
 <!DOCTYPE html>
@@ -32,9 +33,9 @@ $produtos= [
     
         <main class= "container">
 
-        <div class="jumbotron col-12" id= "bannerDesap"></div>
-        <h1 Class="textBanner">Histórico de oferta!</h1>
-        <section class="Desapego">
+       
+            <h1 class="mt-5 text-center">Histórico de oferta!</h1>        
+                    
                 
             <section class="container mt-4">
                 <div class="row justify-content-around">
@@ -46,13 +47,13 @@ $produtos= [
                                 <img src= "<?php echo $produto['img']; ?>" class="card-img-top" alt= "imagens dos produtos">
                                 <p class="card-text font-weight-bold" ><?php echo $produto["preco"];?></p>
                                 <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-primary">Editar</a>
-                                <a href="?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-primary">Excluir</a>
-                                <a href="?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-primary">Desativar</a>  
+                                <a href="?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-danger">Excluir</a>
+                                <a href="?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-warning">Desativar</a>  
                             </div>
                       </div>
                         <?php } ?>
                     <?php } else { ?>
-                        <h1>Nao tem produtos nesta seção :(</h1>
+                        <h1>Não tem produtos nesta seção :(</h1>
                       <?php } ?>
                 </div>
             </section> 

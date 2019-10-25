@@ -15,9 +15,9 @@
 
     <main class= "container">
         
-        <div class="jumbotron col-12" id= "bannerDesap"></div>
-        <h1 Class="textBanner">Cadastro de Oferta</h1>
-        <section class="Desapego">
+        
+        <h1 class="mt-5 text-center">Cadastro de Oferta</h1>
+        
 
             <div class="col-12">
             
@@ -53,8 +53,9 @@
                         <input type="number" class ="form-control" name="precoProduto" placeholder="Preço do Produto"/>
                     </div>
 
-                    <button class= "btn btn-success"><a href="desapegoOfertasUsuario.php"> Cadastrar Oferta </a></button>
-                    <button class= "btn btn-danger"><a href="desapego.php"> Cancelar </a></button>
+
+                    <a href="desapegoOfertasUsuario.php" class="btn btn-success">Cadastrar Oferta</a>
+                    <a href="desapego.php" class="btn btn-danger">Cancelar</a>
             
                 </form>
             </div>  
