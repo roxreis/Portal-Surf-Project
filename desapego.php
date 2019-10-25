@@ -12,25 +12,27 @@
 </head>
 <body>
     <?php include_once("padrao/header.php") ?>  
-    <main class="container-fluid" style="height: 100%;">
-       
-        <div class="jumbotron col-12 banner-desap">
-            <img src="imagens/img-desapego/prancha.jpg" alt="imagem de pranchas">
-        </div>
-        <h1 Class="textBanner">Estão Desapegando!</h1>
-        <section id="desapego" style="height: 1300px;">
-            <div class=  "d-flex flex-wrap"> 
-                    <h1 class="texto-pranchas text-center " >PRANCHAS</h1>
+    <main class="container">
+      
+        <section id="desapego">
+            <div class="d-flex flex-wrap " id="imagens-desapego"> 
+            
                 <div id="img-um">
-                    <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="img-fluid img-thumbnail imagem-um" alt="imagem de prancha">
+                    <a href=”localhost/Portal-Surf-Project/desapegoOferta.php”><h1 class="texto-pranchas " >PRANCHAS</h1></a> 
+                     <h2 id="dropnow-um">Drop Now</h2>
+                     <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="rounded imagem-um" alt="imagem de prancha">
                 </div>
-                    <h1 class="texto-vestuarios text-center " >VESTUÁRIO</h1>
+                    
                 <div id="img-dois">
-                    <img src="imagens/img-desapego/roupas1.jpg" class="img-fluid img-thumbnail imagem-dois" alt="imagem de prancha">
+                    <a href=”endereço”><h1 class="texto-vestuarios">VESTUÁRIO</h1></a>
+                    <h2 id="dropnow-dois">Drop Now</h2>
+                    <img src="imagens/img-desapego/roupas1.jpg" class="rounded imagem-dois" alt="imagem de prancha">
                 </div>
-                    <h1 class="texto-acessorios text-center font-italic" >ACESSÓRIOS</h1>
-                <div class=""id="img-tres">
-                    <img src="imagens/img-desapego/acessorios5.jpg" class="img-fluid img-thumbnail imagem-tres" alt="imagem de prancha">
+                    
+                <div id="img-tres">
+                    <a href=”endereço”><h1 class="texto-acessorios" >ACESSÓRIOS</h1>
+                    <h2 id="dropnow-tres">Drop Now</h2></a>
+                    <img src="imagens/img-desapego/acessorios5.jpg" class="rounded imagem-tres" alt="imagem de prancha">
                 </div>
             </div>
         </section>

@@ -11,7 +11,56 @@
     <title>Portal do Surf - Desapego</title>
 </head>
 <body>
-    <?php include_once("padrao/header.php") ?>   
+<?php include_once("padrao/header.php") ?>  
+    <main>
+        <section class="container d-flex flex-wrap justify-content-between p-3" style="height: 1500px;">
+            <div class="card img-oferta">
+                <img src="imagens/img-desapego/prancha_2.jpg" id="img-prancha-um"alt="imagem prancha">
+                <div class="card-body">
+                    <h5 class="card-title">Prancha semi-nova!</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card img-oferta">
+                <img src="imagens/img-desapego/prancha_3.jpg" id="img-prancha-um"alt="imagem prancha">
+                <div class="card-body">
+                    <h5 class="card-title">Prancha semi-nova!</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card img-oferta">
+                <img src="imagens/img-desapego/prancha_4.jpeg" id="img-prancha-um"alt="imagem prancha">
+                <div class="card-body">
+                    <h5 class="card-title">Prancha semi-nova!</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card img-oferta">
+                <img src="imagens/img-desapego/prancha_6.jpg" id="img-prancha-um"alt="imagem prancha">
+                <div class="card-body">
+                    <h5 class="card-title">Prancha semi-nova!</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+     
 
     <?php include_once("padrao/footer.php") ?>   
 </body>

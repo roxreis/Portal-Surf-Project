@@ -6,7 +6,7 @@ header img{
     margin-top: 20px;
 }
 
-/* Por que a class container do bootstrap está no CSS?? 
+/* Por que a class container do bootstrap estÃ¡ no CSS?? 
 .container{
     /*width: 100px;
     padding-right: 15px;
@@ -14,7 +14,7 @@ header img{
     -webkit-margin-collapse: discard;   ----> para que serve?
 } */
 
-/* não alterou o estilo das fontes
+/* nÃ£o alterou o estilo das fontes
 .h2-carousel{
     margin-bottom: 328px;
     font-size: 1rem;
@@ -22,14 +22,14 @@ header img{
     line-height: 3.2;
 }
 
-* não alterou o estilo das fontes
+* nÃ£o alterou o estilo das fontes
 .p-carousel{
     font-size: 1rem;
     font-weight: 7.5;
     line-height: 7.5;
 } */
 
-/* class do bootstrap, com as mesmas especificações
+/* class do bootstrap, com as mesmas especificaÃ§Ãµes
 .img-fluid{
     max-width: 100%;
     height: auto;
@@ -127,142 +127,223 @@ p{
 
 /* css para section desapego */
 .banner-desap{
-   
+ height: 25vh;
+}
+
+.banner{
+    width: 100vw;
+    height: 17vh;
     background-size: cover;
     background-repeat: no-repeat;
-    height:300px;
-    background-position-y: -151px;
-    filter:contrast(50%);
-   
-     
+    background-position-y: -175px;
+    filter: contrast(23%);
 }
+
+
 #desapego{
-   padding-right: 80px;
-   padding-left: 80px;
+   /* padding-right: 80px;
+   padding-left: 80px; */
+   height: 1073px;
 }
 
 
-
+/* 
 .textBanner{
-    color: #ffffff;
-    font-size: 85px;
+    color: #6b6e77e8;
+    font-size: 59px;
     text-align: center;
-    filter: drop-shadow(2px 11px 8px black);
-    position: relative;
-    top: -245px;
-        
-}
+    filter: drop-shadow(14px 16px 10px black);
+    position: absolute;
+    top: 196px;
+    rigth: 106px;
+    right: 589px;
+    font-family: monospace;
+} */
+
+/* #imagens-desapego{
+    height: 1005px;
+    width: 100%;
+    margin-top: 37px;
+} */
+
+
+
 
 .texto-pranchas{
 
-color: #ffffffd1;
+color: #ffffffe1;
 
 font-family: Stencil Std, fantasy;
 
-font-size: 153px;
+font-size: 181px;
 
-filter: drop-shadow(2px 11px 8px black);
+filter: drop-shadow(31px 22px 12px black);
 
-position: relative;
+position: absolute;
 
 z-index: 99;
 
-top: 303px;
+top: 270px;
 
 width: 1400px;
+
+left: 442px;
 }
+
+.texto-pranchas:hover{
+    color: #ffffffaf;
+}
+
 
 
 .texto-vestuarios{
 
-color: #ffffffd1;
+color: #ffffffe1;
 
-font-family: monospace;
+font-family: Stencil Std, fantasy;
 
-font-size: 94px;
+font-size: 101px;
 
-filter: drop-shadow(2px 11px 8px black);
-
-position: relative;
+filter: drop-shadow(31px 22px 12px black);
 
 z-index: 99;
 
-top: 676px;
+top: 860px;
 
-right: 1363px;
+right: 1345px;
 
 width: 0;
+
+position: absolute;
 }
+
+.texto-vestuarios:hover{
+    color: #ffffffaf;
+}
+
 
 .texto-acessorios{
 
-position: absolute;
+font-family: Stencil Std, fantasy;
 
-font-family: Bradley Hand, cursive;
+color: #ffffffe1;
 
-color: #ffffffd1;
+font-size: 91px;
 
-font-size: 84px;
-
-filter: drop-shadow(2px 11px 8px black);
+filter: drop-shadow(31px 22px 12px black);
 
 position: absolute;
 
 z-index: 99;
 
-top: 1831px;
+top: 862px;
 
-left: 923px;
+left: 889px;
 
-widh: 0px;
 }
+
+.texto-acessorios:hover{
+    color: #ffffffaf;
+  }
+
+#dropnow-um{
+    position: absolute;
+    color: #ffffffaf;
+    filter: drop-shadow(2px 11px 8px black);
+    z-index: 9;
+    top: 472px;
+    left: 690px;
+}
+
+
+
+#dropnow-dois{
+    position: absolute;
+    color: #ffffffaf;
+    filter: drop-shadow(2px 11px 8px black);
+    z-index: 9;
+    top: 960px;
+    left: 419px;
+}
+
+#dropnow-tres{
+    position: absolute;
+    color: #ffffffaf;
+    filter: drop-shadow(2px 11px 8px black);
+    z-index: 9;
+    top: 962px;
+    right: 420px;
+}
+
 
 
 #img-um{
     width: 100%;
     height: 600px;
-    margin-bottom: 12px;
-     
+    margin-bottom: 6px;
+    display: flex;
+    
 }
 
 #img-dois{
 
-width: 737px;
+width: 553px;
 
-height: 400px;
+height: 440px;
 
-margin-right: 12px;
+margin-right: 5px;
+
+display: flex;
 }
 
 #img-tres{
-    justify-content: end;
-    width: 738px;
-    height: 400px;
+    
+width: 552px;
+    
+height: 400px;
+    
+display: flex;
 }
 
 
 .imagem-um{
-    filter: brightness(90%);
+    cursor: pointer;
     width: 100%;
     height: 600px;
 }
 
 .imagem-dois{
-    filter: brightness(90%);
+ 
     width: 100%;
     height: 400px;
 }
 
 .imagem-tres{
-    filter: brightness(90%);
+    
     width: 100%;
     height: 400px;
 }
 
-/* css para página encontre */
+
+
+/* css para pÃ¡gina encontre */
 #encontreBanner{
     background-image: url("../imagens/img-encontre/standuppaddle.jpg");
     background-size: cover;
     height: 400px;
 
+}
+
+
+
+/* css oferta desapego */
+
+.img-oferta{
+    width: 300px;
+    height: 300px;
+}
+
+#img-prancha-um{
+    width: 300px;
+    height: 300px;
 }
