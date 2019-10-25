@@ -6,45 +6,6 @@ header img{
     margin-top: 20px;
 }
 
-/* Por que a class container do bootstrap estÃ¡ no CSS?? 
-.container{
-    /*width: 100px;
-    padding-right: 15px;
-    padding-left: 15px; 
-    -webkit-margin-collapse: discard;   ----> para que serve?
-} */
-
-/* nÃ£o alterou o estilo das fontes
-.h2-carousel{
-    margin-bottom: 328px;
-    font-size: 1rem;
-    font-weight: 900;
-    line-height: 3.2;
-}
-
-* nÃ£o alterou o estilo das fontes
-.p-carousel{
-    font-size: 1rem;
-    font-weight: 7.5;
-    line-height: 7.5;
-} */
-
-/* class do bootstrap, com as mesmas especificaÃ§Ãµes
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-} */
-
-/*  essa  class pertennce ao bootstrap, ao ser colocada aqui, fez com que os indicadores ficassem embaixo do  texto do carousel.
-.carousel-indicators{
-    position: absolute;
-    right: 0;
-    bottom: 42px;
-    left: 0;
-    z-index: 15;
-    justify-content: center;
-} */
-
 header form{
     text-shadow: #bbb6b6 2px 2px 2px;
 }

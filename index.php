@@ -1,4 +1,4 @@
-<!-- Emilia: página da Home. -->
+<!--página da Home. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include_once("padrao/header.php") ?>
+    <?php include_once("padrao/headerindex.php") ?>
 
     <div id="demo" class="carousel slide" data-ride="carousel">
 
