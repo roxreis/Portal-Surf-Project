@@ -215,8 +215,9 @@ footer img{
 
 /* css para pagina encontre */
 #encontreBanner{
-    background-image: url("../imagens/img-encontre/standuppaddle.jpg");
+    background-image: url("../imagens/img-encontre/surfboard.jpg");
     background-size: cover;
+    background-position: bottom;
     height: 400px;
 }
 
