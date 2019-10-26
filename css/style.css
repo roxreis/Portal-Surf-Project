@@ -224,5 +224,21 @@ footer img{
     /* height: 50px; */
 }
 
+/* css para pagina carona */
+#caronaBanner{
+    background-image: url("../imagens/img-home/carousel_2.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+}
+
+.caronaTextoBanner{
+    color: #ffffffe1;
+    font-family: Stencil Std, fantasy;
+    font-size: 121px;
+    filter: drop-shadow(31px 22px 12px black);
+    width: 510px;
+    height: 128px;
+}
 
 

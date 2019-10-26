@@ -2,38 +2,115 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <title>Portal do Surf - Carona</title>
 </head>
+
 <body>
-    <?php include_once("padrao/header.php") ?>  
-    <main class="container mt-5 mb-5">
-    
-    
-        <div>
-            <img src="imagens/img-carona/carona_banner.png" class = 'img-fluid' alt="Carona Principal">
-            <div class = 'carousel-caption'>
-                <div class = 'mb-5'>
-                    <h1 class = 'display-3'>Encontre sua carona</h1>
-                    <p class = ''>Pesquise centenas de locais de todo o mundo e encontre o local perfeito para sua carona</p>
-                </div>
-                <div class = 'mt-5'>
-                    <button type="submit" id = 'button_caronas' class = ' btn btn-primary border border-white w-25 rounded-0'> Ver mais --> </button>
-                </div>
-            </div>
+    <?php include_once("padrao/header.php") ?>
+    <main class="mt-5 mb-5">
+
+        <div id="caronaBanner">
+            <h1 class="mx-auto" id="caronaTextoBanner">Encontre sua carona</h1>
+        </div>
+        <div class="text-center mt-5">
+            <h2>VOCÊ QUER:</h2>
         </div>
 
-    
-    
-    </main> 
-    <?php include_once("padrao/footer.php") ?>   
+
+        <div class="container">
+            <form action="/action_page.php">
+
+                <!-- Dados da partida -->
+                <div class="form-group mt-3 font-weight-bold">
+                    <label for="text">Endereço de Partida:</label>
+                    <input type="text" class="form-control" id="partida">
+                </div>
+                <div class="form-inline" action="/action_page.php">
+                    <label for="text">Estado:</label>
+                    <input type="text" class="form-control" id="estadoP">
+                    <label for="text">Cidade:</label>
+                    <input type="text" class="form-control" id="cidadeP">
+                    <label for="text">CEP:</label>
+                    <input type="text" class="form-control" id="cepP">
+                </div>
+                <div class="form-group form-check mt-2  ">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Repetir o endereço de partida cadastrado
+                    </label>
+                </div>
+                <div class="form-inline" action="/action_page.php">
+                    <label for="date">Data:</label>
+                    <input type="date" class="form-control" id="dataP">
+                    <label for="text">Horário:</label>
+                    <input type="text" class="form-control" id="horarioP">
+                </div>
+
+                <!-- Dados do destino -->
+                <div class="form-group mt-5 font-weight-bold">
+                    <label for="text">Endereço de Destino:</label>
+                    <input type="text" class="form-control" id="destino">
+                </div>
+                <div class="form-inline" action="/action_page.php">
+                    <label for="text">Estado:</label>
+                    <input type="text" class="form-control" id="estadoD">
+                    <label for="text">Cidade:</label>
+                    <input type="text" class="form-control" id="cidadeD">
+                    <label for="text">CEP:</label>
+                    <input type="text" class="form-control" id="cepD">
+                </div>
+                <div class="form-group form-check mt-2">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Repetir o endereço de destino cadastrado
+                    </label>
+                </div>
+                <div class="form-inline" action="/action_page.php">
+                    <label for="date">Data:</label>
+                    <input type="date" class="form-control" id="dataD">
+                    <label for="text">Horário:</label>
+                    <input type="text" class="form-control" id="horarioD">
+                </div>
+
+                <!-- Equipamento -->
+                <div class="form-group mt-5 font-weight-bold">
+                    <label for="text">Equipamento:</label>
+                    <input type="text" class="form-control" id="equipamento">
+                </div>
+                <div class="form-group form-check mt-2">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Repetir o equipamento cadastrado
+                    </label>
+                </div>
+
+                <!-- Combustível -->
+                <div class="form-check-inline">
+                    <label class="form-check-label mt-3">Divide o combustível?
+                        <input type="checkbox" class="form-check-input" value="">Sim
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Não
+                    </label>
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-primary">Dropar</button>
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </main>
+    <?php include_once("padrao/footer.php") ?>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>

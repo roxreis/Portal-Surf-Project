@@ -22,17 +22,17 @@
                 <img src='imagens/img-carona/teste_perfil_carona.jpg' alt="" class='img-thumbnail w-25 p-2'>
             </div>
         </div>
-        <main class='d-flex'>
+        <div class='d-flex'>
             <section id='teste_fundo_perfil_carona' class='w-50'>
                 <h1>Caronas R/P</h1>
             </section>
             <div id='altura_do_momento' class='w-50'>
                 <h3>Informações do usuario</h3>
             </div>
+        </div>
 
-
-        </main>
-        <?php include_once("padrao/footer.php") ?>
+    </main>
+    <?php include_once("padrao/footer.php") ?>
 </body>
 
 </html>
