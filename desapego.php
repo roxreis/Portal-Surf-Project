@@ -17,22 +17,29 @@
         <section id="desapego">
             <div class="d-flex flex-wrap " id="imagens-desapego"> 
             
-                <div id="img-um">
-                     <a href="./desapegoOferta.php"><h1 class="texto-pranchas" >PRANCHAS</h1></a> 
-                     <h2 id="dropnow-um">Drop Now</h2>
-                     <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="rounded imagem-um" alt="imagem de prancha">
+                <div class="  col-lg-12 col-sm-6 img-um">
+                       
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                            <a href="./desapegoOferta.php" style="text-decoration: none;"><h1 class="texto-pranchas" >PRANCHAS</h1></a> 
+                            <h2 id="dropnow-um">Drop Now</h2>
+                        </div>
+                </div>
+                   
+                <div class=" col-lg-6 col-sm-6 img-dois">
+                    
+                    <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                        <a href=”endereço” style="text-decoration: none;"><h1 class="texto-vestuarios">VESTUÁRIO</h1></a>
+                        <h2 id="dropnow-dois">Drop Now</h2>
+                    </div>
+                    
                 </div>
                     
-                <div id="img-dois">
-                    <a href=”endereço”><h1 class="texto-vestuarios">VESTUÁRIO</h1></a>
-                    <h2 id="dropnow-dois">Drop Now</h2>
-                    <img src="imagens/img-desapego/roupas1.jpg" class="rounded imagem-dois" alt="imagem de prancha">
-                </div>
-                    
-                <div id="img-tres">
-                    <a href=”endereço”><h1 class="texto-acessorios" >ACESSÓRIOS</h1>
-                    <h2 id="dropnow-tres">Drop Now</h2></a>
-                    <img src="imagens/img-desapego/acessorios5.jpg" class="rounded imagem-tres" alt="imagem de prancha">
+                <div class=" col-lg-6 col-sm-6 img-tres">
+                  
+                    <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                        <a href=”endereço” style="text-decoration: none;"><h1 class="texto-acessorios" >ACESSÓRIOS</h1></a>
+                        <h2 id="dropnow-tres">Drop Now</h2>
+                    </div>
                 </div>
             </div>
         </section>

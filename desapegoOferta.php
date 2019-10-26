@@ -13,50 +13,71 @@
 <body>
 <?php include_once("padrao/header.php") ?>  
     <main>
-        <section class="container d-flex flex-wrap justify-content-between p-3" style="height: 1500px;">
-            <div class="card img-oferta">
-                <img src="imagens/img-desapego/prancha_2.jpg" id="img-prancha-um"alt="imagem prancha">
-                <div class="card-body">
-                    <h5 class="card-title">Prancha semi-nova!</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section class="container d-flex flex-wrap justify-content-between p-3" style="height:536px;">
+            
+                <div class="card  img-ofertaDesapego" style="max-width: 540px; " >
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="imagens/img-desapego/prancha_6.jpg" class="card-img" alt="imagem prancha">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ótima marca</h5>
+                                <p class="card-text">R$ 800,00 <br> à retirar</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card img-oferta">
-                <img src="imagens/img-desapego/prancha_3.jpg" id="img-prancha-um"alt="imagem prancha">
-                <div class="card-body">
-                    <h5 class="card-title">Prancha semi-nova!</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card  img-ofertaDesapego">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="imagens/img-desapego/prancha_3.jpg" 
+                            class="card-img-top"alt="imagem prancha">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Prancha pouco uso</h5>
+                                <p class="card-text">R$ 450,00<br>Pela marca está na metade do preço<br>Estou de mudança, preciso vender o mais rápido</p>
+                            </div>
+                        </div>   
+                    </div>    
                 </div>
-            </div>
-            <div class="card img-oferta">
-                <img src="imagens/img-desapego/prancha_4.jpeg" id="img-prancha-um"alt="imagem prancha">
-                <div class="card-body">
-                    <h5 class="card-title">Prancha semi-nova!</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card  img-ofertaDesapego">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="imagens/img-desapego/prancha_4.jpeg" 
+                            class="card-img-top"alt="imagem prancha">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Prancha semi-nova</h5>
+                                <p class="card-text">R$ 350,00<br>Quase uma caridade!<br> retirar no local</p>
+                            </div>    
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card img-oferta">
-                <img src="imagens/img-desapego/prancha_6.jpg" id="img-prancha-um"alt="imagem prancha">
-                <div class="card-body">
-                    <h5 class="card-title">Prancha semi-nova!</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card  img-ofertaDesapego">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="imagens/img-desapego/prancha_2.jpg" 
+                            class="card-img-top"alt="imagem prancha">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Prancha nova</h5>
+                                <p class="card-text">R$ 400,00<br> Entrego dependendo do local</p>
+                            </div>    
+                        </div>
+                    </div>
                 </div>
-            </div>
-
+             
 
 
 
         </section>
 
 
-
-
-
-    </main>
+      </main>
 
 
 
