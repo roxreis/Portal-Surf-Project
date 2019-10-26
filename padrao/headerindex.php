@@ -1,4 +1,5 @@
-<!-- header para home (index) do portal.-->
+<!-- opção de header para o portal. ao esta lincado em nenhuma pagina. -->
+<!-- Felipe, por favor, coloca o código do seu header aqui, com o banner superior incluso.  -->
 
 <?php include_once("config/variaveis.php") ?>
 
