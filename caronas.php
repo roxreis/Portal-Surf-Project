@@ -117,7 +117,7 @@
                     <p>Data: 24/10/2019</p>
                     <p>Partida: Rua Pedra Bela, 37, São Paulo, SP</p>
                     <p>Destino: Rua das Flores, 5237, Ubatuba, SP</p>
-                    <p>Carona: Sergio Reis</p>
+                    <p>Carona: Vinicius Oliveira</p>
                     <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
                 </div>
@@ -127,7 +127,7 @@
                     <p>Data: 28/10/2019</p>
                     <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
                     <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
-                    <p>Carona: Sergio Reis</p>
+                    <p>Carona: Vinicius Oliveira</p>
                     <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</p>
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
                 </div>

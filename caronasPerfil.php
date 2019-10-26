@@ -17,19 +17,46 @@
     <?php include_once("padrao/header.php") ?>
     <main class="mt-5 mb-5">
 
-        <div class='d-flex'>
-            <div class='p-2'>
-                <img src='imagens/img-carona/teste_perfil_carona.jpg' alt="" class='img-thumbnail w-25 p-2'>
+        <!-- perfil do usuario -->
+        <section class="container">
+            <h1 class="mt-3 mb-5 text-center">PERFIL DO VINICIUS OLIVEIRA</h1>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./imagens/img-carona/carona_usuario.jpg" class="card-img" alt="foto usuario">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">VINICIUS OLIVEIRA</h5>
+                            <p class="card-text">Local: São Paulo/ SP
+                                <br>No carro: Motorista<br>Carro placa: DEV 1998 - São Paulo/ SP<br>Classificação: 4,2
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class='d-flex'>
-            <section id='teste_fundo_perfil_carona' class='w-50'>
-                <h1>Caronas R/P</h1>
-            </section>
-            <div id='altura_do_momento' class='w-50'>
-                <h3>Informações do usuario</h3>
+        </section>
+
+        <!-- depoimentos sobre o usuario -->
+        <section class="container mt-5">
+            <h3>DEPOIMENTOS</h3>
+            <div class="form-group">
+                <label for="comment" class="font-weight-bold">Sergio Reis, 28/10/2019:</label>
+                <textarea class="form-control border border-dark" rows="2" id="comment">De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</textarea>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="comment" class="font-weight-bold">Sergio Reis, 24/10/2019:</label>
+                <textarea class="form-control border border-dark" rows="2" id="comment">O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</textarea>
+            </div>
+            <div class="form-group">
+                <label for="comment" class="font-weight-bold">Fernando Sabino, 11/10/2019:</label>
+                <textarea class="form-control border border-dark" rows="2" id="comment">Motorista tranquilo, papo bom, e na hora de rachar o combustivel ele ainda tinha maquininha para passar o cartão! É o cara!</textarea>
+            </div>
+            <div class="form-group">
+                <label for="comment" class="font-weight-bold">Gisele Bundchen, 06/09/2019:</label>
+                <textarea class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
+            </div>
+        </section>
 
     </main>
     <?php include_once("padrao/footer.php") ?>
