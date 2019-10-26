@@ -11,8 +11,12 @@
     <title>Portal do Surf - Carona</title>
 </head>
 <body>
-    <?php include_once("padrao/header.php") ?>   
-
+    <?php include_once("padrao/header.php") ?>  
+    <main class="mt-5 mb-5">
+    
+    
+    
+    </main> 
     <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>

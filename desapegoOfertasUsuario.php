@@ -19,49 +19,51 @@ $produtos= [
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <title>Portal do Surf - Desapego</title>
 </head>
+
 <body>
-    <?php include_once("padrao/header.php") ?>   
-    
-    
-        <main class= "container">
+    <?php include_once("padrao/header.php") ?>
 
-       
-            <h1 class="mt-5 text-center">Histórico de oferta!</h1>        
-                    
-                
-            <section class="container mt-4">
-                <div class="row justify-content-around">
-                    <?php if(isset($produtos) && $produtos != []){?>
-                    <?php foreach($produtos as $produto){ ?>
-                        <div class="col-lg-3 card text-center">
-                            <div>
-                                <h2><?php echo $produto["nome"];?> </h2>
-                                <img src= "<?php echo $produto['img']; ?>" class="card-img-top" alt= "imagens dos produtos">
-                                <p class="card-text font-weight-bold" ><?php echo $produto["preco"];?></p>
-                                <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-primary">Editar</a>
-                                <a href="?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-danger">Excluir</a>
-                                <a href="?nomeProduto= <?php echo $produto['nome']; ?>"class="btn btn-warning">Desativar</a>  
-                            </div>
-                      </div>
-                        <?php } ?>
-                    <?php } else { ?>
-                        <h1>Não tem produtos nesta seção :(</h1>
-                      <?php } ?>
+    <main class="container mb-5">
+
+        <h1 class="mt-5 text-center">Seu histórico de ofertas</h1>
+
+        <section class="container mt-4">
+            <div class="row justify-content-around">
+                <?php if(isset($produtos) && $produtos != []){?>
+                <?php foreach($produtos as $produto){ ?>
+                <div class="col-lg-3 card text-center">
+                    <div>
+                        <h2><?php echo $produto["nome"];?> </h2>
+                        <img src="<?php echo $produto['img']; ?>" class="card-img-top" alt="imagens dos produtos">
+                        <p class="card-text font-weight-bold"><?php echo $produto["preco"];?></p>
+                        <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
+                            class="btn btn-primary">Editar</a>
+                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
+                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-warning">Desativar</a>
+                    </div>
                 </div>
-            </section> 
-          
-        </main> 
-          
+                <?php } ?>
+                <?php } else { ?>
+                <h1>Não tem produtos nesta seção :(</h1>
+                <?php } ?>
+            </div>
+        </section>
+
+    </main>
 
 
-    <?php include_once("padrao/footer.php") ?>   
+
+    <?php include_once("padrao/footer.php") ?>
 </body>
+
 </html>

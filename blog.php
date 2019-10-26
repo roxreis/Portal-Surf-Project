@@ -15,7 +15,7 @@
     <?php include_once("padrao/header.php") ?>
 
     <div class="container mt-5 mb-5">
-        <h2 class="mb-5 text-info">Novidades para veteranos e principiantes!</h2>
+        <h1 class="mb-5">Novidades para veteranos e principiantes!</h1>
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Qual a melhor prancha para manobras?</h4>

@@ -1,5 +1,5 @@
 <!-- página Elke -->
-<!-- formulários montados apenas para apresentação, sem variáveis, a serem usadas conforme o back-end a ser programado para busca no Google Maps -->
+<!-- formulários montados apenas para apresentação, sem variáveis, a serem usadas conforme o back-end a ser programado para busca no Google Maps. Código comentado caso tenhamos que fazer um box com seleção de estados (está pronto). -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,8 +58,8 @@
         </section> -->
         <!-- original Elke - fim -->
         <div id="encontreBanner"></div>
-        <section class="container text-info">
-            <h2 class="mt-5 text-center">Encontre tudo o que você precisa para aproveitar a água:</h2>
+        <section class="container">
+            <h1 class="mt-5 text-center">Encontre tudo o que você precisa para aproveitar a água:</h1>
             <div class="row">
                 <form action="/action_page.php" class="form-inline col-lg-11">
                     <div class="col-lg-8 mt-5">
@@ -86,7 +86,7 @@
             </div>
             </div>
         </section>
-        <div class="container mt-5 mb-5 text-info">
+        <div class="container mt-5 mb-5">
             <h2>Itens a venda nesta área:</h2>
             <div class="row justify-content-between mt-5">
                 <img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego">

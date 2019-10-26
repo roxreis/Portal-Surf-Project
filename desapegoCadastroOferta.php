@@ -13,7 +13,7 @@
 <body>
     <?php include_once("padrao/header.php") ?>   
 
-    <main class= "container">
+    <main class= "container mt-5 mb-5">
         
         
         <h1 class="mt-5 text-center">Cadastro de Oferta</h1>
