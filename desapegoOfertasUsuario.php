@@ -33,10 +33,10 @@ $produtos= [
 <body>
     <?php include_once("padrao/header.php") ?>
 
-    <main class="container mb-5">
+    <main class="container mt-5 mb-5">
+        <h1 class="text-center">Seu histórico de ofertas</h1>
 
-        <h1 class="mt-5 text-center">Seu histórico de ofertas</h1>
-
+<!-- codigo original do Caio com todas as interações PHPs prontas -->        
         <section class="container mt-4">
             <div class="row justify-content-around">
                 <?php if(isset($produtos) && $produtos != []){?>
@@ -59,9 +59,8 @@ $produtos= [
             </div>
         </section>
 
+
     </main>
-
-
 
     <?php include_once("padrao/footer.php") ?>
 </body>
