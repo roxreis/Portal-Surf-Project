@@ -225,7 +225,7 @@ footer img{
 }
 
 /* css para pagina carona */
-#caronaBanner{
+.caronaBanner{
     background-image: url("../imagens/img-home/carousel_2.png");
     background-size: cover;
     background-position: bottom;
@@ -235,7 +235,7 @@ footer img{
 .caronaTextoBanner{
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
-    font-size: 121px;
+    font-size: 100px;
     filter: drop-shadow(31px 22px 12px black);
     width: 510px;
     height: 128px;
