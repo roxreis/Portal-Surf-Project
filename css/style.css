@@ -65,6 +65,7 @@ footer img{
 #carousel_2{
     background-image: url('../imagens/img-home/carousel_2.png');
     height: 500px;
+    background-position: bottom;
 }
 
 #carousel_3{
