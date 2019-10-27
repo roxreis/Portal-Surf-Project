@@ -14,6 +14,8 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
+    <div id="noticiasBanner"></div>
+
     <div class="container mt-5 mb-5">
         <h1 class="mb-5">Saiba tudo sobre o mundo do surf!</h1>
         <div class="card">

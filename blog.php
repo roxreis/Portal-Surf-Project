@@ -14,6 +14,8 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
+    <div id="blogBanner"></div>
+
     <div class="container mt-5 mb-5">
         <h1 class="mb-5">Novidades para veteranos e principiantes!</h1>
         <div class="card">

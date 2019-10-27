@@ -242,4 +242,19 @@ footer img{
     height: 128px;
 }
 
+/* css para pagina blog */
+#blogBanner{
+    background-image: url("../imagens/img-blog/surfers.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+/* css para pagina noticias */
+#noticiasBanner{
+    background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
 
