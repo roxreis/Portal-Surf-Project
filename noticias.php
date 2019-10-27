@@ -19,7 +19,9 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Medina cortou a unha</h4>
-                <p class="card-text">Estava insuportável surfar com elas daquele tamanho. Até a minha namorada reclamou. E se você Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, quasi sapiente quod repellendus deserunt magnam laborum magni ...</p>
+                <p class="card-text">Estava insuportável surfar com elas daquele tamanho. Até a minha namorada reclamou.
+                    E se você Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, quasi sapiente quod
+                    repellendus deserunt magnam laborum magni ...</p>
                 <a href="#" class="card-link">Saiba mais</a>
             </div>
         </div>
@@ -27,7 +29,9 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Mineirinho ficou com inveja</h4>
-                <p class="card-text">Eu queria ter tanta repercursão na mídia quanto o Medina. Até quando ele corta a unha vira notícia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam officiis vero nihil exercitationem animi id nobis, sunt, rep...</p>
+                <p class="card-text">Eu queria ter tanta repercursão na mídia quanto o Medina. Até quando ele corta a
+                    unha vira notícia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam officiis vero
+                    nihil exercitationem animi id nobis, sunt, rep...</p>
                 <a href="#" class="card-link">Saiba mais</a>
             </div>
         </div>
@@ -35,12 +39,26 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Festival de super tubos em Peniche/Portugal com galera do Amazonas</h4>
-                <p class="card-text">Galera amazonense surfista de pororocado Amazonas se encontra em Peniche, Portugal, para curtir e participar o campeonato de super tubos. A praia é  conhecida no mundo por ser um dos principais picos deste tipo de onda...</p>
+                <p class="card-text">Galera amazonense surfista de pororocado Amazonas se encontra em Peniche, Portugal,
+                    para curtir e participar o campeonato de super tubos. A praia é conhecida no mundo por ser um dos
+                    principais picos deste tipo de onda...</p>
                 <a href="#" class="card-link">Saiba mais</a>
             </div>
         </div>
     </div>
 
+    <!-- pagination -->
+    <div class="d-flex justify-content-center mb-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <?php include_once("padrao/footer.php") ?>
 </body>

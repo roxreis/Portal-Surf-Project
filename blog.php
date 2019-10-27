@@ -19,7 +19,8 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Qual a melhor prancha para manobras?</h4>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, nisi! Placeat veniam in fugiat voluptatibus nam dolorem reprehenderit, maxime deleniti quibusdam ...</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, nisi! Placeat veniam
+                    in fugiat voluptatibus nam dolorem reprehenderit, maxime deleniti quibusdam ...</p>
                 <a href="#" class="card-link">Saiba mais</a>
             </div>
         </div>
@@ -27,7 +28,9 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Você sabe a importância dos equipamentos de segurança no surf?</h4>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda, molestiae dolorum cupiditate facere, illo laborum iste laudantium voluptates, sapiente necessitatibus....</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda,
+                    molestiae dolorum cupiditate facere, illo laborum iste laudantium voluptates, sapiente
+                    necessitatibus....</p>
                 <a href="#" class="card-link">Saiba mais</a>
             </div>
         </div>
@@ -35,12 +38,26 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Fomos conhecer o shaper de Itanhaém que dá vida nova a pranchas abandonadas.</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maiores quasi suscipit, ducimus eligendi, voluptate veritatis, ad tempora placeat delectus earum totam ab...</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maiores quasi
+                    suscipit, ducimus eligendi, voluptate veritatis, ad tempora placeat delectus earum totam ab...</p>
                 <a href="#" class="card-link">Saiba mais</a>
             </div>
         </div>
     </div>
 
+
+    <!-- pagination -->
+    <div class="d-flex justify-content-center mb-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <?php include_once("padrao/footer.php") ?>
 </body>
