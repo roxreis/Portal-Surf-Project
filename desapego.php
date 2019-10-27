@@ -15,12 +15,14 @@
 
 <body>
     <?php include_once("padrao/header.php") ?>
+
+    <div id="despegoBanner"></div>
     <main class="container mt-5 mb-5">
 
         <section id="desapego">
-            <div class="d-flex flex-wrap " id="imagens-desapego">
+            <div class="d-flex flex-row " id="imagens-desapego">
 
-                <div class="  col-lg-12 col-sm-6 img-um">
+                <div class=" col-lg-4 col-sm-4 img-um">
 
                     <div class="d-flex flex-column justify-content-center align-items-center w-100">
                         <a href="./desapegoOferta.php" style="text-decoration: none;">
@@ -30,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class=" col-lg-6 col-sm-6 img-dois">
+                <div class="col-lg-4 col-sm-4 img-dois">
 
                     <div class="d-flex flex-column justify-content-center align-items-center w-100">
                         <a href=”endereço” style="text-decoration: none;">
@@ -41,7 +43,7 @@
 
                 </div>
 
-                <div class=" col-lg-6 col-sm-6 img-tres">
+                <div class="col-lg-4 col-sm-4 img-tres">
 
                     <div class="d-flex flex-column justify-content-center align-items-center w-100">
                         <a href=”endereço” style="text-decoration: none;">

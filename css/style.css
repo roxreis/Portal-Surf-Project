@@ -82,21 +82,19 @@ footer img{
 
 
 /* css para section desapego */
-.banner-desap{
- height: 25vh;
-}
 
-.banner{    
-    width: 100vw;
-    height: 17vh;
+#despegoBanner{    
+    background-image: url("../imagens/img-desapego/desapegoBanner.jpg");
+    background-position-y: -349px;
+    width: 100%;
+    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -175px;
-    filter: contrast(23%);
+    
 }
 
 #desapego{
-    height: 985px;
+    height: 400px;
     width: 100%;
 }
 
@@ -108,10 +106,10 @@ footer img{
 .texto-pranchas{
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
-    font-size: 121px;
+    font-size: 57px;
     filter: drop-shadow(31px 22px 12px black);
-    width: 510px;
-    height: 128px;
+    width: 245px;
+    height: 63px;
 }
 
 .texto-pranchas:hover{
@@ -121,10 +119,10 @@ footer img{
 .texto-vestuarios{
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
-    font-size: 77px;
+    font-size: 57px;
     filter: drop-shadow(31px 22px 12px black);
-    width: 333px;
-    height: 79px;
+    width: 245px;
+    height: 63px;
 }
 
 .texto-vestuarios:hover{
@@ -132,12 +130,12 @@ footer img{
 }
 
 .texto-acessorios{
-    font-family: Stencil Std, fantasy;
     color: #ffffffe1;
-    font-size: 77px;
+    font-family: Stencil Std, fantasy;
+    font-size: 57px;
     filter: drop-shadow(31px 22px 12px black);
-    width: 381px;
-    height: 77px;
+    width: 245px;
+    height: 63px;
 }
 
 .texto-acessorios:hover{
@@ -145,25 +143,25 @@ footer img{
 }
 
 #dropnow-um{
-    font-size: 50px;
-    width: 234px;
-    height: 60px;
+    font-size: 33px;
+    width: 155px;
+    height: 39px;
     color: #ffffffaf;
-    filter: drop-shadow(2px 11px 8px black);  
+    filter: drop-shadow(2px 11px 8px black);
 }
 
 #dropnow-dois{
-    font-size: 35px;
-    width: 166px;
-    height: 69px;
+    font-size: 33px;
+    width: 155px;
+    height: 39px;
     color: #ffffffaf;
-    filter: drop-shadow(2px 11px 8px black);    
+    filter: drop-shadow(2px 11px 8px black);   
 }
 
 #dropnow-tres{
-    font-size: 35px;
-    width: 166px;
-    height: 69px;
+    font-size: 33px;
+    width: 155px;
+    height: 39px;
     color: #ffffffaf;
     filter: drop-shadow(2px 11px 8px black);
 }
@@ -171,31 +169,35 @@ footer img{
 .img-um{
     background-image: url("../imagens/img-desapego/PranchasnovaPagina.jpg");
     border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    /* border-bottom-left-radius: 10px; */
     background-size:cover;
     width: 100%;
-    height: 600px;
+    height: 355px;
     display: flex;
+    margin-right: 1px;
 }
 
 .img-dois{
     background-image: url("../imagens/img-desapego/roupas7.png");
-    border-bottom-left-radius:10px;
+    /* border-bottom-left-radius:10px; */
     background-size:auto;
     background-repeat: no-repeat;
     width: 100%;
     height: 356px;
-    margin-right: 0px;
+    margin-right: 1px;
     display: flex;
+    background-position-x: -55px;
 }
 
 .img-tres{
     background-image: url("../imagens/img-desapego/acessorios5.jpg");
-    border-bottom-right-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+    /* border-top-right-radius: 10px; */
     background-repeat: no-repeat;
     width: 100%;
     height: 356px;
     display: flex;
+    background-position-x: -175px;
 }
 
 
@@ -253,6 +255,7 @@ footer img{
     background-size: cover;
     background-position: bottom;
     height: 400px;
+    background-position-y: -297px;
 }
 
 .encontredesapego{
@@ -265,6 +268,9 @@ footer img{
     background-size: cover;
     background-position: bottom;
     height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .caronaTextoBanner{
@@ -272,8 +278,9 @@ footer img{
     font-family: Stencil Std, fantasy;
     font-size: 100px;
     filter: drop-shadow(31px 22px 12px black);
-    width: 510px;
-    height: 128px;
+    width: 554px;
+    height: 269px;
+    text-align: center;
 }
 
 /* css para pagina blog */
