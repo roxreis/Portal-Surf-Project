@@ -241,7 +241,7 @@ footer img{
 
 .img-ofertaDesapegoHistorico{
     width: 537px;
-    height: 181px;
+    height: 230px;
     margin-top: 34px;
     justify-content: center;    
 }
@@ -249,8 +249,9 @@ footer img{
 
 /* css para pagina encontre */
 #encontreBanner{
-    background-image: url("../imagens/img-encontre/standuppaddle.jpg");
+    background-image: url("../imagens/img-encontre/surfboard.jpg");
     background-size: cover;
+    background-position: bottom;
     height: 400px;
 }
 
@@ -258,5 +259,36 @@ footer img{
     /* height: 50px; */
 }
 
+/* css para pagina carona */
+.caronaBanner{
+    background-image: url("../imagens/img-home/carousel_2.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+}
 
+.caronaTextoBanner{
+    color: #ffffffe1;
+    font-family: Stencil Std, fantasy;
+    font-size: 100px;
+    filter: drop-shadow(31px 22px 12px black);
+    width: 510px;
+    height: 128px;
+}
+
+/* css para pagina blog */
+#blogBanner{
+    background-image: url("../imagens/img-blog/surfers.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+/* css para pagina noticias */
+#noticiasBanner{
+    background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
 

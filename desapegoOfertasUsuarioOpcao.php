@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px; ">
+            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/acessorios2.jpg" class="card-img" alt="imagem prancha">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px; ">
+            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/prancha_6.jpg" class="card-img" alt="imagem prancha">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px; ">
+            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/prancha_4.jpeg" class="card-img" alt="imagem prancha">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px; ">
+            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/oculos_4.jpg" class="card-img" alt="imagem prancha">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px; ">
+            <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/roupas2.jpg" class="card-img" alt="imagem prancha">
