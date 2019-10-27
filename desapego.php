@@ -52,6 +52,19 @@
                 </div>
             </div>
         </section>
+        <section id="desapegar">
+            <div class="row col-6 d-flex" id="imagem-desapegar"> </div>
+            <div class="row col-6 d-flex h-25">
+                <h2 class="font-italic" >QUER DESAPEGAR TAMBÉM? =)</h2>
+                <p>É fácil! se você ja for cadastrado no nosso site, clique aqui e ja saia desapegando</p>
+                <div>
+                    <a href="./desapegoCadastroOferta.php"><button type="button" class="btn btn-secondary btn-lg">DESAPEGAR</button></a> 
+                </div>
+                
+            </div>
+
+
+        </section>
 
     </main>
 

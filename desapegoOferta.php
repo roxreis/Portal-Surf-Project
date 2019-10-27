@@ -18,20 +18,24 @@
     <main class="mt-5 mb-5">
         <section class="container d-flex flex-wrap justify-content-between p-3" style="height:536px;">
 
-            <div class="card  img-ofertaDesapego" style="max-width: 540px; ">
+        
+         <div class="card  img-ofertaDesapego border border-light" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="imagens/img-desapego/prancha_6.jpg" class="card-img" alt="imagem prancha">
+                    <a href="./desapegoOfertaIndividual.php" class="retiraLink-desapegoIndiv">  <img src="imagens/img-desapego/prancha_6.jpg" class="card-img" alt="imagem prancha"></a>
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Ótima marca</h5>
-                            <p class="card-text">R$ 800,00 <br> à retirar</p>
-                        </div>
+                       
+                            <div class="card-body">
+                                <h5 class="card-title">Power Light - Ótima marca</h5>
+                                <p class="card-text">R$ 800,00 <br>Entrego dependendo do local</p>
+                            </div>
+                       
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapego">
+   
+            <div class="card  img-ofertaDesapego border border-light">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/prancha_3.jpg" class="card-img-top" alt="imagem prancha">
@@ -45,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapego">
+            <div class="card  img-ofertaDesapego border border-light">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/prancha_4.jpeg" class="card-img-top" alt="imagem prancha">
@@ -58,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  img-ofertaDesapego">
+            <div class="card  img-ofertaDesapego border border-light">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="imagens/img-desapego/prancha_2.jpg" class="card-img-top" alt="imagem prancha">
@@ -66,7 +70,7 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Prancha nova</h5>
-                            <p class="card-text">R$ 400,00<br> Entrego dependendo do local</p>
+                            <p class="card-text">R$ 400,00<br>À retirar</p>
                         </div>
                     </div>
                 </div>
