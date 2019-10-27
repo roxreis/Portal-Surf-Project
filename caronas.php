@@ -15,7 +15,7 @@
 
 <body>
     <?php include_once("padrao/header.php") ?>
-    <main class="mt-5 mb-5">
+    <main class="mb-5">
 
         <div class="caronaBanner">
             <h1 class="mx-auto caronaTextoBanner">Encontre uma carona</h1>
@@ -27,6 +27,18 @@
 
         <div class="container">
             <form action="/action_page.php">
+
+                <!-- Opcao da carona -->
+                <div class="mt-5 mb-5 text-center font-weight-bold">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="motorista" value="motorista">
+                        <label class="form-check-label" for="motorista">DAR UMA CARONA</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="passageiro" value="passageiro">
+                        <label class="form-check-label" for="passageiro">ENCONTRAR UMA CARONA</label>
+                    </div>
+                </div>
 
                 <!-- Dados da partida -->
                 <div class="form-group mt-3 font-weight-bold">
@@ -118,7 +130,8 @@
                     <p>Partida: Rua Pedra Bela, 37, São Paulo, SP</p>
                     <p>Destino: Rua das Flores, 5237, Ubatuba, SP</p>
                     <p>Carona: Vinicius Oliveira</p>
-                    <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
+                    <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda
+                        me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
                 </div>
             </div>
@@ -128,7 +141,8 @@
                     <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
                     <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
                     <p>Carona: Vinicius Oliveira</p>
-                    <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</p>
+                    <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando
+                        antes na escola.</p>
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
                 </div>
             </div>
