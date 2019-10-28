@@ -11,86 +11,82 @@
     <title>Portal do Surf</title>
 </head>
 <body>
-<<<<<<< HEAD
 
     <main class="mt-5 mb-5">
     
-        <div class="cadastro">
-        <h2>CADASTRO DE NOVO USUÁRIO</h2>
-=======
-    <?php include_once("padrao/header.php") ?>   
-   
-<div class="form-check">
-  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-</div>
-<div class="form-check">
-  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-</div>
-
-<section class="form container">
-<form>
-<div class="form-group">
-    <input type="nome" class="form-control" id="inputName" placeholder="Nome">
-  </div>
-
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <input type="nome de usuário" class="form-control" id="inputNameUser" placeholder="Nome de Usário">
->>>>>>> 61fde4eab49914e6af6973f04ad25af2f7c8722b
-    </div>
-
-    <div class="campo">
-        <form action="#" method="post">
-            <label class="checkbox">
-                <input type="radio" name="pessoaFisica" value="fisica">Pesoa Física
-            </label>
-
-            <label class="checkbox">
-                <input type="radio" name="pessoaJuridica" value="juridica">Pessoa Juridica
-            </label>
-    </div>
-
-    <div class="form-inline" action="/action_page.php">
-            <label for="name">Nome</label>
-                <input type="text" id="name" name="nome" style="width: 34.5em" value="" required>
-    </div>
-
-    <fieldset class="grupo">
-    <div class="form-group" action="/action_page.php">
-            <label for="username">Usuário</label>
-            <input type="text" id="username" name="username" style="width: 350px" value="" re>
-    </div>
-
-    <div class="form-group" action="/action_page.php">
-            <label for="email">E-mail</label>
-            <input type="text" id="email" name="email" style="width: 350px" value="" required>
-    </div>
-
-    </fieldset>
-
-    <fieldset class="grupo">
-    <div class="form-group" action="/action_page.php">
-            <label for="pwd">Senha</label>
-            <input type="password" id="pwd" name="pwd" value="" required>
-    </div>
-
-    <div class="form-group" action="/action_page.php">
-            <label for="pwd">Confirmar Senha</label>
-            <input type="password" id="pwd" name="pwd" value="" required>
-    </div>
-    
-    </fieldset>
-
-    <div class="form-group form-check mt-2  ">
-            <label>
-            <input type="checkbox" name="darCarona" value="darCarona">Deseja dar ou receber Carona?
-            </label>
-    </div>
-
+    <div class="cadastro">
+                <h2>CADASTRO DE NOVO USUÁRIO</h2>
+            </div>
         
-    <button type="submit" class="botao submit">Enviar</button>
-  
-</form> 
+            <div class="form-checkbox">
+                <form action="#" method="post">
+                    <label class="checkbox cadastroCheckbox">
+                        <input type="radio" name="pessoaFisica" value="fisica">Pesoa Física
+                    </label>
+        
+                    <label class="checkbox cadastroCheckbox">
+                        <input type="radio" name="pessoaJuridica" value="juridica">Pessoa Juridica
+                    </label>
+                    </form>
+            </div>
+
+        <form action="/action_page.php">
+            <div class="container cadastrousuario">
+                    <div class="form-inline">
+                            <label for="text"></label>
+                            <input type="text"  id="username" style="width: 745px" value="" placeholder="Nome:" required>
+                    </div>
+
+                    <div class="form-group cadastroUsuCard" action="/action_page.php">
+                        <label for="text"></label>
+                        <input type="text" id="username" name="nome" style="width: 350px" value="" placeholder="Usuário:" required>
+                        <label for="email"></label>
+                        <input type="email" id="emial" name="email" style="width: 350px" value="" placeholder="Email:" required>
+                        <label for="password"></label>
+                        <input type="password" id="pwd1" name="pwd" style="width: 340px" value="" placeholder="Senha:" required>
+                        <label for="email"></label>
+                        <input type="confirm-password" id="pwd2" name="pwd" style="width: 350px" value="" placeholder="Confirmar senha:" required>
+                        
+                    </div>
+                </div>
+
+                <div class="form-group cadastroUsuCard form-check mt-2  ">
+                        <label>
+                        <input type="checkbox" name="darCarona" style="width: 550px;" value="darCarona">Deseja dar ou receber Carona?
+                        </label>
+                </div>
+            
+
+                <div class="container cadastrousuario">
+                        <div class="form-group  cadastroUsuCard" action="/action_page.php">
+                            <label for="cep"></label>
+                            <input type="text" id="cep" name="cep" maxlength="9" style="width: 350px" placeholder="CEP:" value="" required>
+                            <label for="text"></label>
+                            <input type="email" id="endereco" name="endereco" style="width: 350px" value="" placeholder="Endereço:" required>
+                            <label for="text"></label>
+                            <input type="text" id="endereco" name="endereco" style="width: 350px" value="" placeholder="Bairro:" required>
+                            <label for="url"></label>
+                            <input type="url" id="pais" name="pais" style="width: 350px" value="" placeholder="País:" required>
+                            <label for="url"></label>
+                            <input type="url" id="estado" name="estado" style="width: 350px" value="" placeholder="Estado:" required>
+                            <label for="url"></label>
+                            <input type="url" id="cidade" name="cidade" style="width: 350px" value="" placeholder="Cidade:" required>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                            <label>
+                            <input type="checkbox" name="regras" value="regras">Concordo com as regras
+                            </label>
+                    </div>
+
+                    <button type="submit" class="botao submit">Dropar</button>
+
+
+            
+                
+        
+        </form>
 </main>
 
 
