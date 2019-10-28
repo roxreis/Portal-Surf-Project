@@ -26,17 +26,6 @@ header form{
 /* css cadastro */
 
 
-   /* display: flex;*/
-    
-
-}
-
-.form-row{
-   /* display: flex;
-    flex-wrap: wrap;
-    margin-right: 200px;
-    margin-left: 200px;*/
-}
 
 /* css para footer */
 footer{
@@ -314,9 +303,10 @@ footer img{
     background-position-y: -297px;
 }
 
-.encontredesapego{
-    /* height: 50px; */
-}
+/* .encontredesapego{
+    height: 50px;
+} */
+
 
 /* css para pagina carona */
 .caronaBanner{
@@ -347,8 +337,6 @@ footer img{
     height: 400px;
 }
 
-<<<<<<< HEAD
-=======
 /* css para pagina noticias */
 #noticiasBanner{
     background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
@@ -357,9 +345,6 @@ footer img{
     height: 400px;
 }
 
-<<<<<<< HEAD
->>>>>>> 61fde4eab49914e6af6973f04ad25af2f7c8722b
-=======
 
 /* css para pagina previsao */
 #previsaoBanner{
@@ -369,4 +354,3 @@ footer img{
     height: 400px;
 }
 
->>>>>>> 8b59916527d26e0ae2096a42e2823059f965a797
