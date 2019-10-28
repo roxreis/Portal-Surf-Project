@@ -92,7 +92,49 @@ footer img{
 
 /* css cadastro usuario */
 
- 
+.cadastro{
+    background: #1E4256;
+    text-align: center;
+    padding: 10px;
+    margin: 81px;
+    height: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    color: #ffff;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cadastroCheckbox{
+    margin-left: 420px;
+    margin-bottom: 32px;
+}
+
+.cadastrousuario, .cadastroUsuCard{
+    width: 850px;
+    padding: 20px;
+}
+
+
+.botao {
+    font-size: 1.5em;
+    background: #1E4256;
+    border: 0;
+    margin: 65px;
+    color: #FFF;
+    padding: 0.2em 7.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.botao:hover {
+    background: rgb(23, 101, 143);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
 
 
 /* css para section desapego */
