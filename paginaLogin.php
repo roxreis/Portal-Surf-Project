@@ -11,13 +11,13 @@
     <title>Portal do Surf</title>
 </head>
 <body>
-    <?php include_once("header.php") ?>   
+    <?php include_once("padrao/header.php") ?>   
     <div class="container" >
-        <h1 class="text-center text-info mt-5">OPS! VOCÊ PRECISA ESTAR LOGADO</h1>
-        <h2 class="text-center text-info">PARA ACESSAR ESTA PÁGINA!</h2>
-        <h4 class="container d-flex justify-content-center text-center col-8 mt-5 text-info">Faça seu login abaixo, ou se for o seu primeiro acesso, aproveite para se cadastrar e aproveitar tudo o que o Portal do Surf tem para oferecer!</h4>
+        <h1 class="text-center mt-5">OPS! VOCÊ PRECISA ESTAR LOGADO</h1>
+        <h2 class="text-center">PARA ACESSAR ESTA PÁGINA!</h2>
+        <h4 class="container d-flex justify-content-center text-center col-8 mt-5">Faça seu login abaixo, ou se for o seu primeiro acesso, aproveite para se cadastrar e aproveitar tudo o que o Portal do Surf tem para oferecer!</h4>
     </div>
-    <div class="d-flex justify-content-center mt-5 text-info">
+    <div class="d-flex justify-content-center mt-5">
         <form class="form-inline" action="/action_page.php">
             <label for="email" class="mr-sm-2">Email/ Login:</label>
             <input type="email" class="form-control mb-2 mr-sm-2" id="email">
@@ -32,11 +32,11 @@
             <a href="index.php" class="btn btn-primary mb-2">Dropar</a>
         </form>
     </div>
-    <div class="d-flex justify-content-center mt-5">
+    <div class="d-flex justify-content-center mt-5 mb-5">
         <a href="cadastroUsuario.php" class="btn btn-primary mb-2">Primeiro acesso</a>
     </div>
     
 
-    <?php include_once("footer.php") ?>   
+    <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>

@@ -11,13 +11,13 @@
     <title>Portal do Surf - Desapego</title>
 </head>
 <body>
-    <?php include_once("header.php") ?>   
+    <?php include_once("padrao/header.php") ?>   
 
-    <main class= "container">
+    <main class= "container mt-5 mb-5">
         
-        <div class="jumbotron col-12" id= "bannerDesap"></div>
-        <h1 Class="textBanner">Cadastro de Oferta</h1>
-        <section class="Desapego">
+        
+        <h1 class="mt-5 text-center">Cadastro de Oferta</h1>
+        
 
             <div class="col-12">
             
@@ -53,14 +53,15 @@
                         <input type="number" class ="form-control" name="precoProduto" placeholder="Preço do Produto"/>
                     </div>
 
-                    <button class= "btn btn-success"><a href="desapegoOfertasUsuario.php"> Cadastrar Oferta </a></button>
-                    <button class= "btn btn-danger"><a href="desapego.php"> Cancelar </a></button>
+
+                    <a href="desapegoOfertasUsuario.php" class="btn btn-success">Cadastrar Oferta</a>
+                    <a href="desapego.php" class="btn btn-danger">Cancelar</a>
             
                 </form>
             </div>  
         </div>
     </main> 
 
-    <?php include_once("footer.php") ?>   
+    <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>

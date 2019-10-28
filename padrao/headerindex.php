@@ -1,14 +1,14 @@
-<!-- header padrão para todas as outras páginas do portal.-->
-<!-- Falta aumentar um pouco o tamanho do campo de busca, e melhorar a posição da navbar, deixano o logo como um aside ao lado das duas linhas do header.-->
+<!-- opção de header para o portal. ao esta lincado em nenhuma pagina. -->
+<!-- Felipe, por favor, coloca o código do seu header aqui, com o banner superior incluso.  -->
 
 <?php include_once("config/variaveis.php") ?>
 
 <header>
     <section class="navbar">
         <a href="./index.php"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
-        <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center">
-            <input class="form-control mr-sm-4" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Busca</button>
+        <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6">
+            <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
         </form>
         <nav>
             <ul class="nav font-weight-bold">
@@ -21,16 +21,16 @@
                 </li>
                 <?php } else { ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="paginaLogin.php">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cadastro</a>
+                    <a class="nav-link" href="cadastroUsuario.php">Cadastro</a>
                 </li>
                 <?php } ?>
             </ul>
         </nav>
     </section>
-    <div class="container mt-3 mb-3">
+    <div class="container mt-1 mb-3">
         <nav class="nav-bar d-flex justify-content-center">
             <ul class="nav font-weight-bold" id="headerNavbar">
                 <li class="nav-item">

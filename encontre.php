@@ -1,5 +1,5 @@
 <!-- página Elke -->
-<!-- formulários montados apenas para apresentação, sem variáveis, a serem usadas conforme o back-end a ser programado para busca no Google Maps -->
+<!-- formulários montados apenas para apresentação, sem variáveis, a serem usadas conforme o back-end a ser programado para busca no Google Maps. Código comentado caso tenhamos que fazer um box com seleção de estados (está pronto). -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php include_once("header.php") ?>
+    <?php include_once("padrao/header.php") ?>
 
     <main>
 
@@ -23,29 +23,23 @@
         <!-- <section class="container d-flex justify-contents-center text-info">
             <div class="col-6">
                 <h1 class="p-3 mt-5 ">Encontre tudo o que você precisa para aproveitar a água!</h1> -->
-        <!-- original Elke - fim -->
 
         <!-- linha do label: modelo de form (form control: select) puxado do bootstrap W3C: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_form_select&stacked=h -->
-        <!--  <div class="container">  -->
 
-        <!-- original Elke - inicio -->
-        <!-- <form action="/action_page.php">
+        <!--  <div class="container">
+        <form action="/action_page.php">
                     <div class="form-group col-6 mt-3">
                         <label>Digite o lugar:</label>
-                        <input type="text" name="place"> -->
-        <!-- original Elke - fim -->
-
-        <!-- <label for="sel1">Escolha a cidade:</label>
+                        <input type="text" name="place">
+        <label for="sel1">Escolha a cidade:</label>
                 <select class="form-control" id="sel1" name="cidade">
                     <option></option>
                     <option>Ubatuba</option>
                     <option>Cidade 02</option>
                     <option>Cidade 03</option>
                     <option>Cidade 04</option>
-                </select> -->
-
-        <!-- original Elke - inicio -->
-        <!-- <br>
+                </select>
+                <br>
                         <label for="sel1">Escolha o serviço (selecione um):</label>
                             <select class="form-control" id="sel1" name="servico">
                                 <option></option>
@@ -63,25 +57,26 @@
             </div>
         </section> -->
         <!-- original Elke - fim -->
-
-        <section class="container text-info">
-            <h2 class="mt-5">Encontre tudo o que você precisa para aproveitar a água:</h2>
+        <div id="encontreBanner"></div>
+        <section class="container">
+            <h1 class="mt-5 text-center">Encontre tudo o que você precisa para aproveitar a água:</h1>
             <div class="row">
-                <form action="/action_page.php" class="form-inline col-12">
-                    <div class="col-10">
-                        <!-- <div class="form-group mt-5"> -->
-                        <!-- <div class="container p-0 mt-5 text-info"> -->
-                        <select class="form-control mt-5" name="encontre">
-                            <option disabled selected>Selecione:</option>
+                <form action="/action_page.php" class="form-inline col-lg-11">
+                    <div class="col-lg-8 mt-5">
+                            <input class="form-control w-100" type="search" placeholder="Onde?"
+                                aria-label="Search">
+                    </div>
+                    <div class="mt-5 col-lg-3">
+                        <select class="form-control w-100" name="encontre">
+                            <option disabled selected>O que?</option>
                             <option value=”equipamentos”>Equipamentos</option>
                             <option value=”manutenção”>Manutenção</option>
                             <option value=”surfshop”>Surf Shop</option>
                             <option value=”acomodacao”>Acomodação</option>
                             <option value=”carona”>Carona</option>
                         </select>
-                        <!-- </div> -->
                     </div>
-                    <div class="col-2 mt-5 justify-content-flex-end">
+                    <div class="col-lg-1 mt-5">
                         <button type="submit" class="btn btn-primary">Encontre</button>
                     </div>
                 </form>
@@ -91,20 +86,17 @@
             </div>
             </div>
         </section>
-        <div class="container mt-5 mb-5 text-info">
+        <div class="container mt-5 mb-5">
             <h2>Itens a venda nesta área:</h2>
             <div class="row justify-content-between mt-5">
-                <img class="encontredesapego" src="imagens/img-desapego/acessorios2.jpg" class="" alt="desapego">
-                <img class="encontredesapego" src="imagens/img-desapego/oculos_1.png" class="" alt="desapego">
-                <img class="encontredesapego" src="imagens/img-desapego/prancha_2.jpg" class="" alt="desapego">
-                <img class="encontredesapego" src="imagens/img-encontre/venda1.png" class="" alt="desapego">
+                <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
+                <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
+                <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
             </div>
         </div>
 
-        <!-- font-accent tt-input mx-80 -->
-
     </main>
-    <?php include_once("footer.php") ?>
+    <?php include_once("padrao/footer.php") ?>
 </body>
 
 </html>
