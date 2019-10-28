@@ -23,7 +23,6 @@ header form{
     align-items: center;
 }
 
-<<<<<<< HEAD
 /* css cadastro */
 
 
@@ -38,8 +37,6 @@ header form{
     margin-right: 200px;
     margin-left: 200px;*/
 }
-=======
->>>>>>> 61fde4eab49914e6af6973f04ad25af2f7c8722b
 
 /* css para footer */
 footer{
@@ -318,4 +315,16 @@ footer img{
     height: 400px;
 }
 
+<<<<<<< HEAD
 >>>>>>> 61fde4eab49914e6af6973f04ad25af2f7c8722b
+=======
+
+/* css para pagina previsao */
+#previsaoBanner{
+    background-image: url("../imagens/img-previsao/previgraca.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+>>>>>>> 8b59916527d26e0ae2096a42e2823059f965a797
