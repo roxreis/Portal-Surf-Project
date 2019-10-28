@@ -9,23 +9,25 @@
 </head>
 <body>
     <?php include_once("padrao/header.php") ?>   
-    <div class=container>
-            <h1>PRAIA DE GUAECA</h1>
-            <nav>
+    <main class="mt-5 mb-5">
+    <div class="container mt-5  mb-5">
+            <h1>PRAIA DA BALEIA</h1>
+            <nav class="mt-3  mb-5">
                 <ul class="nav justify-content-between">
-                    <li class="nav-link"><a href="pauba.php">PRAIA ANTERIOR</a></li>
+                    <li class="nav-link"><a href="zjuquehy.php">PRAIA ANTERIOR</a></li>
                     <li class="nav-link"><a href="previsao.php">VOLTAR</a></li>
+                    <li class="nav-link"><a href="zmaresias.php">PROXIMA PRAIA</a></li>
                 </ul>
             </nav>
             <div class="d-flex flex-row mr-3">
-                <img src="imagens/guaeca.jpeg" class="img-fluid" style="width: 400px;" alt="responsive image">
+                <img src="imagens/img-previsao/baleia.jpeg" class="img-fluid" style="width: 400px;" alt="responsive image">
                 <div class="container ml-3">
-                    <p>A praia de Guaecá é mais um pico alternativo para os dias de mar fora de controle em São Sebastião.</p>
+                    <p>Destaque para o lendário Canto Mágico (canto direito), onde encontram-se as melhores valas da praia.</p>
                     <ul>
-                        <li>Tamanho - 2 a 5 pés</li>
-                        <li>Ondulação ideal - Sul</li>
-                        <li>Vento ideal - Quadrante Leste | Quadrante Norte</li>
-                        <li>Grau de dificuldade - Baixa</li>
+                        <li>Tamanho - 2 a 8 pés</li>
+                        <li>Ondulação ideal - Sudeste | Sul</li>
+                        <li>Vento ideal - Quadrante Norte</li>
+                        <li>Grau de dificuldade - Alta | Média</li>
                         <li>Melhor época - Outono | Primavera</li>
                         <li>Constância - Baixa</li>
                         <li>Crowd - Intenso</li>
@@ -34,7 +36,7 @@
             </div>
             <div class="container mt-2">
                 <h3>Condições atuais:</h3>
-                <img src="imagens/prevdia.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/prevdia.png" class="img-fluid" alt="condicoes atuais">
             </div>
             <div class="container p-0 mt-2">
                 <h2>Encontre nesta área:</h2>
@@ -47,33 +49,33 @@
                 </select>
             </div>
             <div class="container mt-3 p-0">
-                <img src="imagens/mapa.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/mapa.png" class="img-fluid" alt="condicoes atuais">
             </div>
         </div>
         <div class=container>
             <h2>Itens a venda nesta área:</h2>
             <div class="row justify-content-between">
-                <img src="imagens/venda1.png" class="img-fluid" alt="condicoes atuais">
-                <img src="imagens/venda1.png" class="img-fluid" alt="condicoes atuais">
-                <img src="imagens/venda1.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
             </div>
         </div>
         <div class="container mt-2">
             <h3>Previsão dos próximos 7 dias:</h3>
-            <img src="imagens/previsurf.png" class="img-fluid" alt="condicoes atuais">
+            <img src="imagens/img-previsao/previsurf.png" class="img-fluid" alt="condicoes atuais">
         </div>
         <div class="container mt-2">
             <h3>Pra quem manja:</h3>
-            <img src="imagens/manja.png" class="img-fluid" alt="condicoes atuais">
+            <img src="imagens/img-previsao/manja.png" class="img-fluid" alt="condicoes atuais">
         </div>
         <div class=container>
             <h2>Fotos da galera:</h2>
             <div class=row>
-                <img src="imagens/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
-                <img src="imagens/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
+                <img src="imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
+                <img src="imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
             </div>
         </div>
-</nav>
+</main>
     <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>

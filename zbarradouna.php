@@ -8,19 +8,19 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <?php include_once("../padrao/header.php") ?>   
+    <?php include_once("padrao/header.php") ?>   
     <main class="mt-5 mb-5">
     <div class="container mt-5  mb-5">
             <h1>PRAIA DE BARRA DO UNA</h1>
             <nav class="mt-3  mb-5">
                 <ul class="nav justify-content-between">
-                    <li class="nav-link"><a href="previsao/riviera.php">PRAIA ANTERIOR</a></li>
-                    <li class="nav-link"><a href="../previsao.php">VOLTAR</a></li>
-                    <li class="nav-link"><a href="previsao/juquehy.php">PROXIMA PRAIA</a></li>
+                    <li class="nav-link"><a href="zriviera.php">PRAIA ANTERIOR</a></li>
+                    <li class="nav-link"><a href="previsao.php">VOLTAR</a></li>
+                    <li class="nav-link"><a href="zjuquehy.php">PROXIMA PRAIA</a></li>
                 </ul>
             </nav>
             <div class="d-flex flex-row mr-3">
-                <img src="../imagens/img-previsao/barradouna.jpg" class="img-fluid" style="width: 400px;" alt="responsive image">
+                <img src="imagens/img-previsao/barradouna.jpg" class="img-fluid" style="width: 400px;" alt="responsive image">
                 <div class="container ml-3">
                     <p>Um dos picos alternativos da região, a Barra da Una é uma excelente opção para os dias de mar fora de controle nos picos mais expostos.</p>
                     <ul>
@@ -34,49 +34,48 @@
                     </ul>
                 </div>
             </div>
-            <div class="container mt-4 mb-5">
-                <h3 class="mb-3">Condições atuais:</h3>
-                <img src="../imagens/img-previsao/prevdia.png" class="img-fluid" alt="condicoes atuais">
+            <div class="container mt-2">
+                <h3>Condições atuais:</h3>
+                <img src="imagens/img-previsao/prevdia.png" class="img-fluid" alt="condicoes atuais">
             </div>
-            <div class="container p-0 mt-2 mb-4">
+            <div class="container p-0 mt-2">
                 <h2>Encontre nesta área:</h2>
                 <select class="form-control font-accent tt-input mx-80" name="encontre">
                     <option disabled selected>Encontre:</option>
-                    <option value=”equipamento”>Equipamentos</option>
-                    <option value=”manutencao”>Manutenção</option>
-                    <option value=”surfshop”>Surf Shop</option>
-                    <option value=”acomodacao”>Acomodação</option>
-                    <option value=”acomodacao”>Carona</option>
+                    <option value=”una”>Acomodação</option>
+                    <option value=”juquehy”>Surf Shop</option>
+                    <option value=”maresias”>Manutenção</option>
+                    <option value=”baleia”>CARONA</option>
                 </select>
             </div>
             <div class="container mt-3 p-0">
-                <img src="../imagens/img-previsao/mapa.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/mapa.png" class="img-fluid" alt="condicoes atuais">
             </div>
         </div>
-        <div class="container mb-5">
+        <div class=container>
             <h2>Itens a venda nesta área:</h2>
             <div class="row justify-content-between">
-                <a href="../desapegoOferta.php"> <img src="../imagens/img-previsao/venda1.png" class="img-fluid" alt="desapego"></a>
-                <img src="../imagens/img-previsao/venda1.png" class="img-fluid" alt="desapego">
-                <img src="../imagens/img-previsao/venda1.png" class="img-fluid" alt="desapego">
+                <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
+                <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
             </div>
         </div>
-        <div class="container mt-4">
+        <div class="container mt-2">
             <h3>Previsão dos próximos 7 dias:</h3>
-            <img src="../imagens/img-previsao/previsurf.png" class="img-fluid" alt="condicoes semana">
+            <img src="imagens/img-previsao/previsurf.png" class="img-fluid" alt="condicoes atuais">
         </div>
-        <div class="container mt-4">
+        <div class="container mt-2">
             <h3>Pra quem manja:</h3>
-            <img src="../imagens/img-previsao/manja.png" class="img-fluid" alt="condicoes para profissional">
+            <img src="imagens/img-previsao/manja.png" class="img-fluid" alt="condicoes atuais">
         </div>
-        <div class="container mt-5">
+        <div class=container>
             <h2>Fotos da galera:</h2>
             <div class=row>
-                <img src="../imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="foto galera">
-                <img src="../imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="foto galera">
+                <img src="imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
+                <img src="imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
             </div>
         </div>
 </main>
-    <?php include_once("../padrao/footer.php") ?>   
+    <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>

@@ -23,7 +23,7 @@
         <div class="container">
                        <h2 class="shadow-sm p-3 mb-4 bg-white rounded text-center mt-5">Selecione a praia e saiba das ondas!</h2>
             <div class="container d-flex justify-content-center mb-0 pb-0">
-               <a href="previsao/barradouna.php"> <img src="imagens/img-previsao/tabela1.png" class="mt-0 pt-0"></a>
+               <a href="zriviera.php"> <img src="imagens/img-previsao/tabela1.png" class="mt-0 pt-0"></a>
             </div>
             <div class="container d-flex justify-content-center mb-0 pb-0">
                 <img src="imagens/img-previsao/tabela2.png" class="mt-0 pt-0">
