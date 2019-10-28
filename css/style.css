@@ -299,3 +299,12 @@ footer img{
     height: 400px;
 }
 
+
+/* css para pagina previsao */
+#previsaoBanner{
+    background-image: url("../imagens/img-previsao/previgraca.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
