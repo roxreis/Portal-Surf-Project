@@ -6,10 +6,12 @@
 <header>
     <section class="navbar">
         <a href="./index.php"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
+        
         <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6">
             <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
             <button class="btn btn-outline-primary my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
         </form>
+
         <nav>
             <ul class="nav font-weight-bold">
                 <?php if(isset($usuario) && $usuario != []) {?>
@@ -29,10 +31,9 @@
                 <?php } ?>
             </ul>
         </nav>
-    </section>
-    <div class="container mt-1 mb-3">
+     <div class="container mt-n4 col-lg-6">
         <nav class="nav-bar d-flex justify-content-center">
-            <ul class="nav font-weight-bold" id="headerNavbar">
+            <ul class="nav" id="headerNavbar">
                 <li class="nav-item">
                     <a class="nav-link" href="previsao.php">Previsão</a>
                 </li>
@@ -63,7 +64,8 @@
                     </div>
                 </li>
         </nav>
-                </div>
+     </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

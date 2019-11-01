@@ -65,18 +65,18 @@ footer img{
 
 #carousel_1{
     background-image: url('../imagens/img-home/carousel_1.png');
-    height: 500px;
+    height:  650px;
 }
 
 #carousel_2{
     background-image: url('../imagens/img-home/carousel_2.png');
-    height: 500px;
+    height:  650px;
     background-position: bottom;
 }
 
 #carousel_3{
     background-image: url('../imagens/img-home/carousel_3.png');
-    height: 500px;
+    height: 650px;
 }
 
 /* css cadastro usuario */
@@ -254,15 +254,14 @@ footer img{
     margin-top: 34px;
     justify-content: center;
     border-top-color: none;
-     
- 
+
 }
 .img-ofertaDesapego:hover{
 
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-     transform: scale(1.1);
-     border-top-color: black; 
+    transform: scale(1.1);
+    border-top-color: black; 
 }
 
 #desapegar{
