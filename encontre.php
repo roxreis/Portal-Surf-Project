@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="css/style.css" rel="stylesheet" media=”screen and (color)” > -->
     <link href="css/style.css" rel="stylesheet">
     <title>Portal do Surf - Encontre</title>
 </head>
@@ -65,7 +66,7 @@
 
         <section class="container">
             <!-- titulo da pagina -->
-            <h1 class="mt-5 text-center">Encontre tudo o que você precisa para aproveitar a água:</h1>
+            <h1 class="mt-5 text-center encontreTitulo">Encontre tudo o que você precisa para aproveitar a água:</h1>
 
             <!-- campos de busca -->
             <div class="row">
@@ -91,15 +92,15 @@
             </div>
 
             <!-- mapa do google -->
-            <div class="container mt-5 p-0">
+            <div class="container mt-5 mb-5 p-0">
                 <img src="imagens/img-encontre/mapa.png" class="img-fluid" alt="mapa">
             </div>
             </div>
 
             <!-- sessao vinculada a busca realizada e ofertas no desapego -->
         </section>
-        <div class="container mt-5 mb-5">
-            <h2>Itens a venda nesta área:</h2>
+        <div class="container mb-5 encontreMobile">
+            <h2 class="encontreTitulo">Itens a venda nesta área:</h2>
             <div class="row justify-content-between mt-5">
                 <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
                 <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>

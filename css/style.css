@@ -321,7 +321,7 @@ footer img {
     text-align: center;
 }
 
-.encontreBotao{
+.encontreBotao {
     background-color: #1E4256;
     color: #FFF;
 }
@@ -379,7 +379,7 @@ footer img {
     border-radius: 30px;
 }
 
-.textoCardBlog{
+.textoCardBlog {
     text-decoration-style: none;
     color: #1f4ea5;
 }
@@ -402,4 +402,85 @@ footer img {
     background-size: cover;
     background-position: center;
     height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsivo Encontre */
+@media only screen and (max-width: 480px){
+    #encontreBanner {
+        background-image: none;
+        background-color: #1E4256;
+        height: 2%;
+    }
+    .encontreTextoBanner {
+        color: #1E4256;
+        font-size: 0%;
+        filter: none;
+        width: 0%;
+        height: 0%;
+    }
+    .encontreTitulo{
+        width: 65%;
+        font-size: 1.5rem;
+    }
+    .encontreMobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #encontreBanner {
+        background-image: none;
+        background-color: #1E4256;
+        height: 2%;
+    }
+    .encontreTextoBanner {
+        color: #1E4256;
+        font-size: 0%;
+        filter: none;
+        width: 0%;
+        height: 0%;
+    }
+    .encontreTitulo{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .encontreMobile{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    #encontreBanner {
+        background-image: url("../imagens/img-encontre/surfboard.jpg");
+        height: 20%;
+        /* justify-content: center;
+        align-items: center;
+        display: flex; */
+    }
+    .encontreTextoBanner {
+        color: #ffffffe1;
+        font-family: Stencil Std, fantasy;
+        font-size: 3rem;
+        filter: drop-shadow(31px 22px 12px black);
+        width: 300px;
+        text-align: center;
+        display: flex;
+    }
+    .encontreTitulo{
+        width: 90%;
+        font-size: 2rem;
+    }
+    .encontreMobile{
+        display: none;
+    }
 }
