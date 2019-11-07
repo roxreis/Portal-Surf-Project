@@ -321,6 +321,10 @@ footer img {
     text-align: center;
 }
 
+.encontreBotao{
+    background-color: #1E4256;
+    color: #FFF;
+}
 
 
 /* .encontredesapego{
@@ -370,14 +374,14 @@ footer img {
 }
 
 .cardBlog {
+    /* border: 4px solid #1E4256; */
     border: 4px solid #1f4ea5;
-    /* border: 4px solid; */
     border-radius: 30px;
 }
 
 .textoCardBlog{
     text-decoration-style: none;
-    color: #5883d3;
+    color: #1f4ea5;
 }
 
 /* css para pagina noticias */

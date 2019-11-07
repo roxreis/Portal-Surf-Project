@@ -57,11 +57,17 @@
             </div>
         </section> -->
         <!-- original Elke - fim -->
+
+        <!-- banner -->
         <div id="encontreBanner">
         <h1 class="mx-auto encontreTextoBanner">Encontre perto de você</h1>
         </div>
+
         <section class="container">
+            <!-- titulo da pagina -->
             <h1 class="mt-5 text-center">Encontre tudo o que você precisa para aproveitar a água:</h1>
+
+            <!-- campos de busca -->
             <div class="row">
                 <form action="/action_page.php" class="form-inline col-lg-11">
                     <div class="col-lg-8 mt-5">
@@ -79,14 +85,18 @@
                         </select>
                     </div>
                     <div class="col-lg-1 mt-5">
-                        <button type="submit" class="btn btn-primary">Encontre</button>
+                        <button type="submit" class="btn encontreBotao">Encontre</button>
                     </div>
                 </form>
             </div>
+
+            <!-- mapa do google -->
             <div class="container mt-5 p-0">
                 <img src="imagens/img-encontre/mapa.png" class="img-fluid" alt="mapa">
             </div>
             </div>
+
+            <!-- sessao vinculada a busca realizada e ofertas no desapego -->
         </section>
         <div class="container mt-5 mb-5">
             <h2>Itens a venda nesta área:</h2>
