@@ -9,36 +9,40 @@
 </head>
 <body>
     <?php include_once("padrao/header.php") ?>   
-    <div class=container>
-            <h1>PRAIA DE JUQUEHY</h1>
-            <nav>
+    <div class="container p-0">
+            <h1>JUQUEHY</h1>
+            <nav class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav justify-content-between">
                     <li class="nav-link"><a href="zbarradouna.php">PRAIA ANTERIOR</a></li>
                     <li class="nav-link"><a href="zprevisao.php">VOLTAR</a></li>
                     <li class="nav-link"><a href="zbaleia.php">PROXIMA PRAIA</a></li>
                 </ul>
             </nav>
-            <div class="d-flex flex-row mr-3">
-                <img src="imagens/img-previsao/juquehy.jpg" class="img-fluid" style="width: 400px;" alt="responsive image">
-                <div class="container ml-3">
-                    <p>Suas ondas são boas e fortes, mas fecham um pouco e a variação de maré interfere diretamente na qualidade das valas.</p>
-                    <ul>
-                        <li>Tamanho - 2 a 8 pés</li>
-                        <li>Ondulação ideal - Sudeste | Sul</li>
-                        <li>Vento ideal - Quadrante Norte</li>
-                        <li>Grau de dificuldade - Alta | Média</li>
-                        <li>Melhor época - Outono | Primavera</li>
-                        <li>Constância - Média</li>
-                        <li>Crowd - Intenso</li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                        <img src="imagens/img-previsao/juquehy.jpg" class="img-fluid" style="width: 400px;" alt="responsive image">
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                        <p>Suas ondas são boas e fortes, mas fecham um pouco e a variação de maré interfere diretamente na qualidade das valas.</p>
+                        <ul>
+                            <li>Tamanho - 2 a 8 pés</li>
+                            <li>Ondulação ideal - Sudeste | Sul</li>
+                            <li>Vento ideal - Quadrante Norte</li>
+                            <li>Grau de dificuldade - Alta | Média</li>
+                            <li>Melhor época - Outono | Primavera</li>
+                            <li>Constância - Média</li>
+                            <li>Crowd - Intenso</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="container mt-2">
-                <h3>Condições atuais:</h3>
+                <h4>Condições atuais:</h4>
                 <img src="imagens/img-previsao/prevdia.png" class="img-fluid" alt="condicoes atuais">
             </div>
             <div class="container p-0 mt-2">
-                <h2>Encontre nesta área:</h2>
+                <h4>Encontre nesta área:</h4>
                 <select class="form-control font-accent tt-input mx-80" name="encontre">
                     <option disabled selected>Encontre:</option>
                     <option value=”una”>Acomodação</option>
@@ -52,27 +56,24 @@
             </div>
         </div>
         <div class=container>
-            <h2>Itens a venda nesta área:</h2>
-            <div class="row justify-content-between">
+            <h4>Itens a venda nesta área:</h4>
+            <div class="row justify-content-center">
                 <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
                 <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
                 <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
             </div>
         </div>
         <div class="container mt-2">
-            <h3>Previsão dos próximos 7 dias:</h3>
+            <h4>Previsão dos próximos 7 dias:</h4>
             <img src="imagens/img-previsao/previsurf.png" class="img-fluid" alt="condicoes atuais">
         </div>
         <div class="container mt-2">
-            <h3>Pra quem manja:</h3>
+            <h4>Pra quem manja:</h4>
             <img src="imagens/img-previsao/manja.png" class="img-fluid" alt="condicoes atuais">
         </div>
-        <div class=container>
-            <h2>Fotos da galera:</h2>
-            <div class=row>
-                <img src="imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
-                <img src="imagens/img-previsao/postai.png" class="img-fluid mx-1" alt="condicoes atuais">
-            </div>
+        <div class="container mt-2">
+            <h4>Fotos da galera:</h4>
+                <img src="imagens/img-previsao/fotosgalera.png" class="img-fluid" alt="condicoes atuais">
         </div>
     <?php include_once("padrao/footer.php") ?>   
 </body>
