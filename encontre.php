@@ -57,7 +57,9 @@
             </div>
         </section> -->
         <!-- original Elke - fim -->
-        <div id="encontreBanner"></div>
+        <div id="encontreBanner">
+        <h1 class="mx-auto encontreTextoBanner">Encontre perto de você</h1>
+        </div>
         <section class="container">
             <h1 class="mt-5 text-center">Encontre tudo o que você precisa para aproveitar a água:</h1>
             <div class="row">
