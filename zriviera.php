@@ -9,8 +9,8 @@
 </head>
 <body>
     <?php include_once("padrao/header.php") ?>   
-    <div class=container>
-            <h1>PRAIA DE RIVIERA</h1>
+    <div class="container p-0">
+            <h1 class="col-xl-7 col-lg-6 col-md-12 col-sm-12">RIVIERA</h1>
             <nav class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav justify-content-between">
                     <li class="nav-link"><a href="previsao.php">VOLTAR</a></li>
@@ -56,7 +56,7 @@
         </div>
         <div class=container>
             <h4>Itens a venda nesta área:</h4>
-            <div class="row justify-content-between">
+            <div class="row justify-content-center">
                 <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
                 <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
                 <img src="imagens/img-previsao/venda1.png" class="img-fluid" alt="condicoes atuais">
@@ -68,7 +68,7 @@
         </div>
         <div class="container justify-content-center mt-2">
             <h4>Pra quem manja:</h4>
-            <img src="imagens/img-previsao/manja.png" class="img-fluid mx-3" style="vw: 100%;"alt="condicoes atuais">
+            <img src="imagens/img-previsao/manja.png" class="img-fluid" alt="condicoes atuais">
         </div>
         <div class="container mt-2">
             <h4>Fotos da galera:</h4>

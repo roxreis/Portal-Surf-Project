@@ -18,11 +18,9 @@
 <body>
     <?php include_once("padrao/header.php") ?>
     <main class="mb-5">
-        <div id="previsaoBanner">
-            <h1 class="mx-auto caronaTextoBanner">PREVISÃO</h1>
-        </div>
             <div class="container">
                 <div class="row justify-content-center">
+                <h4>Selecione o pico abaixo e vamos fazer o check!</h4>
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                         <img class="img-fluid mt-2" src="imagens/img-previsao/tabela1.png" alt="praias para escolher a previsao">
                         <a href="zriviera.php"><img class="img-fluid" src="imagens/img-previsao/tabela2.png" alt="praias para escolher a previsao"></a> 
