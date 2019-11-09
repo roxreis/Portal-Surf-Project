@@ -43,18 +43,22 @@
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Sergio Reis, 28/10/2019:</label>
                 <textarea class="form-control border border-dark" rows="2" id="comment">De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Avaliar</button></a>
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Sergio Reis, 24/10/2019:</label>
                 <textarea class="form-control border border-dark" rows="2" id="comment">O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Avaliar</button></a>
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Fernando Sabino, 11/10/2019:</label>
                 <textarea class="form-control border border-dark" rows="2" id="comment">Motorista tranquilo, papo bom, e na hora de rachar o combustivel ele ainda tinha maquininha para passar o cartão! É o cara!</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Avaliar</button></a>
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Gisele Bundchen, 06/09/2019:</label>
                 <textarea class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Avaliar</button></a>
             </div>
             <a href = 'caronas.php'><button class = 'btn btn-success buttonCaronasVoltar'>Voltar</button></a>
         </section>
