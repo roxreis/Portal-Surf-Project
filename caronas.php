@@ -134,21 +134,21 @@
                     <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda
                         me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
+                    <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary buttonCaronasAvaliar">Avaliar</button><a>
                 </div>
             </div>
             <div class="card mt-5 border border-primary rounded shadow-lg p-4 bg-white col-5">
                 <div class="card-body">
-                <div class="">
                     <p>Data: 28/10/2019</p>
                     <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
                     <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
                     <p>Carona: Vinicius Oliveira</p>
                     <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando
                         antes na escola.</p>
-                        </div>
-                        <div class="d-flex align-itens-center justify-content-end">
+                <div class="d-flex align-itens-center justify-content-end">        
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
-                    </div>
+                    <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary buttonCaronasAvaliar">Avaliar</button><a>
+                </div>
                 </div>
             </div>
             </div>
