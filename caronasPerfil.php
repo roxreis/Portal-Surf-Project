@@ -56,6 +56,7 @@
                 <label for="comment" class="font-weight-bold">Gisele Bundchen, 06/09/2019:</label>
                 <textarea class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
             </div>
+            <a href = 'caronas.php'><button class = 'btn btn-success buttonCaronasVoltar'>Voltar</button></a>
         </section>
 
     </main>
