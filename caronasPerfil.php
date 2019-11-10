@@ -42,23 +42,39 @@
             <h3>DEPOIMENTOS</h3>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Sergio Reis, 28/10/2019:</label>
-                <textarea class="form-control border border-dark" rows="2" id="comment">De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</textarea>
+                <textarea disabled class="form-control border border-dark" rows="2" id="comment">De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Sergio Reis, 24/10/2019:</label>
-                <textarea class="form-control border border-dark" rows="2" id="comment">O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</textarea>
+                <textarea disabled class="form-control border border-dark" rows="2" id="comment">O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Fernando Sabino, 11/10/2019:</label>
-                <textarea class="form-control border border-dark" rows="2" id="comment">Motorista tranquilo, papo bom, e na hora de rachar o combustivel ele ainda tinha maquininha para passar o cartão! É o cara!</textarea>
+                <textarea disabled class="form-control border border-dark" rows="2" id="comment">Motorista tranquilo, papo bom, e na hora de rachar o combustivel ele ainda tinha maquininha para passar o cartão! É o cara!</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Gisele Bundchen, 06/09/2019:</label>
-                <textarea class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
+                <textarea disabled class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
+                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
             </div>
+            <a href = 'caronas.php'><button class = 'btn btn-success buttonCaronasVoltar'>Voltar</button></a>
         </section>
-
+           
     </main>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+            </ul>
+        </nav>
+    </div>
     <?php include_once("padrao/footer.php") ?>
 </body>
 

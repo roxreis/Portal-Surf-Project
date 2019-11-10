@@ -5,13 +5,17 @@
 
 <header>
     <section class="navbar">
+
+    <!-- logo -->
         <a href="./index.php"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
         
+        <!-- campo de busca -->
         <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6">
             <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
+            <button class="btn encontreBotao" type="submit">Busca</button>
         </form>
 
+        <!-- campo de login -->
         <nav>
             <ul class="nav font-weight-bold">
                 <?php if(isset($usuario) && $usuario != []) {?>
@@ -31,6 +35,8 @@
                 <?php } ?>
             </ul>
         </nav>
+
+        <!-- barra de navegacao -->
      <div class="container mt-n4 col-lg-6">
         <nav class="nav-bar d-flex justify-content-center">
             <ul class="nav" id="headerNavbar">
@@ -52,6 +58,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="noticias.php">Notícias</a>
                 </li>
+                <!-- links para outros sites -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
@@ -66,6 +73,8 @@
         </nav>
      </div>
     </section>
+
+    <!-- instruçoes de javascript para  funcionar o dropdown -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

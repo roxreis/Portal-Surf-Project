@@ -4,20 +4,21 @@
 
 
 /* css para header */
-header img{
+header img {
     width: 150px;
     margin-top: 20px;
 }
 
-header form{
+header form {
     text-shadow: #bbb6b6 2px 2px 2px;
 }
-#headerNavbar{
+
+#headerNavbar {
     text-decoration: none;
-    text-shadow: #bbb6b6 2px 2px 2px; 
+    text-shadow: #bbb6b6 2px 2px 2px;
 }
 
-.navbar{
+.navbar {
     position: relative;
     display: flex;
     align-items: center;
@@ -28,78 +29,83 @@ header form{
 
 
 /* css para footer */
-footer{
+footer {
     margin-top: 200px;
     background-color: #dceaec;
-    margin-top: 0%; 
+    margin-top: 0%;
     height: 400px;
 }
-footer p{
+
+footer p {
     color: #140b63;
 }
-#footerlogo{
+
+#footerlogo {
     display: flex;
     justify-content: center;
 }
-footer img{
+
+footer img {
     height: 150px;
-    margin-top:100px;
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 
 
 /* css para home - index */
-.homeBanner{
+.homeBanner {
     height: 550px;
 }
 
-.indexH2{
+.indexH2 {
     display: flex;
     justify-content: center;
     font-size: 3.5rem;
 }
 
-.indexP{
- font-size: 1.5rem;
+.indexP {
+    font-size: 1.5rem;
 }
 
-#carousel_1{
+#carousel_1 {
     background-image: url('../imagens/img-home/carousel_1.png');
-    height:  650px;
+    height: 650px;
 }
 
-#carousel_2{
+#carousel_2 {
     background-image: url('../imagens/img-home/carousel_2.png');
-    height:  650px;
+    height: 650px;
     background-position: bottom;
 }
 
-#carousel_3{
+#carousel_3 {
     background-image: url('../imagens/img-home/carousel_3.png');
     height: 650px;
 }
 
 /* css cadastro usuario */
 
-.cadastro{
+.cadastro {
     background: #1E4256;
     text-align: center;
     padding: 10px;
     margin: 81px;
     height: 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;
     color: #ffff;
     width: 940px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.cadastroCheckbox{
+.cadastroCheckbox {
     margin-left: 420px;
     margin-bottom: 32px;
 }
 
-.cadastrousuario, .cadastroUsuCard{
+.cadastrousuario,
+.cadastroUsuCard {
     width: 850px;
     padding: 20px;
 }
@@ -112,8 +118,8 @@ footer img{
     margin: 65px;
     color: #FFF;
     padding: 0.2em 7.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -121,7 +127,7 @@ footer img{
 
 .botao:hover {
     background: rgb(23, 101, 143);
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
@@ -168,12 +174,12 @@ footer img{
     width: 100%;
 }
 
-#imagens-desapego{
+#imagens-desapego {
     width: 100%;
     height: 957px;
 }
 
-.texto-pranchas{
+.texto-pranchas {
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
     font-size: 48px;
@@ -182,11 +188,11 @@ footer img{
     height: 47px;
 }
 
-.texto-pranchas:hover{
+.texto-pranchas:hover {
     color: #ffffffaf;
 }
 
-.texto-vestuarios{
+.texto-vestuarios {
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
     font-size: 48px;
@@ -195,11 +201,11 @@ footer img{
     height: 47px;
 }
 
-.texto-vestuarios:hover{
-    color: #ffffffaf;    
+.texto-vestuarios:hover {
+    color: #ffffffaf;
 }
 
-.texto-acessorios{
+.texto-acessorios {
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
     font-size: 48px;
@@ -208,7 +214,7 @@ footer img{
     height: 47px;
 }
 
-.texto-acessorios:hover{
+.texto-acessorios:hover {
     color: #ffffffaf;
 }
 
@@ -226,7 +232,7 @@ footer img{
     width: 155px;
     height: 39px;
     color: #ffffffaf;
-    filter: drop-shadow(2px 11px 8px black);   
+    filter: drop-shadow(2px 11px 8px black);
 }
 
 #dropnow-tres{
@@ -237,21 +243,21 @@ footer img{
     filter: drop-shadow(2px 11px 8px black);
 }
 
-.img-um{
+.img-um {
     background-image: url("../imagens/img-desapego/PranchasnovaPagina.jpg");
-    border-top-left-radius:10px;
+    border-top-left-radius: 10px;
     /* border-bottom-left-radius: 10px; */
-    background-size:cover;
+    background-size: cover;
     width: 100%;
     height: 200px;
     display: flex;
     margin-right: 1px;
 }
 
-.img-dois{
+.img-dois {
     background-image: url("../imagens/img-desapego/roupas7.png");
     /* border-bottom-left-radius:10px; */
-    background-size:auto;
+    background-size: auto;
     background-repeat: no-repeat;
     width: 100%;
     height: 200px;
@@ -260,7 +266,7 @@ footer img{
     background-position-x: -55px;
 }
 
-.img-tres{
+.img-tres {
     background-image: url("../imagens/img-desapego/acessorios5.jpg");
     /* border-bottom-right-radius: 10px; */
     /* border-top-right-radius: 10px; */
@@ -274,7 +280,7 @@ footer img{
 
 /* css oferta desapego */
 
-.img-ofertaDesapego{
+.img-ofertaDesapego {
     width: 537px;
     height: 181px;
     margin-top: 34px;
@@ -282,12 +288,13 @@ footer img{
     border-top-color: none;
 
 }
-.img-ofertaDesapego:hover{
+
+.img-ofertaDesapego:hover {
 
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    border-top-color: black; 
+    border-top-color: black;
 }
 
 #desapegar{
@@ -298,7 +305,7 @@ footer img{
     justify-content: center;
 }
 
-#imagem-desapegar{
+#imagem-desapegar {
     background-image: url("../imagens/img-desapego/desapegar.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -311,22 +318,40 @@ footer img{
 
 
 
-.img-ofertaDesapegoHistorico{
+.img-ofertaDesapegoHistorico {
     width: 537px;
     height: 230px;
     margin-top: 34px;
-    justify-content: center;    
+    justify-content: center;
 }
 
 
 /* css para pagina encontre */
-#encontreBanner{
+#encontreBanner {
     background-image: url("../imagens/img-encontre/surfboard.jpg");
     background-size: cover;
-    background-position: bottom;
     height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     background-position-y: -297px;
 }
+
+.encontreTextoBanner {
+    color: #ffffffe1;
+    font-family: Stencil Std, fantasy;
+    font-size: 100px;
+    filter: drop-shadow(31px 22px 12px black);
+    width: 600px;
+    height: 269px;
+    text-align: center;
+}
+
+.encontreBotao {
+    background-color: #1E4256;
+    color: #FFF;
+}
+
 
 /* .encontredesapego{
     height: 50px;
@@ -334,7 +359,7 @@ footer img{
 
 
 /* css para pagina carona */
-.caronaBanner{
+.caronaBanner {
     background-image: url("../imagens/img-home/carousel_2.png");
     background-size: cover;
     background-position: bottom;
@@ -344,7 +369,7 @@ footer img{
     display: flex;
 }
 
-.caronaTextoBanner{
+.caronaTextoBanner {
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
     font-size: 100px;
@@ -355,24 +380,50 @@ footer img{
 }
 
 /* css para pagina blog */
-#blogBanner{
+#blogBanner {
     background-image: url("../imagens/img-blog/surfers.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cardBlogGeral {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+}
+
+.cardBlog {
+    /* border: 4px solid #1E4256; */
+    border: 4px solid #1f4ea5;
+    border-radius: 30px;
+}
+
+.textoCardBlog {
+    text-decoration-style: none;
+    color: #1f4ea5;
 }
 
 /* css para pagina noticias */
-#noticiasBanner{
+#noticiasBanner {
     background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 
 /* css para pagina previsao */
-#previsaoBanner{
+#previsaoBanner {
     background-image: url("../imagens/img-previsao/previgraca.jpeg");
     background-size: cover;
     background-position: center;
@@ -389,3 +440,92 @@ footer img{
     font-style: italic;
 }
      
+
+
+
+
+
+
+
+
+/* responsivo Encontre */
+@media only screen and (max-width: 480px){
+    #encontreBanner {
+        background-image: none;
+        background-color: #1E4256;
+        height: 2%;
+    }
+    .encontreTextoBanner {
+        color: #1E4256;
+        font-size: 0%;
+        filter: none;
+        width: 0%;
+        height: 0%;
+    }
+    .encontreTitulo{
+        width: 65%;
+        font-size: 1.5rem;
+    }
+    .encontreMobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #encontreBanner {
+        background-image: none;
+        background-color: #1E4256;
+        height: 2%;
+    }
+    .encontreTextoBanner {
+        color: #1E4256;
+        font-size: 0%;
+        filter: none;
+        width: 0%;
+        height: 0%;
+    }
+    .encontreTitulo{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .encontreMobile{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    #encontreBanner {
+        background-image: url("../imagens/img-encontre/surfboard.jpg");
+        height: 20%;
+        /* justify-content: center;
+        align-items: center;
+        display: flex; */
+    }
+    .encontreTextoBanner {
+        color: #ffffffe1;
+        font-family: Stencil Std, fantasy;
+        font-size: 3rem;
+        filter: drop-shadow(31px 22px 12px black);
+        width: 300px;
+        text-align: center;
+        display: flex;
+    }
+    .encontreTitulo{
+        width: 90%;
+        font-size: 2rem;
+    }
+    .encontreMobile{
+        display: none;
+    }
+}
+.buttonCaronasVoltar {
+    background-color:#007bff; 
+    border-color:#007bff; 
+    
+}
+
+.buttonCaronasAvaliar{
+    background-color: #1E4256;
+    border-color: #1E4256;
+}
