@@ -14,7 +14,11 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
-    <div id="blogBanner"></div>
+    <div id="blogBanner">
+        <div class = "frontBanner">
+            <h1 class="textoBanner">Blog</h1>
+        </div>
+    </div>
 
     <div class="container mt-5 mb-5">
         <h1 class="mb-5">Novidades para veteranos e principiantes!</h1>

@@ -128,18 +128,43 @@ footer img{
 
 /* css para section desapego */
 
-#despegoBanner{    
-    background-image: url("../imagens/img-desapego/desapegoBanner.jpg");
-    background-position-y: -349px;
+#despegoBanner{
+    background-image: url("../imagens/img-desapego/banner4.png");
+    background-position-y: 1px;
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontBanner{
+    background: rgba(94, 0, 19, 0.5) 0% 0% no-repeat padding-box;
+    border: 1px solid rgba(112, 112, 112, 1);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoBanner{
+
+    color: #ffffffe1;
+    font-family: Stencil Std, fantasy;
+    font-size: 100px;
+    filter: drop-shadow(31px 22px 12px black);
+    width: 554px;
+    height: 96px;
+    text-align: center;
+       
 }
 
 #desapego{
-    height: 400px;
+    height: 261px;
     width: 100%;
 }
 
@@ -151,10 +176,10 @@ footer img{
 .texto-pranchas{
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
-    font-size: 57px;
+    font-size: 48px;
     filter: drop-shadow(31px 22px 12px black);
     width: 245px;
-    height: 63px;
+    height: 47px;
 }
 
 .texto-pranchas:hover{
@@ -164,10 +189,10 @@ footer img{
 .texto-vestuarios{
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
-    font-size: 57px;
+    font-size: 48px;
     filter: drop-shadow(31px 22px 12px black);
     width: 245px;
-    height: 63px;
+    height: 47px;
 }
 
 .texto-vestuarios:hover{
@@ -177,10 +202,10 @@ footer img{
 .texto-acessorios{
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
-    font-size: 57px;
+    font-size: 48px;
     filter: drop-shadow(31px 22px 12px black);
     width: 245px;
-    height: 63px;
+    height: 47px;
 }
 
 .texto-acessorios:hover{
@@ -188,15 +213,16 @@ footer img{
 }
 
 #dropnow-um{
-    font-size: 33px;
+    font-size: 29px;
     width: 155px;
     height: 39px;
     color: #ffffffaf;
     filter: drop-shadow(2px 11px 8px black);
 }
 
+
 #dropnow-dois{
-    font-size: 33px;
+    font-size: 29px;
     width: 155px;
     height: 39px;
     color: #ffffffaf;
@@ -204,7 +230,7 @@ footer img{
 }
 
 #dropnow-tres{
-    font-size: 33px;
+    font-size: 29px;
     width: 155px;
     height: 39px;
     color: #ffffffaf;
@@ -217,7 +243,7 @@ footer img{
     /* border-bottom-left-radius: 10px; */
     background-size:cover;
     width: 100%;
-    height: 355px;
+    height: 200px;
     display: flex;
     margin-right: 1px;
 }
@@ -228,7 +254,7 @@ footer img{
     background-size:auto;
     background-repeat: no-repeat;
     width: 100%;
-    height: 356px;
+    height: 200px;
     margin-right: 1px;
     display: flex;
     background-position-x: -55px;
@@ -240,7 +266,7 @@ footer img{
     /* border-top-right-radius: 10px; */
     background-repeat: no-repeat;
     width: 100%;
-    height: 356px;
+    height: 200px;
     display: flex;
     background-position-x: -175px;
 }
@@ -265,19 +291,19 @@ footer img{
 }
 
 #desapegar{
-    margin-top: 70px;
+    /* margin-top: 70px; */
     width: 100%;
-    height: 300px;
+    height: 201px;
     display: flex;
     justify-content: center;
 }
 
 #imagem-desapegar{
     background-image: url("../imagens/img-desapego/desapegar.jpg");
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -353,3 +379,13 @@ footer img{
     height: 400px;
 }
 
+
+.botaoAzul{
+    background: rgba(7, 237, 243, 1) 0% 0% no-repeat padding-box;
+    border: 1px solid rgba(195, 221, 255, 1);
+    opacity: 1;
+    font-weight: bold;
+    color: #FFF;
+    font-style: italic;
+}
+     
