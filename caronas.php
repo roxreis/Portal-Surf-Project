@@ -46,11 +46,11 @@
                     <input type="text" class="form-control" id="partida">
                 </div>
                 <div class="form-inline" action="/action_page.php">
-                    <label for="text">Estado:</label>
+                    <label for="text" class="mr-2">Estado:</label>
                     <input type="text" class="form-control" id="estadoP">
-                    <label for="text">Cidade:</label>
+                    <label for="text" class="ml-3 mr-2">Cidade:</label>
                     <input type="text" class="form-control" id="cidadeP">
-                    <label for="text">CEP:</label>
+                    <label for="text" class="ml-3 mr-2">CEP:</label>
                     <input type="text" class="form-control" id="cepP">
                 </div>
                 <div class="form-group form-check mt-2  ">
@@ -59,9 +59,9 @@
                     </label>
                 </div>
                 <div class="form-inline" action="/action_page.php">
-                    <label for="date">Data:</label>
+                    <label for="date" class="mr-2">Data:</label>
                     <input type="date" class="form-control" id="dataP">
-                    <label for="text">Horário:</label>
+                    <label for="text" class="ml-3 mr-2">Horário:</label>
                     <input type="text" class="form-control" id="horarioP">
                 </div>
 
@@ -71,11 +71,11 @@
                     <input type="text" class="form-control" id="destino">
                 </div>
                 <div class="form-inline" action="/action_page.php">
-                    <label for="text">Estado:</label>
+                    <label for="text" class="mr-2">Estado:</label>
                     <input type="text" class="form-control" id="estadoD">
-                    <label for="text">Cidade:</label>
+                    <label for="text" class="ml-3 mr-2">Cidade:</label>
                     <input type="text" class="form-control" id="cidadeD">
-                    <label for="text">CEP:</label>
+                    <label for="text" class="ml-3 mr-2">CEP:</label>
                     <input type="text" class="form-control" id="cepD">
                 </div>
                 <div class="form-group form-check mt-2">
@@ -84,9 +84,9 @@
                     </label>
                 </div>
                 <div class="form-inline" action="/action_page.php">
-                    <label for="date">Data:</label>
+                    <label for="date" class="mr-2">Data:</label>
                     <input type="date" class="form-control" id="dataD">
-                    <label for="text">Horário:</label>
+                    <label for="text" class="ml-3 mr-2">Horário:</label>
                     <input type="text" class="form-control" id="horarioD">
                 </div>
 
@@ -124,7 +124,8 @@
         </div>
 
         <section class="container">
-            <div class="card mt-5 border border-dark">
+        <div class="card-deck justify-content-center">
+            <div class="card mt-5 border border-primary rounded shadow-lg p-4 bg-white col-5">
                 <div class="card-body">
                     <p>Data: 24/10/2019</p>
                     <p>Partida: Rua Pedra Bela, 37, São Paulo, SP</p>
@@ -133,9 +134,10 @@
                     <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda
                         me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
+                    <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary buttonCaronasAvaliar">Avaliar</button><a>
                 </div>
             </div>
-            <div class="card mt-5 border border-dark">
+            <div class="card mt-5 border border-primary rounded shadow-lg p-4 bg-white col-5">
                 <div class="card-body">
                     <p>Data: 28/10/2019</p>
                     <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
@@ -143,8 +145,12 @@
                     <p>Carona: Vinicius Oliveira</p>
                     <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando
                         antes na escola.</p>
+                <div class="d-flex align-itens-center justify-content-end">        
                     <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary">Perfil</button><a>
+                    <a href="./caronasPerfil.php"><button type="button" class="btn btn-primary buttonCaronasAvaliar">Avaliar</button><a>
                 </div>
+                </div>
+            </div>
             </div>
         </section>
 
