@@ -33,10 +33,13 @@ $produtos= [
 <body>
     <?php include_once("padrao/header.php") ?>
 
+    <p id="inicio"></p>
+    <a href="#ultimo"> Ir para o final da página</a>
+
     <main class="container mt-5 mb-5">
         <h1 class="text-center">Seu histórico de ofertas</h1>
 
-<!-- codigo original do Caio com todas as interações PHPs prontas -->        
+            <!-- codigo original do Caio com todas as interações PHPs prontas -->        
         <section class="container mt-4">
             <div class="row justify-content-around">
                 <?php if(isset($produtos) && $produtos != []){?>
@@ -49,7 +52,7 @@ $produtos= [
                         <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
                             class="btn btn-primary">Editar</a>
                         <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
-                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-warning">Desativar</a>
+                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-primary">Desativar</a>
                     </div>
                 </div>
                 <?php } ?>
@@ -61,6 +64,9 @@ $produtos= [
 
 
     </main>
+
+    <p id="ultimo"></p>
+    <a href="#inicio"> Inicio da página </a>
 
     <?php include_once("padrao/footer.php") ?>
 </body>

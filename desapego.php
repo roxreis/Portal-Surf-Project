@@ -16,7 +16,12 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
-    <div id="despegoBanner"></div>
+    <div id="despegoBanner">
+        
+        <div class = "frontBanner">
+        <h1 class="textoBanner">Desapego</h1>
+        </div>
+    </div>
     <main class="container mt-5 mb-5">
 
         <section id="desapego">
@@ -60,7 +65,7 @@
                 <h2 class="font-italic" >QUER DESAPEGAR TAMBÉM? =)</h2>
                 <p>É fácil! se você ja for cadastrado no nosso site, clique aqui e ja saia desapegando</p>
                 <div>
-                    <a href="./desapegoCadastroOferta.php"><button type="button" class="btn btn-secondary btn-lg">DESAPEGAR</button></a> 
+                    <a href="./desapegoCadastroOferta.php"><button type="button" class="botaoAzul">DESAPEGAR</button></a> 
                 </div>
                 
             </div>

@@ -34,7 +34,7 @@
                             <p class="card-text">R$ 800,00 <br> Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                             <p class="card-text">R$ 450,00<br>Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                             <p class="card-text">R$ 800,00 <br>Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                             <p class="card-text">R$ 800,00 <br>Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                             <p class="card-text">R$ 800,00 <br>Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                             <p class="card-text">R$ 800,00 <br>Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                             <p class="card-text">R$ 800,00 <br>Descrição: à retirar <br> Data oferta: 13/05/2019 <br> Status: Vendido - 18/05/2019</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Excluir</a>
-                        <a href="#" class="btn btn-warning">Desativar</a>
+                        <a href="#" class="btn btn-primary">Desativar</a>
                         </div>
                     </div>
                 </div>
