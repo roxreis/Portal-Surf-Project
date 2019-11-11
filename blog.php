@@ -14,16 +14,9 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
-<<<<<<< HEAD
-    <div id="blogBanner">
-        <div class = "frontBanner">
-            <h1 class="textoBanner">Blog</h1>
-        </div>
-=======
     <!-- Banner -->
     <div id="blogBanner">
         <h1 class="encontreTextoBanner">Blog</h1>
->>>>>>> 1bf17eb67cd1bb2d5b8a86b8041c325c8beb1d37
     </div>
 
     <!-- Titulo da pagina -->
