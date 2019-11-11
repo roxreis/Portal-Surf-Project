@@ -379,6 +379,19 @@ footer img {
     text-align: center;
 }
 
+/* .buttonCaronasVoltar {
+    background-color:#007bff; 
+    border-color:#007bff; 
+    
+}
+
+.buttonCaronasAvaliar{
+    background-color: #1E4256;
+    border-color: #1E4256;
+} */
+
+
+
 /* css para pagina blog */
 #blogBanner {
     background-image: url("../imagens/img-blog/surfers.jpg");
@@ -410,6 +423,8 @@ footer img {
     color: #1f4ea5;
 }
 
+
+
 /* css para pagina noticias */
 #noticiasBanner {
     background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
@@ -440,10 +455,6 @@ footer img {
     font-style: italic;
 }
      
-
-
-
-
 
 
 
@@ -519,13 +530,21 @@ footer img {
         display: none;
     }
 }
-.buttonCaronasVoltar {
-    background-color:#007bff; 
-    border-color:#007bff; 
-    
+
+
+
+/* responsivo Blog e Noticias */
+@media only screen and (max-width: 480px){
+    .blogMobile{
+        display: none;
+    }
 }
 
-.buttonCaronasAvaliar{
-    background-color: #1E4256;
-    border-color: #1E4256;
+@media only screen and (max-width: 768px){
+    .blogMobile{
+        display: none;
+    }
 }
+
+
+

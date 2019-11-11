@@ -20,7 +20,7 @@
         <!-- perfil do usuario -->
         <section class="container">
             <h1 class="mt-3 mb-5 text-center">PERFIL DO VINICIUS OLIVEIRA</h1>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 border border-dark" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="./imagens/img-carona/carona_usuario.jpg" class="card-img" alt="foto usuario">
@@ -60,6 +60,8 @@
                 <textarea disabled class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
                 <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
             </div>
+            
+            <!-- botao voltar -->
             <a href = 'caronas.php'><button class = 'btn btn-success buttonCaronasVoltar'>Voltar</button></a>
         </section>
            

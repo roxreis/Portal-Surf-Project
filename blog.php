@@ -26,8 +26,8 @@
         <!-- Cards de postagens -->
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
-                <div class="col-4">
-                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-blog/pranchaPraia.jpg" alt="Pranchas para manobras">
+                <div class="col-4 blogMobile">
+                    <img style="max-width: 90%" class="card-img-left blogMobile" src="./imagens/img-blog/pranchaPraia.jpg" alt="Pranchas para manobras">
                 </div>
                 <div class="col-8">
                     <div class="card-body">
