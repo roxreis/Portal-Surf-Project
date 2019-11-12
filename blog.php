@@ -15,7 +15,7 @@
     <?php include_once("padrao/header.php") ?>
 
     <!-- Banner -->
-    <div id="blogBanner">
+    <div id="blogBanner" class="blogBannerMobile">
         <h1 class="encontreTextoBanner">Blog</h1>
     </div>
 

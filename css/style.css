@@ -134,7 +134,7 @@ footer img {
 
 /* css para section desapego */
 
-#despegoBanner{
+#despegoBanner {
     background-image: url("../imagens/img-desapego/banner4.png");
     background-position-y: 1px;
     width: 100%;
@@ -146,7 +146,7 @@ footer img {
     align-items: center;
 }
 
-.frontBanner{
+.frontBanner {
     background: rgba(94, 0, 19, 0.5) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(112, 112, 112, 1);
     opacity: 1;
@@ -157,7 +157,7 @@ footer img {
     align-items: center;
 }
 
-.textoBanner{
+.textoBanner {
 
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
@@ -166,10 +166,10 @@ footer img {
     width: 554px;
     height: 96px;
     text-align: center;
-       
+
 }
 
-#desapego{
+#desapego {
     height: 261px;
     width: 100%;
 }
@@ -218,7 +218,7 @@ footer img {
     color: #ffffffaf;
 }
 
-#dropnow-um{
+#dropnow-um {
     font-size: 29px;
     width: 155px;
     height: 39px;
@@ -227,7 +227,7 @@ footer img {
 }
 
 
-#dropnow-dois{
+#dropnow-dois {
     font-size: 29px;
     width: 155px;
     height: 39px;
@@ -235,7 +235,7 @@ footer img {
     filter: drop-shadow(2px 11px 8px black);
 }
 
-#dropnow-tres{
+#dropnow-tres {
     font-size: 29px;
     width: 155px;
     height: 39px;
@@ -297,7 +297,7 @@ footer img {
     border-top-color: black;
 }
 
-#desapegar{
+#desapegar {
     /* margin-top: 70px; */
     width: 100%;
     height: 201px;
@@ -446,7 +446,7 @@ footer img {
 }
 
 
-.botaoAzul{
+.botaoAzul {
     background: rgba(7, 237, 243, 1) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(195, 221, 255, 1);
     opacity: 1;
@@ -454,18 +454,19 @@ footer img {
     color: #FFF;
     font-style: italic;
 }
-     
+
 
 
 
 
 /* responsivo Encontre */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
     #encontreBanner {
         background-image: none;
         background-color: #1E4256;
         height: 2%;
     }
+
     .encontreTextoBanner {
         color: #1E4256;
         font-size: 0%;
@@ -473,21 +474,24 @@ footer img {
         width: 0%;
         height: 0%;
     }
-    .encontreTitulo{
+
+    .encontreTitulo {
         width: 65%;
         font-size: 1.5rem;
     }
-    .encontreMobile{
+
+    .encontreMobile {
         display: none;
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     #encontreBanner {
         background-image: none;
         background-color: #1E4256;
         height: 2%;
     }
+
     .encontreTextoBanner {
         color: #1E4256;
         font-size: 0%;
@@ -495,17 +499,19 @@ footer img {
         width: 0%;
         height: 0%;
     }
-    .encontreTitulo{
+
+    .encontreTitulo {
         width: 80%;
         font-size: 1.5rem;
     }
-    .encontreMobile{
+
+    .encontreMobile {
         display: none;
     }
 }
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
     #encontreBanner {
         background-image: url("../imagens/img-encontre/surfboard.jpg") center center;
         height: 20%;
@@ -513,6 +519,7 @@ footer img {
         align-items: center;
         display: flex; */
     }
+
     .encontreTextoBanner {
         color: #ffffffe1;
         font-family: Stencil Std, fantasy;
@@ -522,11 +529,13 @@ footer img {
         text-align: center;
         display: flex;
     }
-    .encontreTitulo{
+
+    .encontreTitulo {
         width: 90%;
         font-size: 2rem;
     }
-    .encontreMobile{
+
+    .encontreMobile {
         display: none;
     }
 }
@@ -534,17 +543,24 @@ footer img {
 
 
 /* responsivo Blog e Noticias */
-@media only screen and (max-width: 480px){
-    .blogMobile{
+@media only screen and (max-width: 480px) {
+    #blogBanner {
+    /* background-image: url("../imagens/img-blog/surfers.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    height: 0px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: flex; */
+    }
+
+    .blogMobile {
         display: none;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .blogMobile{
+@media only screen and (max-width: 768px) {
+    .blogMobile {
         display: none;
     }
 }
-
-
-
