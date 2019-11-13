@@ -5,13 +5,13 @@
 $nomeSistema ="Portal do Surf";
 $usuario = ["nome"=>""];
 $produtos= [
-      ["nome"=>"Acessório para prancha","preco"=>"R$"." ". 90.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/acessorios3.jpg"],
-      ["nome"=>"kit acessório para camera","preco"=>"R$"." ". 150.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/acessorios1.jpg"],
-      ["nome"=>"Capa para prancha","preco"=>"R$"." ". 100.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/acessorios2.jpg"],
-      ["nome"=>"Prancha Power Light","preco"=>"R$"." ". 700.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/prancha_6.jpg"],
-      ["nome"=>"Prancha Mormaii","preco"=>"R$"." ". 650.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/prancha_4.jpeg"],
-      ["nome"=>"Óculos Polarizado","preco"=>"R$"." ". 350.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/oculos_4.jpg"], 
-      ["nome"=>"Wetsuit Long John","preco"=>"R$"." ". 990.00,"garantia"=>"2 meses", "img"=>"imagens/img-desapego/roupas2.jpg"], 
+      ["nome"=>"Acessório para prancha","preco"=>"R$"." ". 90.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios3.jpg"],
+      ["nome"=>"kit acessório para camera","preco"=>"R$"." ". 150.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios1.jpg"],
+      ["nome"=>"Capa para prancha","preco"=>"R$"." ". 100.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios2.jpg"],
+      ["nome"=>"Prancha Power Light","preco"=>"R$"." ". 700.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/prancha_6.jpg"],
+      ["nome"=>"Prancha Mormaii","preco"=>"R$"." ". 650.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/prancha_4.jpeg"],
+      ["nome"=>"Óculos Polarizado","preco"=>"R$"." ". 350.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/oculos_4.jpg"], 
+      ["nome"=>"Wetsuit Long John","preco"=>"R$"." ". 990.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/roupas2.jpg"], 
 ];
 ?>
 
@@ -33,11 +33,9 @@ $produtos= [
 <body>
     <?php include_once("padrao/header.php") ?>
 
-    <p id="inicio"></p>
-    <a href="#ultimo"> Ir para o final da página</a>
-
+    
     <main class="container mt-5 mb-5">
-        <h1 class="text-center">Seu histórico de ofertas</h1>
+        <h1 class="text-center" id="historicoOfertasTopo" >Seu histórico de ofertas</h1>
 
             <!-- codigo original do Caio com todas as interações PHPs prontas -->        
         <section class="container mt-4">
@@ -49,10 +47,11 @@ $produtos= [
                         <h2><?php echo $produto["nome"];?> </h2>
                         <img src="<?php echo $produto['img']; ?>" class="card-img-top" alt="imagens dos produtos">
                         <p class="card-text font-weight-bold"><?php echo $produto["preco"];?></p>
+                        <p class="card-text font-weight-bold"><?php echo $produto["garantia"];?></p>
                         <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
-                            class="btn btn-primary">Editar</a>
+                            class="btn encontreBotao">Editar</a>
                         <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
-                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-primary">Desativar</a>
+                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn encontreBotao">Desativar</a>
                     </div>
                 </div>
                 <?php } ?>
@@ -65,8 +64,10 @@ $produtos= [
 
     </main>
 
-    <p id="ultimo"></p>
-    <a href="#inicio"> Inicio da página </a>
+    <div class="container mt-3">
+        <a href='#historicoOfertasTopo' class="btn encontreBotao">Topo</a>
+        <a href="./dadosUsuario.php" class="btn encontreBotao">Voltar</a>
+    </div>
 
     <?php include_once("padrao/footer.php") ?>
 </body>

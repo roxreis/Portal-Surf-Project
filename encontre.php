@@ -68,7 +68,7 @@
 
         <section class="container">
             <!-- titulo da pagina -->
-            <h1 class="mt-5 text-center encontreTitulo">Encontre tudo o que você precisa para aproveitar a água:</h1>
+            <h1 id="encontreTopo" class="mt-5 text-center encontreTitulo">Encontre tudo o que você precisa para aproveitar a água:</h1>
 
             <!-- campos de busca -->
             <div class="row">
@@ -108,6 +108,11 @@
                 <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
                 <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
             </div>
+        </div>
+
+        <!-- botao topo -->
+        <div class="container text-center mt-5 mb-5">
+        <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
         </div>
 
     </main>

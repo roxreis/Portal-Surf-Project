@@ -54,7 +54,7 @@
                     </div>
 
 
-                    <a href="desapegoOfertasUsuario.php" class="btn btn-primary">Cadastrar Oferta</a>
+                    <a href="desapegoOfertasUsuario.php" class="btn encontreBotao">Cadastrar Oferta</a>
                     <a href="desapego.php" class="btn btn-danger">Cancelar</a>
             
                 </form>

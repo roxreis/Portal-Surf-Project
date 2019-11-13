@@ -20,12 +20,12 @@
         <div class="caronaBanner">
             <h1 class="mx-auto caronaTextoBanner">Encontre uma carona</h1>
         </div>
-        <div class="text-center mt-5">
-            <h2>VOCÊ QUER:</h2>
-        </div>
 
+        <section class="container shadow-lg p-5 cardBlog mt-5">
+            <div class="text-center">
+                <h2>VOCÊ QUER:</h2>
+            </div>
 
-        <div class="container">
             <form action="/action_page.php">
 
                 <!-- Opcao da carona -->
@@ -118,7 +118,7 @@
                     <button type="submit" class="btn encontreBotao">Dropar</button>
                 </div>
             </form>
-        </div>
+        </section>
 
         <!-- parte de hisorico de caronas -->
         <div class="caronaBanner mt-5">
@@ -126,31 +126,35 @@
         </div>
 
         <section class="container">
-        <div class="card-deck justify-content-center">
-            <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
-                <div class="card-body">
-                    <p>Data: 24/10/2019</p>
-                    <p>Partida: Rua Pedra Bela, 37, São Paulo, SP</p>
-                    <p>Destino: Rua das Flores, 5237, Ubatuba, SP</p>
-                    <p>Carona: Vinicius Oliveira</p>
-                    <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda
-                        me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Perfil</button><a>
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Avaliar</button><a>
+            <div class="card-deck justify-content-center">
+                <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
+                    <div class="card-body">
+                        <p>Data: 24/10/2019</p>
+                        <p>Partida: Rua Pedra Bela, 37, São Paulo, SP</p>
+                        <p>Destino: Rua das Flores, 5237, Ubatuba, SP</p>
+                        <p>Carona: Vinicius Oliveira</p>
+                        <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e
+                            ainda
+                            me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
+                        <a href="./caronasPerfil.php"><button type="button"
+                                class="btn encontreBotao">Perfil</button></a>
+                        <a href="./caronaAvaliar.php"><button type="button" class="btn encontreBotao"
+                                disabled>Avaliar</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
-                <div class="card-body">
-                    <p>Data: 28/10/2019</p>
-                    <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
-                    <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
-                    <p>Carona: Vinicius Oliveira</p>
-                    <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando
-                        antes na escola.</p>
-                <div class="d-flex align-itens-center justify-content-end">        
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Perfil</button><a>
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Avaliar</button><a>
-                </div>
+                <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
+                    <div class="card-body">
+                        <p>Data: 28/10/2019</p>
+                        <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
+                        <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
+                        <p>Carona: Vinicius Oliveira</p>
+                        <!-- <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</p> -->
+                        <p>Depoimento: </p>
+                        <a href="./caronasPerfil.php"><button type="button"
+                                class="btn encontreBotao">Perfil</button></a>
+                        <a href="./caronaAvaliar.php"><button type="button"
+                                class="btn encontreBotao">Avaliar</button></a>
+                    </div>
                 </div>
             </div>
             </div>

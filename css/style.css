@@ -177,7 +177,7 @@ footer img {
     width: 554px;
     height: 119px;
     text-align: center;
-       
+
 }
 
 .imagem-desapego{
@@ -366,7 +366,7 @@ footer img {
 }
 
 
-.botaoAzul{
+.botaoAzul {
     background: rgba(7, 237, 243, 1) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(195, 221, 255, 1);
     opacity: 1;
@@ -374,7 +374,7 @@ footer img {
     color: #FFF;
     font-style: italic;
 }
-     
+
 
 @media (max-width: 1200px){
     #encontreBanner {
@@ -438,6 +438,7 @@ footer img {
         background-color: #1E4256;
         height: 2%;
     }
+
     .encontreTextoBanner {
         color: #1E4256;
         font-size: 0%;
@@ -445,11 +446,13 @@ footer img {
         width: 0%;
         height: 0%;
     }
-    .encontreTitulo{
-        width: 80%;
+
+    .encontreTitulo {
+        width: 65%;
         font-size: 1.5rem;
     }
-    .encontreMobile{
+
+    .encontreMobile {
         display: none;
     }
     .blogMobile{
@@ -501,6 +504,7 @@ footer img {
         background-color: #1E4256;
         height: 2%;
     }
+
     .encontreTextoBanner {
         color: #1E4256;
         font-size: 0%;
@@ -508,11 +512,13 @@ footer img {
         width: 0%;
         height: 0%;
     }
-    .encontreTitulo{
-        width: 65%;
+
+    .encontreTitulo {
+        width: 80%;
         font-size: 1.5rem;
     }
-    .encontreMobile{
+
+    .encontreMobile {
         display: none;
     }
     .blogMobile{
@@ -598,7 +604,5 @@ footer img {
 
 
  
-
-
 
 
