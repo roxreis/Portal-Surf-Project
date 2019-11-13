@@ -20,14 +20,15 @@
     </div>
 
     <!-- Titulo da pagina -->
-    <div class="container mt-5 mb-5">
-        <h1 class="mb-5 text-center">Saiba tudo sobre o mundo do surf!</h1>
+    <section class="container mt-5 mb-5">
+        <h1 class="mb-5 text-center" id="noticiasTopo">Saiba tudo sobre o mundo do surf!</h1>
 
         <!-- Cards de postagens -->
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
                 <div class="col-4 blogMobile">
-                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/medina.jpg" alt="Medina">
+                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/medina.jpg"
+                        alt="Medina">
                 </div>
                 <div class="col-8">
                     <h4 class="card-title">Medina cortou a unha</h4>
@@ -43,7 +44,8 @@
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
                 <div class="col-4 blogMobile">
-                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/mineirinho.jpeg" alt="Mineirinho">
+                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/mineirinho.jpeg"
+                        alt="Mineirinho">
                 </div>
                 <div class="col-8">
                     <h4 class="card-title">Mineirinho ficou com inveja</h4>
@@ -59,7 +61,8 @@
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
                 <div class="col-4 blogMobile">
-                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/amazonas_peniche.jpg" alt="Peniche Portugal">
+                    <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/amazonas_peniche.jpg"
+                        alt="Peniche Portugal">
                 </div>
                 <div class="col-8">
                     <h4 class="card-title">Festival de super tubos em Peniche/Portugal com galera do Amazonas</h4>
@@ -72,10 +75,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- pagination -->
-    <div class="d-flex justify-content-center mb-5">
+    <div class="d-flex justify-content-center mb-3">
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
@@ -85,6 +88,11 @@
                 <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
             </ul>
         </nav>
+    </div>
+
+    <!-- botao topo -->
+    <div class="container text-center mb-5">
+        <a href="#noticiasTopo" class="btn encontreBotao">Topo</a>
     </div>
 
     <?php include_once("padrao/footer.php") ?>

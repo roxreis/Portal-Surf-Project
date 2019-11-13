@@ -31,7 +31,7 @@
                 </div>
 
             <!-- dados pessoais -->
-            <section class="container mt-5 shadow-lg p-3">
+            <section class="container mt-5 shadow-lg p-3 cardBlog">
                 <div class="text-center" id="dadosPessoais">
                     <h4>SEUS DADOS PESSOAIS</h4>
                     <br>
@@ -97,7 +97,7 @@
 
 
             <!-- Dados carona -->
-            <section class="container mt-5 shadow-lg p-3">
+            <section class="container mt-5 shadow-lg p-3 cardBlog">
                 <div class="text-center" id="dadosCarona">
                     <h4>SEUS DADOS DE CARONA</h4>
                     <br>
@@ -157,7 +157,7 @@
         </form>
 
         <!-- Upload de fotos -->
-        <section class="container mt-5 shadow-lg p-3">
+        <section class="container mt-5 shadow-lg p-3 cardBlog">
             <div class="text-center" id="uploadFotos">
                 <h4>UPLOAD DE FOTOS</h4>
                 <br>
