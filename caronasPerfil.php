@@ -18,7 +18,7 @@
     <main class="mt-5 mb-5">
 
         <!-- perfil do usuario -->
-        <section class="container">
+        <section class="container" id="caronaPerfilTopo">
             <h1 class="mt-3 mb-5 text-center">PERFIL DO VINICIUS OLIVEIRA</h1>
             <div class="card mb-3 border border-dark" style="max-width: 540px;">
                 <div class="row no-gutters">
@@ -42,31 +42,40 @@
             <h3>DEPOIMENTOS</h3>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Sergio Reis, 28/10/2019:</label>
-                <textarea disabled class="form-control border border-dark" rows="2" id="comment">De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</textarea>
-                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
+                <textarea disabled class="form-control border border-dark" rows="2"
+                    id="comment">De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</textarea>
+                <!-- <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a> -->
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Sergio Reis, 24/10/2019:</label>
-                <textarea disabled class="form-control border border-dark" rows="2" id="comment">O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</textarea>
-                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
+                <textarea disabled class="form-control border border-dark" rows="2"
+                    id="comment">O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda me ajudou parando na casa da minha namorada antes de pegar estrada.</textarea>
+                <!-- <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a> -->
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Fernando Sabino, 11/10/2019:</label>
-                <textarea disabled class="form-control border border-dark" rows="2" id="comment">Motorista tranquilo, papo bom, e na hora de rachar o combustivel ele ainda tinha maquininha para passar o cartão! É o cara!</textarea>
-                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
+                <textarea disabled class="form-control border border-dark" rows="2"
+                    id="comment">Motorista tranquilo, papo bom, e na hora de rachar o combustivel ele ainda tinha maquininha para passar o cartão! É o cara!</textarea>
+                <!-- <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a> -->
             </div>
             <div class="form-group">
                 <label for="comment" class="font-weight-bold">Gisele Bundchen, 06/09/2019:</label>
-                <textarea disabled class="form-control border border-dark" rows="2" id="comment">A melhor viagem da minha vida!</textarea>
-                <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a>
+                <textarea disabled class="form-control border border-dark" rows="2"
+                    id="comment">A melhor viagem da minha vida!</textarea>
+                <!-- <a href="#"><button class = 'btn btn-success buttonCaronasAvaliar'>Dar uma olhada</button></a> -->
             </div>
-            
-            <!-- botao voltar -->
-            <a href = 'caronas.php'><button class = 'btn btn-success buttonCaronasVoltar'>Voltar</button></a>
+
+            <div class="container text-center mt-5 mb-5">
+                <!-- botao voltar -->
+                <a href='caronas.php'><button class='btn encontreBotao'>Voltar</button></a>
+                <!-- botao topo -->
+                <a href="#caronaPerfilTopo" class="btn encontreBotao">Topo</a>
+            </div>
+
         </section>
-           
+
     </main>
-    <div class="d-flex justify-content-center mt-5 mb-5">
+    <div class="d-flex justify-content-center mt-3 mb-5">
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
