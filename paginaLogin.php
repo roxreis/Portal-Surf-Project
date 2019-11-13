@@ -29,11 +29,11 @@
                 </label>
             </div>
             <!-- Link para a Home até fazermos o back-end de login com retorno para a página solicitada -->
-            <a href="index.php" class="btn btn-primary mb-2">Dropar</a>
+            <a href="index.php" class="btn encontreBotao mb-2">Dropar</a>
         </form>
     </div>
     <div class="d-flex justify-content-center mt-5 mb-5">
-        <a href="cadastroUsuario.php" class="btn btn-primary mb-2">Primeiro acesso</a>
+        <a href="cadastroUsuario.php" class="btn encontreBotao mb-2">Primeiro acesso</a>
     </div>
     
 
