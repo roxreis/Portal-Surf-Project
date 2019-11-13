@@ -26,7 +26,7 @@
         <!-- Cards de postagens -->
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
-                <div class="col-4">
+                <div class="col-4 blogMobile">
                     <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/medina.jpg" alt="Medina">
                 </div>
                 <div class="col-8">
@@ -42,7 +42,7 @@
         <br>
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
-                <div class="col-4">
+                <div class="col-4 blogMobile">
                     <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/mineirinho.jpeg" alt="Mineirinho">
                 </div>
                 <div class="col-8">
@@ -58,7 +58,7 @@
         <br>
         <div class="cardBlogGeral">
             <div class="card-body shadow-lg cardBlog row no-gutters">
-                <div class="col-4">
+                <div class="col-4 blogMobile">
                     <img style="max-width: 90%" class="card-img-left" src="./imagens/img-noticias/amazonas_peniche.jpg" alt="Peniche Portugal">
                 </div>
                 <div class="col-8">

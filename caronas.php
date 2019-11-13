@@ -135,8 +135,8 @@
                     <p>Carona: Vinicius Oliveira</p>
                     <p>Depoimento: O motorista chegou na hora, foi super simpático, me ajudou com o equipamento e ainda
                         me ajudou parando na casa da minha namorada antes de pegar estrada.</p>
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Perfil</button><a>
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Avaliar</button><a>
+                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Perfil</button></a>
+                    <a href="./caronaAvaliar.php"><button type="button" class="btn encontreBotao" disabled>Avaliar</button></a>
                 </div>
             </div>
             <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
@@ -145,11 +145,10 @@
                     <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
                     <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
                     <p>Carona: Vinicius Oliveira</p>
-                    <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando
-                        antes na escola.</p>
-                <div class="d-flex align-itens-center justify-content-end">        
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Perfil</button><a>
-                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Avaliar</button><a>
+                    <!-- <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</p> -->
+                    <p>Depoimento: </p>
+                    <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Perfil</button></a>
+                    <a href="./caronaAvaliar.php"><button type="button" class="btn encontreBotao">Avaliar</button></a>
                 </div>
                 </div>
             </div>

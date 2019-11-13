@@ -15,7 +15,7 @@
     <?php include_once("padrao/header.php") ?>
 
     <!-- Banner -->
-    <div id="blogBanner" class="blogBannerMobile">
+    <div id="blogBanner">
         <h1 class="encontreTextoBanner">Blog</h1>
     </div>
 
@@ -42,7 +42,7 @@
             <br>
             <div class="cardBlogGeral">
                 <div class="card-body shadow-lg cardBlog row no-gutters">
-                    <div class="col-4">
+                    <div class="col-4 blogMobile">
                         <img style="max-width: 90%" class="card-img-left" src="./imagens/img-blog/protecaoSurf.jpg" alt="Equipamentos de segurança">
                     </div>
                     <div class="col-8">
@@ -59,7 +59,7 @@
                 <br>
                 <div class="cardBlogGeral">
                     <div class="card-body shadow-lg cardBlog row no-gutters">
-                        <div class="col-4">
+                        <div class="col-4 blogMobile">
                             <img style="max-width: 90%" class="card-img-left" src="./imagens/img-encontre/surfboard.jpg" alt="Shaper de Itanhaem">
                         </div>
                         <div class="col-8">
