@@ -61,7 +61,9 @@
 
         <!-- banner -->
         <div id="encontreBanner">
-        <h1 class="mx-auto encontreTextoBanner">Encontre perto de você</h1>
+            <div class = "frontBanner-azul">
+                <h1 class="mx-auto encontreTextoBanner">Encontre perto de você</h1>
+            </div>
         </div>
 
         <section class="container">

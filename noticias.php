@@ -16,7 +16,9 @@
 
     <!-- Banner -->
     <div id="noticiasBanner">
-        <h1 class="encontreTextoBanner">Notícias</h1>
+        <div class = "frontBanner-azul">
+            <h1 class="encontreTextoBanner">Notícias</h1>
+        </div>   
     </div>
 
     <!-- Titulo da pagina -->

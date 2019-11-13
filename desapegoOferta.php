@@ -16,7 +16,7 @@
 <body>
     <?php include_once("padrao/header.php") ?>
     <main class="mt-5 mb-5">
-        <section class="container d-flex flex-wrap justify-content-between p-3" style="height:536px;">
+        <section class="container d-flex flex-wrap justify-content-between p-3 desapego-oferta">
 
         
          <div class="card  img-ofertaDesapego border border-light" style="max-width: 540px;">

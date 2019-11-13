@@ -13,12 +13,12 @@
 
 <body>
     <?php include_once("padrao/header.php") ?>
-        <Main class="container" style="height:650px;">
-            <section class="d-flex flex-row p-3 h-100 mt-4" >
-                <div class="row col-6 w-50 h-50 ofertaIndivid mr-2">
-                    <img src="imagens/img-desapego/prancha_6.jpg" alt="imagem de prancha" class="img-fluid border border-dark">
+        <Main class="container" style="height:1000px;">
+            <section class="d-flex p-3 mt-4 ofertaIndivid" >
+                <div class="row col-xl-6 col-lg-12 col-sm-12 w-50 h-50  mr-2">
+                    <img src="imagens/img-desapego/prancha_6.jpg" alt="imagem de prancha" class="img-fluid border border-dark img-oferta-individual">
                 </div>
-                <div class="row col-6 h-25">
+                <div class="row col-xl-6 col-lg-12 col-sm-12 h-25">
                     <h1 class="font-italic font-weight-bold">Prancha Surf Power Light</h1>
                     <p class="text-muted p-3" style="font-size:12px;" >MARCA: POWER LIGHT<br>MODELO: SOFT 6.6<br>REF: 700<br>GARANTIA: 07 DIAS APÓS O RECEBIMENTO DO PRODUTO<br>DISPONIBILIDADE: ENTREGO DEPENDENDO DO LOCAL<br>ITENS INCLUSOS: 1 PRANCHA DE SURF SOFT 6.6, 1 PARAFINA</p>
                     <div class="card border border-light text-center" style="width: 11rem; height: 10rem;">

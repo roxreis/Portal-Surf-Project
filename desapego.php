@@ -16,60 +16,69 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
-    <div id="despegoBanner">
+    <div class="despegoBanner">
         
-        <div class = "frontBanner">
-        <h1 class="textoBanner">Desapego</h1>
+        <div class = "frontBanner-vermelho">
+             <h1 class="textoBanner">Desapego</h1>
         </div>
     </div>
     <main class="container mt-5 mb-5">
 
         <section id="desapego">
-            <div class="d-flex flex-row " id="imagens-desapego">
-
-                <div class=" col-lg-4 col-sm-4 img-um">
-
-                    <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                        <a href="./desapegoOferta.php" style="text-decoration: none;">
-                            <h1 class="texto-pranchas">PRANCHAS</h1>
-                        </a>
-                        <h2 id="dropnow-um">Drop Now</h2>
+            <div class="card-group cards-desapego ">
+                 
+                    <div class="card border-light col-lg-6 col-md-12 col-sm-12">
+                             <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="card-img-top imagem-desapego" alt="imagem de prancha">
+                                <a href="./desapegoOferta.php" style="text-decoration: none;">
+                                   <div class="card-body texto-card-desapego">
+                                        <h2 class="card-title">PRANCHAS</h2>
+                                        <h3 id="card-subtitle text-muted ">Drop Now</h3>
+                                    </div>
+                                </a> 
                     </div>
+                
+
+                <div class="card border-light col-lg-6 col-md-12 col-sm-12">
+                
+                  <img src="imagens/img-desapego/roupas7.png" class="card-img-top imagem-desapego" alt="imagem de prancha">
+                        <div class="card-body texto-card-desapego">
+                            <h2 class="card-title ">VESTUÁRIO</h2>
+                                <h3 id="card-subtitle text-muted ">Drop Now</h3>
+                        </div>
+                                            
+                
                 </div>
 
-                <div class="col-lg-4 col-sm-4 img-dois">
 
-                    <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                        <a href=”endereço” style="text-decoration: none;">
-                            <h1 class="texto-vestuarios">VESTUÁRIO</h1>
-                        </a>
-                        <h2 id="dropnow-dois">Drop Now</h2>
-                    </div>
-
+                <div class="card border-light col-lg-12 col-md-12 col-sm-12">
+                
+                    <img src="imagens/img-desapego/acessorios5.jpg" class="card-img-top imagem-desapego" alt="imagem de prancha">
+                        <div class="card-body texto-card-desapego">
+                            <h2 class="card-title">ACESSÓRIOS</h2>
+                                <h3 id="card-subtitle text-muted ">Drop Now</h3>
+                        </div>
+                    
+                                                
                 </div>
 
-                <div class="col-lg-4 col-sm-4 img-tres">
-
-                    <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                        <a href=”endereço” style="text-decoration: none;">
-                            <h1 class="texto-acessorios">ACESSÓRIOS</h1>
-                        </a>
-                        <h2 id="dropnow-tres">Drop Now</h2>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </section>
         <section id="desapegar">
-            <div class="row col-6 d-flex" id="imagem-desapegar"> </div>
-            <div class="row col-6 d-flex h-25">
-                <h2 class="font-italic" >QUER DESAPEGAR TAMBÉM? =)</h2>
-                <p>É fácil! se você ja for cadastrado no nosso site, clique aqui e ja saia desapegando</p>
-                <div>
-                    <a href="./desapegoCadastroOferta.php"><button type="button" class="botaoAzul">DESAPEGAR</button></a> 
+   
+            <div class="card border-light row col-xl-10 justify-content-center">
+                <div class="row no-gutters">
+                    <div class="col-xl-5 col-lg-6 col-md-8 ml-3 mr-3  imagem-desapegar">
+                        <img src="imagens/img-desapego/desapegar.jpg" class="card-img" alt="imagem de uma mulher segurando cartaz de vende">
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">QUER DESAPEGAR TAMBÉM? =)</h2>
+                            <p class="card-text">É fácil! se você ja for cadastrado no nosso site, clique aqui e ja saia desapegando</p>
+                            <a href="./desapegoCadastroOferta.php"><button type="button" class="encontreBotao">Desapegar</button></a>                 
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-
 
         </section>
 
