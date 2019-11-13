@@ -17,8 +17,10 @@
     <?php include_once("padrao/header.php") ?>
     <main class="mb-5">
 
+    <div>
         <div class="caronaBanner">
             <h1 class="mx-auto caronaTextoBanner">Encontre uma carona</h1>
+        </div>
         </div>
 
         <section class="container shadow-lg p-5 cardBlog mt-5">
@@ -125,7 +127,7 @@
             <h1 class="mx-auto caronaTextoBanner">Suas caronas</h1>
         </div>
 
-        <section class="container">
+        <section class="container historico-caronas">
             <div class="card-deck justify-content-center">
                 <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
                     <div class="card-body">

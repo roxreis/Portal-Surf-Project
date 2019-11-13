@@ -272,7 +272,7 @@ footer img {
     font-size: 100px;
     filter: drop-shadow(31px 22px 12px black);
     width: 600px;
-    height: 218px;
+    height: 228px;
     text-align: center;
 }
 
@@ -389,9 +389,10 @@ footer img {
     .encontreTextoBanner {
         color: #ffffffe1;
         font-family: Stencil Std, fantasy;
-        font-size: 3rem;
+        font-size: 5rem;
         filter: drop-shadow(31px 22px 12px black);
-        width: 300px;
+        width: 321px;
+        height: 298px;
         text-align: center;
         display: flex;
     }
@@ -467,6 +468,10 @@ footer img {
             display: none;
         }
 
+        .caronaBanner{
+            display: none;
+        }
+
 
         .blogMobile {
             display: none;
@@ -506,6 +511,9 @@ footer img {
 
         .desapego-oferta {
             height: 110vh;
+        }
+        .historico-caronas{
+            display: none;
         }
 
     }
@@ -555,6 +563,9 @@ footer img {
         .img-ofertaDesapego {
             height: 452px;
         }
+        .historico-caronas{
+            display: none;
+        }
     }
 
 
@@ -580,17 +591,20 @@ footer img {
         .img-ofertaDesapego {
             height: 452px;
         }
+        .historico-caronas{
+            display: none;
+        }
     }
 
 
     /* responsivo Desapego */
     @media (max-width: 320px) {
         #desapego {
-            height: 164vh;
+            height: 182vh;
         }
 
         #desapegar {
-            height: 56vh;
+            height: 76vh;
         }
 
         .cards-desapego {
@@ -600,5 +614,8 @@ footer img {
 
         .desapego-oferta {
             height: 355vh;
+        }
+        .historico-caronas{
+            display: none;
         }
     }

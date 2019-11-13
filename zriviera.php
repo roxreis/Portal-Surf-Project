@@ -8,8 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <?php include_once("padrao/header.php") ?>   
-    <div class="container p-0" id="rivieraTopo">
+    
+<?php include_once("padrao/header.php") ?>   
+
+<div class="container p-0" id="rivieraTopo">
             <h1 class="col-xl-7 col-lg-6 col-md-12 col-sm-12">RIVIERA</h1>
             <nav class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav justify-content-between">
