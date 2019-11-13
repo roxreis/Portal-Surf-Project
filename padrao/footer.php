@@ -5,17 +5,17 @@
     <div class="container h-100">
         <div class="row h-100">
             <section class="col-3 h-100">
-                <form>
+                <form  id="footerContatoMobile">
                     <div class="form-group mt-5">
                         <p class="font-weight-bold">Entre em contato</p>
                         <input type="text" class="form-control" placeholder="Nome">
                         <input type="email" class="form-control" placeholder="E-mail">
                         <input type="text" class="form-control" placeholder="Mensagem">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-5">Dropar</button>
+                    <button type="submit" class="btn encontreBotao mb-5">Dropar</button>
                 </form>
             </section>
-            <section class="col-6 h-100" id="footerlogo">
+            <section class="col-6 h-100 footerlogo">
                 <img src="imagens/Logo_degrade.png" alt="logo portal do surf">
             </section>
             <section class="col-3 h-100">
@@ -24,7 +24,7 @@
                         <p class="font-weight-bold">Cadastre-se e receba nossas novidades:</p>
                         <input type="email" class="form-control" placeholder="E-mail">
                     </div>
-                    <button type="submit" class="btn btn-primary">Cadastre-se</button>
+                    <button type="submit" class="btn encontreBotao">Cadastre-se</button>
                 </form>
             </section>
         </div>

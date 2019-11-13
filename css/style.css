@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-    
+
 }
- 
+
 
 /* css para header */
 header img {
@@ -135,7 +135,7 @@ footer img {
 
 /* css para section desapego */
 
-.despegoBanner{
+.despegoBanner {
     background-image: url("../imagens/img-desapego/banner4.png");
     background-position-y: 1px;
     width: 100%;
@@ -147,7 +147,7 @@ footer img {
     align-items: center;
 }
 
-.frontBanner-vermelho{
+.frontBanner-vermelho {
     background: rgba(94, 0, 19, 0.5) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(112, 112, 112, 1);
     opacity: 1;
@@ -158,7 +158,7 @@ footer img {
     align-items: center;
 }
 
-.frontBanner-azul{
+.frontBanner-azul {
     background: transparent linear-gradient(180deg, #1E4256D4 0%, #032C808C 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     width: 100%;
@@ -168,7 +168,7 @@ footer img {
     align-items: center;
 }
 
-.textoBanner{
+.textoBanner {
 
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
@@ -180,26 +180,26 @@ footer img {
 
 }
 
-.imagem-desapego{
+.imagem-desapego {
     width: 25vw;
     height: 40vh;
     border: 4px solid #1f4ea5;
     border-radius: 30px;
 }
 
-#desapego{
+#desapego {
     height: 78vh;
     display: flex;
 }
 
-#desapegar{
+#desapegar {
     height: 33vh;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.texto-card-desapego{
+.texto-card-desapego {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -208,18 +208,18 @@ footer img {
 
 
 
-.img-oferta-individual{
+.img-oferta-individual {
     width: 50vw;
 }
 
-.link-desapego{
+.link-desapego {
     text-decoration: none;
 }
 
-.imagem-desapegar{
+.imagem-desapegar {
     border: 4px solid #1f4ea5;
     border-radius: 30px;
-    
+
 }
 
 
@@ -374,7 +374,6 @@ footer img {
     height: 400px;
 }
 
-
 .botaoAzul {
     background: rgba(7, 237, 243, 1) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(195, 221, 255, 1);
@@ -385,7 +384,7 @@ footer img {
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     #encontreBanner {
         background-image: url("../imagens/img-encontre/surfboard.jpg") center center;
         height: 20%;
@@ -402,216 +401,214 @@ footer img {
         text-align: center;
         display: flex;
     }
-    .encontreTitulo{
+    .encontreTitulo {
         width: 90%;
         font-size: 2rem;
     }
-    .encontreMobile{
+    .encontreMobile {
         display: none;
     }
-    .cards-desapego{
+
+    .cards-desapego {
         flex-wrap: wrap;
         display: flex;
     }
-
-    #desapego{
-        height: 45vh; 
+    #desapego {
+        height: 45vh;
     }
-
-    .imagem-desapego{
+    .imagem-desapego {
         height: 25vh;
         width: 100%;
-
     }
 
-    .desapego-oferta{
+    .desapego-oferta {
         height: 91vh;
     }
 
-    .ofertaIndivid{
-        flex-direction:wrap;
-
-}
-
-
-@media (max-width: 960px){
-   
-
-
-}    
-
-
-@media (max-width: 768px){
-    #encontreBanner {
-        background-image: none;
-        background-color: #1E4256;
-        height: 2%;
-    }
-
-    .encontreTextoBanner {
-        color: #1E4256;
-        font-size: 0%;
-        filter: none;
-        width: 0%;
-        height: 0%;
-    }
-
-    .encontreTitulo {
-        width: 65%;
-        font-size: 1.5rem;
-    }
-
-    .encontreMobile {
-        display: none;
-    }
-    .blogMobile{
-        display: none;
+    .ofertaIndivid {
+        flex-direction: wrap;
     }
 
 
-    .despegoBanner{
-        display: none;
+
+    @media (max-width: 768px) {
+        #headerBuscaMobile{
+            display: none;
+        }
+        /* .headerLogoMobile{
+            display: flex;
+            justify-items: center;
+        } */
+        .headerLoginMobile{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        #footerContatoMobile{
+            display: none;
+        }
+
+        .footerlogo{
+            display: none;
+        }
+
+        #encontreBanner {
+            background-image: none;
+            background-color: #1E4256;
+            height: 2%;
+        }
+        .encontreTextoBanner {
+            color: #1E4256;
+            font-size: 0%;
+            filter: none;
+            width: 0%;
+            height: 0%;
+        }
+        .encontreTitulo {
+            width: 65%;
+            font-size: 1.5rem;
+        }
+        .encontreMobile {
+            display: none;
+        }
+
+        .blogMobile {
+            display: none;
+        }
+
+        .despegoBanner {
+            display: none;
+        }
+        .cards-desapego {
+            flex-direction: column;
+            display: flex;
+        }
+        #desapego {
+            height: 120vh;
+        }
+        #desapegar {
+            height: 47vh;
+        }
+        .imagem-desapego {
+            width: 100%;
+        }
+        .texto-card-desapego h2 {
+            font-size: 2em;
+        }
+        .texto-card-desapego h3 {
+            font-size: 1.8em;
+        }
+
+        .desapego-oferta {
+            height: 110vh;
+        }
 
     }
-    .cards-desapego{
-        flex-direction: column;
-        display: flex;
+
+
+    @media (max-width: 480px) {
+        #encontreBanner {
+            background-image: none;
+            background-color: #1E4256;
+            height: 2%;
+        }
+
+        .encontreTextoBanner {
+            color: #1E4256;
+            font-size: 0%;
+            filter: none;
+            width: 0%;
+            height: 0%;
+        }
+
+        .encontreTitulo {
+            width: 80%;
+            font-size: 1.5rem;
+        }
+
+        .encontreMobile {
+            display: none;
+        }
+
+        .blogMobile {
+            display: none;
+        }
+
+        #desapego {
+            height: 146vh;
+        }
+
+        #desapegar {
+            height: 46vh;
+        }
+
+        .texto-card-desapego h2 {
+
+            font-size: 1.7em;
+        }
+
+        .texto-card-desapego h3 {
+
+            font-size: 1.5em;
+        }
+
+        .cards-desapego {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .desapego-oferta {
+            height: 337vh;
+        }
+
+        .img-ofertaDesapego {
+            height: 452px;
+        }
     }
 
-    #desapego{
-        height: 120vh;
+
+    /* responsivo Encontre */
+    @media (max-width: 375px) {
+        #desapego {
+            height: 144vh;
+        }
+
+        #desapegar {
+            height: 57vh;
+        }
+
+        .cards-desapego {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .desapego-oferta {
+            height: 318vh;
+        }
+
+        .img-ofertaDesapego {
+            height: 452px;
+        }
     }
 
-    #desapegar{
-        height: 47vh;
+
+    /* responsivo Desapego */
+    @media (max-width: 320px) {
+        #desapego {
+            height: 164vh;
+        }
+
+        #desapegar {
+            height: 56vh;
+        }
+
+        .cards-desapego {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .desapego-oferta {
+            height: 355vh;
+        }
     }
-
-    .imagem-desapego{
-        width: 100%;
-    }
-
-    .texto-card-desapego h2{
-         
-        font-size: 2em;
-    }
-
-    .texto-card-desapego h3{
-        
-        font-size: 1.8em;
-    }
-
-    .desapego-oferta{
-        height: 110vh;
-    }
-    
-}
-
-
-@media (max-width: 480px){
-    #encontreBanner {
-        background-image: none;
-        background-color: #1E4256;
-        height: 2%;
-    }
-
-    .encontreTextoBanner {
-        color: #1E4256;
-        font-size: 0%;
-        filter: none;
-        width: 0%;
-        height: 0%;
-    }
-
-    .encontreTitulo {
-        width: 80%;
-        font-size: 1.5rem;
-    }
-
-    .encontreMobile {
-        display: none;
-    }
-    .blogMobile{
-        display: none;
-    }
-    #desapego{
-        height: 146vh;
-    }
-    #desapegar{
-        height: 46vh;
-    }
-
-    .texto-card-desapego h2{
-         
-        font-size: 1.7em;
-    }
-
-    .texto-card-desapego h3{
-        
-        font-size: 1.5em;
-    }
-    .cards-desapego{
-        flex-direction: column;
-        display: flex;
-    }
-
-    .desapego-oferta{
-        height: 337vh;
-    }
-    .img-ofertaDesapego{
-        height: 452px;
-    }
-}
-
-
-/* responsivo Encontre */
-@media (max-width: 375px){
-    #desapego{
-        height: 144vh;
-    }
-    #desapegar{
-        height: 57vh;
-    }
-    .cards-desapego{
-        flex-direction: column;
-        display: flex;
-    }
-
-    .desapego-oferta{
-        height: 318vh;
-    }
-    .img-ofertaDesapego{
-        height: 452px;
-    }
-}  
-
-@media (max-width: 320px){
-    #desapego{
-        height: 164vh;
-    }
-    #desapegar{
-        height: 56vh;
-    }
-    .cards-desapego{
-        flex-direction: column;
-        display: flex;
-    }
-    .desapego-oferta{
-        height: 355vh;
-    }
-} 
-
-
-
-
-
-
-
-
-
-    
- 
-
-
- 
-
-

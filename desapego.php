@@ -74,7 +74,7 @@
                         <div class="card-body">
                             <h2 class="card-title">QUER DESAPEGAR TAMBÉM? =)</h2>
                             <p class="card-text">É fácil! se você ja for cadastrado no nosso site, clique aqui e ja saia desapegando</p>
-                            <a href="./desapegoCadastroOferta.php"><button type="button" class="encontreBotao">Desapegar</button></a>                 
+                            <a href="./desapegoCadastroOferta.php"><button type="button" class="btn encontreBotao">Desapegar</button></a>                 
                         </div>
                     </div>
                 </div>

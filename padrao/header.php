@@ -7,17 +7,18 @@
     <section class="navbar">
 
     <!-- logo -->
-        <a href="./index.php"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
+        <a href="./index.php" class="headerLogoMobile"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
         
         <!-- campo de busca -->
-        <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6">
+        <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6" id="headerBuscaMobile">
             <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
             <button class="btn encontreBotao" type="submit">Busca</button>
         </form>
+        
 
         <!-- campo de login -->
-        <nav>
-            <ul class="nav font-weight-bold">
+        <nav class="">
+            <ul class="nav font-weight-bold headerLoginMobile">
                 <?php if(isset($usuario) && $usuario != []) {?>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Olá <?php echo $usuario["nome"]; ?></a>
@@ -35,6 +36,7 @@
                 <?php } ?>
             </ul>
         </nav>
+        
 
         <!-- barra de navegacao -->
      <div class="container mt-n4 col-lg-6">

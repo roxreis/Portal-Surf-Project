@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include_once("padrao/header.php") ?>   
-    <div class="container p-0">
+    <div class="container p-0" id="rivieraTopo">
             <h1 class="col-xl-7 col-lg-6 col-md-12 col-sm-12">RIVIERA</h1>
             <nav class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav justify-content-between">
@@ -74,6 +74,12 @@
             <h4>Fotos da galera:</h4>
                 <img src="imagens/img-previsao/fotosgalera.png" class="img-fluid mx-1" alt="condicoes atuais">
         </div>
+        
+    <!-- botao topo -->
+    <div class="container text-center mt-5 mb-5">
+        <a href="#rivieraTopo" class="btn encontreBotao">Topo</a>
+    </div>
+
     <?php include_once("padrao/footer.php") ?>   
 </body>
 </html>
