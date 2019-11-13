@@ -27,8 +27,8 @@
         <section id="desapego">
             <div class="card-group cards-desapego ">
                  
-                    <div class="card border-light col-lg-6 col-md-12 col-sm-12">
-                             <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="card-img-top imagem-desapego" alt="imagem de prancha">
+                    <div class="card border-light col-lg-6 col-md-12 col-sm-12 ">
+                             <img src="imagens/img-desapego/PranchasnovaPagina.jpg" class="card-img-top shadow-lg imagem-desapego" alt="imagem de prancha">
                                 <a href="./desapegoOferta.php" style="text-decoration: none;">
                                    <div class="card-body texto-card-desapego">
                                         <h2 class="card-title">PRANCHAS</h2>
@@ -40,7 +40,7 @@
 
                 <div class="card border-light col-lg-6 col-md-12 col-sm-12">
                 
-                  <img src="imagens/img-desapego/roupas7.png" class="card-img-top imagem-desapego" alt="imagem de prancha">
+                  <img src="imagens/img-desapego/roupas7.png" class="card-img-top shadow-lg imagem-desapego" alt="imagem de prancha">
                         <div class="card-body texto-card-desapego">
                             <h2 class="card-title ">VESTUÁRIO</h2>
                                 <h3 id="card-subtitle text-muted ">Drop Now</h3>
@@ -52,7 +52,7 @@
 
                 <div class="card border-light col-lg-12 col-md-12 col-sm-12">
                 
-                    <img src="imagens/img-desapego/acessorios5.jpg" class="card-img-top imagem-desapego" alt="imagem de prancha">
+                    <img src="imagens/img-desapego/acessorios5.jpg" class="card-img-top shadow-lg imagem-desapego" alt="imagem de prancha">
                         <div class="card-body texto-card-desapego">
                             <h2 class="card-title">ACESSÓRIOS</h2>
                                 <h3 id="card-subtitle text-muted ">Drop Now</h3>
@@ -66,9 +66,9 @@
         <section id="desapegar">
    
             <div class="card border-light row col-xl-10 justify-content-center">
-                <div class="row no-gutters">
-                    <div class="col-xl-5 col-lg-6 col-md-8 ml-3 mr-3  imagem-desapegar">
-                        <img src="imagens/img-desapego/desapegar.jpg" class="card-img" alt="imagem de uma mulher segurando cartaz de vende">
+                <div class="row no-gutters ">
+                    <div class="col-xl-5 col-lg-6 col-md-8 ml-3 mr-3">
+                        <img src="imagens/img-desapego/desapegar.jpg" class="card-img shadow-lg " alt="imagem de uma mulher segurando cartaz de vende">
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-8">
                         <div class="card-body">
