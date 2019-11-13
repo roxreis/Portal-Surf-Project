@@ -5,13 +5,13 @@
 $nomeSistema ="Portal do Surf";
 $usuario = ["nome"=>""];
 $produtos= [
-      ["nome"=>"Acessório para prancha","preco"=>"R$"." ". 90.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios3.jpg"],
-      ["nome"=>"kit acessório para camera","preco"=>"R$"." ". 150.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios1.jpg"],
-      ["nome"=>"Capa para prancha","preco"=>"R$"." ". 100.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios2.jpg"],
-      ["nome"=>"Prancha Power Light","preco"=>"R$"." ". 700.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/prancha_6.jpg"],
-      ["nome"=>"Prancha Mormaii","preco"=>"R$"." ". 650.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/prancha_4.jpeg"],
-      ["nome"=>"Óculos Polarizado","preco"=>"R$"." ". 350.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/oculos_4.jpg"], 
-      ["nome"=>"Wetsuit Long John","preco"=>"R$"." ". 990.00,"garantia"=>"Descrição: à retirar / Data oferta: 13/05/2019 / Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/roupas2.jpg"], 
+      ["nome"=>"Acessório para prancha","preco"=>"R$"." ". 89.99,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios3.jpg"],
+      ["nome"=>"kit acessório para camera","preco"=>"R$"." ". 150.00,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios1.jpg"],
+      ["nome"=>"Capa para prancha","preco"=>"R$"." ". 100.00,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/acessorios2.jpg"],
+      ["nome"=>"Prancha Power Light","preco"=>"R$"." ". 700.00,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/prancha_6.jpg"],
+      ["nome"=>"Prancha Mormaii","preco"=>"R$"." ". 650.00,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/prancha_4.jpeg"],
+      ["nome"=>"Óculos Polarizado","preco"=>"R$"." ". 350.00,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/oculos_4.jpg"], 
+      ["nome"=>"Wetsuit Long John","preco"=>"R$"." ". 990.00,"garantia"=>"Descrição: à retirar", "data"=>"Data oferta: 13/05/2019", "status"=>"Status: Vendido - 18/05/2019", "img"=>"imagens/img-desapego/roupas2.jpg"], 
 ];
 ?>
 
@@ -42,22 +42,27 @@ $produtos= [
             <div class="row justify-content-around">
                 <?php if(isset($produtos) && $produtos != []){?>
                 <?php foreach($produtos as $produto){ ?>
-                <div class="col-lg-3 card text-center">
-                    <div>
-                        <h2><?php echo $produto["nome"];?> </h2>
-                        <img src="<?php echo $produto['img']; ?>" class="card-img-top" alt="imagens dos produtos">
-                        <p class="card-text font-weight-bold"><?php echo $produto["preco"];?></p>
-                        <p class="card-text font-weight-bold"><?php echo $produto["garantia"];?></p>
-                        <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
-                            class="btn encontreBotao">Editar</a>
-                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
-                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn encontreBotao">Desativar</a>
+                    <div class="col-lg-3 card text-center">
+                        <div>
+                            <h2><?php echo $produto["nome"];?> </h2>
+                            <img src="<?php echo $produto['img']; ?>" class="card-img-top" alt="imagens dos produtos">
+                            <p class="card-text"><?php echo $produto["preco"];?></p>
+                            <p class="card-text"><?php echo $produto["data"];?></p>
+                            <p class="card-text"><?php echo $produto["garantia"];?></p>
+                            <p class="card-text"><?php echo $produto["status"];?></p>
+                            <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
+                                class="btn encontreBotao">Editar</a>
+                            <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
+                            <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn encontreBotao">Desativar</a>
+                        </div>
                     </div>
-                </div>
+
                 <?php } ?>
+                
                 <?php } else { ?>
                 <h1>Não tem produtos nesta seção :(</h1>
                 <?php } ?>
+                
             </div>
         </section>
 
