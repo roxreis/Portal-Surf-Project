@@ -60,7 +60,7 @@
         <!-- original Elke - fim -->
 
         <!-- banner -->
-        <div id="encontreBanner">
+        <div class="encontreBanner">
             <div class = "frontBanner-azul">
                 <h1 class="mx-auto encontreTextoBanner">Encontre perto de você</h1>
             </div>

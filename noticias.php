@@ -15,7 +15,7 @@
     <?php include_once("padrao/header.php") ?>
 
     <!-- Banner -->
-    <div id="noticiasBanner">
+    <div class="noticiasBanner">
         <div class = "frontBanner-azul">
             <h1 class="encontreTextoBanner">Notícias</h1>
         </div>   

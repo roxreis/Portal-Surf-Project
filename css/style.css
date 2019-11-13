@@ -256,7 +256,7 @@ footer img {
 
 
 /* css para pagina encontre */
-#encontreBanner {
+.encontreBanner {
     background-image: url("../imagens/img-encontre/surfboard.jpg");
     background-size: cover;
     height: 400px;
@@ -280,12 +280,6 @@ footer img {
     background-color: #1E4256;
     color: #FFF;
 }
-
-
-/* .encontredesapego{
-    height: 50px;
-} */
-
 
 /* css para pagina carona */
 .caronaBanner {
@@ -322,7 +316,7 @@ footer img {
 
 
 /* css para pagina blog */
-#blogBanner {
+.blogBanner {
     background-image: url("../imagens/img-blog/surfers.jpg");
     background-size: cover;
     background-position: center;
@@ -355,7 +349,7 @@ footer img {
 
 
 /* css para pagina noticias */
-#noticiasBanner {
+.noticiasBanner {
     background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
     background-size: cover;
     background-position: center;
@@ -448,23 +442,23 @@ footer img {
         #footerContatoMobile{
             display: none;
         }
-
         .footerlogo{
             display: none;
         }
 
-        #encontreBanner {
-            background-image: none;
+        .encontreBanner {
+            display: none;
+            /* background-image: none;
             background-color: #1E4256;
-            height: 2%;
+            height: 2%; */
         }
-        .encontreTextoBanner {
+        /* .encontreTextoBanner {
             color: #1E4256;
             font-size: 0%;
             filter: none;
             width: 0%;
             height: 0%;
-        }
+        } */
         .encontreTitulo {
             width: 65%;
             font-size: 1.5rem;
@@ -473,9 +467,19 @@ footer img {
             display: none;
         }
 
+
         .blogMobile {
             display: none;
         }
+        .blogBanner{
+            display: none;
+        }
+
+
+        .noticiasBanner{
+            display: none;
+        }
+
 
         .despegoBanner {
             display: none;
@@ -508,25 +512,13 @@ footer img {
 
 
     @media (max-width: 480px) {
-        #encontreBanner {
-            background-image: none;
-            background-color: #1E4256;
-            height: 2%;
+        .encontreBanner {
+            display: none;
         }
-
-        .encontreTextoBanner {
-            color: #1E4256;
-            font-size: 0%;
-            filter: none;
-            width: 0%;
-            height: 0%;
-        }
-
         .encontreTitulo {
             width: 80%;
             font-size: 1.5rem;
         }
-
         .encontreMobile {
             display: none;
         }
@@ -544,12 +536,10 @@ footer img {
         }
 
         .texto-card-desapego h2 {
-
             font-size: 1.7em;
         }
 
         .texto-card-desapego h3 {
-
             font-size: 1.5em;
         }
 

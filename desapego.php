@@ -17,7 +17,6 @@
     <?php include_once("padrao/header.php") ?>
 
     <div class="despegoBanner">
-        
         <div class = "frontBanner-vermelho">
              <h1 class="textoBanner">Desapego</h1>
         </div>
