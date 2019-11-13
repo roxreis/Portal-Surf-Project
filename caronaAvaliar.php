@@ -19,12 +19,12 @@
     <?php include_once("padrao/header.php") ?>
 
     <main class="mb-5">
-        <div class="text-center mt-5">
+
+        <section class="container cardBlog shadow-lg p-5 mt-5">
+        <div class="text-center">
             <h1>AVALIE A SUA CARONA</h1>
             <br><br>
         </div>
-
-        <section class="container">
             <div class="text-center">
                 <p>Ajude outras pessoas a conhecer a sua carona.</p>
                 <p> Avalie com uma nota de zero a cinco, sendo zero péssimo e cinco excelente:</p>
@@ -86,7 +86,7 @@
                 </div>
 
                 <!-- botao  -->
-                <div class="mt-5">
+                <div class="mt-5 ml-3">
                     <a href="./caronasPerfil.php"><button type="button" class="btn encontreBotao">Dropar</button></a>
                 </div>
             </form>
