@@ -6,19 +6,19 @@
 <header>
     <section class="navbar">
 
-    <!-- logo -->
-        <a href="./index.php" class="headerLogoMobile"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
-        
-        <!-- campo de busca -->
-        <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6" id="headerBuscaMobile">
-            <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!" aria-label="Search">
-            <button class="btn encontreBotao" type="submit">Busca</button>
-        </form>
-        
+        <!-- logo -->
+        <a href="./index.php"><img src="imagens/Logo_degrade.png" alt="logo portal do surf"></a>
 
-        <!-- campo de login -->
-        <nav class="">
-            <ul class="nav font-weight-bold headerLoginMobile">
+        <!-- busca -->
+        <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6">
+            <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!"
+                aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
+        </form>
+
+        <!-- login -->
+        <nav>
+            <ul class="nav font-weight-bold">
                 <?php if(isset($usuario) && $usuario != []) {?>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Olá <?php echo $usuario["nome"]; ?></a>
@@ -36,44 +36,45 @@
                 <?php } ?>
             </ul>
         </nav>
-        
 
         <!-- barra de navegacao -->
-     <div class="container mt-n4 col-lg-6">
-        <nav class="nav-bar d-flex justify-content-center">
-            <ul class="nav" id="headerNavbar">
-                <li class="nav-item">
-                    <a class="nav-link" href="previsao.php">Previsão</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="caronas.php">Carona</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="desapego.php">Desapego</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="encontre.php">Encontre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.php">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="noticias.php">Notícias</a>
-                </li>
-                <!-- links para outros sites -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" target=_blank href="https://www.isasurf.org/">ISA</a>
-                        <a class="dropdown-item" target=_blank href="https://www.worldsurfleague.com/">World Surf League</a>
-                        <a class="dropdown-item" target=_blank href="http://wsllatinamerica.com/">WSL Latin America</a>
-                        <a class="dropdown-item" target=_blank href="http://www.abrasp.com/">ABRASP</a>
-                        <a class="dropdown-item" target=_blank href="https://magicseaweed.com/">Magic Sea Weed</a>
-                    </div>
-                </li>
-        </nav>
-     </div>
+        <div class="container mt-n4 col-lg-6">
+            <nav class="nav-bar d-flex justify-content-center">
+                <ul class="nav" id="headerNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="previsao.php">Previsão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="caronas.php">Carona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desapego.php">Desapego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="encontre.php">Encontre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.php">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.php">Notícias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" target=_blank href="https://www.isasurf.org/">ISA</a>
+                            <a class="dropdown-item" target=_blank href="https://www.worldsurfleague.com/">World Surf
+                                League</a>
+                            <a class="dropdown-item" target=_blank href="http://wsllatinamerica.com/">WSL Latin
+                                America</a>
+                            <a class="dropdown-item" target=_blank href="http://www.abrasp.com/">ABRASP</a>
+                            <a class="dropdown-item" target=_blank href="https://magicseaweed.com/">Magic Sea Weed</a>
+                        </div>
+                    </li>
+            </nav>
+        </div>
+        
     </section>
 
     <!-- instruçoes de javascript para  funcionar o dropdown -->
