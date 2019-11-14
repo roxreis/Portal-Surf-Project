@@ -4,6 +4,8 @@
 <footer>
     <div class="container h-100">
         <div class="row h-100">
+
+        <!-- formulario de contato -->
             <section class="col-3 h-100">
                 <form  id="footerContatoMobile">
                     <div class="form-group mt-5">
@@ -15,9 +17,13 @@
                     <button type="submit" class="btn encontreBotao mb-5">Dropar</button>
                 </form>
             </section>
+
+            <!-- logo -->
             <section class="col-6 h-100 footerlogo">
                 <img src="imagens/Logo_degrade.png" alt="logo portal do surf">
             </section>
+
+            <!-- formulario para newsletter -->
             <section class="col-3 h-100">
                 <form>
                     <div class="form-group mt-5">

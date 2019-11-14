@@ -20,7 +20,6 @@
     <main class="container mt-5 mb-5">
         <h1 id="historicoOfertasTopo" class="text-center">Seu histórico de ofertas</h1>
 
-
         <!-- codigo Elke copiado do Rodrigo, como sugestão -->
         <section class="container d-flex flex-wrap justify-content-between p-3" >
             <div class="card  img-ofertaDesapegoHistorico" style="max-width: 540px">
@@ -137,7 +136,7 @@
             </div>
         </section>
 
-        <!-- botao voltar -->
+        <!-- botao voltar e topo -->
         <div class="container mt-3">
         <a href='#historicoOfertasTopo' class="btn encontreBotao">Topo</a>
         <a href="./dadosUsuario.php" class="btn encontreBotao">Voltar</a>
@@ -146,5 +145,4 @@
 
     <?php include_once("padrao/footer.php") ?>
 </body>
-
 </html>

@@ -17,13 +17,13 @@
     <?php include_once("padrao/header.php") ?>
     <main class="mb-5">
 
-    <div>
-        <div class="caronaBanner">
-            <h1 class="mx-auto caronaTextoBanner">Encontre uma carona</h1>
-        </div>
+        <div>
+            <div class="caronaBanner">
+                <h1 class="mx-auto caronaTextoBanner">Encontre uma carona</h1>
+            </div>
         </div>
 
-        <section class="container shadow-lg p-5 cardBlog mt-5">
+        <section id="caronasTopo" class="container shadow-lg p-5 cardBlog mt-5">
             <div class="text-center">
                 <h2>VOCÊ QUER:</h2>
             </div>
@@ -117,16 +117,18 @@
 
                 <!-- botao  -->
                 <div class="mt-5">
-                    <button type="submit" class="btn encontreBotao">Dropar</button>
+                    <button type="submit" class="btn encontreBotao">Dropar</button>&nbsp
+                    <a href="#caronasTopo" class="btn encontreBotao">Topo</a>
                 </div>
             </form>
         </section>
 
-        <!-- parte de hisorico de caronas -->
+        <!-- parte de historico de caronas -->
         <div class="caronaBanner mt-5">
             <h1 class="mx-auto caronaTextoBanner">Suas caronas</h1>
         </div>
 
+        <!-- cards de historico -->
         <section class="container historico-caronas">
             <div class="card-deck justify-content-center">
                 <div class="card mt-5 cardBlog shadow-lg p-4 bg-white col-5">
@@ -150,7 +152,6 @@
                         <p>Partida: Rua das Flores, 5237, Ubatuba, SP</p>
                         <p>Destino: Av. Dr.Cardoso de Melo, 90, São Paulo, SP</p>
                         <p>Carona: Vinicius Oliveira</p>
-                        <!-- <p>Depoimento: De novo, o motorista me ajudou e levou a minha prancha para a minha casa me deixando antes na escola.</p> -->
                         <p>Depoimento: </p>
                         <a href="./caronasPerfil.php"><button type="button"
                                 class="btn encontreBotao">Perfil</button></a>
@@ -161,6 +162,11 @@
             </div>
             </div>
         </section>
+
+        <!-- botao topo -->
+        <div class="container text-center mt-5">
+            <a href="#caronasTopo" class="btn encontreBotao">Topo</a>
+        </div>
 
     </main>
     <?php include_once("padrao/footer.php") ?>

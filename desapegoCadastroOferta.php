@@ -11,16 +11,15 @@
     <title>Portal do Surf - Desapego</title>
 </head>
 <body>
+
     <?php include_once("padrao/header.php") ?>   
 
-    <main class= "container mt-5 mb-5">
+    <main class= "container mt-5 mb-5">        
         
-        
+        <!-- formulario de cadastro de oferta -->
         <h1 class="mt-5 text-center">Cadastro de Oferta</h1>
         
-
             <div class="col-12">
-            
                 <br>
                     <label for="seg"><b>Segmento do Produto</b></label>
                         <select class="form-control" id="seg" name="segmento">
@@ -53,7 +52,7 @@
                         <input type="number" class ="form-control" name="precoProduto" placeholder="Preço do Produto"/>
                     </div>
 
-
+                    <!-- botoes -->
                     <a href="desapegoOfertasUsuario.php" class="btn encontreBotao">Cadastrar Oferta</a>
                     <a href="desapego.php" class="btn btn-danger">Cancelar</a>
             

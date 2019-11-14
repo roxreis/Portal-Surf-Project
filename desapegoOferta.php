@@ -16,25 +16,26 @@
 <body>
     <?php include_once("padrao/header.php") ?>
     <main class="mt-5 mb-5">
-        <section class="container d-flex flex-wrap justify-content-between p-3 desapego-oferta">
+        <section class="container d-flex flex-wrap justify-content-between p-3 desapego-oferta" id="desapegoOfertaTopo">
 
-        
-         <div class="card  img-ofertaDesapego border border-light" style="max-width: 540px;">
+
+            <div class="card  img-ofertaDesapego border border-light" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <a href="./desapegoOfertaIndividual.php" class="retiraLink-desapegoIndiv">  <img src="imagens/img-desapego/prancha_6.jpg" class="card-img" alt="imagem prancha"></a>
+                        <a href="./desapegoOfertaIndividual.php" class="retiraLink-desapegoIndiv"> <img
+                                src="imagens/img-desapego/prancha_6.jpg" class="card-img" alt="imagem prancha"></a>
                     </div>
                     <div class="col-md-8">
-                       
-                            <div class="card-body">
-                                <h5 class="card-title">Power Light - Ótima marca</h5>
-                                <p class="card-text">R$ 800,00 <br>Entrego dependendo do local</p>
-                            </div>
-                       
+
+                        <div class="card-body">
+                            <h5 class="card-title">Power Light - Ótima marca</h5>
+                            <p class="card-text">R$ 800,00 <br>Entrego dependendo do local</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-   
+
             <div class="card  img-ofertaDesapego border border-light">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -78,11 +79,30 @@
 
         </section>
 
+        <!-- botões -->
+        <div class="container text-center mt-5 mb-5">
+            <!-- botao voltar -->
+            <a href='desapego.php'><button class='btn encontreBotao'>Voltar</button></a>
+            <!-- botao topo -->
+            <a href="#desapegoOfertaTopo" class="btn encontreBotao">Topo</a>
+        </div>
+
     </main>
 
+    <!-- pagination -->
+    <div class="d-flex justify-content-center mt-3 mb-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+            </ul>
+        </nav>
+    </div>
 
-
-
+    </main>
 
     <?php include_once("padrao/footer.php") ?>
 </body>

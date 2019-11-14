@@ -97,7 +97,6 @@
         </nav>
     </div>
 
-
     <!-- botao topo -->
     <div class="container text-center mb-5">
         <a href="#blogTopo" class="btn encontreBotao">Topo</a>

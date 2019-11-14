@@ -1,5 +1,6 @@
 <!-- Caio: página de histórico das oferta cadastradas pelo usuário logado, acessada por link na página de desapego principal, caso existam ofertas dele (do Rodrigo). -->
 
+<!-- variaveis para pagina de historico de ofertas -->
 <?php
 
 $nomeSistema ="Portal do Surf";
@@ -33,48 +34,47 @@ $produtos= [
 <body>
     <?php include_once("padrao/header.php") ?>
 
-    
-    <main class="container mt-5 mb-5">
-        <h1 class="text-center" id="historicoOfertasTopo" >Seu histórico de ofertas</h1>
 
-            <!-- codigo original do Caio com todas as interações PHPs prontas -->        
+    <main class="container mt-5 mb-5">
+        <h1 class="text-center" id="historicoOfertasTopo">Seu histórico de ofertas</h1>
+
+        <!-- codigo original do Caio com todas as interações PHPs prontas -->
         <section class="container mt-4">
+        
             <div class="row justify-content-around">
                 <?php if(isset($produtos) && $produtos != []){?>
                 <?php foreach($produtos as $produto){ ?>
-                    <div class="col-lg-3 card text-center">
-                        <div>
-                            <h2><?php echo $produto["nome"];?> </h2>
-                            <img src="<?php echo $produto['img']; ?>" class="card-img-top" alt="imagens dos produtos">
-                            <p class="card-text"><?php echo $produto["preco"];?></p>
-                            <p class="card-text"><?php echo $produto["data"];?></p>
-                            <p class="card-text"><?php echo $produto["garantia"];?></p>
-                            <p class="card-text"><?php echo $produto["status"];?></p>
-                            <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
-                                class="btn encontreBotao">Editar</a>
-                            <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
-                            <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn encontreBotao">Desativar</a>
-                        </div>
+                <div class="col-lg-3 card text-center">
+                    <div>
+                        <h2><?php echo $produto["nome"];?> </h2>
+                        <img src="<?php echo $produto['img']; ?>" class="card-img-top" alt="imagens dos produtos">
+                        <p class="card-text"><?php echo $produto["preco"];?></p>
+                        <p class="card-text"><?php echo $produto["data"];?></p>
+                        <p class="card-text"><?php echo $produto["garantia"];?></p>
+                        <p class="card-text"><?php echo $produto["status"];?></p>
+                        <a href="desapegoCadastroOferta.php?nomeProduto= <?php echo $produto['nome']; ?>"
+                            class="btn encontreBotao">Editar</a>
+                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn btn-danger">Excluir</a>
+                        <a href="?nomeProduto= <?php echo $produto['nome']; ?>" class="btn encontreBotao">Desativar</a>
                     </div>
-
+                </div>
                 <?php } ?>
-                
+
                 <?php } else { ?>
                 <h1>Não tem produtos nesta seção :(</h1>
                 <?php } ?>
-                
+
             </div>
         </section>
-
-
     </main>
 
-    <div class="container mt-3">
-        <a href='#historicoOfertasTopo' class="btn encontreBotao">Topo</a>
+    <!-- botões topo e voltar -->
+    <div class="container mt-3 mb-5">
+        <a href='#historicoOfertasTopo' class="btn encontreBotao">Topo</a   >
         <a href="./dadosUsuario.php" class="btn encontreBotao">Voltar</a>
     </div>
 
     <?php include_once("padrao/footer.php") ?>
-</body>
 
+</body>
 </html>

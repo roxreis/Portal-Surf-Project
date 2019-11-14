@@ -16,6 +16,7 @@
 <body>
     <?php include_once("padrao/header.php") ?>
 
+    <!-- banner -->
     <div class="despegoBanner">
         <div class = "frontBanner-vermelho">
              <h1 class="textoBanner">Desapego</h1>
@@ -23,6 +24,7 @@
     </div>
     <main class="container mt-5 mb-5">
 
+        <!-- segmentos -->
         <section id="desapego">
             <div class="card-group cards-desapego ">
                  
@@ -35,33 +37,27 @@
                                     </div>
                                 </a> 
                     </div>
-                
 
                 <div class="card border-light col-lg-6 col-md-12 col-sm-12">
-                
                   <img src="imagens/img-desapego/roupas7.png" class="card-img-top shadow-lg imagem-desapego" alt="imagem de prancha">
                         <div class="card-body texto-card-desapego">
                             <h2 class="card-title ">VESTUÁRIO</h2>
                                 <h3 id="card-subtitle text-muted ">Drop Now</h3>
                         </div>
-                                            
-                
                 </div>
 
-
                 <div class="card border-light col-lg-12 col-md-12 col-sm-12">
-                
                     <img src="imagens/img-desapego/acessorios5.jpg" class="card-img-top shadow-lg imagem-desapego" alt="imagem de prancha">
                         <div class="card-body texto-card-desapego">
                             <h2 class="card-title">ACESSÓRIOS</h2>
                                 <h3 id="card-subtitle text-muted ">Drop Now</h3>
-                        </div>
-                    
-                                                
+                        </div>                          
                 </div>
 
             </div> 
         </section>
+
+        <!-- link para cadastro de oferta -->
         <section id="desapegar">
    
             <div class="card border-light row col-xl-10 justify-content-center">
