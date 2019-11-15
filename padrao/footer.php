@@ -19,8 +19,8 @@
             </section>
 
             <!-- logo -->
-            <section class="col-6 h-100 footerlogo">
-                <img src="imagens/Logo_degrade.png" alt="logo portal do surf">
+            <section class="col-6 h-100">
+                <img src="imagens/Logo_degrade.png" alt="logo portal do surf" class="footerlogo">
             </section>
 
             <!-- formulario para newsletter -->

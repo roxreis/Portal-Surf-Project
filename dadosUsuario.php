@@ -26,8 +26,8 @@
                     <a href="#dadosPessoais" class="btn encontreBotao">Dados Pessoais</a>
                     <a href="#dadosCarona" class="btn encontreBotao">Dados Carona</a>
                     <a href="#uploadFotos" class="btn encontreBotao">Upload de fotos</a>
-                    <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button"
-                            class="btn encontreBotao">Histórico de ofertas</button></a>
+                    <a href="./caronas.php"><button type="button" class="btn encontreBotao">Histórico de caronas</button></a>
+                    <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button" class="btn encontreBotao">Histórico de ofertas</button></
                 </div>
 
             <!-- dados pessoais -->

@@ -17,7 +17,7 @@
     <!-- Banner -->
     <div class="blogBanner">
         <div class = "frontBanner-azul">    
-            <h1 class="encontreTextoBanner">Blog</h1>
+            <h1 class="caronaTextoBanner">Blog</h1>
         </div>
     </div>
 

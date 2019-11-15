@@ -17,12 +17,14 @@
     <?php include_once("padrao/header.php") ?>
     <main class="mb-5">
 
+        <!-- banner -->
         <div>
             <div class="caronaBanner">
-                <h1 class="mx-auto caronaTextoBanner">Encontre uma carona</h1>
+                <h1 class="mx-auto caronaTextoBanner">Carona</h1>
             </div>
         </div>
 
+        <!-- solicitacao de carona -->
         <section id="caronasTopo" class="container shadow-lg p-5 cardBlog mt-5">
             <div class="text-center">
                 <h2>VOCÊ QUER:</h2>
@@ -125,7 +127,7 @@
 
         <!-- parte de historico de caronas -->
         <div class="caronaBanner mt-5">
-            <h1 class="mx-auto caronaTextoBanner">Suas caronas</h1>
+            <h1 class="mx-auto caronaTextoBanner">Histórico</h1>
         </div>
 
         <!-- cards de historico -->

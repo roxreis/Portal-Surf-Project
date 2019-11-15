@@ -64,10 +64,8 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" target=_blank href="https://www.isasurf.org/">ISA</a>
-                            <a class="dropdown-item" target=_blank href="https://www.worldsurfleague.com/">World Surf
-                                League</a>
-                            <a class="dropdown-item" target=_blank href="http://wsllatinamerica.com/">WSL Latin
-                                America</a>
+                            <a class="dropdown-item" target=_blank href="https://www.worldsurfleague.com/">World Surf League</a>
+                            <a class="dropdown-item" target=_blank href="http://wsllatinamerica.com/">WSL Latin America</a>
                             <a class="dropdown-item" target=_blank href="http://www.abrasp.com/">ABRASP</a>
                             <a class="dropdown-item" target=_blank href="https://magicseaweed.com/">Magic Sea Weed</a>
                         </div>
