@@ -13,7 +13,7 @@
         <form class="form-inline my-2 my-lg-0 justify-content-center align-items-center col-lg-6">
             <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!"
                 aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
+            <button class="btn encontreBotao my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
         </form>
 
         <!-- login -->
