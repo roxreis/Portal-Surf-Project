@@ -19,16 +19,18 @@
 
     <main class="mb-5">
 
-        <form action="/action_page.php">
+        <!-- opcoes da pagina -->
+        <div class="container mt-5 text-center" id="usuarioTopo">
+            <a href="#dadosPessoais" class="btn encontreBotao">Dados Pessoais</a>
+            <a href="#dadosCarona" class="btn encontreBotao">Dados Carona</a>
+            <a href="#uploadFotos" class="btn encontreBotao">Upload de fotos</a>
+            <a href="./caronas.php"><button type="button" class="btn encontreBotao">Histórico de caronas</button></a>
+            <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button" class="btn encontreBotao">Histórico de
+                    ofertas</button>
+        </div>
 
-                <!-- opcoes da pagina -->
-                <div class="container mt-5 text-center" id="usuarioTopo">
-                    <a href="#dadosPessoais" class="btn encontreBotao">Dados Pessoais</a>
-                    <a href="#dadosCarona" class="btn encontreBotao">Dados Carona</a>
-                    <a href="#uploadFotos" class="btn encontreBotao">Upload de fotos</a>
-                    <a href="./caronas.php"><button type="button" class="btn encontreBotao">Histórico de caronas</button></a>
-                    <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button" class="btn encontreBotao">Histórico de ofertas</button></
-                </div>
+        <!-- formulario -->
+        <form action="/action_page.php">
 
             <!-- dados pessoais -->
             <section class="container mt-5 shadow-lg p-3 cardBlog">
@@ -37,21 +39,21 @@
                     <br>
                 </div>
 
-                <div class="text-center">
+                <div class="text-center font-weight-bold">
                     <div class="form-check-inline">
-                        <label class="form-check-label mt-3">Você é:
-                            <input type="checkbox" class="form-check-input" value="pf">Pessoa física
+                        <label class="form-check-label mt-3">VOCÊ É:
+                            <input type="checkbox" class="form-check-input" value="pf">PESSOA FÍSICA
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="pj">Pessoa jurídica
+                            <input type="checkbox" class="form-check-input" value="pj">PESSOA JURÍDICA
                         </label>
                         <br><br>
                     </div>
                 </div>
 
-                <div class="form-group mt-3 font-weight-bold">
+                <div class="form-group mt-3">
                     <label for="text">Nome completo:</label>
                     <input type="text" class="form-control" id="nomeUsuario">
                 </div>
@@ -63,18 +65,29 @@
                     <label for="text" class="ml-3 mr-2">Confirmar senha:</label>
                     <input type="text" class="form-control" id="senha">
                 </div>
+                <br>
 
                 <div class="form-inline mt-3">
-                    <label for="text" class="mr-4">E-mail:</label>
+                    <label for="text" class="mr-3">CPF:</label>
+                    <input type="number" class="form-control" id="cpf">
+                    <label for="text" class="ml-3 mr-3">Estado:</label>
+                    <input type="text" class="form-control" id="estado">
+                    <label for="text" class="ml-3 mr-3">Cidade:</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <br>
+
+                <div class="form-inline mt-3">
+                    <label for="text" class="mr-3">E-mail:</label>
                     <input type="text" class="form-control" id="email">
-                    <label for="text" class="ml-3 mr-4">Confirmar e-mail:</label>
+                    <label for="text" class="ml-3 mr-3">Confirmar e-mail:</label>
                     <input type="text" class="form-control" id="email">
                 </div>
 
                 <div class="form-inline mt-3">
-                    <label for="text" class="mr-4">Telefone 01:</label>
+                    <label for="text" class="mr-3">Telefone 01:</label>
                     <input type="text" class="form-control" id="telefone01">
-                    <label for="text" class="ml-3 mr-4">Telefone 02:</label>
+                    <label for="text" class="ml-3 mr-3">Telefone 02:</label>
                     <input type="text" class="form-control" id="telefone02">
                 </div>
 
@@ -93,6 +106,45 @@
                         <input type="checkbox" class="form-check-input" value="whatsappNao">Não utilizo.
                     </label>
                 </div>
+                <br><br>
+
+                <!-- opcao em participar do programa de caronas -->
+                <div class="font-weight-bold">
+                    <div class="form-check-inline">
+                        <label class="form-check-label mt-3">Você quer participar do programa de caronas?
+                            <input type="checkbox" class="form-check-input" value="caronaSim">Sim
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="caronaNao">Não
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                <br>
+
+                <!-- notificacoes -->
+                <div class="form-check-inline">
+                    <label class="form-check-label mt-3">
+                        <input type="checkbox" class="form-check-input" value="termos">Aceito receber
+                        notificações
+                        por e-mail.
+                    </label>
+                </div><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label mt-3">
+                        <input type="checkbox" class="form-check-input" value="termos">Aceito receber
+                        notificações
+                        por WhatsApp.
+                    </label>
+                </div>
+
+                <!-- botao Salvar e Cancelar -->
+                <div class="container mt-5">
+                    <button type="submit" class="btn encontreBotao">Salvar alterações</button>
+                    <button type="submit" class="btn encontreBotao">Cancelar</button>
+                </div>
             </section>
 
 
@@ -102,6 +154,55 @@
                     <h4>SEUS DADOS DE CARONA</h4>
                     <br>
                 </div>
+
+                <!-- dados da carona -->
+                <div class="font-weight-bold">
+                    <div class="form-check-inline">
+                        <label class="form-check-label mt-3">Você é:
+                            <input type="checkbox" class="form-check-input" value="motorista">Motorista
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="passageiro">Passageiro
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="ambos">Ambos
+                        </label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-inline" action="/action_page.php">
+                    <label for="text" class="mr-2">Registro da CNH:</label>
+                    <input type="text" class="form-control" id="cnh">
+                    <label for="text" class="ml-3 mr-2">Validade:</label>
+                    <input type="data" class="form-control" id="validadeCnh">
+                    <label for="text" class="ml-3 mr-2">Categoria Habilitação:</label>
+                    <input type="text" class="form-control" id="catCNH">
+                </div><br><br>
+
+                <!-- dados do  carro -->
+                <p class="font-weight-bold">Dados do veículo</p>
+                <div class="form-inline" action="/action_page.php">
+                    <label for="text" class="mr-2">Marca do carro:</label>
+                    <input type="text" class="form-control" id="carroMarca">
+                    <label for="text" class="ml-3 mr-2">Modelo do carro:</label>
+                    <input type="text" class="form-control" id="carroModelo">
+                    <label for="text" class="ml-3 mr-2">Ano do carro:</label>
+                    <input type="text" class="form-control" id="carroAno">
+                </div><br>
+                <div class="form-inline" action="/action_page.php">
+                    <label for="text" class="mr-2">Cor do carro:</label>
+                    <input type="text" class="form-control" id="carroCor">
+                    <label for="text" class="ml-3 mr-2">Placa do carro:</label>
+                    <input type="text" class="form-control" id="carroPlaca">
+                    <label for="text" class="ml-3 mr-2">Renavam:</label>
+                    <input type="text" class="form-control" id="carroRenavam">
+                </div><br>
+
                 <!-- Dados da partida -->
                 <div class="form-group mt-3 font-weight-bold">
                     <label for="text">Endereço de Partida:</label>
@@ -147,8 +248,25 @@
                         <input type="checkbox" class="form-check-input" value="">Não
                     </label>
                 </div>
+                <br><br>
 
-                <!-- botao  -->
+                <!-- notificacoes -->
+                <div class="form-check-inline">
+                    <label class="form-check-label mt-3">
+                        <input type="checkbox" class="form-check-input" value="termos">Aceito receber
+                        notificações
+                        por e-mail.
+                    </label>
+                </div><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label mt-3">
+                        <input type="checkbox" class="form-check-input" value="termos">Aceito receber
+                        notificações
+                        por WhatsApp.
+                    </label>
+                </div>
+
+                <!-- botao Salvar e Cancelar -->
                 <div class="container mt-5">
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     <button type="submit" class="btn encontreBotao">Cancelar</button>
@@ -158,21 +276,28 @@
 
         <!-- Upload de fotos -->
         <section class="container mt-5 shadow-lg p-3 cardBlog">
-            <div class="text-center" id="uploadFotos">
-                <h4>UPLOAD DE FOTOS</h4>
+            <div id="uploadFotos">
+                <h4 class="text-center">UPLOAD DE FOTOS</h4>
                 <br>
+                
                 <form method="post" action="" enctype="multipart/form-data">
                     <label>Carregue sua foto para a galera:</label>
                     <input type="file" name="fotoSurf" />
+                    <br>
+
+                    <label for="fotoUploadDescr">Comentários:</label>
+                    <textarea class="form-control" id="fotoUploadDescr" rows="3"></textarea>
+
                     <br><br>
                     <input type="submit" class="btn encontreBotao" value="Dropar" />
+
                 </form>
             </div>
         </section>
 
         <!-- botao topo -->
         <div class="container text-center mt-5">
-        <a href="#usuarioTopo" class="btn encontreBotao">Topo</a>
+            <a href="#usuarioTopo" class="btn encontreBotao">Topo</a>
         </div>
     </main>
     <?php include_once("padrao/footer.php") ?>

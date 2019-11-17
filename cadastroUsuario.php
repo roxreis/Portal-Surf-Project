@@ -179,7 +179,10 @@
                     <input type="data" class="form-control" id="validadeCnh">
                     <label for="text" class="ml-3 mr-2">Categoria Habilitação:</label>
                     <input type="text" class="form-control" id="catCNH">
-                </div><br>
+                </div><br><br>
+
+                <!-- dados do  carro -->
+                <p class="font-weight-bold">Dados do veículo</p>
                 <div class="form-inline" action="/action_page.php">
                     <label for="text" class="mr-2">Marca do carro:</label>
                     <input type="text" class="form-control" id="carroMarca">
