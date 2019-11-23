@@ -171,7 +171,7 @@
                     </div>
                 </div>
                 <br>
-                        
+
                 <div class="form-inline" action="/action_page.php">
                     <label for="text" class="mr-2">Registro da CNH:</label>
                     <input type="text" class="form-control" id="cnh">
@@ -179,7 +179,38 @@
                     <input type="data" class="form-control" id="validadeCnh">
                     <label for="text" class="ml-3 mr-2">Categoria Habilitação:</label>
                     <input type="text" class="form-control" id="catCNH">
-                </div><br><br>
+                </div><br>
+
+                <!-- genero -->
+                <div class="font-weight-bold">
+                    <div class="form-check-inline">
+                        <label class="form-check-label mt-3">Qual o seu gênero?
+                            <input type="checkbox" class="form-check-input" value="feminino">Feminino
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="masculino">Masculino
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                
+                <!-- seguranca feminina -->
+                <div class="font-weight-bold">
+                    <div class="form-check-inline">
+                        <label class="form-check-label mt-3">Você aceita pegar carona com homens?
+                            <input type="checkbox" class="form-check-input" value="caronaMascSim">Sim
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="caronaMascNao">Não
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                <br><br>
 
                 <!-- dados do  carro -->
                 <p class="font-weight-bold">Dados do veículo</p>
@@ -232,20 +263,7 @@
                 <div class="form-group mt-5 font-weight-bold">
                     <label for="text">Equipamento:</label>
                     <input type="text" class="form-control" id="equipamento">
-                </div>
-
-                <!-- Combustível -->
-                <div class="form-check-inline">
-                    <label class="form-check-label mt-3">Divide o combustível?
-                        <input type="checkbox" class="form-check-input" value="">Sim
-                    </label>
-                </div>
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" value="">Não
-                    </label>
-                </div>
-                <br><br>
+                </div><br>
 
                 <!-- aceite de termos e condicoes -->
                 <div>
@@ -272,11 +290,11 @@
                         </label>
                     </div>
 
-                <!-- botao Salvar e Cancelar -->
-                <div class="container mt-5">
-                    <button type="submit" class="btn encontreBotao">Salvar alterações</button>
-                    <button type="submit" class="btn encontreBotao">Cancelar</button>
-                </div>
+                    <!-- botao Salvar e Cancelar -->
+                    <div class="container mt-5">
+                        <button type="submit" class="btn encontreBotao">Salvar alterações</button>
+                        <button type="submit" class="btn encontreBotao">Cancelar</button>
+                    </div>
             </section>
         </form>
 

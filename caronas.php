@@ -105,18 +105,6 @@
                     </label>
                 </div>
 
-                <!-- Combustível -->
-                <div class="form-check-inline">
-                    <label class="form-check-label mt-3">Divide o combustível?
-                        <input type="checkbox" class="form-check-input" value="">Sim
-                    </label>
-                </div>
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" value="">Não
-                    </label>
-                </div>
-
                 <!-- botao  -->
                 <div class="mt-5">
                     <button type="submit" class="btn encontreBotao">Dropar</button>&nbsp

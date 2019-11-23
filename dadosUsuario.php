@@ -25,12 +25,11 @@
             <a href="#dadosCarona" class="btn encontreBotao">Dados Carona</a>
             <a href="#uploadFotos" class="btn encontreBotao">Upload de fotos</a>
             <a href="./caronas.php"><button type="button" class="btn encontreBotao">Histórico de caronas</button></a>
-            <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button" class="btn encontreBotao">Histórico de
-                    ofertas</button>
+            <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button" class="btn encontreBotao">Histórico de ofertas</button></a>
         </div>
 
         <!-- formulario -->
-        <form action="/action_page.php">
+        <form action="">
 
             <!-- dados pessoais -->
             <section class="container mt-5 shadow-lg p-3 cardBlog">
@@ -184,6 +183,22 @@
                     <input type="text" class="form-control" id="catCNH">
                 </div><br><br>
 
+                <!-- seguranca feminina -->
+                <div class="font-weight-bold">
+                    <div class="form-check-inline">
+                        <label class="form-check-label mt-3">Você aceita pegar carona com homens?
+                            <input type="checkbox" class="form-check-input" value="caronaMascSim">Sim
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="caronaMascNao">Não
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                <br><br>
+
                 <!-- dados do  carro -->
                 <p class="font-weight-bold">Dados do veículo</p>
                 <div class="form-inline" action="/action_page.php">
@@ -236,19 +251,7 @@
                     <label for="text">Equipamento:</label>
                     <input type="text" class="form-control" id="equipamento">
                 </div>
-
-                <!-- Combustível -->
-                <div class="form-check-inline">
-                    <label class="form-check-label mt-3">Divide o combustível?
-                        <input type="checkbox" class="form-check-input" value="">Sim
-                    </label>
-                </div>
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" value="">Não
-                    </label>
-                </div>
-                <br><br>
+                <br>
 
                 <!-- notificacoes -->
                 <div class="form-check-inline">
@@ -279,7 +282,7 @@
             <div id="uploadFotos">
                 <h4 class="text-center">UPLOAD DE FOTOS</h4>
                 <br>
-                
+
                 <form method="post" action="" enctype="multipart/form-data">
                     <label>Carregue sua foto para a galera:</label>
                     <input type="file" name="fotoSurf" />

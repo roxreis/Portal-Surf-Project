@@ -27,13 +27,12 @@
             <div class="col-12">
                 <br>
                 <p><b>Dados da oferta</b></p>
+
                 <label for="seg">Segmento do Produto:</label>
                 <select class="form-control" id="seg" name="ofertaSegmento">
                     <option>Selecione uma opção</option>
-                    <option>Acessórios</option>
-                    <option>Vestuário</option>
-                    <option>Wetsuits</option>
                     <option>Pranchas</option>
+                    <option>Acessórios</option>
                 </select>
                 <br>
 
@@ -46,6 +45,14 @@
                     <option>Windsurf</option>
                     <option>Stand Up Paddle</option>
                     <option>Body Board</option>
+                </select>
+                <br>
+
+                <label for="seg">Estado do Produto:</label>
+                <select class="form-control" id="seg" name="ofertaEstProduto">
+                    <option>Selecione uma opção</option>
+                    <option>Novo</option>
+                    <option>Usado</option>
                 </select>
 
                 <form action="" method="post" enctype="multipart/form-data">
