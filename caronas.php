@@ -62,12 +62,6 @@
                         <input class="form-check-input" type="checkbox"> Repetir o endereço de partida cadastrado
                     </label>
                 </div>
-                <div class="form-inline" action="/action_page.php">
-                    <label for="date" class="mr-2">Data:</label>
-                    <input type="date" class="form-control" id="dataP">
-                    <label for="text" class="ml-3 mr-2">Horário:</label>
-                    <input type="text" class="form-control" id="horarioP">
-                </div>
 
                 <!-- Dados do destino -->
                 <div class="form-group mt-5 font-weight-bold">
@@ -87,6 +81,8 @@
                         <input class="form-check-input" type="checkbox"> Repetir o endereço de destino cadastrado
                     </label>
                 </div>
+
+                <!-- data da carona -->
                 <div class="form-inline" action="/action_page.php">
                     <label for="date" class="mr-2">Data:</label>
                     <input type="date" class="form-control" id="dataD">
