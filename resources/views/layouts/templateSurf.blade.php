@@ -12,7 +12,7 @@
     <!-- header padrão para todas as outras páginas do portal.-->
 
 
-<!-- <?php include_once("../config/variaveis.php") ?> -->
+
 
 <header>
     <section class="navbar">
