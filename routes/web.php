@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/home', "SiteController@viewHome");
+Route::get('/caronas', 'CaronaController@viewCarona');
