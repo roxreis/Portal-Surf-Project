@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
+}
 
+a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -16,7 +20,8 @@ header form {
 
 #headerNavbar {
     text-decoration: none;
-    text-shadow: #bbb6b6 2px 2px 2px;
+    font-weight: 500;
+    /* text-shadow: #bbb6b6 2px 2px 2px; */
 }
 
 .navbar {
@@ -25,31 +30,28 @@ header form {
     align-items: center;
 }
 
-/* css cadastro */
-
-
-
 /* css para footer */
 footer {
-    margin-top: 200px;
     background-color: #dceaec;
     margin-top: 0%;
-    height: 400px;
+    height: 300px;
+    margin-bottom: 0%;
 }
 
 footer p {
     color: #140b63;
 }
 
-#footerlogo {
+/* #footerlogo {
     display: flex;
     justify-content: center;
-}
+} */
 
 footer img {
-    height: 150px;
+    height: 120px;
     margin-top: 100px;
     margin-bottom: 40px;
+    margin-left: 100px;
 }
 
 
@@ -61,85 +63,77 @@ footer img {
 .indexH2 {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 3.5rem;
+    /* position: absolute; */
 }
 
 .indexP {
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 #carousel_1 {
     background-image: url('../imagens/img-home/carousel_1.png');
-    height: 650px;
+    height: 450px;
 }
 
 #carousel_2 {
     background-image: url('../imagens/img-home/carousel_2.png');
-    height: 650px;
+    height: 450px;
     background-position: bottom;
 }
 
 #carousel_3 {
     background-image: url('../imagens/img-home/carousel_3.png');
-    height: 650px;
-}
-
-/* css cadastro usuario */
-
-.cadastro {
-    background: #1E4256;
-    text-align: center;
-    padding: 10px;
-    margin: 81px;
-    height: 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    ;
-    color: #ffff;
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cadastroCheckbox {
-    margin-left: 420px;
-    margin-bottom: 32px;
-}
-
-.cadastrousuario,
-.cadastroUsuCard {
-    width: 850px;
-    padding: 20px;
+    height: 450px;
 }
 
 
-.botao {
-    font-size: 1.5em;
-    background: #1E4256;
-    border: 0;
-    margin: 65px;
-    color: #FFF;
-    padding: 0.2em 7.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    margin-right: auto;
-    margin-left: auto;
+
+/* css para pagina previsao */
+.previsaoBanner {
+    background-image: url("../imagens/img-home/carousel_1.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
 
-.botao:hover {
-    background: rgb(23, 101, 143);
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
+
+
+/* css para pagina carona */
+.caronaBanner {
+    background-image: url("../imagens/img-home/carousel_2.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.caronaTextoBanner {
+    color: #ffffffe1;
+    font-family: Stencil Std, fantasy;
+    font-size: 100px;
+    filter: drop-shadow(31px 22px 12px black);
+    width: 554px;
+    height: 100px;
+    text-align: center;
 }
 
 
-/* css para section desapego */
 
+/* css para desapego */
 .despegoBanner {
     background-image: url("../imagens/img-desapego/banner4.png");
     background-position-y: 1px;
     width: 100%;
-    height: 350px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -158,18 +152,8 @@ footer img {
     align-items: center;
 }
 
-.frontBanner-azul {
-    background: transparent linear-gradient(180deg, #1E4256D4 0%, #032C808C 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .textoBanner {
-
     color: #ffffffe1;
     font-family: Stencil Std, fantasy;
     font-size: 100px;
@@ -177,7 +161,6 @@ footer img {
     width: 554px;
     height: 119px;
     text-align: center;
-
 }
 
 .imagem-desapego {
@@ -206,8 +189,6 @@ footer img {
     font-weight: bold;
 }
 
-
-
 .img-oferta-individual {
     width: 50vw;
 }
@@ -219,7 +200,6 @@ footer img {
 .imagem-desapegar {
     border: 4px solid #1f4ea5;
     border-radius: 30px;
-
 }
 
 
@@ -233,7 +213,6 @@ footer img {
     margin-top: 34px;
     justify-content: center;
     border-top-color: none;
-
 }
 
 .img-ofertaDesapego:hover {
@@ -244,9 +223,6 @@ footer img {
     border-top-color: black;
 }
 
-
-
-
 .img-ofertaDesapegoHistorico {
     width: 537px;
     height: 230px;
@@ -256,62 +232,30 @@ footer img {
 
 
 /* css para pagina encontre */
+.frontBanner-azul {
+    background: transparent linear-gradient(180deg, #1E4256D4 0%, #032C808C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .encontreBanner {
     background-image: url("../imagens/img-encontre/surfboard.jpg");
     background-size: cover;
-    height: 400px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     display: flex;
     background-position-y: -297px;
 }
 
-.encontreTextoBanner {
-    color: #ffffffe1;
-    font-family: Stencil Std, fantasy;
-    font-size: 100px;
-    filter: drop-shadow(31px 22px 12px black);
-    width: 600px;
-    height: 228px;
-    text-align: center;
-}
-
 .encontreBotao {
     background-color: #1E4256;
     color: #FFF;
 }
-
-/* css para pagina carona */
-.caronaBanner {
-    background-image: url("../imagens/img-home/carousel_2.png");
-    background-size: cover;
-    background-position: bottom;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.caronaTextoBanner {
-    color: #ffffffe1;
-    font-family: Stencil Std, fantasy;
-    font-size: 100px;
-    filter: drop-shadow(31px 22px 12px black);
-    width: 554px;
-    height: 269px;
-    text-align: center;
-}
-
-/* .buttonCaronasVoltar {
-    background-color:#007bff; 
-    border-color:#007bff; 
-    
-}
-
-.buttonCaronasAvaliar{
-    background-color: #1E4256;
-    border-color: #1E4256;
-} */
 
 
 
@@ -320,7 +264,7 @@ footer img {
     background-image: url("../imagens/img-blog/surfers.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -336,8 +280,7 @@ footer img {
 }
 
 .cardBlog {
-    /* border: 4px solid #1E4256; */
-    border: 4px solid #1f4ea5;
+    border: 2px solid #1f4ea5;
     border-radius: 30px;
 }
 
@@ -353,7 +296,7 @@ footer img {
     background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -365,7 +308,7 @@ footer img {
     background-image: url("../imagens/img-previsao/previgraca.jpeg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
 }
 
 .botaoAzul {
@@ -512,7 +455,7 @@ footer img {
         .desapego-oferta {
             height: 110vh;
         }
-        .historico-caronas{
+          .historico-caronas{
             display: none;
         }
 

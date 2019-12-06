@@ -14,7 +14,7 @@
             <nav class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav justify-content-between">
                     <li class="nav-link"><a href="zmaresias.php">PRAIA ANTERIOR</a></li>
-                    <li class="nav-link"><a href="zprevisao.php">VOLTAR</a></li>
+                    <li class="nav-link"><a href="previsao.php">VOLTAR</a></li>
                     <li class="nav-link"><a href="zguaeca.php">PROXIMA PRAIA</a></li>
                 </ul>
             </nav>
