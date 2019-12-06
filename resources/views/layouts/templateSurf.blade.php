@@ -12,8 +12,15 @@
     <!-- header padrão para todas as outras páginas do portal.-->
 
 
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 5daf7239b887db14883011a3091b6d768f8c523c
 
 
+>>>>>>> 647d4d6cac976d7fa28c6ad153854954d8d76bd3
 <header>
     <section class="navbar">
 
