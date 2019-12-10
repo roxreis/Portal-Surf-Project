@@ -21,8 +21,4 @@ Route::get('/caronas', 'CaronaController@viewCarona');
 Route::get('/desapego',"DesapegoController@viewDesapego");
 
 
-Route::get('/encontre', 'EncontreController@viewEncontre');
-
-Route::get('/home', "SiteController@viewHome");
-Route::get('/caronas', 'CaronaController@viewCarona');
 

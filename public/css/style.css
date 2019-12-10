@@ -9,86 +9,336 @@ a{
 
 
 /* css para header */
-header img {
-    width: 150px;
-    margin-top: 20px;
+body{
+    font-family: "evolve";
 }
 
-header form {
-    text-shadow: #bbb6b6 2px 2px 2px;
+@font-face{
+    font-family: "roboto-light";
+    src: local(surf-aloha), url(/public/font/Roboto-Light.ttf);
 }
 
-#headerNavbar {
-    text-decoration: none;
-    font-weight: 500;
-    /* text-shadow: #bbb6b6 2px 2px 2px; */
+@font-face{
+    font-family: "aloha";
+    src: local(surf-aloha), url(font/surf-style-regular.ttf);
 }
 
-.navbar {
-    position: relative;
-    display: flex;
+@font-face{
+    font-family: "mohave";
+    src: local(surf-aloha), url(font/Mohave-Bold.otf);
+}
+
+@font-face{
+    font-family: "kinley";
+    src: local(surf-aloha), url(font/Kinley\ Free\ Version.ttf);
+}
+
+@font-face{
+    font-family: "givena";
+    src: local(surf-aloha), url(font/Giveny.otf);
+}
+
+@font-face{
+    font-family: "quincy";
+    src: local(surf-aloha), url(font/FontsFree-Net-quincy-cf-bold.ttf);
+}
+
+@font-face{
+    font-family: "proudly";
+    src: local(surf-aloha), url(font/FontsFree-Net-Proudly.ttf);
+}
+
+@font-face{
+    font-family: "frintake";
+    src: local(surf-aloha), url(font/FontsFree-Net-Frintake.ttf);
+}
+
+@font-face{
+    font-family: "evolve";
+    src: local(surf-aloha), url(/public/font/MADE\ Evolve\ Sans\ Light\ \(PERSONAL\ USE\).otf);
+}
+
+@font-face{
+    font-family: "evolve-bold";
+    src: local(surf-aloha), url(font/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\.otf);
+}
+
+.contato{
+    height: 7vh;
+    background-color: #cecece;
     align-items: center;
 }
 
-/* css para footer */
-footer {
-    background-color: #dceaec;
-    margin-top: 0%;
-    height: 300px;
-    margin-bottom: 0%;
-}
-
-footer p {
-    color: #140b63;
-}
-
-/* #footerlogo {
+.cabecario{
+    width: 100%;
     display: flex;
-    justify-content: center;
-} */
-
-footer img {
-    height: 120px;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    margin-left: 100px;
+    align-items: center;
+    height: 65px;
+    z-index: 99;
+    font-weight: 500;
+    font-size: 15px;
+    /* font-family: roboto; */
+    color: black;
+    background-image: linear-gradient(to top, #6693ad00 , #6a99b000);
+    /* font-family: roboto; */
+    /* justify-content: center; */
+    position: absolute;
+    margin-top: 19px;
+    text-shadow: #000000 -2px 0px 20px;
 }
 
+nav ul li a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* font-family: "roboto-light"; */
+    /* text-transform: uppercase; */
+    /* text-shadow: #000 1px 0px 3px; */
+}
+
+
+#logo{
+    height: 107px;
+    width: 175px;
+    /* margin-left: 61px; */
+    /* margin-bottom: 10px; */
+    margin-right: 20px;
+    /* margin-left: 18px; */
+}
+
+.headerNavbar{
+    /* margin-right: 128px; */
+    /* justify-self: flex-end; */
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-end; */
+ }
+
+ .gaveta-icones{
+    display: flex;
+    width: 5vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    justify-content: space-evenly;
+}
+
+.icone{
+    width: 5vw;
+    height: 3vh;
+}
+
+   
+
+.redes-sociais{
+    width: 20px;
+    height: 20px;
+}
 
 /* css para home - index */
-.homeBanner {
-    height: 550px;
+
+#carousel-1{
+    background-image: url("../imagens/img-home/banner14.jpg");
+    background-position-y: -33px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.indexH2 {
+/* .carousel-gaveta{
+    background-image: linear-gradient(180deg, #6a849e94,  #52505000);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;} */
+
+#carousel-2{
+    background-image: url("../imagens/img-home/1353.jpg");
+    background-position-y: -2px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel-3{
+    background-image: url("../imagens/img-home/banner23.jpg");
+    background-position-y: -285px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-index{
+    color: rgb(31, 29, 29);
+    height: 218px;
+    width: 100%;
+    /* margin-left: 257px; */
+    /* text-align: center; */
+    /* text-shadow: 0 0 0.2em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* font-size: 31px; */
+    /* padding: 50px; */
+    margin-top: 193px;
+    margin-bottom: 8px;
+    /* margin-left: 33px; */
+    /* align-items: flex-start; */
+    /* margin-right: 506px; */
+    text-shadow: #000000 -2px 0px 20px;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.texto-index-2{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    justify-content: center;
+   
+}
+.botaoHome{
+    flex-direction: row;
+    /* background-color: #235879; */
+    width: 468px;
+    height: 95px;
+    color: #fff;
+    /* font-size: 0.8rem; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 117px;
+    /* margin-right: 572px; */
+}
+
+.botao-um{
+    width: 13vw;
+    font-size: 1.9rem;
+    /* border-radius: 0.3rem; */
+    border: solid 1px #84478500;
+    color: #ffffff;
+    background-color: #5a8a92;
+    height: 10vh;
+    /* justify-content: center; */
+    align-content: center;
+    display: flex;
+    }
+
+.botao-dois{
+    background-color: #ffffff;
+    color: #53858d;
+    border: solid 1px #8b538c00;
+    width: 13vw;
+    font-size: 1.9rem;
+    /* border-radius: 0.3rem; */
+    height: 10vh;
+}
+
+.botao-tres{
+    background-color: #53858d;
+    color: #fff;
+    border: solid 1px #eef0f3;
+    width: 6.5vw;
+    font-size: 1.2rem;
+    border-radius: 0.1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#texto-index h2{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #ffffff;
+    font-family: "evolve-bold";
+}
+#texto-index p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 680px;
+    /* margin-left: 293px; */
+    text-align: center;
+    text-shadow: #000000 -2px 0px 20px;
+}
+
+
+/* #efeito-img #logo{
+    opacity: none;
+
+} */
+
+/* #efeito-img{
+    background: transparent linear-gradient(180deg, #6C648B 0%, #B6A19E 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+   
+} */
+
+
+/* .indexH2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3.5rem;
     /* position: absolute; */
-}
+/* } */
 
-.indexP {
+/* .indexP {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+} */
+
+.desapegoHome1{
+    width: 100%;
+    height: 284px;
+    background-image: url(../imagens/img-home/desapego5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -37px;
 }
 
-#carousel_1 {
-    background-image: url('../imagens/img-home/carousel_1.png');
-    height: 450px;
+.caronasHome1{
+    width: 100%;
+    height: 284px;
+    /* background-color: #ce9c00; */
+    background-image: url(../imagens/img-home/card-caronas.jpg);
+    /* text-shadow: 0 0 0.2em; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -109px;
+
 }
 
-#carousel_2 {
-    background-image: url('../imagens/img-home/carousel_2.png');
-    height: 450px;
-    background-position: bottom;
+.previsaoHome1{
+    width: 100%;
+    height: 284px;
+    /* background-color: #ce9c00; */
+    background-image: url(../imagens/img-home/previsao2.png);
+    /* text-shadow: 0 0 0.2em; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#carousel_3 {
-    background-image: url('../imagens/img-home/carousel_3.png');
-    height: 450px;
-}
+/* fim css home */
+
+
 
 
 
