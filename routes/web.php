@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/encontre', 'EncontreController@viewEncontre');
 Route::get('/home', "SiteController@viewHome");
 Route::get('/caronas', 'CaronaController@viewCarona');
+Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
+Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
 Route::get('/desapego',"DesapegoController@viewDesapego");
 
 
