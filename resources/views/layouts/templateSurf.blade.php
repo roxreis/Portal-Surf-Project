@@ -17,7 +17,7 @@
           
 
       <nav class="navbar navbar-expand-lg headerNavbar" role="banner">
-           <ul class="nav w-100 justify-content-between" >
+           <ul class="nav w-100 justify-content-between align-items-center" >
                       <li class="nav-item">
                           <a class="nav-link" href="previsao.php">Previsão</a>
                       </li>

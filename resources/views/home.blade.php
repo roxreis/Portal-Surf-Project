@@ -10,10 +10,10 @@ Home
 
 <div class="carousel slide carousel-fade w-100" data-ride="carousel">
     <div class="carousel-inner h-100 ">
-        <div class="carousel-item active" id="carousel-1">
+        <div class="carousel-item active" id="carousel-1"> 
             
-                <div id="texto-index">
-                    <h2>Aqui todo mundo é local!</h2>
+                <div id="texto-index"> <>
+                    <h2 >Aqui todo mundo é local!</h2>
                     <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                     
                 </div>
@@ -28,7 +28,7 @@ Home
         
             <div id="texto-index">
                     <h2>Aqui todo mundo é local!</h2>
-                    <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins Entre e sinta a vibe do site!</p>
+                    <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                     
             </div>
             <div class="form-group botaoHome">
@@ -41,7 +41,7 @@ Home
         
             <div id="texto-index">
                     <h2>Aqui todo mundo é local!</h2>
-                    <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins Entre e sinta a vibe do site!</p>
+                    <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                     
             </div>
             <div class="form-group botaoHome">
@@ -50,14 +50,7 @@ Home
             </div> 
         </div>
     </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-     </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-     </a>
+  
 </div>
 
 
@@ -65,7 +58,7 @@ Home
 
 <section class="d-flex flex-column flex-nowrap   h-100 ">
 
-<article class="text-center p-5 d-flex flex-column justify-content-center h-25" style="background:#dededf; color:#53858d;">
+<article class="text-center p-5 d-flex flex-column justify-content-center h-25" style="background:#f7f7f7;color: #000000;">
 <h2>Quem Somos</h2>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique consectetur corporis sunt explicabo ducimus ratione perspiciatis rem quae aspernatur ad minima porro illum excepturi reiciendis cum iste earum, sed veniam.
 
