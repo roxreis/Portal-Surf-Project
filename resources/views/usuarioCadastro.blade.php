@@ -34,9 +34,15 @@ Home
                 <label for="text">Nome completo:</label>
                 <input type="text" class="form-control" id="nomeUsuario">
             </div>
+            
+            <div class="form-inline mt-3">
+                <label for="text" class="mr-3">E-mail:</label>
+                <input type="text" class="form-control" id="email">
+                <label for="text" class="ml-3 mr-3">Confirmar e-mail:</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+
             <div class="form-inline">
-                <label for="text" class="mr-2">Login:</label>
-                <input type="text" class="form-control" id="login">
                 <label for="text" class="ml-3 mr-2">Senha:</label>
                 <input type="text" class="form-control" id="senha">
                 <label for="text" class="ml-3 mr-2">Confirmar senha:</label>
@@ -67,13 +73,6 @@ Home
                 <input type="text" class="form-control" id="cidade">
             </div>
             <br>
-
-            <div class="form-inline mt-3">
-                <label for="text" class="mr-3">E-mail:</label>
-                <input type="text" class="form-control" id="email">
-                <label for="text" class="ml-3 mr-3">Confirmar e-mail:</label>
-                <input type="text" class="form-control" id="email">
-            </div>
 
             <div class="form-inline mt-3">
                 <label for="text" class="mr-3">Telefone 01:</label>
