@@ -22,7 +22,7 @@ Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
 Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
 Route::get('/desapego',"DesapegoController@viewDesapego");
 Route::get('/login',"Auth/LoginController@viewPaginaLogin");
-Route::get('/usuarioCadastro',"Auth/RegisterController@viewUsuarioCadastro");
+Route::post('/usuarioCadastro',"Auth/RegisterController@viewUsuarioCadastro");
 Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); /*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
 
 

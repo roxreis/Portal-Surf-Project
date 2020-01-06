@@ -35,10 +35,17 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+
+     // como colocar corretamente o direcionamento para o view com o formulario de cadastro sem perder as informacoes colocadas aqui?
+     public function viewUsuarioCadastro(Request $request){
+        return view('usuarioCadastro');
         $this->middleware('guest');
-    }
+     }
+
+    // public function __construct()
+    // {
+    //     $this->middleware('guest');
+    // }
 
     /**
      * Get a validator for an incoming registration request.
@@ -46,12 +53,25 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+     // validacao do cadastro ainda no formulario
     protected function validator(array $data)
     {
         return Validator::make($data, [
+            'person' => ['required'],
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'nameLogin' => ['required', 'string', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'cpf' => ['required', 'varchar', 'unique:users'],
+            'gender' => ['required'],
+            'state' => ['required', 'string', 'max:20'],
+            'city' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'phone1' => ['required', 'varchar', 'max:12'],
+            'phone2' => ['varchar', 'max:12'],
+            'programaCarona' => ['required'],
+            'terms' => ['required'],
+            'emailNotification' => ['required'],
         ]);
     }
 
@@ -61,12 +81,25 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+
+     // criacao do cadastro do usuario
     protected function create(array $data)
     {
         return User::create([
+            'person' => $data['person'],
             'name' => $data['name'],
-            'email' => $data['email'],
+            'nameLogin' => $data['nameLogin'],
             'password' => Hash::make($data['password']),
+            'cpf' => $data['cpf'],
+            'gender' => $data['gender'],
+            'state' => $data['state'],
+            'city' => $data['city'],
+            'email' => $data['email'],
+            'phone1' => $data['phone1'],
+            'phone2' => $data['phone2'],
+            'programaCarona' => $data['programaCarona'],
+            'terms' => $data['terms'],
+            'emailNotification' => $data['emailNotification'],
         ]);
     }
 }
