@@ -10,13 +10,17 @@
     <title>@yield('titulo')</title>
 </head>
 <body>
-<header class="cabecario p-5">
+<header class="cabecario">
       
-         
-      <a href="/index"><img src="../imagens/Logo_white.png" id="logo" alt=""></a>
-          
-
-      <nav class="navbar navbar-expand-lg headerNavbar" role="banner">
+      <div id=upHeader>   
+        <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+        <div style="margin-left:356px;">
+            <button type="button" class="btn btn-primary">Cadastro</button>
+            <button type="button" class="btn btn-success">Login</button>
+        </div>
+      </div>
+    <div class="headerNavbar">
+      <nav class="navbar navbar-expand-lg " role="banner">
            <ul class="nav w-100 justify-content-between align-items-center" >
                       <li class="nav-item">
                           <a class="nav-link" href="previsao.php">Previsão</a>
@@ -25,7 +29,7 @@
                           <a class="nav-link" href="caronas.php">Carona</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="desapego.php">Desapego</a>
+                          <a class="nav-link" href="/desapego">Desapego</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="encontre.php">Encontre</a>
@@ -47,37 +51,19 @@
                               <a class="dropdown-item" target=_blank href="https://magicseaweed.com/">Magic Sea Weed</a>
                           </div>
                       </li>
+            </ul>            
                   <div class="gaveta-icones">
 
-                  <i class="fab icone fa-facebook-f"></i>
-                  <i class="fab icone fa-instagram"></i> 
-                  <i class="fab icone fa-twitter"></i>                 
+                    <i class="fab icone fa-facebook-f" href="#"></i>
+                    <i class="fab icone fa-instagram" href="#"></i> 
+                    <i class="fab icone fa-twitter" href="#"></i>                 
                   
                   </div>
                       
-               </nav>
-      <!-- <nav>
-                      <ul class="nav">
-                          <?php if(isset($usuario) && $usuario != []) {?>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Olá <?php echo $usuario["nome"]; ?></a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Sair</a>
-                          </li>
-                          <?php } else { ?>
-                          <li class="nav-item">
-                              <a class="nav-link" href="paginaLogin.php">Login</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="cadastroUsuario.php">Cadastro</a>
-                          </li>
-                          <?php } ?>
-                      </ul>
-              </nav> -->
-          
-          
-  </div>
+        </nav>
+
+    </div> 
+
   
    <!-- instruçoes de javascript para  funcionar o dropdown -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

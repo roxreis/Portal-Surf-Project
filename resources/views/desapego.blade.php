@@ -23,7 +23,7 @@
                     <h1 class="textoBanner">Desapego</h1>
                 </div>
             </div>
-            <div class="card-group cards-desapego ">
+            <!-- <div class="card-group cards-desapego ">
 
                 <div class="card border-light col-lg-6 col-md-12 col-sm-12 ">
                     <img src="imagens/img-desapego/PranchasnovaPagina.jpg"
@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </section>
 
         <!-- link para cadastro de oferta -->
