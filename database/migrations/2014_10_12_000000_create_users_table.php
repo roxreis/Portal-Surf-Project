@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('person');
@@ -21,15 +22,15 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->string('cpf');
+            $table->integer('cpf');
             $table->string('gender');
             $table->string('state');
             $table->string('city');
-            $table->string('phone1');
-            $table->string('phone2');
-            $table->string('programaCarona');
-            $table->string('terms');
-            $table->string('emailNotification');
+            $table->integer('phone1');
+            $table->integer('phone2');
+            $table->boolean('programaCarona');
+            $table->boolean('terms');
+            $table->boolean('emailNotification');
             $table->timestamps();
         });
     }
