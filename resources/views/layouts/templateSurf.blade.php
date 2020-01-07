@@ -15,13 +15,13 @@
       <div id=upHeader>   
         <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
         <div style="margin-left:356px;">
-            <button type="button" class="btn btn-primary">Cadastro</button>
-            <button type="button" class="btn btn-success">Login</button>
+            <button type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</button>
+            <button type="button" class="btn btn-success"id="botaoHeader2">Login</button>
         </div>
       </div>
     <div class="headerNavbar">
       <nav class="navbar navbar-expand-lg " role="banner">
-           <ul class="nav w-100 justify-content-between align-items-center" >
+           <ul class="nav w-100 justify-content-between align-items-center" style="margin-left:65px;" >
                       <li class="nav-item">
                           <a class="nav-link" href="previsao.php">Previsão</a>
                       </li>

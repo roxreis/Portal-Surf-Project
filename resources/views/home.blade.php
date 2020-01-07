@@ -55,7 +55,7 @@ Home
 
 <section class="container d-flex flex-column flex-nowrap h-100 ">
 
-<article class="text-center p-5 d-flex flex-column justify-content-center h-25" style="background:#efefef;color: #565656d1;">
+<article class="text-center p-5 d-flex flex-column justify-content-center h-25" style="background:#dadada;color: #333333ed;">
 <h2>Quem Somos</h2>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique consectetur corporis sunt explicabo ducimus ratione perspiciatis rem quae aspernatur ad minima porro illum excepturi reiciendis cum iste earum, sed veniam.
 
