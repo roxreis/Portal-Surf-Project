@@ -65,7 +65,7 @@ body{
 
 @font-face{
     font-family: "evolve-bold";
-    src: url(/public/font/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\.otf);
+    src: url('font/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\.otf');
 }
 
 .contato{
@@ -169,7 +169,7 @@ nav ul li a{
 
 #carousel-1{
     background-image: url("../imagens/img-home/banner21.jpg");
-    background-position-y: -151px;
+    background-position-y: -172px;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ nav ul li a{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-top: 102px;
+    margin-top: 122px;
 }
 
 /* .carousel-gaveta{
@@ -198,7 +198,7 @@ nav ul li a{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-top: 108px;
+    margin-top: 122px;
 }
 
 #carousel-3{
@@ -211,7 +211,7 @@ nav ul li a{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-top: 108px;
+    margin-top: 122px;
 }
 
 .efeitoBannerHome{
@@ -356,7 +356,7 @@ text-shadow: #000000 -2px 0px 20px;
 
 .previsaoHome1{
     width: 100%;
-    height: 249px;
+    height: 240px;
     /* background-color: #ce9c00; */
     background-image: url(../imagens/img-home/previsao3.jfif);
     /* text-shadow: 0 0 0.2em; */
@@ -413,16 +413,17 @@ text-shadow: #000000 -2px 0px 20px;
     background-image: url("../imagens/img-desapego/banner4.png");
     background-position-y: 1px;
     width: 100%;
-    height: 200px;
+    height: 212px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
 }
 
-.frontBanner-vermelho {
-    background: rgba(94, 0, 19, 0.5) 0% 0% no-repeat padding-box;
+.frontBanner{
+    background: rgba(0, 33, 94, 0.5) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(112, 112, 112, 1);
     opacity: 1;
     width: 100%;
@@ -435,39 +436,31 @@ text-shadow: #000000 -2px 0px 20px;
 
 .textoBanner {
     color: #ffffffe1;
-    font-family: Stencil Std, fantasy;
-    font-size: 100px;
+    /* font-family: Stencil Std, fantasy; */
+    font-size: 79px;
     filter: drop-shadow(31px 22px 12px black);
-    width: 554px;
-    height: 119px;
+    width: 566px;
+    height: 94px;
     text-align: center;
-}
-
-.imagem-desapego {
-    width: 25vw;
-    height: 40vh;
-    border: 4px solid #1f4ea5;
-    border-radius: 30px;
-}
-
-#desapego {
-    height: 78vh;
-    display: flex;
-}
-
-#desapegar {
-    height: 33vh;
-    width: 100%;
-    display: flex;
     justify-content: center;
 }
 
-.texto-card-desapego {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
+.imagemcards-desapego {
+    height: 50vh;
+    background-image: cover;
 }
+
+#desapego {
+    height: 240vh;
+    display: flex;
+    flex-direction:column;
+}
+
+.cards-desapego{
+    border
+}
+
+
 
 .img-oferta-individual {
     width: 50vw;
@@ -477,11 +470,22 @@ text-shadow: #000000 -2px 0px 20px;
     text-decoration: none;
 }
 
-.imagem-desapegar {
-    border: 4px solid #1f4ea5;
-    border-radius: 30px;
+
+.titulodeSecaoDesapego{
+    font-family: aloha;
+    color: #ff8f04;
+    border-bottom: #ff8f04 1px solid;
+    height: 40px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    /* font-size: 74px; */
+    /* font-weight: bold; */
 }
 
+.titulodeSecaoDesapego h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 
 
 

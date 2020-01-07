@@ -18,12 +18,7 @@ Home
                     
                 </div>
             </div>
-                <!-- <div class="form-group botaoHome">
-                    <button type="livedemo" class="btn btn-primary btn-lg botao-um"> Cadastro</button>
-                    <button type="livedemo" class="btn btn-primary btn-lg botao-dois"> Login</button>
-                    
-                </div>      ------------------------------------------               -->
-            
+                        
         </div>
         <div class="carousel-item" id="carousel-2">
             <div class="efeitoBannerHome">
@@ -55,8 +50,8 @@ Home
 
 <section class="container d-flex flex-column flex-nowrap h-100 ">
 
-<article class="text-center p-5 d-flex flex-column justify-content-center h-25" style="background:#dadada;color: #333333ed;">
-<h2>Quem Somos</h2>
+<article class="text-center p-5 d-flex flex-column h-25  " style="background:#d7dfea;color: #101010;">
+<h2 class="font-weight-bold">Quem Somos</h2>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique consectetur corporis sunt explicabo ducimus ratione perspiciatis rem quae aspernatur ad minima porro illum excepturi reiciendis cum iste earum, sed veniam.
 
 </p>
@@ -67,7 +62,7 @@ Home
         <div class="col-6 texto-index-2">                       
             <h3 class="font-weight-bold">Desapego</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga nisi rerum porro, amet id asperiores numquam voluptas velit, commodi laboriosam voluptate! Perspiciatis nobis qui praesentium, accusantium molestiae ipsum nam?Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="#" class="btn btn-primary btn-lg botao-tres">Dropar</a>
+            <a href="/desapego" class="btn btn-primary btn-lg botao-tres">Dropar</a>
         </div>
 </div>
  
@@ -76,7 +71,7 @@ Home
         <div class="col-6 texto-index-2"> 
             <h3 class="font-weight-bold">Caronas</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga nisi rerum porro, amet id asperiores numquam voluptas velit, commodi laboriosam voluptate! Perspiciatis nobis qui praesentium, accusantium molestiae ipsum nam?Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="#" class="btn btn-primary btn-lg botao-tres">Dropar</a>
+            <a href="/caronas" class="btn btn-primary btn-lg botao-tres">Dropar</a>
         </div>
         <div class="caronasHome1 col-6"></div>
         
@@ -88,7 +83,7 @@ Home
          <div class="col-6    texto-index-2"> 
             <h3 class="font-weight-bold">Previsão</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga nisi rerum porro, amet id asperiores numquam voluptas velit, commodi laboriosam voluptate! Perspiciatis nobis qui praesentium, accusantium molestiae ipsum nam?Lorem ipsum dolor sit amet consectetur.</p>
-             <a href="#" class="btn btn-primary btn-lg botao-tres">Dropar</a>
+             <a href="/previsao" class="btn btn-primary btn-lg botao-tres">Dropar</a>
         </div>
 </div>
  
