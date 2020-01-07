@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-    Página Desapego
+    Desapego
 @endsection
 
 @section('conteudo')
@@ -17,12 +17,114 @@
         </div><br><br>
 
         <!-- segmentos -->
-        <section id="desapego">
+        <section class="mb-3">
             <div class="despegoBanner ">
-                <div class = "frontBanner-vermelho">
+                <div class = "frontBanner">
                     <h1 class="textoBanner">Desapego</h1>
                 </div>
             </div>
+        </section>
+
+        <section class="container"id="desapego">
+
+            <div class="titulodeSecaoDesapego"> 
+                <h3>Pranchas e Equipamentos</h3>
+            </div>
+            <div class="card-deck p-3"> 
+                <div class="card cards-desapego border-0">
+                  <img src="/imagens/img-desapego/prancha_2.jpg" class="imagemcards-desapego card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                   
+                </div>
+                <div class="card cards-desapego border-0">
+                    <img src="/imagens/img-desapego/prancha_6.jpg" class="imagemcards-desapego card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                   
+                </div>
+                <div class="card cards-desapego border-0 ">
+                    <img src="/imagens/img-desapego/acessorios1.jpg" class=" imagemcards-desapego card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                  
+                </div>
+
+
+            
+            
+            
+            </div>
+
+            <div class="titulodeSecaoDesapego"> 
+                <h3>Body Board, Stand Up Paddle e Windsurf </h3>
+            </div>
+            <div class="card-deck  p-3"> 
+                <div class="card cards-desapego border-0 ">
+                  <img src="/imagens/img-desapego/Body Board.jpg" class="imagemcards-desapego card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                   
+                </div>
+                <div class="card cards-desapego border-0 ">
+                    <img src="/imagens/img-desapego/Windsurf.jfif" class="imagemcards-desapego card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                           
+                        </div>
+                   
+                </div>
+                <div class="card cards-desapego border-0">
+                    <img src="/imagens/img-desapego/Standuppaddle.jfif" class=" imagemcards-desapego card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                  
+                </div>
+
+
+            
+            
+            
+            </div>
+
+            <div class="titulodeSecaoDesapego"> 
+                <h3>Vestuários</h3>
+            </div>
+            <div class="card-deck  p-3"> 
+                <div class="card cards-desapego border-0">
+                  <img src="/imagens/img-desapego/roupas3.jpg" class="imagemcards-desapego card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                   
+                </div>
+                <div class="card cards-desapego border-0">
+                    <img src="/imagens/img-desapego/oculos_3.jpg" class="imagemcards-desapego card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                   
+                </div>
+                <div class="card cards-desapego border-0">
+                    <img src="/imagens/img-desapego/roupas4.jpg" class=" imagemcards-desapego card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                  
+                </div>
+
+
+            
+            
+            
+            </div>
+        </section>
+            
             <!-- <div class="card-group cards-desapego ">
 
                 <div class="card border-light col-lg-6 col-md-12 col-sm-12 ">
@@ -55,12 +157,12 @@
                 </div>
 
             </div> -->
-        </section>
+       
 
         <!-- link para cadastro de oferta -->
         <section id="desapegar">
 
-            <div class="card border-light row col-xl-10 justify-content-center">
+            <!-- <div class="card border-light row col-xl-10 justify-content-center">
                 <div class="row no-gutters ">
                     <div class="col-xl-5 col-lg-6 col-md-8 ml-3 mr-3">
                         <img src="imagens/img-desapego/desapegar.jpg" class="card-img shadow-lg "
@@ -76,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
