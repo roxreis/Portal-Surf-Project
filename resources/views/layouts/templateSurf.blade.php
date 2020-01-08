@@ -15,8 +15,8 @@
       <div id=upHeader>   
         <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
         <div style="margin-left:356px;">
-            <button type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</button>
-            <button type="button" class="btn btn-success"id="botaoHeader2">Login</button>
+            <a href="/usuarioCadastro" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
+            <a href="#" class="btn btn-success"id="botaoHeader2">Login</a>
         </div>
       </div>
     <div class="headerNavbar">

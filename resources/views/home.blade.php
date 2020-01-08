@@ -48,7 +48,7 @@ Home
 
 </section>
 
-<section class="container d-flex flex-column flex-nowrap h-100 ">
+<section class=" d-flex flex-column flex-nowrap h-100 ">
 
 <article class="text-center p-5 d-flex flex-column h-25  " style="background:#d7dfea;color: #101010;">
 <h2 class="font-weight-bold">Quem Somos</h2>
