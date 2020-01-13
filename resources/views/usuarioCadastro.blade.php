@@ -38,14 +38,7 @@ Cadastro Usuario
             <div class="form-inline mt-3">
                 <label for="email" class="mr-3">E-mail:</label>
                 <input type="email" class="form-control col-sm-4" id="email" name="email">
-                <label for="email" class="ml-3 mr-3">Confirmar e-mail:</label>
-                <input type="email" class="form-control col-sm-4" id="email" name="email">
-            </div><br>
-
-            <div class="form-inline">
-                <label for="password" class="mr-3">Senha:</label>
-                <input type="password" class="form-control col-sm-4" id="password" name="password">
-                <label for="password" class="ml-3 mr-3">Confirmar senha:</label>
+                <label for="password" class="ml-3 mr-3">Senha:</label>
                 <input type="password" class="form-control col-sm-4" id="password" name="password">
             </div>
             <br>
