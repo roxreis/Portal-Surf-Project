@@ -31,3 +31,7 @@ Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); /*confirmar se
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
