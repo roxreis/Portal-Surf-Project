@@ -84,10 +84,16 @@ Portal Surf - Cadastro Usuario
                 <label for="phone2" class="col-sm-1">Telefone 02:</label>
                 <input type="text" class="form-control col-sm-4" id="phone2" name="phone2">
             </div>
-            <br><br>
+            <br>
 
             <!-- opcao em participar do programa de caronas -->
-            <div class="font-weight-bold">
+            <div class="font-weight-bold form-check-inline">
+                    <label class="form-check-label mt-3" for="programaCarona">
+                        <input type="checkbox" class="form-check-input" value="sim" for="programaCarona" name="programaCarona" id="programaCarona">Quero participar do `Programa de Caronas!
+                    </label>
+                </div><br><br><br>
+
+            <!-- <div class="font-weight-bold">
                 <label class="form-check-label mt-3" for="programaCarona">Você quer participar do programa de caronas?
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="programaCarona" id="caronaSim" for="programaCarona" value="sim">
@@ -99,7 +105,7 @@ Portal Surf - Cadastro Usuario
                         <label class="form-check-label" for="programaCarona">Não</label>
                     </div>
             </div>
-            <br><br>
+            <br><br> -->
 
             <!-- aceite de termos e condicoes -->
             <div>
@@ -123,6 +129,9 @@ Portal Surf - Cadastro Usuario
 
                 <!-- botao Salvar e Cancelar -->
                 <div class="container mt-5 mb-5">
+                    <!-- @empty($programaCarona)
+                    <button type="submit" class="btn encontreBotao">Salvar alterações</button>
+                    @endempty -->
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     <button type="reset" class="btn encontreBotao">Cancelar</button>
                 </div>
