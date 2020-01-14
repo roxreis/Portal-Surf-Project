@@ -90,8 +90,7 @@ Portal Surf - Cadastro Usuario
             <div class="font-weight-bold">
                 <label class="form-check-label mt-3" for="programaCarona">Você quer participar do programa de caronas?
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="programaCarona" id="caronaSim"
-                            for="programaCarona" value="sim">
+                        <input class="form-check-input" type="radio" name="programaCarona" id="caronaSim" for="programaCarona" value="sim">
                         <label class="form-check-label" for="programaCarona">Sim</label>
                     </div>
                     <div class="form-check form-check-inline">
@@ -129,8 +128,6 @@ Portal Surf - Cadastro Usuario
                 </div>
         </form>
     </section>
-
-
 
     <!-- botao topo -->
     <div class="container text-center mt-5">
