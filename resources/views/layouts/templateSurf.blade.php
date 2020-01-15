@@ -14,25 +14,29 @@
       
       <div id=upHeader>   
         <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
-        <div style="margin-left:356px;">
+        <div id="botaoHeader">
             <a href="/usuarioCadastro" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
-            <a href="#" class="btn btn-success"id="botaoHeader2">Login</a>
+            <a href="/login" class="btn btn-success"id="botaoHeader2">Login</a>
         </div>
       </div>
-    <div class="headerNavbar">
-      <nav class="navbar navbar-expand-lg " role="banner">
-           <ul class="nav w-100 justify-content-between align-items-center" style="margin-left:65px;" >
-                      <li class="nav-item">
+    
+    <nav class="headerNavbar navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+           <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center" style="margin-left:65px; width: 696px;" >
+                      <li class="nav-item active">
                           <a class="nav-link" href="previsao.php">Previsão</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="caronas.php">Carona</a>
+                          <a class="nav-link" href="/caronas">Carona</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="/desapego">Desapego</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="encontre.php">Encontre</a>
+                          <a class="nav-link" href="/encontre">Encontre</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="blog.php">Blog</a>
@@ -59,12 +63,10 @@
                     <i class="fab icone fa-twitter" href="#"></i>                 
                   
                   </div>
+        </div>
                       
-        </nav>
-
-    </div> 
-
-  
+    </nav>
+ 
    <!-- instruçoes de javascript para  funcionar o dropdown -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -78,15 +80,10 @@
 
 
 </header>
-
- 
-
 <main>
-    <!-- conteudo do site -->
-    @yield('conteudo');
-
+<!-- conteudo do site -->
+    @yield('conteudo')
 </main>
-
 
 <footer class="shadow p-3 rounded footer">
     <p>© 2019 All rights reserved - contato@portalsurf.com.br</p>

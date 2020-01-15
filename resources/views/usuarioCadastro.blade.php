@@ -5,10 +5,10 @@ Cadastro Usuario
 @endsection
 
 @section('conteudo')
-
-<main class="mt-5">
-    <section class="container mt-5 shadow-lg p-3 cardBlog" id="usuarioTopo">
-        <form action="/usuarioCadastro" method="GET" enctype="multipart/form-data" class="mt-3 ml-5">
+ 
+<section  class="d-flex flex-column" style="background-color: #cbcece75;height: 1274px;">
+    <div class="container d-flex " id="usuarioTopo">
+        <form action="/usuarioCadastro" method="GET" enctype="multipart/form-data" class="shadow-lg p-3 cardBlog">
         @CSRF
             <!-- dados pessoais -->
 
@@ -107,15 +107,15 @@ Cadastro Usuario
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     <button type="reset" class="btn encontreBotao">Cancelar</button>
                 </div>
+            </div>
         </form>
-    </section>
-
-
-
-    <!-- botao topo -->
-    <div class="container text-center mt-5">
-        <a href="#usuarioTopo" class="btn encontreBotao">Topo</a>
     </div>
-</main>
-
+    
+      <!-- botao topo -->
+      <div class="text-center mt-3">
+            <a href="#usuarioTopo" class="btn encontreBotao">Topo</a>
+      </div>
+  
+</section>
+ 
 @endsection
