@@ -13,9 +13,9 @@
 <header class="cabecario">
       
       <div id=upHeader>   
-        <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+        <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
         <div id="botaoHeader">
-            <a href="/usuarioCadastro" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
+            <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
             <a href="/login" class="btn btn-success"id="botaoHeader2">Login</a>
         </div>
       </div>

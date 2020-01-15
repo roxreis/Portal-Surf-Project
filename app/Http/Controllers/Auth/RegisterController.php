@@ -39,7 +39,7 @@ class RegisterController extends Controller
 
      // como colocar corretamente o direcionamento para o view com o formulario de cadastro sem perder as informacoes colocadas aqui?
      public function viewUsuarioCadastro(Request $request){
-        return view('usuarioCadastro');
+        return view('register');
         $this->middleware('guest');
      }
 
@@ -63,7 +63,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'cpf' => ['required', 'varchar', 'unique:users'],
+            'cpf' => ['required', 'integer', 'unique:users'],
             'gender' => ['required'],
             'state' => ['required', 'string', 'max:20'],
             'city' => ['required', 'string', 'max:255'],
