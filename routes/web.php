@@ -18,10 +18,15 @@ Route::get('/', function () {
 
 Route::get('/encontre', 'EncontreController@viewEncontre');
 Route::get('/home', "SiteController@viewHome");
+
 Route::get('/caronas', 'CaronaController@viewCarona');
 Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
 Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
+
 Route::get('/desapego',"DesapegoController@viewDesapego");
+Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
+Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
+
 Route::get('/login',"Auth\LoginController@viewLogin");
 Route::get('/register',"Auth\RegisterController@viewRegister");
 // Route::post('/register',"Auth\RegisterController@create");
