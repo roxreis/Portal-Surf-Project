@@ -45,11 +45,15 @@
         <!-- original Elke - fim -->
 
         <!-- banner -->
-        <div class="encontreBanner">
-            <div class = "frontBanner-azul">
-                <h1 class="mx-auto caronaTextoBanner">Encontre</h1>
+        <section class= "d-flex">
+            <div class="encontreBanner">
+                <div class = "frontBanner">
+                    <h1 class="mx-auto caronaTextoBanner">Encontre</h1>
+                </div>
             </div>
-        </div>
+        </section>
+
+
 
         <section class="container">
             <!-- titulo da pagina -->
@@ -97,7 +101,7 @@
 
         <!-- botao topo -->
         <div class="container text-center mt-5 mb-5">
-        <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
+            <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
         </div>
 
 @endsection

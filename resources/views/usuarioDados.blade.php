@@ -5,9 +5,6 @@ Home
 @endsection
 
 @section('conteudo')
-
-<main class="mb-5">
-
     <form action="/action_page.php">
 
         <!-- opcoes da pagina -->
@@ -202,6 +199,6 @@ Home
     <div class="container text-center mt-5">
         <a href="#usuarioTopo" class="btn encontreBotao">Topo</a>
     </div>
-</main>
+
 
 @endsection

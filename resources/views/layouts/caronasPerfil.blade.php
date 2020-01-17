@@ -5,7 +5,7 @@
 @endsection
 
 @section('conteudo')
-<main class="mt-5 mb-5">
+
 
         <!-- perfil do usuario -->
         <section class="container" id="caronaPerfilTopo">
@@ -61,7 +61,7 @@
 
         </section>
 
-    </main>
+   
 
     <!-- pagination -->
     <div class="d-flex justify-content-center mt-3 mb-5">
