@@ -31,12 +31,12 @@ Portal Surf - Cadastro Usuario
             <br>
             <div class="ml-5">
                 <div class="form-inline mt-3">
-                    <label for="name" class="col-sm-1">Nome completo:</label>
+                    <label for="name" class="col-sm-2">Nome completo:</label>
                     <input id="name" type="text" class="col-sm-9 form-control" name="name" required autocomplete="name" autofocus>
                 </div><br>
 
                 <div class="form-inline mt-3">
-                    <label for="email" class="col-sm-1">E-mail:</label>
+                    <label for="email" class="col-sm-2">E-mail:</label>
                     <input id="email" type="email" class="form-control col-sm-4"
                         name="email" required autocomplete="email">
 
@@ -60,7 +60,7 @@ Portal Surf - Cadastro Usuario
                 <br>
 
                 <div class="form-inline mt-3">
-                    <label for="cpf" class="col-sm-1">CPF:</label>
+                    <label for="cpf" class="col-sm-2">CPF:</label>
                     <input type="text" class="form-control col-sm-4" id="cpf" name="cpf">
                     <label for="gender" class="col-sm-1">Gênero:</label>
                     <select class="form-control col-sm-4" id="gender" name="gender">
@@ -72,7 +72,7 @@ Portal Surf - Cadastro Usuario
                 <br>
 
                 <div class="form-inline mt-3">
-                    <label for="state" class="col-sm-1">Estado:</label>
+                    <label for="state" class="col-sm-2">Estado:</label>
                     <input type="text" class="form-control col-sm-4" id="state" name="state">
                     <label for="city" class="col-sm-1">Cidade:</label>
                     <input type="text" class="form-control col-sm-4" id="city" name="city">
@@ -80,7 +80,7 @@ Portal Surf - Cadastro Usuario
                 <br>
 
                 <div class="form-inline mt-3">
-                    <label for="phone1" class="col-sm-1">Tel 01:</label>
+                    <label for="phone1" class="col-sm-2">Tel 01:</label>
                     <input type="text" class="form-control col-sm-4" id="phone1" name="phone1">
                     <label for="phone2" class="col-sm-1">Tel 02:</label>
                     <input type="text" class="form-control col-sm-4" id="phone2" name="phone2">

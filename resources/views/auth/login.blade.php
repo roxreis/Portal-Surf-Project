@@ -26,7 +26,7 @@ Portal Surf - Login
                         <div class="form-group row">
                             <label for="email" class="col-md-2 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
                                     name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -42,7 +42,7 @@ Portal Surf - Login
                             <label for="password"
                                 class="col-md-2 col-form-label text-md-right">{{ __('Senha') }}</label>
 
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
                                     required autocomplete="current-password">
@@ -55,7 +55,7 @@ Portal Surf - Login
                             </div>
                         </div>
 
-                        <div class="form-group row offset-md-4">
+                        <div class="form-group row ml-3">
                             
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember"

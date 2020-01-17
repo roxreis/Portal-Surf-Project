@@ -68,6 +68,11 @@ body{
     src: url('font/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\.otf');
 }
 
+@font-face{
+    font-family: "gravity";
+    src: url('/font/gravity.ttf');
+}
+
 .contato{
     height: 7vh;
     background-color: #cecece;
@@ -457,7 +462,7 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 #desapego {
-    height: 240vh;
+    height: 309vh;
     display: flex;
     flex-direction:column;
     background-color: #ffffff;
@@ -474,16 +479,76 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 #desapegar{
-    background-image: url('/imagens/img-desapego/desapegar.jpg');
-    background-repeat: no-repeat;
-    width: 25vw;
-    height: 33vh;
-    align-items: flex-end;
-    color: #ffffff;
-    font-weight: bold;
-    display: flex;
-    background-position-y: -29px;
+   
+/* align-items: flex-end; */
+   
+color: #ffffff;
+   
+font-weight: bold;
+   
+display: flex;
+   
+/* background-position-y: -29px; */
+   
+height: 51vh;
+   
+/* justify-content: center; */
+   
+align-items: center;
+   
+flex-wrap: nowrap;
 }
+
+/* #desapegar a{
+    text-decoration: none;
+} */
+
+/* #desapegar a:hover */
+#desapegar a:hover{
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  
+  
+}
+
+
+
+#desapegar2{
+
+/* background-image: url('/imagens/img-desapego/desapegar.jfif'); */
+
+background-repeat: no-repeat;
+
+width: 3vw;
+
+height: 33vh;
+
+display: flex;
+
+justify-content: flex-end;
+}
+
+#desapegar2 img{
+    height: 40vh;
+
+}
+
+#desapegar3{
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 53px;
+}
+
+
+#desapegar3 h3{
+    font-family: gravity;
+    font-size: 3.2rem;
+}
+
+
 
 .link-desapego {
     text-decoration: none;
@@ -507,12 +572,34 @@ text-shadow: #000000 -2px 0px 20px;
     /* font-family: Stencil Std, fantasy; */
 }
 
+/* css cadastro desapego */
+
+.desapegoCadastro{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
+.formDesapego{
+    margin-top: 166px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.labelFormDesapego{
+    width: 50%;
+}
+
+
+
+
 /* css cadastro usuario */
 
 .formCadastro{
     margin-top: 144px;
     /* margin-left: 100px; */
-    border: 1px solid #0e0e0e1a;
+    border: 1px solid #ced4da;
     border-radius: 20px;
     height: 1051px;
     width: 100%;
@@ -603,7 +690,7 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 .cardBlog {
-    border: 1px solid #01349233;
+    border: 1px solid #ced4da;
     border-radius: 20px;
     height: 226px;
     width: 572px;

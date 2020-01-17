@@ -7,18 +7,19 @@
 @section('conteudo')
 
 
-        <section class="shadow-lg p-4 cardBlog">
+        <section class=" desapegoCadastro container">
 
             <!-- formulario de cadastro de oferta -->
-            <h1 class="mt-2 text-center" id="ofertaCadastroTopo">Cadastro de Oferta</h1>
-            <br>
+            <form action="" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
+                <h1 class="mt-2 text-center" id="ofertaCadastroTopo">Cadastro de Oferta</h1>
+                <br>
 
             <div class="col-12">
                 <br>
                 <p><b>Dados da oferta</b></p>
 
                 <label for="seg">Segmento do Produto:</label>
-                <select class="form-control" id="seg" name="ofertaSegmento">
+                <select class="form-control  labelFormDesapego" id="seg" name="ofertaSegmento">
                     <option>Selecione uma opção</option>
                     <option>Pranchas</option>
                     <option>Acessórios</option>
@@ -26,7 +27,7 @@
                 <br>
 
                 <label for="tipo">Tipo de Equipamento:</label>
-                <select class="form-control" id="tipo" name="ofertaTipo">
+                <select class="form-control labelFormDesapego" id="tipo" name="ofertaTipo">
                     <option>Selecione uma opção</option>
                     <option>Surf</option>
                     <option>Surf Infantil</option>
@@ -38,13 +39,13 @@
                 <br>
 
                 <label for="seg">Estado do Produto:</label>
-                <select class="form-control" id="seg" name="ofertaEstProduto">
+                <select class="form-control labelFormDesapego" id="seg" name="ofertaEstProduto">
                     <option>Selecione uma opção</option>
                     <option>Novo</option>
                     <option>Usado</option>
                 </select>
 
-                <form action="" method="post" enctype="multipart/form-data">
+                
                     <div class="form-group mt-3">
                         <label for="text">Título da oferta:</label>
                         <input type="text" class="form-control" id="ofertaTitulo">
@@ -61,12 +62,18 @@
 
                     <p><b>Local de retirada do produto</b></p>
                     <div class="form-inline mt-3">
-                        <label for="text" class="mr-3">Estado:</label>
-                        <input type="number" class="form-control" id="ofertaEstado">
-                        <label for="text" class="ml-3 mr-3">Cidade:</label>
-                        <input type="text" class="form-control" id="ofertaCidade">
-                        <label for="text" class="ml-3 mr-3">Bairro/ Região:</label>
-                        <input type="text" class="form-control" id="ofertaBairro">
+                        <div style="margin-right:24px;">
+                            <label for="text" class="mr-3">Estado:</label>
+                            <input type="number" class="form-control" id="ofertaEstado">
+                        </div>
+                        <div style="margin-right:25px;">
+                            <label for="text" class="ml-3 mr-3">Cidade:</label>
+                            <input type="text" class="form-control" id="ofertaCidade">
+                        </div>
+                        <div class=>
+                            <label for="text" class="ml-3 mr-3">Bairro/ Região:</label>
+                            <input type="text" class="form-control" id="ofertaBairro">
+                        </div>
                     </div>
                     <br><br>
 
@@ -97,7 +104,7 @@
         </section>
 
         <!-- botao topo -->
-        <div class="container text-center mt-5">
+        <div class="container text-center mt-5 mb-5">
             <a href="#ofertaCadastroTopo" class="btn encontreBotao">Topo</a>
         </div>
 
