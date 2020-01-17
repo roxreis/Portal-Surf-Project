@@ -21,15 +21,15 @@ class CreateUsersTable extends Migration
             $table->string('email', 300)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password', 300);
-            $table->integer('cpf');
+            $table->string('cpf');
             $table->string('gender', 10);
             $table->string('state', 300);
             $table->string('city', 300);
-            $table->integer('phone1');
-            $table->integer('phone2');
-            $table->boolean('programaCarona');
-            $table->boolean('terms');
-            $table->boolean('emailNotification');
+            $table->string('phone1');
+            $table->string('phone2')->nullable();
+            $table->string('programaCarona');
+            $table->string('emailNotification');
+            $table->string('terms');
             $table->timestamps();
         });
     }
