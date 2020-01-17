@@ -25,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse">
-           <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center" style="margin-left:65px; width: 696px;" >
+           <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center" style="margin-left:65px; width: 1022px;" >
                       <li class="nav-item active">
                           <a class="nav-link" href="previsao.php">Previsão</a>
                       </li>

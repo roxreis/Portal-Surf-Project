@@ -6,7 +6,7 @@ Cadastro Usuario - Programa de Carona
 
 @section('conteudo')
 
-<main class="mb-5">
+
     <form action="/action_page.php">
 
         <!-- Dados carona -->
@@ -107,6 +107,6 @@ Cadastro Usuario - Programa de Carona
     <div class="container text-center mt-5">
         <a href="#usuario2Topo" class="btn encontreBotao">Topo</a>
     </div>
-</main>
+
 
 @endsection
