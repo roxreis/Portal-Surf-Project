@@ -126,33 +126,19 @@ Portal Surf - Cadastro Usuario
             </div><br><br><br> -->
 
             <div class="font-weight-bold">
-                <label class="form-check-label mt-3 col-sm-10" for="programaCarona">Você quer participar do programa de caronas?
+                <label class="form-check-label mt-3 col-sm-10" for="programaCarona">Você quer participar do programa de
+                    caronas?
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="programaCarona" id="caronaSim"
                             for="programaCarona" value="sim">
                         <label class="form-check-label" for="programaCarona">Sim</label>
                     </div>
-                    <div class="form-check-inline">
-                        <label class="form-check-label mt-3" for="terms">
-                            <input type="checkbox" class="form-check-input" name="terms" id="terms" value="sim">Aceito os
-                            termos e condições.
-                        </label>
-                    </div><br>
-                    <div class="form-check-inline">
-                        <label class="form-check-label mt-3" for="emailNotification">
-                            <input type="checkbox" class="form-check-input" value="sim" for="emailNotification"
-                                name="emailNotification" id="emailNotification">Aceito receber notificações por e-mail.
-                        </label>
-                    </div><br>
-
-                    <!-- botao Salvar e Cancelar -->
-                    <div class="container mt-5 mb-5">
-                        <!-- @empty($programaCarona)
-                        <button type="submit" class="btn encontreBotao">Salvar alterações</button>
-                        @endempty -->
-                        <button type="submit" class="btn encontreBotao">Salvar alterações</button>
-                        <button type="reset" class="btn encontreBotao">Cancelar</button>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="programaCarona" id="caronaNao"
+                            for="programaCarona" value="nao">
+                        <label class="form-check-label" for="programaCarona">Não</label>
                     </div>
+
                     @error('programaCarona')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -166,8 +152,8 @@ Portal Surf - Cadastro Usuario
                     </label> -->
 
             <div class="font-weight-bold">
-                <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber notificações por
-                    e-mail?
+                <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber notificações
+                    por e-mail?
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
                             for="emailNotification" value="sim">
@@ -218,11 +204,11 @@ Portal Surf - Cadastro Usuario
     </div>
 
 
-@endsection
+    @endsection
 
 
 
-<!-- @section('content')
+    <!-- @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
