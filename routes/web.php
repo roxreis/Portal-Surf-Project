@@ -26,6 +26,7 @@ Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
 Route::get('/desapego',"DesapegoController@viewDesapego");
 Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
 Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
+Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
 
 Route::get('/login',"Auth\LoginController@viewLogin");
 

@@ -11,6 +11,7 @@
 
             <!-- formulario de cadastro de oferta -->
             <form action="" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
+            @CSRF
                 <h1 class="mt-2 text-center" id="ofertaCadastroTopo">Cadastro de Oferta</h1>
                 <br>
 

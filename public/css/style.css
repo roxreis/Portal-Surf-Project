@@ -410,9 +410,9 @@ text-shadow: #000000 -2px 0px 20px;
 
 .caronaTextoBanner {
     color: #ffffffe1;
-    font-size: 5.5rem;;
+    font-size: 5.0rem;
     filter: drop-shadow(31px 22px 12px black);
-    width: 554px;
+    width: 899px;
     height: 100px;
     text-align: center;
 }
@@ -434,7 +434,7 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 .frontBanner{
-    background: rgba(0, 33, 94, 0.5) 0% 0% no-repeat padding-box;
+    background: rgba(0, 33, 94, 0.4) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(112, 112, 112, 1);
     opacity: 1;
     width: 100%;
@@ -571,6 +571,33 @@ justify-content: flex-end;
     font-weight: 600;
     /* font-family: Stencil Std, fantasy; */
 }
+
+/* css desapego oferta individual */
+
+.despegoBannerIndividual{
+
+background-image: url("../imagens/img-desapego/agua-do-mar.jpg");
+
+background-position-y: -190px;
+
+width: 100%;
+
+height: 210px;
+
+background-size: cover;
+
+background-repeat: no-repeat;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin-top: 116px;
+}
+
+
 
 /* css cadastro desapego */
 

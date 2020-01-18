@@ -17,4 +17,8 @@ class DesapegoController extends Controller
     public function viewDesapegoOfertasUsuario(Request $request){
         return view('desapegoOfertasUsuario');
     }
+
+    public function viewDesapegoOfertaIndividual(Request $request){
+        return view('desapegoOfertaIndividual');
+    }
 }
