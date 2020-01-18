@@ -15,7 +15,7 @@
 <body>
     <header class="cabecario">
 
-        <div id=upHeader>
+        <div id='upHeader'>
             <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
             <div id="botaoHeader">
                 <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
@@ -32,7 +32,7 @@
                 <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center"
                     style="margin-left:65px; width: 1022px;">
                     <li class="nav-item active">
-                        <a class="nav-link" href="previsao.php">Previsão</a>
+                        <a class="nav-link" href="/previsao">Previsão</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/caronas">Carona</a>
@@ -44,10 +44,10 @@
                         <a class="nav-link" href="/encontre">Encontre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.php">Blog</a>
+                        <a class="nav-link" href="/blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="noticias.php">Notícias</a>
+                        <a class="nav-link" href="/noticias">Notícias</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

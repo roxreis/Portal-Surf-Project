@@ -16,8 +16,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/encontre', 'EncontreController@viewEncontre');
 Route::get('/home', "SiteController@viewHome");
+
+Route::get('/previsao', 'PrevisaoController@viewPrevisao');
 
 Route::get('/caronas', 'CaronaController@viewCarona');
 Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
@@ -27,6 +28,12 @@ Route::get('/desapego',"DesapegoController@viewDesapego");
 Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
 Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
 Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
+
+Route::get('/encontre', 'EncontreController@viewEncontre');
+
+Route::get('/blog', 'BlogController@viewBlog');
+
+Route::get('/noticias', 'NoticiasController@viewNoticias');
 
 Route::get('/login',"Auth\LoginController@viewLogin");
 
