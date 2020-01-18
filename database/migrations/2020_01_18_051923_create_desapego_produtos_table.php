@@ -15,7 +15,7 @@ class CreateDesapegoProdutosTable extends Migration
     {
         Schema::create('desapego_produtos', function (Blueprint $table) {
             $table->bigIncrements('idProdutosDesapego')->unique();
-            $table->string('segmento');
+            $table->string('segment');
             $table->string('typeEquipament', 15);
             $table->string('stateProduct', 50);
             $table->string('titleProduct', 256);
