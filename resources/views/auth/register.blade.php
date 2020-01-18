@@ -5,12 +5,13 @@ Portal Surf - Cadastro Usuario
 @extends('layouts.templateSurf')
 
 @section('conteudo')
-<section class="container mt-5 shadow-lg p-3 cardBlog" id="usuarioTopo">
-    <form action="/register" method="POST" enctype="multipart/form-data" class="mt-3 ml-5">
+<section class="container  " id="usuarioTopo">
+    <div class="d-flex h-75">
+    <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister">
         @CSRF
 
         <!-- dados pessoais -->
-
+    <div style="margin-left: 81px;">
         <div class="text-center" id="dadosPessoais">
             <h4>SEUS DADOS PESSOAIS</h4>
             <br>
@@ -35,8 +36,8 @@ Portal Surf - Cadastro Usuario
         <br>
 
         <div class="form-inline mt-3">
-            <label for="name" class="col-sm-1">Nome completo:</label>
-            <input id="name" type="text" class="col-sm-9 form-control" name="name" required autocomplete="name"
+            <label for="name" class="col-sm-2">Nome completo:</label>
+            <input id="name" type="text" class="col-sm-8 form-control" name="name" required autocomplete="name"
                 autofocus>
             @error('name')
             <div class="alert alert-danger">{{ $message }}</div>
@@ -44,7 +45,7 @@ Portal Surf - Cadastro Usuario
         </div><br>
 
         <div class="form-inline mt-3">
-            <label for="email" class="col-sm-1">E-mail:</label>
+            <label for="email" class="col-sm-2">E-mail:</label>
             <input id="email" type="email" class="form-control col-sm-4" name="email" required autocomplete="email">
 
             @error('email')
@@ -57,7 +58,7 @@ Portal Surf - Cadastro Usuario
                 @enderror -->
 
             <label for="password" class="col-sm-1">Senha:</label>
-            <input id="password" type="password" class="form-control col-sm-4" name="password" required
+            <input id="password" type="password" class="form-control col-sm-3" name="password" required
                 autocomplete="new-password">
 
             @error('password')
@@ -72,14 +73,14 @@ Portal Surf - Cadastro Usuario
         <br>
 
         <div class="form-inline mt-3">
-            <label for="cpf" class="col-sm-1">CPF:</label>
-            <input type="text" class="form-control col-sm-4" id="cpf" name="cpf">
+            <label for="cpf" class="col-sm-2">CPF:</label>
+            <input type="text" class="form-control col-sm-3" id="cpf" name="cpf">
             @error('cpf')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
-            <label for="gender" class="col-sm-1">Gênero:</label>
-            <select class="form-control col-sm-4" id="gender" name="gender">
+            <label for="gender" class="col-sm-2">Gênero:</label>
+            <select class="form-control col-sm-3" id="gender" name="gender">
                 <option value="feminino">Feminino</option>
                 <option value="masculino">Masculino</option>
                 <option value="neutro">Prefiro não declarar</option>
@@ -91,14 +92,14 @@ Portal Surf - Cadastro Usuario
         <br>
 
         <div class="form-inline mt-3">
-            <label for="state" class="col-sm-1">Estado:</label>
-            <input type="text" class="form-control col-sm-4" id="state" name="state">
+            <label for="state" class="col-sm-2">Estado:</label>
+            <input type="text" class="form-control col-sm-3" id="state" name="state">
             @error('state')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
-            <label for="city" class="col-sm-1">Cidade:</label>
-            <input type="text" class="form-control col-sm-4" id="city" name="city">
+            <label for="city" class="col-sm-2">Cidade:</label>
+            <input type="text" class="form-control col-sm-3" id="city" name="city">
             @error('city')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
@@ -106,14 +107,14 @@ Portal Surf - Cadastro Usuario
         <br>
 
         <div class="form-inline mt-3">
-            <label for="phone1" class="col-sm-1">Telefone 01:</label>
-            <input type="text" class="form-control col-sm-4" id="phone1" name="phone1">
+            <label for="phone1" class="col-sm-2">Telefone 01:</label>
+            <input type="text" class="form-control col-sm-3" id="phone1" name="phone1">
             @error('phone1')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
-            <label for="phone2" class="col-sm-1">Telefone 02:</label>
-            <input type="text" class="form-control col-sm-4" id="phone2" name="phone2">
+            <label for="phone2" class="col-sm-2">Telefone 02:</label>
+            <input type="text" class="form-control col-sm-3" id="phone2" name="phone2">
             @error('phone2')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
@@ -184,9 +185,11 @@ Portal Surf - Cadastro Usuario
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     @endempty -->
                 <button type="submit" class="btn encontreBotao">Salvar alterações</button>
-                <button type="reset" class="btn encontreBotao">Cancelar</button>
+                <button type="reset" class="btn btn-danger">Cancelar</button>
             </div>
+        </div>
     </form>
+    
 </section>
 
 <!-- botao topo -->

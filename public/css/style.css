@@ -728,6 +728,15 @@ margin-top: 116px;
     background-color: white;
 }
 
+.formRegister{
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    height: 183vh;
+    width: 150vw;
+    background-color: white;
+    margin-top: 150px;
+}
+
 .textoCardBlog {
     text-decoration-style: none;
     color: #1f4ea5;
