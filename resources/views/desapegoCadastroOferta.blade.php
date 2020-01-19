@@ -10,7 +10,7 @@
         <section class=" desapegoCadastro container">
 
             <!-- formulario de cadastro de oferta -->
-            <form action="" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
+            <form action="/dadosDaOferta" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
             @CSRF
                 <h1 class="mt-2 text-center" id="ofertaCadastroTopo">Cadastro de Oferta</h1>
                 <br>
@@ -96,8 +96,8 @@
                     <br><br>
 
                     <!-- botoes -->
-                    <a href="desapegoOfertasUsuario.php" class="btn encontreBotao">Cadastrar Oferta</a>
-                    <a href="desapego.php" class="btn btn-danger">Cancelar</a>
+                    <input type="submit" value="Cadastrar Oferta" class="btn encontreBotao">
+                    <a href="/desapego" class="btn btn-danger">Cancelar</a>
 
                 </form>
             </div>
