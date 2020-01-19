@@ -65,7 +65,7 @@
                     <div class="form-inline mt-3">
                         <div style="margin-right:24px;">
                             <label for="text" class="mr-3">Estado:</label>
-                            <input type="number" class="form-control" id="ofertaEstado">
+                            <input type="text" class="form-control" id="ofertaEstado">
                         </div>
                         <div style="margin-right:25px;">
                             <label for="text" class="ml-3 mr-3">Cidade:</label>
@@ -96,8 +96,8 @@
                     <br><br>
 
                     <!-- botoes -->
-                    <a href="desapegoOfertasUsuario.php" class="btn encontreBotao">Cadastrar Oferta</a>
-                    <a href="desapego.php" class="btn btn-danger">Cancelar</a>
+                    <a href="/desapegoOfertasUsuario" class="btn encontreBotao">Cadastrar Oferta</a>
+                    <a href="/desapego" class="btn btn-danger">Cancelar</a>
 
                 </form>
             </div>
