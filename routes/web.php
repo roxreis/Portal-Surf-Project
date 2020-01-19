@@ -16,7 +16,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', "SiteController@viewHome");
+// Route::get('/home', "SiteController@viewHome");
 
 Route::get('/previsao', 'PrevisaoController@viewPrevisao');
 

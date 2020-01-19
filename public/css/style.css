@@ -140,6 +140,23 @@ nav ul li a{
     /* background-size: cover; */
  }
 
+ .logado{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 56px;
+ }
+
+ .logado a{
+     color: #245676;
+     font-size: -2.9rem;
+     font-weight: 700;
+     text-shadow: 1px 2px 3px 1px;
+     /* text-shadow: 2px 3px 4px; */
+     /* border: 1px solid #245676; */
+ }
+
  .gaveta-icones{
     display: flex;
     width: 90px;

@@ -14,14 +14,43 @@
 
 <body>
     <header class="cabecario">
-
+    @guest
         <div id='upHeader'>
+       
             <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+       
+            @if (Route::has('register'))
             <div id="botaoHeader">
                 <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
                 <a href="/login" class="btn btn-success" id="botaoHeader2">Login</a>
             </div>
+            @endif
         </div>
+        @else
+        <div id='upHeader'>
+            <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+            <li class="nav-item dropdown logado">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ Auth::user()->name }} <span class="caret"></span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                          onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+        
+        </div>
+        @endguest
+    
+            
 
         <nav class="headerNavbar navbar navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
