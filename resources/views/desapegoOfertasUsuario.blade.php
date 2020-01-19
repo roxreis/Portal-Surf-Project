@@ -126,7 +126,7 @@
 <!-- botao voltar e topo -->
 <div class="container mt-3">
 <a href='#historicoOfertasTopo' class="btn encontreBotao">Topo</a>
-<a href="./dadosUsuario.php" class="btn encontreBotao">Voltar</a>
+<a href="/desapego" class="btn encontreBotao">Voltar</a>
 </div>
 
 
