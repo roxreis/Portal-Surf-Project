@@ -713,7 +713,6 @@ margin-top: 116px;
 .cardBlogGeral {
     position: relative;
     display: flex;
-    flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
 
