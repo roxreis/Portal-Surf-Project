@@ -7,7 +7,7 @@
 @section('conteudo')
 
 
-        <section class=" desapegoCadastro container">
+        <section class="desapegoCadastro container">
 
             <!-- formulario de cadastro de oferta -->
             <form action="" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
