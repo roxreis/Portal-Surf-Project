@@ -9,17 +9,25 @@ class DesapegoController extends Controller
 {
 
 
-    public function create(Request $request){
-        // metodo acima 'create' fica responsavel por cadastrar um produto
-
-        // metodo abaixo sujo, substituido pelo proximo:
-        // if($request->isMethod('GET')){
-        //     return view('formulario');
-        // }else{
-        //     // faco o cadastro do produto
-        // }
-        
+     protected function create(Request $request){
+        return Desapego::create([
+            
+            'segment' => $request['ofertaSegmento'],
+            'typeEquipament' => $request['ofertaTipo'],
+            'stateProduct' => $request['ofertaEstProduto'],
+            'titleProduct' => $request['ofertaTitulo'],
+            'descriptionProduct' => $request['ofertaDescr'],
+            'priceProduct' => $request['ofertaPreco'],
+            'withdrawalState' => $request['ofertaEstado'],
+            'withdrawalCity' => $request['ofertaCidade'],
+            'programaCarona' => $request['ofertaBairro'],
+            'imgProduct' => $request['imgProduto'],
+          
+        ]);
     }
+
+        
+  
 
     protected $redirectTo = '/desapegoOfertasUsuario';
 
@@ -40,8 +48,6 @@ class DesapegoController extends Controller
         return view('desapegoOfertaIndividual');
     }
 
-    public function dadosDaOferta(Request $request){
-        return "ok!";
-    }
+    
 
 }
