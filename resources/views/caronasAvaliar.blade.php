@@ -5,7 +5,7 @@
 @endsection
 
 @section('conteudo')
-<main class="mb-5">
+
 
 <section class="container cardBlog shadow-lg p-5 mt-5">
 <div class="text-center">
@@ -79,6 +79,6 @@
     </form>
 </section>
 
-</main>
+
 $endsection
 

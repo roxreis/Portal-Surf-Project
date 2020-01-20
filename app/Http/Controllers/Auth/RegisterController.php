@@ -38,15 +38,16 @@ class RegisterController extends Controller
      */
 
      // como colocar corretamente o direcionamento para o view com o formulario de cadastro sem perder as informacoes colocadas aqui?
-     public function viewUsuarioCadastro(Request $request){
-        return view('register');
-        $this->middleware('guest');
-     }
-
-    // public function __construct()
-    // {
+    //  public function viewRegister(Request $request){
+        
     //     $this->middleware('guest');
-    // }
+    //     return view('register');
+    //  }
+
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
 
     /**
      * Get a validator for an incoming registration request.
@@ -60,16 +61,16 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'person' => ['required'],
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'cpf' => ['required', 'integer', 'unique:users'],
+            'password' => ['required', 'string', 'min:6'],
+            'cpf' => ['required', 'string', 'unique:users'],
             'gender' => ['required'],
-            'state' => ['required', 'string', 'max:20'],
-            'city' => ['required', 'string', 'max:255'],
-            'phone1' => ['required', 'integer', 'max:12'],
-            'phone2' => ['integer', 'max:12'],
-            'programaCarona' => ['required'],
+            'state' => ['required', 'string'],
+            'city' => ['required', 'string'],
+            'phone1' => ['required', 'string'],
+            'programaCarona' => ['required', 'string'],
+            'emailNotification' => ['required', 'string'],
             'terms' => ['required'],
         ]);
     }
@@ -87,18 +88,17 @@ class RegisterController extends Controller
         return User::create([
             'person' => $data['person'],
             'name' => $data['name'],
-            'nameLogin' => $data['nameLogin'],
+            'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'cpf' => $data['cpf'],
             'gender' => $data['gender'],
             'state' => $data['state'],
             'city' => $data['city'],
-            'email' => $data['email'],
             'phone1' => $data['phone1'],
             'phone2' => $data['phone2'],
             'programaCarona' => $data['programaCarona'],
-            'terms' => $data['terms'],
             'emailNotification' => $data['emailNotification'],
+            'terms' => $data['terms'],
         ]);
     }
 }

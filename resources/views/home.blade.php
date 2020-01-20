@@ -41,9 +41,9 @@ Home
   
 </section>
 
-<section class=" d-flex flex-column flex-nowrap home">
+<section class=" d-flex flex-column flex-nowrap homeSection2" style="height:958px;">
 
-    <article class="text-center p-5 d-flex flex-column h-25  " style="background:#d7dfea;color: #101010;">
+    <article class="text-center p-5 d-flex flex-column" style="background:#d7dfea;color: ##404147;">
         <h2 class="font-weight-bold">Quem Somos</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique consectetur corporis sunt explicabo ducimus ratione perspiciatis rem quae aspernatur ad minima porro illum excepturi reiciendis cum iste earum, sed veniam.</p>
     </article>                            

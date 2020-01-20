@@ -16,20 +16,37 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/encontre', 'EncontreController@viewEncontre');
-Route::get('/home', "SiteController@viewHome");
+// Route::get('/home', "SiteController@viewHome");
+
+Route::get('/previsao', 'PrevisaoController@viewPrevisao');
+
 Route::get('/caronas', 'CaronaController@viewCarona');
 Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
 Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
+
 Route::get('/desapego',"DesapegoController@viewDesapego");
+Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
+Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
+Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
+Route::post('/dadosDaOferta', "DesapegoController@create");
+
+// Route::resource('/desapegoCadastroOferta', "DesapegoController@viewDesapegoCadastroOferta");
+//Route::post('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
+
+
+Route::get('/encontre', 'EncontreController@viewEncontre');
+
+Route::get('/blog', 'BlogController@viewBlog');
+
+Route::get('/noticias', 'NoticiasController@viewNoticias');
+
 Route::get('/login',"Auth\LoginController@viewLogin");
-Route::get('/register',"Auth\RegisterController@viewRegister");
-// Route::post('/register',"Auth\RegisterController@create");
-Route::post('/register',"Auth\RegisterController@viewRegister");
+
+Route::post('/register',"Auth\RegisterController@create");
+// Route::post('/register',"Auth\RegisterController@viewRegister");
 
 Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); /*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
 
-
-Auth::routes();
+ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

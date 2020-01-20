@@ -26,8 +26,8 @@
     </section>
 
     <section  style="background-color: #cbcece75;" >
-        <div class="shadow-lg container" id="desapego">
-
+    <div class="shadow-lg container" id="desapego">
+        
             <!-- <div>
             <form class="form-inline my-2 my-lg-0 d-flex justify-content-center align-items-center col-lg-6">
                 <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!"
@@ -35,6 +35,20 @@
                 <button class="btn encontreBotao my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
             </form>
             </div><br><br> -->
+            <div class="row" id="desapegar">
+                <div class= col-5 id="desapegar2">
+                    <img src="/imagens/img-desapego/desapegar.jfif" alt="">
+
+                </div>
+                <a href="/desapegoCadastroOferta" ><div class="col-10" id="desapegar3">
+                    <h3 class="font-weight-bold">Quer fazer uma grana!? <br> </h3>
+                    <h4>Todo mundo tem aquele item que não usa mais: pranchas, long e short jhon, acessórios e tudo mais, então CLICK AQUI e anuncie no site, </h4><br>
+                    <h4>Veja abaixo ofertas de quem já está desapegando!</h4>
+                </div>
+
+
+                </a>
+            </div>
 
             <div class="titulodeSecaoDesapego"> 
                 <h3>Pranchas e Equipamentos</h3>

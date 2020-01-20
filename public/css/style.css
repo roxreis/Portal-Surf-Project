@@ -68,6 +68,11 @@ body{
     src: url('font/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\.otf');
 }
 
+@font-face{
+    font-family: "gravity";
+    src: url('/font/gravity.ttf');
+}
+
 .contato{
     height: 7vh;
     background-color: #cecece;
@@ -76,7 +81,7 @@ body{
 
 .cabecario{
     width: 100%;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     height: 121px;
     z-index: 99;
@@ -91,7 +96,7 @@ body{
 
 nav ul li a{
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     /* font-weight: bold; */
     /* font-family: "roboto-light"; */
     /* text-transform: uppercase; */
@@ -100,7 +105,7 @@ nav ul li a{
 
 
 #logo{
-    height: 69px;
+    height: 65px;
     width: 236px;
     /* margin-left: 61px; */
     margin-bottom: 10px;
@@ -125,7 +130,7 @@ nav ul li a{
  #upHeader{
     width: 100%;
     /* background-image: linear-gradient(to left, #f0f0f37a , #ffffff); */
-    height: 209px;
+    height: 84px;
     align-items: center;
     display: flex;
     background-image: url("../imagens/img-home/banner17.jpg");
@@ -135,15 +140,32 @@ nav ul li a{
     /* background-size: cover; */
  }
 
+ .logado{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 56px;
+ }
+
+ .logado a{
+     color: #245676;
+     font-size: -2.9rem;
+     font-weight: 700;
+     text-shadow: 3px 4px 8px;
+     /* text-shadow: 2px 3px 4px; */
+     /* border: 1px solid #245676; */
+ }
+
  .gaveta-icones{
     display: flex;
-    width: 81px;
+    width: 90px;
     height: 29px;
     /* justify-content: center; */
     align-items: center;
     color: #fff;
-    /* justify-content: space-evenly; */
-    margin-left: 422px;
+    justify-content: space-evenly;
+    margin-left: 94px;
     margin-bottom: -2px;
 }
 
@@ -152,7 +174,7 @@ nav ul li a{
     height: 3vh;
 }
 
-   
+
 
 .redes-sociais{
     width: 20px;
@@ -171,11 +193,6 @@ nav ul li a{
 }
 
 /* css para home - index */
-.home{
-    height: 160.5vh;
-}
-
-
 
 
 #carousel-1{
@@ -188,7 +205,7 @@ nav ul li a{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-top: 122px;
+    margin-top: 107px;
 }
 
 /* .carousel-gaveta{
@@ -201,7 +218,7 @@ nav ul li a{
 
 #carousel-2{
     background-image: url("../imagens/img-home/banner28.jpg");
-    background-position-y: -187px;
+    background-position-y: -314px;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,7 +226,7 @@ nav ul li a{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-top: 122px;
+    margin-top: 107px;
 }
 
 #carousel-3{
@@ -222,7 +239,7 @@ nav ul li a{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-top: 122px;
+    margin-top: 108px;
 }
 
 .efeitoBannerHome{
@@ -231,49 +248,51 @@ nav ul li a{
     background-image: linear-gradient(to top, #011a77cf , #002bc700);
 }
 
+
+
 .cards-home{
     display: flex;
     height: 248px;
 }
 
 #texto-index{
-     
+
 color: rgb(31, 29, 29);
-     
+
 height: 177px;
-     
+
 width: 100%;
-     
+
 /* margin-left: 257px; */
-     
+
 /* text-align: center; */
-     
+
 /* text-shadow: 0 0 0.2em; */
-     
+
 display: flex;
-     
+
 flex-direction: column;
-     
+
 justify-content: center;
-     
+
 /* font-size: 31px; */
-     
+
 /* padding: 50px; */
-     
+
 margin-top: 124px;
-     
+
 margin-bottom: 8px;
-     
+
 margin-left: 111px;
-     
+
 /* align-items: flex-start; */
-     
+
 /* margin-right: 506px; */
-     
+
 text-shadow: #000000 -2px 0px 20px;
-     
+
 /* text-align: center; */
-     
+
 /* align-items: center; */
 }
 
@@ -285,6 +304,7 @@ text-shadow: #000000 -2px 0px 20px;
     color: #333333ed;
     justify-content: baseline;
     justify-content: center;
+    background-color: azure;
 }
 
 
@@ -325,7 +345,7 @@ text-shadow: #000000 -2px 0px 20px;
 /* #efeito-img{
     background: transparent linear-gradient(180deg, #6C648B 0%, #B6A19E 100%) 0% 0% no-repeat padding-box;
     opacity: 0.7;
-   
+
 } */
 
 
@@ -407,9 +427,9 @@ text-shadow: #000000 -2px 0px 20px;
 
 .caronaTextoBanner {
     color: #ffffffe1;
-    font-size: 5.5rem;;
+    font-size: 5.0rem;
     filter: drop-shadow(31px 22px 12px black);
-    width: 554px;
+    width: 899px;
     height: 100px;
     text-align: center;
 }
@@ -427,11 +447,11 @@ text-shadow: #000000 -2px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 121px;
+    margin-top: 116px;
 }
 
 .frontBanner{
-    background: rgba(0, 33, 94, 0.5) 0% 0% no-repeat padding-box;
+    background: rgba(0, 33, 94, 0.4) 0% 0% no-repeat padding-box;
     border: 1px solid rgba(112, 112, 112, 1);
     opacity: 1;
     width: 100%;
@@ -459,7 +479,7 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 #desapego {
-    height: 240vh;
+    height: 309vh;
     display: flex;
     flex-direction:column;
     background-color: #ffffff;
@@ -476,16 +496,76 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 #desapegar{
-    background-image: url('/imagens/img-desapego/desapegar.jpg');
-    background-repeat: no-repeat;
-    width: 25vw;
-    height: 33vh;
-    align-items: flex-end;
-    color: #ffffff;
-    font-weight: bold;
-    display: flex;
-    background-position-y: -29px;
+
+/* align-items: flex-end; */
+
+color: #ffffff;
+
+font-weight: bold;
+
+display: flex;
+
+/* background-position-y: -29px; */
+
+height: 51vh;
+
+/* justify-content: center; */
+
+align-items: center;
+
+flex-wrap: nowrap;
 }
+
+/* #desapegar a{
+    text-decoration: none;
+} */
+
+/* #desapegar a:hover */
+#desapegar a:hover{
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+
+
+}
+
+
+
+#desapegar2{
+
+/* background-image: url('/imagens/img-desapego/desapegar.jfif'); */
+
+background-repeat: no-repeat;
+
+width: 3vw;
+
+height: 33vh;
+
+display: flex;
+
+justify-content: flex-end;
+}
+
+#desapegar2 img{
+    height: 40vh;
+
+}
+
+#desapegar3{
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 53px;
+}
+
+
+#desapegar3 h3{
+    font-family: gravity;
+    font-size: 3.2rem;
+}
+
+
 
 .link-desapego {
     text-decoration: none;
@@ -509,6 +589,70 @@ text-shadow: #000000 -2px 0px 20px;
     /* font-family: Stencil Std, fantasy; */
 }
 
+/* css desapego oferta individual */
+
+.despegoBannerIndividual{
+
+background-image: url("../imagens/img-desapego/agua-do-mar.jpg");
+
+background-position-y: -190px;
+
+width: 100%;
+
+height: 210px;
+
+background-size: cover;
+
+background-repeat: no-repeat;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin-top: 116px;
+}
+
+
+
+/* css cadastro desapego */
+
+.desapegoCadastro{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
+.formDesapego{
+    margin-top: 166px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.labelFormDesapego{
+    width: 50%;
+}
+
+
+
+
+/* css cadastro usuario */
+
+.formCadastro{
+    margin-top: 144px;
+    /* margin-left: 100px; */
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    height: 1051px;
+    width: 100%;
+    background-color: white;
+}
+
+#dadosPessoais{
+    margin-top: 50px;
+}
 
 
 /* css oferta desapego */
@@ -558,7 +702,7 @@ text-shadow: #000000 -2px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 121px;
+    margin-top: 116px;
 }
 
 .encontreBotao {
@@ -571,31 +715,42 @@ text-shadow: #000000 -2px 0px 20px;
 /* css para pagina blog */
 .blogBanner {
     background-image: url("../imagens/img-blog/surfers.jpg");
+    /* background-image: url("../imagens/img-encontre/surfboard.jpg"); */
+    background-position-y: -297px;
+    width: 100%;
+    height: 210px;
     background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    margin-top: 116px;
 }
 
 .cardBlogGeral {
     position: relative;
     display: flex;
-    flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    
+
     background-color: #fff;
 }
 
 .cardBlog {
-    border: 1px solid #01349233;
+    border: 1px solid #ced4da;
     border-radius: 20px;
-    height: 1051px;
-    margin-top: 152px;
-    width: 100%;
+    height: 226px;
+    width: 572px;
     background-color: white;
+}
+
+.formRegister{
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    height: 183vh;
+    width: 150vw;
+    background-color: white;
+    margin-top: 150px;
 }
 
 .textoCardBlog {
@@ -608,21 +763,30 @@ text-shadow: #000000 -2px 0px 20px;
 /* css para pagina noticias */
 .noticiasBanner {
     background-image: url("../imagens/img-noticias/pranchaPaisagem.jpg");
+    background-position-y: -297px;
+    width: 100%;
+    height: 210px;
     background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    margin-top: 93px;
 }
 
 
 /* css para pagina previsao */
 #previsaoBanner {
     background-image: url("../imagens/img-previsao/previgraca.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-position-y: -257px;
+      width: 100%;
+      height: 210px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 116px;
 }
 
 .botaoAzul {
@@ -632,6 +796,12 @@ text-shadow: #000000 -2px 0px 20px;
     font-weight: bold;
     color: #FFF;
     font-style: italic;
+}
+
+/* css login */
+
+.textoLogin{
+    margin-top: 171px;
 }
 
 /* css footer */
@@ -651,7 +821,7 @@ text-shadow: #000000 -2px 0px 20px;
     color: #f3eeee;
     margin-top: 14px;
     /* font-weight: bold; */
-    
+
 }
 
 /* fim css footer */
@@ -757,7 +927,7 @@ text-shadow: #000000 -2px 0px 20px;
             align-items: flex-end;
         }
 
-      
+
 
         .encontreBanner {
             display: none;
@@ -833,7 +1003,7 @@ text-shadow: #000000 -2px 0px 20px;
 
     @media (max-width: 480px) {
 
-     
+
         .encontreBanner {
             display: none;
         }
@@ -946,4 +1116,4 @@ text-shadow: #000000 -2px 0px 20px;
         .historico-caronas{
             display: none;
         }
-    }   
+    }
