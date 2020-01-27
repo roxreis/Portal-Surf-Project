@@ -57,21 +57,21 @@
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse d-flex">
                 <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center"
-                    style="margin-left:65px; width: 1022px;">
+                    style="margin-left:65px; width: 600px;">
                     <li class="nav-item active">
                         <a class="nav-link" href="/previsao">Previsão</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/caronas">Carona</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/desapego">Desapego</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/encontre">Encontre</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/blog">Blog</a>
                     </li>
