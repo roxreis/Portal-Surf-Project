@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-    Caronas
+    Blog
 @endsection
 
 @section('conteudo')

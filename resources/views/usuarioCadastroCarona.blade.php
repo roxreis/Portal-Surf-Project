@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-Cadastro Usuario - Programa de Carona
+Caronas - Cadastro Usuario
 @endsection
 
 @section('conteudo')

@@ -5,7 +5,7 @@ Portal Surf - Cadastro Usuario
 @extends('layouts.templateSurf')
 
 @section('conteudo')
-<section class="container  " id="usuarioTopo">
+<section class="container" id="usuarioTopo">
     <div class="d-flex h-75">
         <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister">
             @CSRF
@@ -51,7 +51,7 @@ Portal Surf - Cadastro Usuario
                     @error('email')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-                    
+
                     <label for="password" class="col-sm-1">Senha:</label>
                     <input id="password" type="password" class="form-control col-sm-3" name="password" required
                         autocomplete="new-password">
@@ -206,7 +206,9 @@ Portal Surf - Cadastro Usuario
                         <button type="reset" class="btn btn-danger">Cancelar</button>
                     </div>
                 </div>
+            </div>
         </form>
+    </div>
 
 </section>
 

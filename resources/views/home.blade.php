@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-Home
+Portal Surf
 @endsection
 
 

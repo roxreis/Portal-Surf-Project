@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-    Caronas
+    Previsão
 @endsection
 
 @section('conteudo')
@@ -21,7 +21,7 @@
         <div class=container>
             <div class="card-deck">
                     <div class="card">
-                    <a href="zriviera.php">
+                    <a href="/previsaoRiviera">
                         <img src="imagens/img-previsao/riviera.png" class="card-img-top" alt="onda de riviera"></a>
                         <div class="card-body">
                             <h5 class="card-title">Riviera</h5>
@@ -127,5 +127,5 @@
             </div>
     </div>
 </div>
-</main>
+
 @endsection

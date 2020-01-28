@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-    Perfil Caronas
+    Caronas Perfil 
 @endsection
 
 @section('conteudo')

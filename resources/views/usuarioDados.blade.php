@@ -1,7 +1,7 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-Home
+Seus dados
 @endsection
 
 @section('conteudo')

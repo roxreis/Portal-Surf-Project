@@ -19,6 +19,7 @@ Route::get('/', function () {
 // Route::get('/home', "SiteController@viewHome");
 
 Route::get('/previsao', 'PrevisaoController@viewPrevisao');
+Route::get('/previsaoRiviera', 'PrevisaoController@viewPrevisaoRiviera');
 
 Route::get('/caronas', 'CaronaController@viewCarona');
 Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
