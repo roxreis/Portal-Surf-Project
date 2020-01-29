@@ -29,10 +29,9 @@ Route::get('/desapego',"DesapegoController@viewDesapego");
 Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
 Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
 Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
-Route::post('/dadosDaOferta', "DesapegoController@create");
-
+// Route::post('/dadosDaOferta', "DesapegoController@create");
+Route::post('/desapegoCadastroOferta', "DesapegoController@create");
 // Route::resource('/desapegoCadastroOferta', "DesapegoController@viewDesapegoCadastroOferta");
-//Route::post('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
 
 
 Route::get('/encontre', 'EncontreController@viewEncontre');

@@ -8,7 +8,6 @@ use App\Desapego;
 
 class DesapegoController extends Controller
 {
-
  
 
      protected function create(Request $request){

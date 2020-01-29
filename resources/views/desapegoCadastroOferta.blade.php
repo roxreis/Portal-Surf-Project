@@ -10,7 +10,7 @@
         <section class="desapegoCadastro container">
 
             <!-- formulario de cadastro de oferta -->
-            <form action="/dadosDaOferta" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
+            <form action="/desapegoCadastroOferta" method="post" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
             @CSRF
                 <h1 class="mt-2 text-center" id="ofertaCadastroTopo">Cadastro de Oferta</h1>
                 <br>
