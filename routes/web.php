@@ -26,10 +26,10 @@ Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
 Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
 
 Route::get('/desapego',"DesapegoController@viewDesapego");
-Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
-Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
+// Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
+// Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
 Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
-Route::post('/dadosDaOferta', "DesapegoController@create");
+// Route::post('/dadosDaOferta', "DesapegoController@create");
 
 // Route::resource('/desapegoCadastroOferta', "DesapegoController@viewDesapegoCadastroOferta");
 //Route::post('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
@@ -46,8 +46,11 @@ Route::get('/login',"Auth\LoginController@viewLogin");
 Route::post('/register',"Auth\RegisterController@create");
 // Route::post('/register',"Auth\RegisterController@viewRegister");
 
-Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); /*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
+// Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); /*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
 
  Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('ofertaDesapego', 'CrudDesapegoController');
+// Route::resource('/desapegoOfertasUsuario', 'DesapegoController2');

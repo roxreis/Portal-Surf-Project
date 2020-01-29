@@ -10,15 +10,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Desapego extends Model{
 
-    use Notifiable;
+    // use Notifiable;
 
         /**
          * The attributes that are mass assignable.
          *
          * @var array
          */
-        protected $fillable = [
-            'ofertaSegmento', 'ofertaTipo', 'ofertaEstProduto', 'ofertaTitulo', 'ofertaDescr', 'ofertaPreco', 'ofertaEstado', 'ofertaCidade', 'ofertaBairro', 'imgProduto',
-        ];
+        protected $fillable =
+        ['segment', 'typeEquipament', 'stateProduct', 'titleProduct', 'descriptionProduct', 'priceProduct', 'withdrawalState', 'withdrawalCity', 'withdrawalNeighborhood', 'imgProduct'];
+        protected $guarded = ['id', 'created_at', 'update_at'];
+        protected $table = 'desapego_produtos';
     }
 

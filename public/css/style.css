@@ -674,10 +674,20 @@ margin-top: 116px;
 }
 
 .img-ofertaDesapegoHistorico {
-    width: 537px;
-    height: 230px;
-    margin-top: 34px;
-    justify-content: center;
+    
+width: 100vw;
+    
+height: 210vh;
+    
+margin-top: 147px;
+    
+/* justify-content: center; */
+    
+/* justify-content: space-between; */
+    
+display: flex;
+    
+flex-wrap: wrap;
 }
 
 

@@ -40,7 +40,7 @@
                     <img src="/imagens/img-desapego/desapegar.jfif" alt="">
 
                 </div>
-                <a href="/desapegoCadastroOferta" ><div class="col-10" id="desapegar3">
+                <a href="{{route('ofertaDesapego.create')}}" ><div class="col-10" id="desapegar3">
                     <h3 class="font-weight-bold">Quer fazer uma grana!? <br> </h3>
                     <h4>Todo mundo tem aquele item que não usa mais: pranchas, long e short jhon, acessórios e tudo mais, então CLICK AQUI e anuncie no site, </h4><br>
                     <h4>Veja abaixo ofertas de quem já está desapegando!</h4>
