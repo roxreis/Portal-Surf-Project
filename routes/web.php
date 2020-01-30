@@ -30,9 +30,7 @@ Route::get('/desapego',"DesapegoController@viewDesapego");
 // Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
 Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
 // Route::post('/dadosDaOferta', "DesapegoController@create");
-
 // Route::resource('/desapegoCadastroOferta', "DesapegoController@viewDesapegoCadastroOferta");
-//Route::post('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
 
 
 Route::get('/encontre', 'EncontreController@viewEncontre');
