@@ -42,6 +42,7 @@ class CrudDesapegoController extends Controller
         return redirect()->route('ofertaDesapego.index');
     }
 
+
     /**
      * Display the specified resource.
      *
@@ -50,8 +51,19 @@ class CrudDesapegoController extends Controller
      */
     public function show($id)
     {
-        //
+        // try{
+            //         $oferta = $this->Desapego->findOrFail($id);
+        
+            //         return view('Desapego.edit');
+        
+            //     } catch(\Exception $e) {
+            //         if(env('APP_DEBUG')) {
+            //             return redirect()->back();
+            //         }
+        
+        // }    
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -64,6 +76,7 @@ class CrudDesapegoController extends Controller
         //
     }
 
+
     /**
      * Update the specified resource in storage.
      *
@@ -73,8 +86,23 @@ class CrudDesapegoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+                    $data = $request->all();
+        
+                    $oferta = $this->Desapego->findOrFail($id);
+                    $oferta->update($data);
+        
+                    return redirect()->route('ofertaDesapego.index');
+        
+                } catch(\Exception $e) {
+                    if(env('APP_DEBUG')) { 
+                        return redirect()->back();
+                    }
+                    
+                }
     }
+    
+
 
     /**
      * Remove the specified resource from storage.
@@ -86,5 +114,20 @@ class CrudDesapegoController extends Controller
     {
         // $oferta = Desapego::find($id)->delete();
         // return redirect()->route('ofertaDesapego.index');
+
+        try {
+
+            $oferta = $this->Desapego->findOrFail($id);
+            $oferta->delete();
+        
+            return redirect()->route('ofertaDesapego.index');
+        
+                } catch(\Exception $e) {
+                    if(env('APP_DEBUG')) {
+                        return redirect()->back();
+                    }
+                }
     }
+
 }
+
