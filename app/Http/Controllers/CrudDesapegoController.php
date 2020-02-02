@@ -51,17 +51,17 @@ class CrudDesapegoController extends Controller
      */
     public function show($id)
     {
-        // try{
-            //         $oferta = $this->Desapego->findOrFail($id);
+        try{
+                    $oferta = $this->Desapego->findOrFail($id);
         
-            //         return view('Desapego.edit');
+                    return view('ofertaDesapego.edit');
         
-            //     } catch(\Exception $e) {
-            //         if(env('APP_DEBUG')) {
-            //             return redirect()->back();
-            //         }
+                } catch(\Exception $e) {
+                    if(env('APP_DEBUG')) {
+                        return redirect()->back();
+                    }
         
-        // }    
+        }    
     }
 
 
@@ -86,7 +86,7 @@ class CrudDesapegoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        try{
+                try{
                     $data = $request->all();
         
                     $oferta = $this->Desapego->findOrFail($id);

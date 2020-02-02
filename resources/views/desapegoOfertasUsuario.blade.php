@@ -19,9 +19,9 @@
 
                 <div class="card-body">
                         <h5 class="card-title">{{$oferta -> titleProduct}}</h5>
-                        <p class="card-text">R$ {{$oferta -> priceProduct}} <br> Descrição: {{$oferta -> descriptionProduct}} <br> Data oferta:{{$oferta ->created_at}} </p>
+                        <p class="card-text"> R$ {{$oferta -> priceProduct}} <br> Descrição: {{$oferta -> descriptionProduct}} <br> Data oferta:{{$oferta -> created_at}} </p>
                         <a href="#" class="btn encontreBotao">Editar</a>
-                        <a href= "#" class="btn btn-danger">Excluir</a> 
+                        <a href= "#" class="btn btn-danger encontreBotao">Excluir</a> 
                         <!-- <a href="#" class="btn encontreBotao">Desativar</a> -->
                 </div>
 
