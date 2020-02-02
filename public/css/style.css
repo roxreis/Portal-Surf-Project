@@ -720,7 +720,21 @@ flex-wrap: wrap;
     color: #FFF;
 }
 
+.encontreSelecao {
+    display: flex;
+    /* flex-flow: column;
+    flex-direction: column; */
+    /* justify-content: flex-start; */
+    transform: rotate(270deg);
+    flex-wrap: nowrap;
+}
 
+.encontreMapa{
+    display: flex;
+    justify-content: flex-end;
+    height: 300px;
+    width: 100%;
+}
 
 /* css para pagina blog */
 .blogBanner {
