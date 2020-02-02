@@ -51,8 +51,12 @@
         <section class="bg-light pt-2 pb-3">
             <div class="container mt-3 mb-2">
                 <h4>Condições atuais:</h4>
+                <!-- link da imagem de credito do magicseaweed - problemas na tela -->
+                <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
+                <!-- imagem da previsao -->
                 <img src="imagens/img-previsao/prevdia.png" class="img-fluid" alt="condicoes atuais">
             </div>
+            
         </section>
 
         <!-- sessão encontre vinculada a busca do google -->
