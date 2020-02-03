@@ -87,10 +87,11 @@ Portal Surf - Cadastro Usuario
                     @error('cep')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
+                    </div><br>
 
-                    <button type="submit" class="btn encontreBotao ml-5">Buscar</button>
-                </div><br>
-
+                    <!-- <button type="submit" class="btn encontreBotao ml-5">Buscar</button>
+                </div><br> -->
+                    <!-- 
                 <div class="form-inline mt-3">
                     <label for="street" class="col-sm-2">Endereço:</label>
                     <input type="text" class="form-control col-sm-3" id="street" name="street">
@@ -104,109 +105,111 @@ Portal Surf - Cadastro Usuario
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <br>
+                <br> -->
 
-                <div class="form-inline mt-3">
-                    <label for="state" class="col-sm-2">Estado:</label>
-                    <input type="text" class="form-control col-sm-3" id="state" name="state">
-                    @error('state')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                    @enderror
-
-                    <label for="city" class="col-sm-2">Cidade:</label>
-                    <input type="text" class="form-control col-sm-3" id="city" name="city">
-                    @error('city')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <br>
-
-                <div class="form-inline mt-3">
-                    <label for="phone1" class="col-sm-2">Telefone 01:</label>
-                    <input type="text" class="form-control col-sm-3" id="phone1" name="phone1">
-                    @error('phone1')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                    @enderror
-
-                    <label for="phone2" class="col-sm-2">Telefone 02:</label>
-                    <input type="text" class="form-control col-sm-3" id="phone2" name="phone2">
-                    @error('phone2')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <br>
-
-                <!-- opcao em participar do programa de caronas -->
-                <div class="font-weight-bold">
-                    <label class="form-check-label mt-3 col-sm-10" for="programaCarona">Você quer participar do programa
-                        de
-                        caronas?
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="programaCarona" id="caronaSim"
-                                for="programaCarona" value="sim">
-                            <label class="form-check-label" for="programaCarona">Sim</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="programaCarona" id="caronaNao"
-                                for="programaCarona" value="nao">
-                            <label class="form-check-label" for="programaCarona">Não</label>
-                        </div>
-
-                        @error('programaCarona')
+                    <div class="form-inline mt-3">
+                        <label for="state" class="col-sm-2">Estado:</label>
+                        <input type="text" class="form-control col-sm-3" id="state" name="state">
+                        @error('state')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
-                </div>
 
-                <!-- opcao em receber notificacos por email -->
-                <div class="font-weight-bold">
-                    <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber
-                        notificações
-                        por e-mail?
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
-                                for="emailNotification" value="sim">
-                            <label class="form-check-label" for="emailNotification">Sim</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="emailNotification" id="emailNao"
-                                for="emailNotification" value="nao">
-                            <label class="form-check-label" for="emailNotification">Não</label>
-                        </div>
-
-                        @error('emailNotification')
+                        <label for="city" class="col-sm-2">Cidade:</label>
+                        <input type="text" class="form-control col-sm-3" id="city" name="city">
+                        @error('city')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
-                </div><br><br>
-
-                <!-- aceite de termos e condicoes -->
-                <div>
-                    <div class="form-group">
-                        <label class="font-weight-bold">Termos e Condições do Portal do Surf</label>
-                        <textarea class="form-control col-sm-11"
-                            rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
                     </div>
-                    <div class="form-check-inline">
-                        <label class="form-check-label mt-3" for="terms">
-                            <input type="checkbox" class="form-check-input" name="terms" id="terms" value="sim">Aceito
-                            os
-                            termos e condições.
-                        </label>
+                    <br>
 
-                        @error('terms')
+                    <div class="form-inline mt-3">
+                        <label for="phone1" class="col-sm-2">Telefone 01:</label>
+                        <input type="text" class="form-control col-sm-3" id="phone1" name="phone1">
+                        @error('phone1')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
+
+                        <label for="phone2" class="col-sm-2">Telefone 02:</label>
+                        <input type="text" class="form-control col-sm-3" id="phone2" name="phone2">
+                        @error('phone2')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <br>
+
+                    <!-- opcao em participar do programa de caronas -->
+                    <!-- <div class="font-weight-bold">
+                        <label class="form-check-label mt-3 col-sm-10" for="programaCarona">Você quer participar do
+                            programa
+                            de
+                            caronas?
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="programaCarona" id="caronaSim"
+                                    for="programaCarona" value="sim">
+                                <label class="form-check-label" for="programaCarona">Sim</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="programaCarona" id="caronaNao"
+                                    for="programaCarona" value="nao">
+                                <label class="form-check-label" for="programaCarona">Não</label>
+                            </div> -->
+
+                            <!-- @error('programaCarona')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                    </div> -->
+
+                    <!-- opcao em receber notificacos por email -->
+                    <div class="font-weight-bold">
+                        <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber
+                            notificações
+                            por e-mail?
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
+                                    for="emailNotification" value="sim">
+                                <label class="form-check-label" for="emailNotification">Sim</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="emailNotification" id="emailNao"
+                                    for="emailNotification" value="nao">
+                                <label class="form-check-label" for="emailNotification">Não</label>
+                            </div>
+
+                            @error('emailNotification')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                     </div><br><br>
 
-                    <!-- botao Salvar e Cancelar -->
-                    <div class="container mt-5 mb-5">
-                        <!-- @empty($programaCarona)
+                    <!-- aceite de termos e condicoes -->
+                    <div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Termos e Condições do Portal do Surf</label>
+                            <textarea class="form-control col-sm-11"
+                                rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label mt-3" for="terms">
+                                <input type="checkbox" class="form-check-input" name="terms" id="terms"
+                                    value="sim">Aceito
+                                os
+                                termos e condições.
+                            </label>
+
+                            @error('terms')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div><br><br>
+
+                        <!-- botao Salvar e Cancelar -->
+                        <div class="container mt-5 mb-5">
+                            <!-- @empty($programaCarona)
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     @endempty -->
-                        <button type="submit" class="btn encontreBotao">Salvar alterações</button>
-                        <button type="reset" class="btn btn-danger">Cancelar</button>
+                            <button type="submit" class="btn encontreBotao">Salvar alterações</button>
+                            <button type="reset" class="btn btn-danger">Cancelar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
         </form>
     </div>
 
