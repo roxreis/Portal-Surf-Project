@@ -117,9 +117,7 @@ class CrudDesapegoController extends Controller
 
         try {
 
-            $oferta = $this->Desapego->findOrFail($id);
-            $oferta->delete();
-        
+            $oferta = Desapego::findOrFail($id)->delete();
             return redirect()->route('ofertaDesapego.index');
         
                 } catch(\Exception $e) {
