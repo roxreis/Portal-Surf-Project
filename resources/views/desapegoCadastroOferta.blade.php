@@ -9,9 +9,19 @@
 
         <section class="desapegoCadastro container">
 
+           
+
             <!-- formulario de cadastro de oferta -->
             <form action="{{route('ofertaDesapego.store')}}" method="POST" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
             @CSRF
+            
+            @if(session('erro'))
+                <div class="alert alert-danger">
+                    {{session('erro')}}
+                </div>
+            @endif
+           
+
                 <h1 class="mt-2 text-center" id="ofertaCadastroTopo">Cadastro de Oferta</h1>
                 <br>
 

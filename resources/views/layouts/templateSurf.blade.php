@@ -30,17 +30,20 @@
         <div id='upHeader'>
             <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
             <li class="nav-item dropdown logado">
+               
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }} <span class="caret"></span>
                 </a>
+                
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
+                <a class="ml-4 text-decoration-none" style="color:green;" href="{{route('ofertaDesapego.index')}}">Suas Vendas</a>
+                    <a class="dropdown-item" style="color:red;" href="{{ route('logout') }}"
                           onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
                     </a>
-
+                    
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none; none;">
                         @csrf
                     </form>

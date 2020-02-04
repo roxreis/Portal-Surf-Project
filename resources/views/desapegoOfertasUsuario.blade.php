@@ -14,14 +14,16 @@
    
         @foreach($ofertas as $oferta)
         
-            <div class="card col-4">                
-                    <img src="{{$oferta -> imgProduct}}" class="card-img-top" alt="imagem prancha">
-
+            <div class="card col-4"> 
+                              
+                    <img src="{{url('imagens/{$oferta->imgProduct}')}}" class="card-img-top" alt="imagem prancha">
+               
                 <div class="card-body">
                         <h5 class="card-title">{{$oferta -> titleProduct}}</h5>
+                        <p class="card-titlle">Produto {{$oferta ->id}}</p>
                         <p class="card-text">R$ {{$oferta -> priceProduct}} <br> Descrição: {{$oferta -> descriptionProduct}} <br> Data oferta:{{$oferta ->created_at}} </p>
-                        <a href="#" class="btn encontreBotao">Editar</a>
-                        <a href= "#" class="btn btn-danger">Excluir</a> 
+                        <a href="{{route('ofertaDesapego.edit', $oferta -> id)}}" class="btn encontreBotao">Editar</a>
+                        <a href= "{{route('ofertaDesapego.destroy', $oferta -> id)}}" class="btn btn-danger">Excluir</a> 
                         <!-- <a href="#" class="btn encontreBotao">Desativar</a> -->
                 </div>
 
