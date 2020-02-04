@@ -166,7 +166,7 @@ nav ul li a{
     align-items: center;
     color: #fff;
     justify-content: flex-end;
-    margin-left: 94px;
+    margin-left: 23px;
     margin-bottom: -2px;
 }
 
@@ -721,7 +721,36 @@ flex-wrap: wrap;
     color: #FFF;
 }
 
+.encontreSelecao {
+    display: flex;
+    font-family: gravity;
+    font-size: 45px;
+    box-sizing: border-box;
+    color: black;
+}
 
+.encontreMapa{
+    background-image: url('../imagens/img-encontre/mapahome.png');
+    background-size: 300px, 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encontreIcones{
+    width: 40px;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+.encontreMapa{
+    display: flex;
+    justify-content: flex-end;
+    height: 300px;
+    width: 100%;
+}
 
 /* css para pagina blog */
 .blogBanner {

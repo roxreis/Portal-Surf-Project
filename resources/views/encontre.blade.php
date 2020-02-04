@@ -1,107 +1,70 @@
 @extends('layouts.templateSurf')
 
 @section('titulo')
-    Encontre
+Encontre
 @endsection
 
 @section('conteudo')
-    <!-- original Elke - inicio -->
-        <!-- <section class="container d-flex justify-contents-center text-info">
-            <div class="col-6">
-                <h1 class="p-3 mt-5 ">Encontre tudo o que você precisa para aproveitar a água!</h1> -->
 
-        <!-- linha do label: modelo de form (form control: select) puxado do bootstrap W3C: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_form_select&stacked=h -->
+<!-- banner -->
+<section class="d-flex">
+    <div class="encontreBanner">
+        <div class="frontBanner">
+            <h1 class="mx-auto caronaTextoBanner">Encontre</h1>
+        </div>
+    </div>
+</section>
 
-        <!--  <div class="container">
-        <form action="/action_page.php">
-                    <div class="form-group col-6 mt-3">
-                        <label>Digite o lugar:</label>
-                        <input type="text" name="place">
-        <label for="sel1">Escolha a cidade:</label>
-                <select class="form-control" id="sel1" name="cidade">
-                    <option></option>
-                    <option>Ubatuba</option>
-                    <option>Cidade 02</option>
-                    <option>Cidade 03</option>
-                    <option>Cidade 04</option>
+<section class="container">
+    <!-- titulo da pagina -->
+    <h1 id="encontreTopo" class="mt-5 text-center">Encontre lojas com produtos e serviços de <br> surf aonde
+        você estiver:</h1>
+
+    <!-- campos de busca -->
+    <section class="container mt-5">
+        <div class="row align-items-center">
+
+            <h2 class="font-weight-bold encontreSelecao">O que você procura?</h2><br>
+<form action="">
+            <div class="col-lg-3 col-md-3 ml-5">
+                <select class="form-control" id="encontreLocal">
+                    <option disabled selected>Selecione uma praia!</option>
+                    <option id="encontreLocal" value="riviera">Riviera</option>
+                    <option id="encontreLocal" value="maresias">Maresias</option>
+                    <option id="encontreLocal" value="baleia">Baleia</option>
+                    <option id="encontreLocal" value="barra">Barra do Una</option>
+                    <option id="encontreLocal" value="juquehy">Juquehy</option>
+                    <option id="encontreLocal" value="cambury">Cambury</option>
                 </select>
-                <br>
-                        <label for="sel1">Escolha o serviço (selecione um):</label>
-                            <select class="form-control" id="sel1" name="servico">
-                                <option></option>
-                                <option>Escolas de surf</option>
-                                <option>Shaper</option>
-                                <option>Surfwear</option>
-                                <option>Pranchas</option>
-                                <option>Pousadas</option>  
-                                <option>Restaurantes</option>
-                            </select>
-                        <br>
-                    </div>
-                </form>
-                <button type="submit" class="btn btn-primary">Encontre</button>
-            </div>
-        </section> -->
-        <!-- original Elke - fim -->
-
-        <!-- banner -->
-        <section class= "d-flex">
-            <div class="encontreBanner">
-                <div class = "frontBanner">
-                    <h1 class="mx-auto caronaTextoBanner">Encontre</h1>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="container">
-            <!-- titulo da pagina -->
-            <h1 id="encontreTopo" class="mt-5 text-center encontreTitulo">Encontre tudo o que você precisa para aproveitar o mar:</h1>
-
-            <!-- campos de busca -->
-            <div class="row">
-                <form action="/action_page.php" class="form-inline col-lg-11">
-                    <div class="col-lg-8 mt-5">
-                            <input class="form-control w-100" type="search" placeholder="Onde?"
-                                aria-label="Search">
-                    </div>
-                    <div class="mt-5 col-lg-3">
-                        <select class="form-control w-100" name="encontre">
-                            <option disabled selected>O que?</option>
-                            <option value=”equipamentos”>Equipamentos</option>
-                            <option value=”manutenção”>Manutenção</option>
-                            <option value=”surfshop”>Surf Shop</option>
-                            <option value=”acomodacao”>Acomodação</option>
-                            <option value=”carona”>Carona</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-1 mt-5">
-                        <button type="submit" class="btn encontreBotao">Encontre</button>
-                    </div>
-                </form>
             </div>
 
-            <!-- mapa do google -->
-            <div class="container mt-5 mb-5 p-0">
-                <img src="imagens/img-encontre/mapa.png" class="img-fluid" alt="mapa">
+            <div class="ml-5 mr-5">
+                <input type="hidden" name="encontreServico" id="encontreServico">
+                <!-- <div><img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones chip">Equipamentos</div> -->
+                <img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones" id="encontrePrancha">
+                <img src="{{asset('icn/neoprene.svg')}}" alt="surfwear" class="encontreIcones" id="encontreSurfwear">
+                <img src="{{asset('icn/surfar.svg')}}" alt="aulas" class="encontreIcones" id="encontreAulas">
             </div>
-            </div>
-
-            <!-- sessao vinculada a busca realizada e ofertas no desapego -->
-        </section>
-        <div class="container mb-5 encontreMobile">
-            <h2 class="encontreTitulo">Itens a venda nesta área:</h2>
-            <div class="row justify-content-between mt-5">
-                <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
-                <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
-                <a href="./desapegoOferta.php"><img class="encontredesapego" src="imagens/img-encontre/venda1.png" alt="desapego"></a>
-            </div>
+            
+            <!-- botao de enviar -->
+            <button type="submit" class="btn encontreBotao" id="botao">Dropar</button>
+            </form>
         </div>
 
-        <!-- botao topo -->
-        <div class="container text-center mt-5 mb-5">
-            <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
-        </div>
+        <!-- mapa do google -->
+        <div id="map" class="encontreMapa mt-5"></div>
+        <!-- <div id="map"></div> -->
 
-@endsection
+    </section>
+
+    <!-- botao topo -->
+    <div class="container text-center mt-5 mb-5">
+        <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
+    </div>
+
+    <!-- script para api -->
+    <script src="{{asset('js/encontre.js')}}"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs"></script>
+    
+    @endsection

@@ -67,4 +67,6 @@ Riviera
     <a href="#rivieraTopo" class="btn encontreBotao">Topo</a>
 </div>
 
+<script src="../js/previsaoTeste.js"></script>
+
 @endsection

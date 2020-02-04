@@ -72,9 +72,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/desapego">Desapego</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="/encontre">Encontre</a>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog">Blog</a>
                     </li>

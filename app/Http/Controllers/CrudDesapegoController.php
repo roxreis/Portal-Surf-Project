@@ -143,15 +143,15 @@ class CrudDesapegoController extends Controller
         // try{
             //         $oferta = $this->Desapego->findOrFail($id);
         
-            //         return view('Desapego.edit');
+                    
         
-            //     } catch(\Exception $e) {
-            //         if(env('APP_DEBUG')) {
-            //             return redirect()->back();
-            //         }
+                // } catch(\Exception $e) {
+                //     if(env('APP_DEBUG')) {
+                //         return redirect()->back();
+                //     }
         
-        // }    
-    }
+        }    
+    
 
 
     /**
@@ -160,8 +160,7 @@ class CrudDesapegoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id){
         $ofertas = Desapego::find($id);
         if($ofertas){
             return view('desapegoEditarOferta')->with(["ofertas"=>$ofertas]);
@@ -230,7 +229,7 @@ class CrudDesapegoController extends Controller
 
         $ofertas = Desapego::destroy($id);
         if($ofertas){
-        return redirect('ofertaDesapego.edit');
+        return redirect()->route('ofertaDesapego.index');
         }
         // try {
 
