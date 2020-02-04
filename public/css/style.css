@@ -725,8 +725,30 @@ flex-wrap: wrap;
     /* flex-flow: column;
     flex-direction: column; */
     /* justify-content: flex-start; */
-    transform: rotate(270deg);
-    flex-wrap: nowrap;
+    /* transform: rotate(270deg); */
+    /* flex-wrap: nowrap; */
+    font-family: gravity;
+    font-size: 45px;
+    /* margin-bottom: 0.5rem;
+    line-height: 1.2; */
+    box-sizing: border-box;
+    color: black;
+}
+
+.encontreMapa{
+    background-image: url('../imagens/img-encontre/mapahome.png');
+    background-size: 300px, 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encontreIcones{
+    width: 40px;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
 }
 
 .encontreMapa{
