@@ -722,15 +722,8 @@ flex-wrap: wrap;
 
 .encontreSelecao {
     display: flex;
-    /* flex-flow: column;
-    flex-direction: column; */
-    /* justify-content: flex-start; */
-    /* transform: rotate(270deg); */
-    /* flex-wrap: nowrap; */
     font-family: gravity;
     font-size: 45px;
-    /* margin-bottom: 0.5rem;
-    line-height: 1.2; */
     box-sizing: border-box;
     color: black;
 }

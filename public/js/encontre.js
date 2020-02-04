@@ -1,6 +1,3 @@
-// var map;
-
-
 //original em adaptacao da API de noticias
 // buttonClick.addEventListener('click',()=>{
 //     fetch("https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap")
@@ -34,11 +31,28 @@
 
 
 // exercicio feito com um local estatico
+console.log("teste");
+
+var map;
 
 let botaoClick = document.getElementById('botao');
 
+let encontreLocal = document.getElementById('encontreLocal');
+
+let encontreServico = document.getElementById('encontreServico');
+let encontreSurfwear = document.getElementById('encontreSurfwear');
+let encontreAulas = document.getElementById('encontreAulas');
+let encontrePrancha = document.getElementById('encontrePrancha');
+
+
+// criar um addEventListener para cada servico, pois ao clica-lo eu altero o valor do encontre serviço, que eh o meu input hidden - etapa 1
+// usar a propriedade set attribute , onde value vai valer x (nome que darei)
+// etapa 2 - criar array com as lat e long
+// etapa 3 - logica que com condicao (switch ou if) de local mais servico, me retorna a array x (nome que eu defino)
+// etapa 4 - jogar array na funcao do google maps, na var markerCluster (favorito link) var locations
+
 botaoClick.addEventListener('click', () => {
-            function iniciarMap() {
+            // function iniciarMap() {
 
                 var coord = {
                     lat: -23.791516,
@@ -46,11 +60,14 @@ botaoClick.addEventListener('click', () => {
                 };
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 16,
-                    center: coord,
+                    // center: coord,
+                    center: new google.maps.LatLng(-23.791516, -45.5627291),
                 });
                 var marker = new google.maps.Marker({
                     position: coord,
-                    map: map,
+                    map: map
                 });
-            }
-        }
+
+                console.log("oi");
+            // }
+        })

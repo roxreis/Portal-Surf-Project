@@ -25,38 +25,30 @@ Encontre
         <div class="row align-items-center">
 
             <h2 class="font-weight-bold encontreSelecao">O que você procura?</h2><br>
-
+<form action="">
             <div class="col-lg-3 col-md-3 ml-5">
                 <select class="form-control" id="encontreLocal">
                     <option disabled selected>Selecione uma praia!</option>
                     <option id="encontreLocal" value="riviera">Riviera</option>
                     <option id="encontreLocal" value="maresias">Maresias</option>
-                    <option id="encontreLocal" value="pauba">Paúba</option>
                     <option id="encontreLocal" value="baleia">Baleia</option>
                     <option id="encontreLocal" value="barra">Barra do Una</option>
-                    <option id="encontreLocal" value="guaeca">Guaecá</option>
                     <option id="encontreLocal" value="juquehy">Juquehy</option>
-                    <option id="encontreLocal" value="santiago">Santiago</option>
                     <option id="encontreLocal" value="cambury">Cambury</option>
                 </select>
             </div>
 
             <div class="ml-5 mr-5">
-                <img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones">
-                <img src="{{asset('icn/neoprene.svg')}}" alt="surfwear" class="encontreIcones">
-                <img src="{{asset('icn/surfar.svg')}}" alt="aulas" class="encontreIcones">
+                <input type="hidden" name="encontreServico" id="encontreServico">
+                <!-- <div><img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones chip">Equipamentos</div> -->
+                <img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones" id="encontrePrancha">
+                <img src="{{asset('icn/neoprene.svg')}}" alt="surfwear" class="encontreIcones" id="encontreSurfwear">
+                <img src="{{asset('icn/surfar.svg')}}" alt="aulas" class="encontreIcones" id="encontreAulas">
             </div>
-
-            <!-- <button type="button" class="btn encontreBotao" data-toggle="tooltip" data-placement="top"
-                            title="Surfshop" id="encontreLocal" value="surfshop">Surfshop</button><br><br>
-                        <button type="button" class="btn encontreBotao" data-toggle="tooltip" data-placement="top"
-                            title="Surfshop" id="encontreLocal" value="equipamentos">Equipamentos</button><br><br>
-                        <button type="button" class="btn encontreBotao" data-toggle="tooltip" data-placement="top"
-                            title="Surfshop" id="encontreLocal" value="aulas">Aulas</button><br><br> -->
-
+            
             <!-- botao de enviar -->
             <button type="submit" class="btn encontreBotao" id="botao">Dropar</button>
-
+            </form>
         </div>
 
         <!-- mapa do google -->
@@ -71,8 +63,8 @@ Encontre
     </div>
 
     <!-- script para api -->
-    <script src="..\js\encontre.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap">
-    </script>
+    <script src="{{asset('js/encontre.js')}}"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs"></script>
+    
     @endsection
