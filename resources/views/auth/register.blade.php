@@ -7,7 +7,7 @@ Portal Surf - Cadastro Usuario
 @section('conteudo')
 <section class="container" id="usuarioTopo">
     <div class="d-flex h-75">
-        <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister">
+        <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister" name="registerForm">
             @CSRF
 
             <!-- dados pessoais -->
@@ -17,7 +17,7 @@ Portal Surf - Cadastro Usuario
                     <br>
                 </div>
 
-                <div class="text-center font-weight-bold">
+                <!-- <div class="text-center font-weight-bold">
                     <label class="form-check-label mt-3 mr-5" for="person">VOCÊ É:
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="person" value="pf" id="personF">
@@ -33,7 +33,7 @@ Portal Surf - Cadastro Usuario
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                 </div>
-                <br>
+                <br> -->
 
                 <div class="form-inline mt-3">
                     <label for="name" class="col-sm-2">Nome completo:</label>
@@ -183,7 +183,7 @@ Portal Surf - Cadastro Usuario
                     <!-- aceite de termos e condicoes -->
                     <div>
                         <div class="form-group">
-                            <label class="font-weight-bold">Termos e Condições do Portal do Surf</label>
+                            <label class="font-weight-bold">Termos e Condições do Portal Surf</label>
                             <textarea class="form-control col-sm-11"
                                 rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
                         </div>
@@ -201,11 +201,11 @@ Portal Surf - Cadastro Usuario
                         </div><br><br>
 
                         <!-- botao Salvar e Cancelar -->
-                        <div class="container mt-5 mb-5">
+                        <div class="container mt-5">
                             <!-- @empty($programaCarona)
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     @endempty -->
-                            <button type="submit" class="btn encontreBotao">Salvar alterações</button>
+                            <button type="submit" class="btn encontreBotao" onclick="return validar_registerForm()">Salvar alterações</button>
                             <button type="reset" class="btn btn-danger">Cancelar</button>
                         </div>
                     </div>
@@ -219,6 +219,68 @@ Portal Surf - Cadastro Usuario
 <div class="container text-center mt-5 mb-2">
     <a href="#usuarioTopo" class="btn encontreBotao ">Topo</a>
 </div>
+
+<!-- validacao javascript do formulario -->
+<script type="text/javascript">
+    function validar_registerForm(){
+        var name = registerForm.name.value;
+        var email = registerForm.email.value;
+        var password = registerForm.password.value;
+        var cpf = registerForm.cpf.value;
+        var gender = registerForm.gender.value;
+        var cep = registerForm.cep.value;
+        var state = registerForm.state.value;
+        var city = registerForm.city.value;
+        var phone1 = registerForm.phone1.value;
+        var emailNotification = registerForm.emailNotification.value;
+        var terms = registerForm.terms.value;
+
+        if (name == ""){
+            alert("Campo Nome é obrigatório.");
+            registerForm.name.focus();
+            return false;
+        }if (email == ""){
+            alert("Campo E-mail é obrigatório. Caso tenha preenchido e retornou este erro, verifique se o endereço é válido ou se não foi utilizado por outro usuário.");
+            registerForm.email.focus();
+            return false;
+        }if (password == ""){
+            alert("Campo Senha é obrigatório.");
+            registerForm.password.focus();
+            return false;
+        }if (cpf == ""){
+            alert("Campo CPF é obrigatório.");
+            registerForm.cpf.focus();
+            return false;
+        }if (gender == ""){
+            alert("Favor preencher o campo Gênero.");
+            registerForm.gender.focus();
+            return false;
+        }if (cep == ""){
+            alert("Campo CEP é obrigatório.");
+            registerForm.cep.focus();
+            return false;
+        }if (state == ""){
+            alert("Campo Estado é obrigatório.");
+            registerForm.state.focus();
+            return false;
+        }if (city == ""){
+            alert("Campo Cidade é obrigatório.");
+            registerForm.city.focus();
+            return false;
+        }if (phone1 == ""){
+            alert("Favor informar um número de telefone válido.");
+            registerForm.phone1.focus();
+            return false;
+        }if (emailNotification == ""){
+            alert("Favor informar se aceita receber as nossas notificações por e-mail. Este campo também é importante para as facilitar suas comunicações na sessão Desapego.");
+            registerForm.emailNotification.focus();
+            return false;
+        }if (terms == ""){
+            alert("Favor ler e aceitar os Termos e Condições do Portal Surf.");
+            registerForm.terms.focus();
+            return false;
+    }}
+</script>
 
 
 @endsection

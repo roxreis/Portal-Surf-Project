@@ -33,16 +33,22 @@
 // exercicio feito com um local estatico
 console.log("teste");
 
+
+
+// em producao:
 var map;
 
 let botaoClick = document.getElementById('botao');
 
-let encontreLocal = document.getElementById('encontreLocal');
+// let encontreLocal = document.getElementById('encontreLocal');
 
-let encontreServico = document.getElementById('encontreServico');
-let encontreSurfwear = document.getElementById('encontreSurfwear');
-let encontreAulas = document.getElementById('encontreAulas');
-let encontrePrancha = document.getElementById('encontrePrancha');
+// let encontreServico = document.getElementById('encontreServico');
+// let encontreSurfwear = document.getElementById('encontreSurfwear');
+// let encontreAulas = document.getElementById('encontreAulas');
+// let encontrePrancha = document.getElementById('encontrePrancha');
+//  fim do em producao
+
+
 
 
 // criar um addEventListener para cada servico, pois ao clica-lo eu altero o valor do encontre serviço, que eh o meu input hidden - etapa 1
@@ -51,17 +57,24 @@ let encontrePrancha = document.getElementById('encontrePrancha');
 // etapa 3 - logica que com condicao (switch ou if) de local mais servico, me retorna a array x (nome que eu defino)
 // etapa 4 - jogar array na funcao do google maps, na var markerCluster (favorito link) var locations
 
+// var locations = [
+// var guaruja = [
+//     {lat: -24.0022138, lng: -46.282744,14},
+// ]
+
+
 botaoClick.addEventListener('click', () => {
             // function iniciarMap() {
 
                 var coord = {
                     lat: -23.791516,
                     lng: -45.5627291
+                    // id_place: ChIJrc9MAG3-0ZQREkf8IZzKFsE
                 };
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 16,
-                    // center: coord,
-                    center: new google.maps.LatLng(-23.791516, -45.5627291),
+                    center: coord,
+                    // center: new google.maps.LatLng(-23.791516, -45.5627291),
                 });
                 var marker = new google.maps.Marker({
                     position: coord,
