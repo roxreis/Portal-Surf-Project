@@ -38,7 +38,20 @@ class CrudDesapegoController extends Controller
      */
     public function create()
     {
-          
+        // $oferta = new Desapego();
+        // $oferta->segment = $request->segment;
+        // $oferta->typeEquipament = $request->typeEquipament;
+        // $oferta->stateProduct = $request->stateProduct;
+        // $oferta->titleProduct = $request->titleProduct;
+        // $oferta->descriptionProduct = $request->descriptionProduct;
+        // $oferta->priceProduct = $request->priceProduct;
+        // $oferta->withdrawalState = $request->withdrawalState;
+        // $oferta->withdrawalCity = $request->withdrawalCity;
+        // $oferta->withdrawalNeighborhood = $request->withdrawalNeighborhood;
+        // $oferta->imgProduct = $request->imgProduct;
+       
+        // $result = $oferta->save();
+        //     return view('desapegoEditarOferta')->with(["result"=>$result]);
 
         return view('desapegoCadastroOferta');
         
@@ -160,7 +173,7 @@ class CrudDesapegoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id){
+    public function edit(Request $request, $id=0){
         $ofertas = Desapego::find($id);
         if($ofertas){
             return view('desapegoEditarOferta')->with(["ofertas"=>$ofertas]);
