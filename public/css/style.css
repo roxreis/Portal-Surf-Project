@@ -146,13 +146,14 @@ nav ul li a{
     display: flex;
     justify-content: flex-end;
     margin-right: 56px;
+    align-items: center;
  }
 
  .logado a{
      color: #245676;
-     font-size: -2.9rem;
+     font-size: .85rem;
      font-weight: 700;
-     text-shadow: 3px 4px 8px;
+     /* text-shadow: 3px 4px 8px; */
      /* text-shadow: 2px 3px 4px; */
      /* border: 1px solid #245676; */
  }
@@ -722,11 +723,26 @@ flex-wrap: wrap;
 
 .encontreSelecao {
     display: flex;
-    /* flex-flow: column;
-    flex-direction: column; */
-    /* justify-content: flex-start; */
-    transform: rotate(270deg);
-    flex-wrap: nowrap;
+    font-family: gravity;
+    font-size: 45px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.encontreMapa{
+    background-image: url('../imagens/img-encontre/mapahome.png');
+    background-size: 300px, 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encontreIcones{
+    width: 40px;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
 }
 
 .encontreMapa{

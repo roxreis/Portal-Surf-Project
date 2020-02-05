@@ -20,7 +20,7 @@ class CreateDesapegoProdutosTable extends Migration
             $table->string('stateProduct', 50);
             $table->string('titleProduct', 256);
             $table->string('descriptionProduct', 360);
-            $table->string('priceProduct', 8, 2);
+            $table->float('priceProduct', 10, 2);
             $table->string('withdrawalState', 45);
             $table->string('withdrawalCity', 45);
             $table->string('withdrawalNeighborhood', 45);
