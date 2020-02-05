@@ -20,4 +20,3 @@ $(documet).ready( function(){
     })
 });
 
-//http://www.rafaelwendel.com/2012/08/preenchimento-automatico-do-endereco-a-partir-do-cep/
