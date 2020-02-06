@@ -36,8 +36,9 @@
                 </a>
                 
 
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu dropdown-menu-right d-flex flex-column" aria-labelledby="navbarDropdown">
                 <a class="ml-4 text-decoration-none" style="color:green;" href="{{route('ofertaDesapego.index')}}">Suas Vendas</a>
+                <a class="ml-4 text-decoration-none" style="color:blue;" href="{{route('ofertaDesapego.create')}}">Cadastrar uma Venda</a>
                     <a class="dropdown-item" style="color:red;" href="{{ route('logout') }}"
                           onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">

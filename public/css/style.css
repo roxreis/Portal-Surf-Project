@@ -620,7 +620,7 @@ margin-top: 116px;
 /* css cadastro desapego */
 
 .desapegoCadastro{
-    height: 200vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -630,6 +630,7 @@ margin-top: 116px;
     border: 1px solid #ced4da;
     border-radius: 20px;
     width: 70%;
+    height: 100%;
 }
 
 .labelFormDesapego{

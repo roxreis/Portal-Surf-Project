@@ -65,7 +65,22 @@ class CrudDesapegoController extends Controller
      */
     public function store(Request $request)
     {
-        Desapego::create($request->all());
+        $validaDados = $request->validate([
+           
+            'descriptionProduct' => 'required',
+            'priceProduct' => 'required',
+            'withdrawalState'=> 'required',
+            'withdrawalCity'=> 'required',
+            'withdrawalNeighborhood'=> 'required',
+            'imgProduct' => 'required',
+            'phone' => 'required',
+        ]);
+        
+        Desapego::create($validaDados);
+
+
+
+
           // Define o valor default para a variável que contém o nome da imagem 
     $nameFile = null;
  
@@ -94,7 +109,7 @@ class CrudDesapegoController extends Controller
  
     }
       
-    return redirect()->route('ofertaDesapego.index');
+        return redirect()->route('ofertaDesapego.index');
       
       
       
@@ -190,25 +205,37 @@ class CrudDesapegoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
+        $validaDados = $request->validate([
+          
+            'descriptionProduct' => 'required',
+            'priceProduct' => 'required',
+            'withdrawalState'=> 'required',
+            'withdrawalCity'=> 'required',
+            'withdrawalNeighborhood'=> 'required',
+            'imgProduct' => 'required',
+            'phone' => 'required',
+        ]);
         
-        $oferta = Desapego::update($request->all());
-        $oferta->segment = $request->segment;
-        $oferta->typeEquipament = $request->typeEquipament;
-        $oferta->stateProduct = $request->stateProduct;
-        $oferta->titleProduct = $request->titleProduct;
-        $oferta->descriptionProduct = $request->descriptionProduct;
-        $oferta->priceProduct = $request->priceProduct;
-        $oferta->withdrawalState = $request->withdrawalState;
-        $oferta->withdrawalCity = $request->withdrawalCity;
-        $oferta->withdrawalNeighborhood = $request->withdrawalNeighborhood;
-        $oferta->imgProduct = $request->imgProduct;
-        // // apagada a linha de id usuario porque nao posso alterar essa informacao original
-        //auth eh uma classe global que possui um metodo proprio chamado user que me retorna os atributos dele, por isso posso apenas solicitar o id direto.
-        //agora precisa salvar este objeto que geramos:
-        $result = $oferta->save();
-            return view('desapegoEditarOferta')->with(["result"=>$result]);
+        Desapego::whereId($id)->update($validaDados);  
+        return redirect()->route('ofertaDesapego.index')->with('success', "Atualizado com Sucesso" );
+              // $ofertas = Desapego::find($request->id);
+        // $ofertas->segment = $request->segment;
+        // $ofertas->typeEquipament = $request->typeEquipament;
+        // $ofertas->stateProduct = $request->stateProduct;
+        // $ofertas->titleProduct = $request->titleProduct;
+        // $ofertas->descriptionProduct = $request->descriptionProduct;
+        // $ofertas->priceProduct = $request->priceProduct;
+        // $ofertas->withdrawalState = $request->withdrawalState;
+        // $ofertas->withdrawalCity = $request->withdrawalCity;
+        // $ofertas->withdrawalNeighborhood = $request->withdrawalNeighborhood;
+        // $ofertas->imgProduct = $request->imgProduct;
+        // $ofertas->phone = $request->phone;
+        // // // apagada a linha de id usuario porque nao posso alterar essa informacao original
+        // //auth eh uma classe global que possui um metodo proprio chamado user que me retorna os atributos dele, por isso posso apenas solicitar o id direto.
+        // //agora precisa salvar este objeto que geramos:
+        // $result = $ofertas->save();
     }  
         // try{
                     // $data = $request->all();
@@ -234,26 +261,14 @@ class CrudDesapegoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, $id=0)
+    public function destroy($id)
     {
-        // $oferta = Desapego::find($id)->delete();
-        
-        // return redirect()->route('ofertaDesapego.index');
+        Desapego::where('id',$id)->delete();
+        return redirect()->route('ofertaDesapego.index')->with('delete', 'Oferta deletada');
 
-        $ofertas = Desapego::destroy($id);
-        if($ofertas){
-        return redirect()->route('ofertaDesapego.index');
-        }
-        // try {
-
-            
-        
-        //         } catch(\Exception $e) {
-        //             if(env('APP_DEBUG')) {
-        //                 return redirect()->back();
-        //             }
-        //         }
+       
     }
-
+     
 }
 
+ 

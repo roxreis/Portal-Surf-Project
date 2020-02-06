@@ -8,28 +8,67 @@
 
 
 
-<section class="container d-flex" style="height:398vh;">
+<section class="container d-flex justify-content-center align-items-center " >
+     @if(session('delete'))
+        <div class=" col-6 alert alert-success h-25 d-flex" style="margin-top: 21vh;justify-content: center;">
+            <p>{{session('delete')}}</p>
+        </div>
+     @endif
+
+
+</section>
+
+<section class="container d-flex" >
+
+   
 
     <div class="img-ofertaDesapegoHistorico">
-   
-        @foreach($ofertas as $oferta)
-        
-            <div class="card col-4"> 
-                              
-                    <img src="{{url('imagens/{$oferta->imgProduct}')}}" class="card-img-top" alt="imagem prancha">
-               
-                <div class="card-body">
-                        <h5 class="card-title">{{$oferta -> titleProduct}}</h5>
-                        <p class="card-titlle">Produto {{$oferta ->id}}</p>
-                        <p class="card-text">R$ {{$oferta -> priceProduct}} <br> Descrição: {{$oferta -> descriptionProduct}} <br> Data oferta:{{$oferta ->created_at}} </p>
-                        <a href="{{route('ofertaDesapego.edit', $oferta -> id)}}" class="btn encontreBotao">Editar</a>
-                        <a href= "{{route('ofertaDesapego.destroy', $oferta -> id)}}" class="btn btn-danger">Excluir</a> 
-                        <!-- <a href="#" class="btn encontreBotao">Desativar</a> -->
+       
+        @if(isset($ofertas))
+
+            @foreach($ofertas as $oferta)
+            
+                <div class="card col-4"> 
+                                
+                        <img src="{{url('imagens/{$oferta->imgProduct}')}}" class="card-img-top" alt="imagem prancha">
+                
+                    <div class="card-body">
+                            <p class="card-titlle">ID {{$oferta ->id}}</p>
+                            <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
+                            <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
+                            <p class="card-text">Fone: {{$oferta -> phone}}</p>
+                            <div class="d-flex flex-row">
+                                <a href="{{route('ofertaDesapego.edit', $oferta -> id)}}" class="btn encontreBotao mr-1">Editar</a>
+                                <form action="{{route('ofertaDesapego.destroy', $oferta -> id)}}" method="post">
+                                    {{ csrf_field() }}
+                                    @method('DELETE')
+                                    <button class="btn btn-danger" type="submit">Excluir</button>
+                                </form>    
+                            </div>
+                            @if(session('success'))
+                                <div class="alert alert-success">
+                                    <p>{{session('success')}}</p>
+                                </div>
+                            @endif
+                            
+                            <!-- <a href="#" class="btn encontreBotao">Desativar</a> -->
+                    </div>
+
                 </div>
+                    
 
-            </div>
+            @endforeach
 
-        @endforeach
+            @else
+                <h2>Não há Produtos para Exibir</h2>
+
+        @endif
+    
+    
+
+
+    
+    
    
     </div>
 

@@ -12,9 +12,9 @@
            
         @if(isset($ofertas))
             <!-- formulario de cadastro de oferta -->
-            <form action="{{route('ofertaDesapego.update', $ofertas -> id)}}" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
+            <form action="{{route('ofertaDesapego.update', $ofertas->id)}}" method="POST" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
             @CSRF
-            {{ method_field('PUT') }}
+            @method('PUT')
             
             @if(session('erro'))
                 <div class="alert alert-danger">
@@ -30,7 +30,7 @@
                 <br>
                 <p><b>Dados da oferta</b></p>
 
-                <label for="seg">Segmento do Produto:</label>
+                <!-- <label for="seg">Segmento do Produto:</label>
                 <select class="form-control  labelFormDesapego" id="seg" name="segment">
                     <option>Selecione uma opção</option>
                     <option>Pranchas</option>
@@ -61,14 +61,14 @@
                     <div class="form-group mt-3">
                         <label for="text">Título da oferta:</label>
                         <input type="text" class="form-control" id="ofertaTitulo" name="titleProduct">
-                    </div>
+                    </div> -->
                     <div class="form-group mt-3">
                         <label for="text">Descrição do produto:</label>
-                        <input type="text" class="form-control" id="ofertaDescr" name="descriptionProduct">
+                        <input type="text" class="form-control" id="ofertaDescr" name="descriptionProduct" placeholder="Ex. Prancha com pouco uso">
                     </div>
                     <div class="form-group mt-3">
                     <label for="text">Preço do produto:</label>
-                        <input type="number" class="form-control" name="priceProduct" />
+                        <input type="number" class="form-control" name="priceProduct" placeholder="Não precisa de virgula" />
                     </div>
                     <br>
 
@@ -76,15 +76,19 @@
                     <div class="form-inline mt-3">
                         <div style="margin-right:24px;">
                             <label for="text" class="mr-3">Estado:</label>
-                            <input type="text" class="form-control" id="ofertaEstado" name="withdrawalState">
+                            <input type="text" class="form-control" id="ofertaEstado" name="withdrawalState" placeholder="Ex. SP">
                         </div>
                         <div style="margin-right:25px;">
                             <label for="text" class="ml-3 mr-3">Cidade:</label>
-                            <input type="text" class="form-control" id="ofertaCidade" name="withdrawalCity">
+                            <input type="text" class="form-control" id="ofertaCidade" name="withdrawalCity" placeholder="Ex. São Vicente">
                         </div>
                         <div class=>
                             <label for="text" class="ml-3 mr-3">Bairro/ Região:</label>
-                            <input type="text" class="form-control" id="ofertaBairro" name="withdrawalNeighborhood">
+                            <input type="text" class="form-control" id="ofertaBairro" name="withdrawalNeighborhood" placeholder="Ex. Parque City">
+                        </div>
+                        <div class=>
+                            <label for="text" class="ml-3 mr-3">Telefone:</label>
+                            <input type="text" class="form-control" id="ofertaBairro" name="phone" placeholder="Colocar DDD na frente">
                         </div>
                     </div>
                     <br><br>
