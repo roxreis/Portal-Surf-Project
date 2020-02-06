@@ -7,7 +7,8 @@ Portal Surf - Cadastro Usuario
 @section('conteudo')
 <section class="container" id="usuarioTopo">
     <div class="d-flex h-75">
-        <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister" name="registerForm">
+        <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister"
+            name="registerForm">
             @CSRF
 
             <!-- dados pessoais -->
@@ -54,7 +55,7 @@ Portal Surf - Cadastro Usuario
 
                     <label for="password" class="col-sm-1">Senha:</label>
                     <input id="password" type="password" class="form-control col-sm-3" name="password" required
-                        autocomplete="new-password">
+                        autocomplete="new-password" placeholder="Mínimo de seis caracteres.">
                     @error('password')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -63,13 +64,14 @@ Portal Surf - Cadastro Usuario
 
                 <div class="form-inline mt-3">
                     <label for="cpf" class="col-sm-2">CPF:</label>
-                    <input type="text" class="form-control col-sm-3" id="cpf" name="cpf">
+                    <input type="text" class="form-control col-sm-3" id="cpf" name="cpf" placeholder="Use apenas números.">
                     @error('cpf')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
 
                     <label for="gender" class="col-sm-2">Gênero:</label>
                     <select class="form-control col-sm-3" id="gender" name="gender">
+                        <option disabled selected> </option>
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
                         <option value="neutro">Prefiro não declarar</option>
@@ -83,62 +85,46 @@ Portal Surf - Cadastro Usuario
                 <!-- Dados de endereco -->
                 <div class="form-inline mt-3">
                     <label for="cep" class="col-sm-2">CEP:</label>
-                    <input type="text" class="form-control col-sm-3" id="cep" name="cep">
+                    <input type="text" class="form-control col-sm-3" id="cep" name="cep" placeholder="Use apenas números.">
                     @error('cep')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-                    </div><br>
+                </div><br>
 
-                    <!-- <button type="submit" class="btn encontreBotao ml-5">Buscar</button>
-                </div><br> -->
-                    <!-- 
                 <div class="form-inline mt-3">
-                    <label for="street" class="col-sm-2">Endereço:</label>
-                    <input type="text" class="form-control col-sm-3" id="street" name="street">
-                    @error('street')
+                    <label for="state" class="col-sm-2">Estado:</label>
+                    <input type="text" class="form-control col-sm-3" id="state" name="state">
+                    @error('state')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
 
-                    <label for="number" class="col-sm-2">Número:</label>
-                    <input type="text" class="form-control col-sm-3" id="number" name="number">
-                    @error('number')
+                    <label for="city" class="col-sm-2">Cidade:</label>
+                    <input type="text" class="form-control col-sm-3" id="city" name="city">
+                    @error('city')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <br> -->
+                <br>
 
-                    <div class="form-inline mt-3">
-                        <label for="state" class="col-sm-2">Estado:</label>
-                        <input type="text" class="form-control col-sm-3" id="state" name="state">
-                        @error('state')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
+                <div class="form-inline mt-3">
+                    <label for="phone1" class="col-sm-2">Telefone 01:</label>
+                    <input type="text" class="form-control col-sm-3" id="phone1" name="phone1" placeholder="Inclua DDD, use apenas números.">
+                    
+                    @error('phone1')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
 
-                        <label for="city" class="col-sm-2">Cidade:</label>
-                        <input type="text" class="form-control col-sm-3" id="city" name="city">
-                        @error('city')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <br>
+                    <label for="phone2" class="col-sm-2">Telefone 02:</label>
+                    <input type="text" class="form-control col-sm-3" id="phone2" name="phone2" placeholder="Inclua DDD, use apenas números.">
 
-                    <div class="form-inline mt-3">
-                        <label for="phone1" class="col-sm-2">Telefone 01:</label>
-                        <input type="text" class="form-control col-sm-3" id="phone1" name="phone1">
-                        @error('phone1')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
+                    @error('phone2')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <br>
 
-                        <label for="phone2" class="col-sm-2">Telefone 02:</label>
-                        <input type="text" class="form-control col-sm-3" id="phone2" name="phone2">
-                        @error('phone2')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <br>
-
-                    <!-- opcao em participar do programa de caronas -->
-                    <!-- <div class="font-weight-bold">
+                <!-- opcao em participar do programa de caronas -->
+                <!-- <div class="font-weight-bold">
                         <label class="form-check-label mt-3 col-sm-10" for="programaCarona">Você quer participar do
                             programa
                             de
@@ -154,62 +140,59 @@ Portal Surf - Cadastro Usuario
                                 <label class="form-check-label" for="programaCarona">Não</label>
                             </div> -->
 
-                            <!-- @error('programaCarona')
+                <!-- @error('programaCarona')
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                     </div> -->
 
-                    <!-- opcao em receber notificacos por email -->
-                    <div class="font-weight-bold">
-                        <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber
-                            notificações
-                            por e-mail?
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
-                                    for="emailNotification" value="sim">
-                                <label class="form-check-label" for="emailNotification">Sim</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="emailNotification" id="emailNao"
-                                    for="emailNotification" value="nao">
-                                <label class="form-check-label" for="emailNotification">Não</label>
-                            </div>
-
-                            @error('emailNotification')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
-                    </div><br><br>
-
-                    <!-- aceite de termos e condicoes -->
-                    <div>
-                        <div class="form-group">
-                            <label class="font-weight-bold">Termos e Condições do Portal Surf</label>
-                            <textarea class="form-control col-sm-11"
-                                rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
+                <!-- opcao em receber notificacos por email -->
+                <div class="font-weight-bold">
+                    <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber
+                        notificações por e-mail?
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
+                                for="emailNotification" value="sim">
+                            <label class="form-check-label" for="emailNotification">Sim</label>
+                            <!-- </div>
+                            <div class="form-check form-check-inline"> -->
+                            <input class="form-check-input ml-2" type="radio" name="emailNotification" id="emailNao"
+                                for="emailNotification" value="nao">
+                            <label class="form-check-label" for="emailNotification">Não</label>
                         </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label mt-3" for="terms">
-                                <input type="checkbox" class="form-check-input" name="terms" id="terms"
-                                    value="sim">Aceito
-                                os
-                                termos e condições.
-                            </label>
 
-                            @error('terms')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
-                        </div><br><br>
+                        @error('emailNotification')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                </div><br><br>
 
-                        <!-- botao Salvar e Cancelar -->
-                        <div class="container mt-5">
-                            <!-- @empty($programaCarona)
+                <!-- aceite de termos e condicoes -->
+                <div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Termos e Condições do Portal Surf</label>
+                        <textarea class="form-control col-sm-11"
+                            rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="mt-3" for="terms">
+                            <input type="checkbox" class="form-check-label mr-2" name="terms" id="terms" for="terms" value="sim" checked>Aceito os termos e condições.
+                        </label>
+
+                        @error('terms')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div><br><br>
+                </div>
+
+                <!-- botao Salvar e Cancelar -->
+                <div class="container mt-5">
+                    <!-- @empty($programaCarona)
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     @endempty -->
-                            <button type="submit" class="btn encontreBotao" onclick="return validar_registerForm()">Salvar alterações</button>
-                            <button type="reset" class="btn btn-danger">Cancelar</button>
-                        </div>
-                    </div>
+                    <button type="submit" class="btn encontreBotao" onclick="return validar_registerForm()">Salvar
+                        alterações</button>
+                    <button type="reset" class="btn btn-danger">Cancelar</button>
                 </div>
+            </div>
         </form>
     </div>
 
@@ -222,7 +205,7 @@ Portal Surf - Cadastro Usuario
 
 <!-- validacao javascript do formulario -->
 <script type="text/javascript">
-    function validar_registerForm(){
+    function validar_registerForm() {
         var name = registerForm.name.value;
         var email = registerForm.email.value;
         var password = registerForm.password.value;
@@ -235,51 +218,66 @@ Portal Surf - Cadastro Usuario
         var emailNotification = registerForm.emailNotification.value;
         var terms = registerForm.terms.value;
 
-        if (name == ""){
+        if (name == "") {
             alert("Campo Nome é obrigatório.");
             registerForm.name.focus();
             return false;
-        }if (email == ""){
-            alert("Campo E-mail é obrigatório. Caso tenha preenchido e retornou este erro, verifique se o endereço é válido ou se não foi utilizado por outro usuário.");
+        }
+        if (email == "") {
+            alert(
+                "Campo E-mail é obrigatório. Caso tenha preenchido e retornou este erro, verifique se o endereço é válido ou se não foi utilizado por outro usuário."
+            );
             registerForm.email.focus();
             return false;
-        }if (password == ""){
-            alert("Campo Senha é obrigatório.");
+        }
+        if (password == "" || password.length <= 5) {
+            alert("Campo Senha é obrigatório. Preencha com no mínimo seis caractéres.");
             registerForm.password.focus();
             return false;
-        }if (cpf == ""){
+        }
+        if (cpf == "" || cpf.length < 11) {
             alert("Campo CPF é obrigatório.");
             registerForm.cpf.focus();
             return false;
-        }if (gender == ""){
+        }
+        if (gender == "") {
             alert("Favor preencher o campo Gênero.");
             registerForm.gender.focus();
             return false;
-        }if (cep == ""){
-            alert("Campo CEP é obrigatório.");
+        }
+        if (cep == "" || cep.length < 8) {
+            alert("Favor preencher um CEP válido.");
             registerForm.cep.focus();
             return false;
-        }if (state == ""){
+        }
+        if (state == "") {
             alert("Campo Estado é obrigatório.");
             registerForm.state.focus();
             return false;
-        }if (city == ""){
+        }
+        if (city == "") {
             alert("Campo Cidade é obrigatório.");
             registerForm.city.focus();
             return false;
-        }if (phone1 == ""){
+        }
+        if (phone1 == ""  || phone1.length < 10) {
             alert("Favor informar um número de telefone válido.");
             registerForm.phone1.focus();
             return false;
-        }if (emailNotification == ""){
-            alert("Favor informar se aceita receber as nossas notificações por e-mail. Este campo também é importante para as facilitar suas comunicações na sessão Desapego.");
-            registerForm.emailNotification.focus();
+        }
+        if (emailNotification == "") {
+            alert(
+                "Favor informar se aceita receber as nossas notificações por e-mail. Este campo também é importante para as facilitar suas comunicações na sessão Desapego.");
+            // registerForm.emailNotification.focus();
             return false;
-        }if (terms == ""){
+        }
+        if (terms == "") {
             alert("Favor ler e aceitar os Termos e Condições do Portal Surf.");
-            registerForm.terms.focus();
+            // registerForm.terms.focus();
             return false;
-    }}
+        }
+    }
+
 </script>
 
 
