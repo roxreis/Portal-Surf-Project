@@ -27,29 +27,28 @@ Encontre
             <h2 class="font-weight-bold encontreSelecao">O que você procura?</h2><br>
             <!-- <form action="" class="form-inline"> -->
 
-                <div class="col-lg-3 col-md-3 ml-5 mr-5">
-                    <select class="form-control" id="encontreLocal">
-                        <option disabled selected>Selecione uma praia!</option>
-                        <option id="encontreLocal" value="guaruja">Guarujá</option>
-                        <option id="encontreLocal" value="maresias">Maresias</option>
-                        <option id="encontreLocal" value="baleia">Baleia</option>
-                        <option id="encontreLocal" value="juquey">Juquey</option>
-                        <option id="encontreLocal" value="camburi">Camburi</option>
-                    </select>
-                </div>
+            <div class="col-lg-3 col-md-3 ml-5 mr-5">
+                <select class="form-control" id="encontreLocal">
+                    <option disabled selected>Selecione uma praia!</option>
+                    <option id="encontreLocal" value="guaruja">Guarujá</option>
+                    <option id="encontreLocal" value="maresias">Maresias</option>
+                    <option id="encontreLocal" value="baleia">Baleia</option>
+                    <option id="encontreLocal" value="juquey">Juquey</option>
+                    <option id="encontreLocal" value="camburi">Camburi</option>
+                </select>
+            </div>
 
-                <div class="mr-5">
-                    <input type="hidden" name="encontreServico" id="encontreServico">
-                    <img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones"
-                        id="encontrePrancha">
-                    <img src="{{asset('icn/neoprene.svg')}}" alt="surfwear" class="encontreIcones"
-                        id="encontreSurfwear">
-                    <img src="{{asset('icn/surfar.svg')}}" alt="aulas" class="encontreIcones" id="encontreAulas">
-                </div>
+            <div class="mr-5">
+                <input type="hidden" name="encontreServico" id="encontreServico">
+                <img src="{{asset('icn/prancha-de-surfe.svg')}}" alt="equipamentos" class="encontreIcones"
+                    id="encontrePrancha">
+                <img src="{{asset('icn/neoprene.svg')}}" alt="surfwear" class="encontreIcones" id="encontreSurfwear">
+                <img src="{{asset('icn/surfar.svg')}}" alt="aulas" class="encontreIcones" id="encontreAulas">
+            </div>
 
-                <!-- botao de enviar -->
-                <button type="submit" class="btn encontreBotao" id="botao">Dropar</button>
-                
+            <!-- botao de enviar -->
+            <button type="submit" class="btn encontreBotao" id="botao">Dropar</button>
+
             <!-- </form> -->
         </div>
 
