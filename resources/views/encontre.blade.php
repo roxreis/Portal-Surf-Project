@@ -17,11 +17,13 @@ Encontre
 
 <section class="container">
     <!-- titulo da pagina -->
-    <h1 id="encontreTopo" class="mt-5 text-center">Encontre lojas com produtos e serviços de <br> surf aonde
-        você estiver:</h1>
+    <div class="container">
+        <h1 id="encontreTopo" class="mt-5 text-center">Encontre lojas com produtos e serviços de <br> surf aonde
+            você estiver:</h1>
+    </div>
 
     <!-- campos de busca -->
-    <section class="container mt-5">
+    <section class="mt-5">
         <div class="row align-items-center">
 
             <h2 class="font-weight-bold encontreSelecao">O que você procura?</h2><br>
@@ -51,21 +53,22 @@ Encontre
 
             <!-- </form> -->
         </div>
-
-        <!-- mapa do google -->
-        <div id="map" class="encontreMapa mt-5"></div>
-        <!-- <div id="map"></div> -->
-
     </section>
 
-    <!-- botao topo -->
-    <div class="container text-center mt-5 mb-5">
-        <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
-    </div>
+    <!-- mapa do google -->
+    <div id="map" class="encontreMapa mt-5"></div>
 
-    <!-- script para api -->
-    <script src="{{asset('js/encontre.js')}}"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs"></script>
+</section>
 
-    @endsection
+<!-- botao topo -->
+<div class="container text-center mt-5 mb-5">
+    <a href="#encontreTopo" class="btn encontreBotao">Topo</a>
+</div>
+
+<!-- script para api -->
+<script src="{{asset('js/encontre.js')}}"></script>
+<!-- <script src="{{asset('js/encontreTeste.js')}}"></script> -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs"></script>
+
+@endsection

@@ -731,8 +731,8 @@ flex-wrap: wrap;
 }
 
 .encontreMapa{
-    background-image: url('../imagens/img-encontre/mapahome.png');
-    background-size: 300px, 100%;
+    background-image: url('../imagens/img-encontre/pranchaPaisagem.jpg');
+    background-size: 500px, 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -742,7 +742,7 @@ flex-wrap: wrap;
 }
 
 #map {
-    height: 300px;
+    height: 500px;
     width: 100%;
 }
 
