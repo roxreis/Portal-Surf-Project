@@ -114,6 +114,15 @@ nav ul li a{
     margin-top: 10px;
 }
 
+.menuLogin{
+    
+background-color: #ebf4f1;
+    
+width: 14vw;
+    
+border-radius: 6px;
+}
+
 .headerNavbar{
     display: flex;
     /* background-color: #000fc7; */
@@ -490,6 +499,13 @@ text-shadow: #000000 -2px 0px 20px;
     border
 }
 
+.cardOfertaDesapego{
+    max-height: 108vh;
+    max-width: 25vw;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 
 
 .img-oferta-individual {
@@ -574,10 +590,10 @@ justify-content: flex-end;
 
 
 .titulodeSecaoDesapego{
-    font-family: aloha;
+    /* font-family: aloha; */
     color: #ff8f04;
     border-bottom: #ff8f04 1px solid;
-    height: 45px;
+    height: 33px;
     margin-bottom: 18px;
     margin-top: 18px;
     /* font-size: 74px; */
@@ -585,7 +601,7 @@ justify-content: flex-end;
 }
 
 .titulodeSecaoDesapego h3{
-    font-size: 2.9rem;
+    font-size: 1.9rem;
     font-weight: 600;
     /* font-family: Stencil Std, fantasy; */
 }
@@ -681,9 +697,9 @@ width: 100vw;
     
 height: 210vh;
     
-margin-top: 147px;
+margin-top: 131px;
     
-/* justify-content: center; */
+justify-content: center;
     
 /* justify-content: space-between; */
     

@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Http\Request;
+use App\Desapego;
 
 class User extends Authenticatable
 {
@@ -18,7 +19,12 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name', 'email', 'password', 'cpf', 'gender', 'cep', 'state', 'city', 'phone1', 'phone2', 'emailNotification', 'terms',
-    ];
+    'user_id'];
+
+    // public function desapego()
+    // {
+    //     return $this->belongsTo('App\Desapego');
+    // }
 
     /**
      * The attributes that should be hidden for arrays.

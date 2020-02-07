@@ -105,7 +105,7 @@
 
                     <p><b>Fotos do produto</b></p>
                     <div class="form-group">
-                        <input type="file" class="form-control" name="imgProduct" placeholder="Imagem do Produto" />
+                        <input type="file" class="form-control" name="image" placeholder="Imagem do Produto" />
                     </div>
                     <br><br>
 

@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Desapego;
 use File;
+use Illuminate\Http\UploadedFile; 
+use Auth; 
+use App\User;
 
 class CrudDesapegoController extends Controller
 {
@@ -16,15 +19,9 @@ class CrudDesapegoController extends Controller
     public function index()
     {   
         $ofertas = Desapego::all();
-        
-
-        // $imagens = array_map(function($imagem) {
-        //     return '/imagens' . basename($imagem);
-        // }, File::glob(public_path('imagens/*.*')));
-
-        return view('desapegoOfertasUsuario')->with(['ofertas'=> $ofertas]);
-        
-        
+        return view('desapegoOfertasUsuario')->with(['ofertas'=>$ofertas]);
+       
+    
 
        
 
@@ -65,51 +62,78 @@ class CrudDesapegoController extends Controller
      */
     public function store(Request $request)
     {
-        $validaDados = $request->validate([
+        if (Auth::user()){
+            $ofertas = new Desapego();
            
-            'descriptionProduct' => 'required',
-            'priceProduct' => 'required',
-            'withdrawalState'=> 'required',
-            'withdrawalCity'=> 'required',
-            'withdrawalNeighborhood'=> 'required',
-            'imgProduct' => 'required',
-            'phone' => 'required',
-        ]);
+            $ofertas->descriptionProduct = $request->input('descriptionProduct');
+            $ofertas->priceProduct = $request->input('priceProduct');
+            $ofertas->withdrawalState = $request->input('withdrawalState');
+            $ofertas->withdrawalState = $request->input('withdrawalState');
+            $ofertas->withdrawalCity = $request->input('withdrawalCity');
+            $ofertas->withdrawalNeighborhood = $request->input('withdrawalNeighborhood');
+            $ofertas->image = $request->input('image');
+            $ofertas->phone = $request->input('phone');
+            $ofertas['user_id'] = Auth::user()->id;
+           
+
+           if($request->hasFile('image')){
+               $ofertas->image = $request->image->store('imagens');
+           }
+          
+            $ofertas->save();
+
+            
         
-        Desapego::create($validaDados);
-
-
-
-
-          // Define o valor default para a variável que contém o nome da imagem 
-    $nameFile = null;
- 
-    // Verifica se informou o arquivo e se é válido
-    if ($request->hasFile('imgProduct') && $request->file('imgProduct')->isValid()) {
-         
-        // Define um aleatório para o arquivo baseado no timestamps atual
-        $name = uniqid(date('HisYmd'));
- 
-        // Recupera a extensão do arquivo
-        $extension = $request->imgProduct->extension();
- 
-        // Define finalmente o nome
-        $nameFile = "{$name}.{$extension}";
- 
-        // Faz o upload:
-        $upload = $request->imgProduct->storeAs('imagens', $nameFile);
-        // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
- 
-        // Verifica se NÃO deu certo o upload (Redireciona de volta)
-        if ( !$upload )
-            return redirect()
-                        ->back()
-                        ->with('error', 'Falha ao carregar a imagem')
-                        ->withInput();
- 
-    }
-      
         return redirect()->route('ofertaDesapego.index');
+        }else{
+            return redirect()->route('login');
+        }
+    }
+
+        // if($request->hasFile('image')){
+        //     $path = $request->image->store('imagens');
+        //     Image::create(['path'=> $path]);
+
+        // }
+        
+        // return redirect()->route('ofertaDesapego.index');
+
+
+        
+
+
+
+    //       // Define o valor default para a variável que contém o nome da imagem 
+    // $nameFile = null;
+ 
+    // // Verifica se informou o arquivo e se é válido
+    // if ($request->hasFile('imgProduct') && $request->file('imgProduct')->isValid()) {
+         
+    //     // Define um aleatório para o arquivo baseado no timestamps atual
+    //     $name = uniqid(date('HisYmd'));
+ 
+    //     // Recupera a extensão do arquivo
+    //     $extension = $request->imgProduct->extension();
+ 
+    //     // Define finalmente o nome
+    //     $nameFile = "{$name}.{$extension}";
+ 
+    //     // Faz o upload:
+    //     $upload = $request->imgProduct->storeAs('imagens', $nameFile);
+    //     // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+        
+        
+ 
+    //     // Verifica se NÃO deu certo o upload (Redireciona de volta)
+    //     if ( !$upload )
+    //         return redirect()
+    //                     ->back()
+    //                     ->with('error', 'Falha ao carregar a imagem')
+    //                     ->withInput();
+ 
+    // }
+      
+       
       
       
       
@@ -156,7 +180,7 @@ class CrudDesapegoController extends Controller
 
        
         
-    }
+  
 
 
     /**
@@ -207,19 +231,35 @@ class CrudDesapegoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $validaDados = $request->validate([
+        // $validaDados = $request->validate([
           
-            'descriptionProduct' => 'required',
-            'priceProduct' => 'required',
-            'withdrawalState'=> 'required',
-            'withdrawalCity'=> 'required',
-            'withdrawalNeighborhood'=> 'required',
-            'imgProduct' => 'required',
-            'phone' => 'required',
-        ]);
+        //     'descriptionProduct' => 'required',
+        //     'priceProduct' => 'required',
+        //     'withdrawalState'=> 'required',
+        //     'withdrawalCity'=> 'required',
+        //     'withdrawalNeighborhood'=> 'required',
+        //     'image' => 'required',
+        //     'phone' => 'required',
+        // ]);
+
+        $ofertas = Desapego::find($id);
+           
+        $ofertas->descriptionProduct = $request->input('descriptionProduct');
+        $ofertas->priceProduct = $request->input('priceProduct');
+        $ofertas->withdrawalState = $request->input('withdrawalState');
+        $ofertas->withdrawalState = $request->input('withdrawalState');
+        $ofertas->withdrawalCity = $request->input('withdrawalCity');
+        $ofertas->withdrawalNeighborhood = $request->input('withdrawalNeighborhood');
+        $ofertas->image = $request->input('image');
+        $ofertas->phone = $request->input('phone');
+
+       if($request->hasFile('image')){
+           $ofertas->image = $request->image->store('imagens');
+       }
+      
+        $ofertas->save();
         
-        Desapego::whereId($id)->update($validaDados);  
-        return redirect()->route('ofertaDesapego.index')->with('success', "Atualizado com Sucesso" );
+       return redirect()->route('ofertaDesapego.index')->with('success', "Atualizado com Sucesso" );
               // $ofertas = Desapego::find($request->id);
         // $ofertas->segment = $request->segment;
         // $ofertas->typeEquipament = $request->typeEquipament;
