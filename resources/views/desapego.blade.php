@@ -50,7 +50,7 @@
 
                         <img src="{{asset('storage/'.$oferta->image)}}" style="height:55vh; margin-bottom: 10px;margin-top: 10px;" alt="">
         
-                        <p class="card-titlle">ID {{$oferta ->id}}</p>
+                        <p class="card-titlle">Cód. Produto {{$oferta ->id}}</p>
                         <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
                         <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
                          <a href="{{route('ofertaDesapego.show', $oferta->id)}}">          <input type="button" class="btn     btn-success"value="Detalhes">
@@ -60,7 +60,7 @@
             </div>
    
 
-        <form class="d-flex flex-row" style="margin-top: 100px;" action="{{route('ofertaDesapego.create')}}" method="get">
+        <form class="d-flex flex-row" style="margin-top: 100px;margin-bottom: 76px;" action="{{route('ofertaDesapego.create')}}" method="get">
                 <div id="desapegar4">
                     <h3 class="font-weight-bold">Também Quer fazer uma grana!? -></h3> <button class="btn btn-success" ype="submit" style="height: 9vh;width: 13vw;font-size: 1.5rem;">Desapegue</button>
                 </div>

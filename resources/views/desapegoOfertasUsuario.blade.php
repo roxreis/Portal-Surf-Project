@@ -27,7 +27,7 @@
 
                         <img src="{{asset('storage/'.$oferta->image)}}" style="height:55vh; margin-bottom: 10px;margin-top: 10px;" alt="">
                             
-                                <p class="card-titlle">ID {{$oferta ->id}}</p>
+                                <p class="card-titlle">Código Produto {{$oferta ->id}}</p>
                                 <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
                                 <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
                                 <p class="card-text">Fone: {{$oferta -> phone}}</p>
