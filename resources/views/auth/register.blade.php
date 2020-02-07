@@ -18,24 +18,6 @@ Portal Surf - Cadastro Usuario
                     <br>
                 </div>
 
-                <!-- <div class="text-center font-weight-bold">
-                    <label class="form-check-label mt-3 mr-5" for="person">VOCÊ É:
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="person" value="pf" id="personF">
-                            <label class="form-check-label" for="person">PESSOA FÍSICA</label>
-
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="person" value="pj" id="personJ">
-                            <label class="form-check-label" for="person">PESSOA JURÍDICA</label>
-                        </div>
-
-                        @error('person')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                </div>
-                <br> -->
-
                 <div class="form-inline mt-3">
                     <label for="name" class="col-sm-2">Nome completo:</label>
                     <input id="name" type="text" class="col-sm-8 form-control" name="name" required autocomplete="name"
@@ -153,8 +135,6 @@ Portal Surf - Cadastro Usuario
                             <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
                                 for="emailNotification" value="sim">
                             <label class="form-check-label" for="emailNotification">Sim</label>
-                            <!-- </div>
-                            <div class="form-check form-check-inline"> -->
                             <input class="form-check-input ml-2" type="radio" name="emailNotification" id="emailNao"
                                 for="emailNotification" value="nao">
                             <label class="form-check-label" for="emailNotification">Não</label>
@@ -202,6 +182,7 @@ Portal Surf - Cadastro Usuario
 <div class="container text-center mt-5 mb-2">
     <a href="#usuarioTopo" class="btn encontreBotao ">Topo</a>
 </div>
+
 
 <!-- validacao javascript do formulario -->
 <script type="text/javascript">
