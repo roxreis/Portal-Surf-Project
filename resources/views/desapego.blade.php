@@ -25,113 +25,47 @@
         </div>
     </section>
 
-    <section  style="background-color: #cbcece75;" >
+    <section  style="background-color: #cbcece75;height: 360vh;" >
     <div class="shadow-lg container" id="desapego">
         
-            <!-- <div>
-            <form class="form-inline my-2 my-lg-0 d-flex justify-content-center align-items-center col-lg-6">
-                <input class="form-control mr-sm-4 col-lg-8" type="search" placeholder="Encontre no Portal do Surf!"
-                    aria-label="Search">
-                <button class="btn encontreBotao my-2 my-sm-0 col-lg-2" type="submit">Busca</button>
-            </form>
-            </div><br><br> -->
+       
             <div class="row" id="desapegar">
-                <div class= col-5 id="desapegar2">
-                    <img src="/imagens/img-desapego/desapegar.jfif" alt="">
-
-                </div>
-                <a href="{{route('ofertaDesapego.create')}}" ><div class="col-10" id="desapegar3">
-                    <h3 class="font-weight-bold">Quer fazer uma grana!? <br> </h3>
-                    <h4>Todo mundo tem aquele item que não usa mais: pranchas, long e short jhon, acessórios e tudo mais, então CLICK AQUI e anuncie no site, </h4><br>
-                    <h4>Veja abaixo ofertas de quem já está desapegando!</h4>
+               
+                <div  id="desapegar3">
+                    
+                    <h4>Aqui você encontra o equipamento que procura por um precinho mais camarada :)</h4><br>
+                     
                 </div>
 
 
-                </a>
+               
             </div>
 
             <div class="titulodeSecaoDesapego"> 
-                <h3>Pranchas e Equipamentos</h3>
+                <h3>Produtos em destaque!</h3>
             </div>
-            <div class="card-deck p-3"> 
-                <div class="card cards-desapego border-0">
-                  <img src="/imagens/img-desapego/prancha_2.jpg" class="imagemcards-desapego card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                   
-                </div>
-                <div class="card cards-desapego border-0">
-                    <img src="/imagens/img-desapego/prancha_6.jpg" class="imagemcards-desapego card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                   
-                </div>
-                <div class="card cards-desapego border-0 ">
-                    <img src="/imagens/img-desapego/acessorios1.jpg" class=" imagemcards-desapego card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                  
-                </div>
-            </div>
+            <div class="card cardHomeDesapego p-3"> 
+                @foreach($ofertas as $oferta)
+                    <div class="card col-4 cardOfertaDesapego">
 
-            <div class="titulodeSecaoDesapego"> 
-                <h3>Body Board, Stand Up Paddle e Windsurf </h3>
-            </div>
-            <div class="card-deck  p-3"> 
-                <div class="card cards-desapego border-0 ">
-                  <img src="/imagens/img-desapego/Body Board.jpg" class="imagemcards-desapego card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <img src="{{asset('storage/'.$oferta->image)}}" style="height:55vh; margin-bottom: 10px;margin-top: 10px;" alt="">
+        
+                        <p class="card-titlle">ID {{$oferta ->id}}</p>
+                        <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
+                        <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
+                         <a href="{{route('ofertaDesapego.show', $oferta->id)}}">          <input type="button" class="btn     btn-success"value="Detalhes">
+                        </a>
                     </div>
-                   
-                </div>
-                <div class="card cards-desapego border-0 ">
-                    <img src="/imagens/img-desapego/Windsurf.jfif" class="imagemcards-desapego card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                           
-                        </div>
-                   
-                </div>
-                <div class="card cards-desapego border-0">
-                    <img src="/imagens/img-desapego/Standuppaddle.jfif" class=" imagemcards-desapego card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                  
-                </div>
+                @endforeach
             </div>
+   
 
-            <div class="titulodeSecaoDesapego"> 
-                <h3>Vestuários</h3>
-            </div>
-            <div class="card-deck  p-3"> 
-                <div class="card cards-desapego border-0">
-                  <img src="/imagens/img-desapego/roupas3.jpg" class="imagemcards-desapego card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                   
+        <form class="d-flex flex-row" style="margin-top: 100px;" action="{{route('ofertaDesapego.create')}}" method="get">
+                <div id="desapegar4">
+                    <h3 class="font-weight-bold">Também Quer fazer uma grana!? -></h3> <button class="btn btn-success" ype="submit" style="height: 9vh;width: 13vw;font-size: 1.5rem;">Desapegue</button>
                 </div>
-                <div class="card cards-desapego border-0">
-                    <img src="/imagens/img-desapego/oculos_3.jpg" class="imagemcards-desapego card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                   
-                </div>
-                <div class="card cards-desapego border-0">
-                    <img src="/imagens/img-desapego/roupas4.jpg" class=" imagemcards-desapego card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                  
-                </div>
-            </div>
-        </div>
+        </form>
+                
     </section>
 
 

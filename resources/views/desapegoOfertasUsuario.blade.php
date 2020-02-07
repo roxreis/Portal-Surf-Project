@@ -54,13 +54,6 @@
 
                 @endforeach
            
-
-          
-    
-    
-
-
-    
     
    
     </div>

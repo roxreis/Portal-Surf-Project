@@ -23,9 +23,6 @@ class CrudDesapegoController extends Controller
        
     
 
-       
-
-
     }
 
     /**
@@ -35,22 +32,10 @@ class CrudDesapegoController extends Controller
      */
     public function create()
     {
-        // $oferta = new Desapego();
-        // $oferta->segment = $request->segment;
-        // $oferta->typeEquipament = $request->typeEquipament;
-        // $oferta->stateProduct = $request->stateProduct;
-        // $oferta->titleProduct = $request->titleProduct;
-        // $oferta->descriptionProduct = $request->descriptionProduct;
-        // $oferta->priceProduct = $request->priceProduct;
-        // $oferta->withdrawalState = $request->withdrawalState;
-        // $oferta->withdrawalCity = $request->withdrawalCity;
-        // $oferta->withdrawalNeighborhood = $request->withdrawalNeighborhood;
-        // $oferta->imgProduct = $request->imgProduct;
-       
-        // $result = $oferta->save();
-        //     return view('desapegoEditarOferta')->with(["result"=>$result]);
+     
 
         return view('desapegoCadastroOferta');
+        
         
     }
 
@@ -90,98 +75,13 @@ class CrudDesapegoController extends Controller
         }
     }
 
-        // if($request->hasFile('image')){
-        //     $path = $request->image->store('imagens');
-        //     Image::create(['path'=> $path]);
 
-        // }
-        
-        // return redirect()->route('ofertaDesapego.index');
+    public function homeDesapego(){
 
+        $ofertas = Desapego::all();
+        return view('/desapego')->with(['ofertas'=>$ofertas]);
 
-        
-
-
-
-    //       // Define o valor default para a variável que contém o nome da imagem 
-    // $nameFile = null;
- 
-    // // Verifica se informou o arquivo e se é válido
-    // if ($request->hasFile('imgProduct') && $request->file('imgProduct')->isValid()) {
-         
-    //     // Define um aleatório para o arquivo baseado no timestamps atual
-    //     $name = uniqid(date('HisYmd'));
- 
-    //     // Recupera a extensão do arquivo
-    //     $extension = $request->imgProduct->extension();
- 
-    //     // Define finalmente o nome
-    //     $nameFile = "{$name}.{$extension}";
- 
-    //     // Faz o upload:
-    //     $upload = $request->imgProduct->storeAs('imagens', $nameFile);
-    //     // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
-        
-        
- 
-    //     // Verifica se NÃO deu certo o upload (Redireciona de volta)
-    //     if ( !$upload )
-    //         return redirect()
-    //                     ->back()
-    //                     ->with('error', 'Falha ao carregar a imagem')
-    //                     ->withInput();
- 
-    // }
-      
-       
-      
-      
-      
-        // $file = $request->hasFile('imgProduct');
- 
-        // // Se é válido, retorna um boolean
-        // $file = $request->file('imgProduct')->isValid();
-        // $extension = $img->getClientOriginalExtension();
-        // if($extension != 'jpeg' && $extension != 'jpg' && $extension != 'png'){
-        //       return back()->with('erro', 'Erro: A foto do produto deve ter extensão jpeg, jpg ou png!');
-        // }
-
-
-
-        // $images = $request->file('imgProduct');
-
-        // if($images){
-        //     foreach ($images as $image){
-        //         $image->store('images', 'public');
-        //     }
-        // }
-        
-    //    if(isset($request['imgProduct'])){
-    //     $img = $request['imgProduct']; 
-    //     $extension = $img->getClientOriginalExtension();
-    //     if($extension != 'jpeg' && $extension != 'jpg' && $extension != 'png'){
-    //         return back()->with('erro', 'Erro: A foto do produto deve ter extensão jpeg, jpg ou png!');
-    //     }
-
-   
-    // }
-
-    // if(isset($request['imgProduct']))
-    // {
-    //     $img = $request['imgProduct']; 
-    //     File::move($img, public_path().'/imagens/img-desapego/image-id_'. $request->id.'.'.$extension);
-    //     $request->imgProduct = public_path().'/imagens/img-desapego/image-id_'. $request->id.'.'.$extension;
-    //     // $request->save();
-    // }
-
-
-    
-
-
-       
-        
-  
-
+    }
 
     /**
      * Display the specified resource.
@@ -192,17 +92,10 @@ class CrudDesapegoController extends Controller
     public function show($id)
     {
         
-        // try{
-            //         $oferta = $this->Desapego->findOrFail($id);
+        $ofertas = Desapego::findOrFail($id);
+        return view('desapegoOFertaIndividual')->with(['ofertas'=>$ofertas]);
         
-                    
-        
-                // } catch(\Exception $e) {
-                //     if(env('APP_DEBUG')) {
-                //         return redirect()->back();
-                //     }
-        
-        }    
+    }    
     
 
 
@@ -231,17 +124,7 @@ class CrudDesapegoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // $validaDados = $request->validate([
-          
-        //     'descriptionProduct' => 'required',
-        //     'priceProduct' => 'required',
-        //     'withdrawalState'=> 'required',
-        //     'withdrawalCity'=> 'required',
-        //     'withdrawalNeighborhood'=> 'required',
-        //     'image' => 'required',
-        //     'phone' => 'required',
-        // ]);
-
+        
         $ofertas = Desapego::find($id);
            
         $ofertas->descriptionProduct = $request->input('descriptionProduct');
@@ -260,54 +143,22 @@ class CrudDesapegoController extends Controller
         $ofertas->save();
         
        return redirect()->route('ofertaDesapego.index')->with('success', "Atualizado com Sucesso" );
-              // $ofertas = Desapego::find($request->id);
-        // $ofertas->segment = $request->segment;
-        // $ofertas->typeEquipament = $request->typeEquipament;
-        // $ofertas->stateProduct = $request->stateProduct;
-        // $ofertas->titleProduct = $request->titleProduct;
-        // $ofertas->descriptionProduct = $request->descriptionProduct;
-        // $ofertas->priceProduct = $request->priceProduct;
-        // $ofertas->withdrawalState = $request->withdrawalState;
-        // $ofertas->withdrawalCity = $request->withdrawalCity;
-        // $ofertas->withdrawalNeighborhood = $request->withdrawalNeighborhood;
-        // $ofertas->imgProduct = $request->imgProduct;
-        // $ofertas->phone = $request->phone;
-        // // // apagada a linha de id usuario porque nao posso alterar essa informacao original
-        // //auth eh uma classe global que possui um metodo proprio chamado user que me retorna os atributos dele, por isso posso apenas solicitar o id direto.
-        // //agora precisa salvar este objeto que geramos:
-        // $result = $ofertas->save();
-    }  
-        // try{
-                    // $data = $request->all();
-        
-    //                 $oferta = $this->Desapego->findOrFail($id);
-    //                 $oferta->update($data);
-        
-    //                 return redirect()->route('ofertaDesapego.index');
-        
-    //             } catch(\Exception $e) {
-    //                 if(env('APP_DEBUG')) { 
-    //                     return redirect()->back();
-    //                 }
-                    
-    //             }
-    // }
-    
+         
 
-
+    }
     /**
      * Remove the specified resource from storage.
-     *
+   
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id){
         Desapego::where('id',$id)->delete();
         return redirect()->route('ofertaDesapego.index')->with('delete', 'Oferta deletada');
 
        
-    }
+        }
+    
      
 }
 

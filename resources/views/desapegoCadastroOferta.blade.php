@@ -29,39 +29,7 @@ Desapego - Cadastro de Oferta
         <div class="col-12">
             <br>
             <p><b>Dados da oferta</b></p>
-            <!-- 
-                <label for="seg">Segmento do Produto:</label>
-                <select class="form-control  labelFormDesapego" id="seg" name="segment">
-                    <option>Selecione uma opção</option>
-                    <option>Pranchas</option>
-                    <option>Acessórios</option>
-                </select>
-                <br>
-
-                <label for="tipo">Tipo de Equipamento:</label>
-                <select class="form-control labelFormDesapego" id="tipo" name="typeEquipament">
-                    <option>Selecione uma opção</option>
-                    <option>Surf</option>
-                    <option>Surf Infantil</option>
-                    <option>Kitesurf</option>
-                    <option>Windsurf</option>
-                    <option>Stand Up Paddle</option>
-                    <option>Body Board</option>
-                </select>
-                <br>
-
-                <label for="seg">Estado do Produto:</label>
-                <select class="form-control labelFormDesapego" id="seg" name="stateProduct">
-                    <option>Selecione uma opção</option>
-                    <option>Novo</option>
-                    <option>Usado</option>
-                </select>
-
-                
-                    <div class="form-group mt-3">
-                        <label for="text">Título da oferta:</label>
-                        <input type="text" class="form-control" id="ofertaTitulo" name="titleProduct">
-                    </div> -->
+       
             <div class="form-group mt-3">
                 <label for="text">Descrição do produto:</label>
                 <input type="text" class="form-control" id="ofertaDescr" name="descriptionProduct"
@@ -91,23 +59,12 @@ Desapego - Cadastro de Oferta
                         placeholder="Ex. Parque City" required>
                 </div>
                 <div class=>
-                    <label for="text" class="ml-3 mr-3">Telefone:</label>
+                    <label for="text" class="ml-3 mr-3 mt-2">Telefone:</label>
                     <input type="text" class="form-control" id="ofertaBairro" name="phone"
                         placeholder="Colocar DDD na frente" required>
                 </div>
             </div>
             <br><br>
-
-            <!-- <div class="form-group">
-                        <input type="text" class="form-control" name="nomeProduto" placeholder="Nome do Produto" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="descProduto" placeholder="Descrição do Produto" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="localEntrega"
-                            placeholder="Local de Entrega/Retirada do Produto" />
-                    </div> -->
 
                     <p><b>Fotos do produto</b></p>
                     <div class="form-group">
@@ -115,22 +72,12 @@ Desapego - Cadastro de Oferta
                     </div>
                     <br><br>
 
-                    <!-- botoes -->
-                    <input type="submit" value="Cadastrar Oferta" class="btn encontreBotao">
-                    <a href="/desapego" class="btn btn-danger">Cancelar</a>
-
-                </form>
-            </div>
-            </div>
-            <br><br>
-
-            <!-- botoes -->
+      
             <input type="submit" value="Cadastrar Oferta" class="btn encontreBotao" onclick="return validar_desapegoFormJavascript()">
             <a href="/desapego" class="btn btn-danger">Cancelar</a>
 
     </form>
-    </div>
-    </div>
+    
 </section>
 
 <!-- botao topo -->

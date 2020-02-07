@@ -10,7 +10,7 @@
         <section class="desapegoCadastro container">
 
            
-        @if(isset($ofertas))
+     
             <!-- formulario de cadastro de oferta -->
             <form action="{{route('ofertaDesapego.update', $ofertas->id)}}" method="POST" class="shadow-lg p-4 formDesapego"enctype="multipart/form-data">
             @CSRF
@@ -55,7 +55,7 @@
                             <input type="text" class="form-control" id="ofertaBairro" name="withdrawalNeighborhood" placeholder="Ex. Parque City">
                         </div>
                         <div class=>
-                            <label for="text" class="ml-3 mr-3">Telefone:</label>
+                            <label for="text" class="ml-3 mr-3 mt-2">Telefone:</label>
                             <input type="text" class="form-control" id="ofertaBairro" name="phone" placeholder="Colocar DDD na frente">
                         </div>
                     </div>
@@ -74,22 +74,7 @@
 
                 </form>
            
-            @elseif(isset($result))
-            
-            <div class="row">
-            <div class="col-md-12">
-                @if(isset($result))
-                <!-- pergunta se a variavel acima existe -->
-                    @if($result)
-                    <!-- pergunta se a variavel eh verdadeira -->
-                        <h1>Atualização realizada com sucesso.</h1>
-                        @else
-                        <h1>Erro na atualização.</h1>
-                    @endif
-                @endif
-            @endif
-            </div>
-        </div>
+      
         </section>
 
         <!-- botao topo -->
