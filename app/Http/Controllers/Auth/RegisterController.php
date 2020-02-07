@@ -60,19 +60,16 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'person' => ['required'],
+            // 'person' => ['required'],
             'name' => ['required', 'string'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6'],
             'cpf' => ['required', 'string', 'unique:users'],
             'gender' => ['required'],
             'cep' => ['required'],
-            'street' => ['required'],
-            'number' => ['required'],
             'state' => ['required', 'string'],
             'city' => ['required', 'string'],
             'phone1' => ['required', 'string'],
-            'programaCarona' => ['required', 'string'],
             'emailNotification' => ['required', 'string'],
             'terms' => ['required'],
         ]);
@@ -89,20 +86,17 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'person' => $data['person'],
+            // 'person' => $data['person'],
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'cpf' => $data['cpf'],
             'gender' => $data['gender'],
             'cep' => $data['cep'],
-            'street' => $data['street'],
-            'number' => $data['number'],
             'state' => $data['state'],
             'city' => $data['city'],
             'phone1' => $data['phone1'],
             'phone2' => $data['phone2'],
-            'programaCarona' => $data['programaCarona'],
             'emailNotification' => $data['emailNotification'],
             'terms' => $data['terms'],
         ]);

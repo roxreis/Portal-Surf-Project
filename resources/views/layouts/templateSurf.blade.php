@@ -17,37 +17,41 @@
     @guest
         <div id='upHeader'>
        
-            <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+            <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
        
             @if (Route::has('register'))
-            <div id="botaoHeader">
-                <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
-                <a href="/login" class="btn btn-success" id="botaoHeader2">Login</a>
-            </div>
+                <div id="botaoHeader">
+                    <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
+                    <a href="/login" class="btn btn-success" id="botaoHeader2">Login</a>
+                </div>
             @endif
         </div>
         @else
-        <div id='upHeader'>
-            <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
-            <li class="nav-item dropdown logado">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }} <span class="caret"></span>
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                          onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
+            <div id='upHeader'>
+                <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+                <li class="nav-item dropdown logado">
+                
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
+                    
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none; none;">
-                        @csrf
-                    </form>
-                </div>
-            </li>
-        
-        </div>
+                    <div class="dropdown-menu dropdown-menu-right menuLogin" aria-labelledby="navbarDropdown">
+                        <a class="ml-4 text-decoration-none" style="color:#090ea996;" href="{{route('ofertaDesapego.index')}}">Suas Vendas</a>
+                        <a class="ml-4 text-decoration-none" style="color:#ce8500ad;" href="{{route('ofertaDesapego.create')}}">Cadastrar uma Venda</a>
+                        <a class="dropdown-item" style="color:#373b44a8;" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                        </a>
+                        
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none; none;">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+            
+            </div>
         @endguest
     
             
@@ -59,7 +63,7 @@
             </button>
             <div class="collapse navbar-collapse d-flex">
                 <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center"
-                    style="margin-left:65px; width: 600px;">
+                    style="margin-left:65px; width: 1038px;">
                     <li class="nav-item active">
                         <a class="nav-link" href="/previsao">Previsão</a>
                     </li>
@@ -69,9 +73,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/desapego">Desapego</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="/encontre">Encontre</a>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog">Blog</a>
                     </li>
@@ -116,7 +120,7 @@
 
 
     </header>
-    <main>
+    <main >
         <!-- conteudo do site -->
         @yield('conteudo')
     </main>

@@ -25,14 +25,18 @@ Route::get('/caronas', 'CaronaController@viewCarona');
 Route::get('/PerfilCaronas', 'CaronaController@viewPerfilCarona');
 Route::get('/CaronasAvaliar', 'CaronaController@viewCaronasAvaliar');
 
-Route::get('/desapego',"DesapegoController@viewDesapego");
+Route::get('/desapego','CrudDesapegoController@homeDesapego');
 // Route::get('/desapegoCadastroOferta',"DesapegoController@viewDesapegoCadastroOferta");
 // Route::get('/desapegoOfertasUsuario',"DesapegoController@viewDesapegoOfertasUsuario");
-Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
+// Route::get('/desapegoOfertaIndividual',"DesapegoController@viewDesapegoOfertaIndividual");
 
-// vou informar que a rota abaixo precisa de usuario logado, informando o middleware que verifica isso, usando o checkuser que cadastramos dentro do Kernel. Poderiamos usar apenas nesta porque as outras paginas teoricamente so seriam acessadas apos esta, mas por seguranca se coloca em todas. 
+// // vou informar que a rota abaixo precisa de usuario logado, informando o middleware que verifica isso, usando o checkuser que cadastramos dentro do Kernel. Poderiamos usar apenas nesta porque as outras paginas teoricamente so seriam acessadas apos esta, mas por seguranca se coloca em todas. 
 // Route::get('/desapegoCadastroOferta', 'CrudDesapegoController@viewDesapegoCadastroOferta')->middleware('checkuser');
 // Route::post('/desapegoCadastroOferta', 'CrudDesapegoController@create');
+// Route::get('/desapegoEditarOferta/{id?}', 'CrudDesapegoController@edit');
+// // rota para botao atualizar na view, para de fato salvar os dados atualizados no banco de dados.
+// Route::post('/desapegoEditarOferta', 'CrudDesapegoController@update');
+// Route::get('/desapegoOfertasUsuario/{id?}', 'CrudDesapegoController@delete');
 
 
 Route::get('/encontre', 'EncontreController@viewEncontre');

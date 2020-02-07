@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Desapego;
+use File;
+use Illuminate\Http\UploadedFile; 
+use Auth; 
+use App\User;
 
 class CrudDesapegoController extends Controller
 {
@@ -15,7 +19,10 @@ class CrudDesapegoController extends Controller
     public function index()
     {   
         $ofertas = Desapego::all();
-        return view('desapegoOfertasUsuario')->with(['ofertas'=> $ofertas]);
+        return view('desapegoOfertasUsuario')->with(['ofertas'=>$ofertas]);
+       
+    
+
     }
 
     /**
@@ -25,8 +32,10 @@ class CrudDesapegoController extends Controller
      */
     public function create()
     {
+     
 
         return view('desapegoCadastroOferta');
+        
         
     }
 
@@ -38,10 +47,41 @@ class CrudDesapegoController extends Controller
      */
     public function store(Request $request)
     {
-        Desapego::create($request->all());
+        if (Auth::user()){
+            $ofertas = new Desapego();
+           
+            $ofertas->descriptionProduct = $request->input('descriptionProduct');
+            $ofertas->priceProduct = $request->input('priceProduct');
+            $ofertas->withdrawalState = $request->input('withdrawalState');
+            $ofertas->withdrawalState = $request->input('withdrawalState');
+            $ofertas->withdrawalCity = $request->input('withdrawalCity');
+            $ofertas->withdrawalNeighborhood = $request->input('withdrawalNeighborhood');
+            $ofertas->image = $request->input('image');
+            $ofertas->phone = $request->input('phone');
+            $ofertas['user_id'] = Auth::user()->id;
+           
+
+           if($request->hasFile('image')){
+               $ofertas->image = $request->image->store('imagens');
+           }
+          
+            $ofertas->save();
+
+            
+        
         return redirect()->route('ofertaDesapego.index');
+        }else{
+            return redirect()->route('login');
+        }
     }
 
+
+    public function homeDesapego(){
+
+        $ofertas = Desapego::all();
+        return view('/desapego')->with(['ofertas'=>$ofertas]);
+
+    }
 
     /**
      * Display the specified resource.
@@ -51,18 +91,12 @@ class CrudDesapegoController extends Controller
      */
     public function show($id)
     {
-        try{
-                    $oferta = $this->Desapego->findOrFail($id);
         
-                    return view('ofertaDesapego.edit');
+        $ofertas = Desapego::findOrFail($id);
+        return view('desapegoOFertaIndividual')->with(['ofertas'=>$ofertas]);
         
-                } catch(\Exception $e) {
-                    if(env('APP_DEBUG')) {
-                        return redirect()->back();
-                    }
-        
-        }    
-    }
+    }    
+    
 
 
     /**
@@ -71,9 +105,13 @@ class CrudDesapegoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit(Request $request, $id=0){
+        $ofertas = Desapego::find($id);
+        if($ofertas){
+            return view('desapegoEditarOferta')->with(["ofertas"=>$ofertas]);
+        }else{
+            return view('desapegoEditarOferta');
+        }
     }
 
 
@@ -86,48 +124,42 @@ class CrudDesapegoController extends Controller
      */
     public function update(Request $request, $id)
     {
-                try{
-                    $data = $request->all();
         
-                    $oferta = $this->Desapego->findOrFail($id);
-                    $oferta->update($data);
+        $ofertas = Desapego::find($id);
+           
+        $ofertas->descriptionProduct = $request->input('descriptionProduct');
+        $ofertas->priceProduct = $request->input('priceProduct');
+        $ofertas->withdrawalState = $request->input('withdrawalState');
+        $ofertas->withdrawalState = $request->input('withdrawalState');
+        $ofertas->withdrawalCity = $request->input('withdrawalCity');
+        $ofertas->withdrawalNeighborhood = $request->input('withdrawalNeighborhood');
+        $ofertas->image = $request->input('image');
+        $ofertas->phone = $request->input('phone');
+
+       if($request->hasFile('image')){
+           $ofertas->image = $request->image->store('imagens');
+       }
+      
+        $ofertas->save();
         
-                    return redirect()->route('ofertaDesapego.index');
-        
-                } catch(\Exception $e) {
-                    if(env('APP_DEBUG')) { 
-                        return redirect()->back();
-                    }
-                    
-                }
+       return redirect()->route('ofertaDesapego.index')->with('success', "Atualizado com Sucesso" );
+         
+
     }
-    
-
-
     /**
      * Remove the specified resource from storage.
-     *
+   
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        // $oferta = Desapego::find($id)->delete();
-        // return redirect()->route('ofertaDesapego.index');
+    public function destroy($id){
+        Desapego::where('id',$id)->delete();
+        return redirect()->route('ofertaDesapego.index')->with('delete', 'Oferta deletada');
 
-        try {
-
-            $oferta = $this->Desapego->findOrFail($id);
-            $oferta->delete();
-        
-            return redirect()->route('ofertaDesapego.index');
-        
-                } catch(\Exception $e) {
-                    if(env('APP_DEBUG')) {
-                        return redirect()->back();
-                    }
-                }
-    }
-
+       
+        }
+    
+     
 }
 
+ 
