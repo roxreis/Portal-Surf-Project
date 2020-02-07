@@ -41,7 +41,7 @@ Portal Surf
   
 </section>
 
-<section class=" d-flex flex-column flex-nowrap homeSection2" style="height:958px;">
+<section class=" d-flex flex-column flex-nowrap homeSection2" style="height:971px;">
 
     <article class="text-center p-5 d-flex flex-column" style="background:#d7dfea;color: ##404147;">
         <h2 class="font-weight-bold">Quem Somos</h2>

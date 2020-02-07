@@ -53,7 +53,7 @@
                         <p class="card-titlle">Cód. Produto {{$oferta ->id}}</p>
                         <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
                         <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
-                         <a href="{{route('ofertaDesapego.show', $oferta->id)}}">          <input type="button" class="btn     btn-success"value="Detalhes">
+                         <a href="{{route('ofertaDesapego.show', $oferta->id)}}"> <input type="button" class="btn     btn-primary"value="Detalhes">
                         </a>
                     </div>
                 @endforeach

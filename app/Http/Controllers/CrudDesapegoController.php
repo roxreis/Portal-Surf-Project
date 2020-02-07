@@ -89,9 +89,9 @@ class CrudDesapegoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request, $id){
+    public function show($id){
         
-        $ofertas = Desapego::findOrFail($id)->get();
+        $ofertas = Desapego::where('id', $id)->get();
     
         return view('desapegoOfertaIndividual')->with(["ofertas"=>$ofertas]);
     
