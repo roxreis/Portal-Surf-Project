@@ -836,6 +836,14 @@ flex-wrap: wrap;
 
 /* fim css footer */
 
+/* @media (max-width: 1023px){
+    .gaveta-icones{
+        margin-left: 80px;
+
+
+    }
+} */
+
 
 @media (max-width: 1200px) {
     #encontreBanner {
