@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration
         
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('person');
+            // $table->string('person');
             $table->string('name', 300);
             $table->string('email', 300)->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -24,13 +24,10 @@ class CreateUsersTable extends Migration
             $table->string('cpf');
             $table->string('gender', 10);
             $table->string('cep', 10);
-            $table->string('street');
-            $table->string('number', 10);
             $table->string('state', 300);
             $table->string('city', 300);
             $table->string('phone1');
             $table->string('phone2')->nullable();
-            $table->string('programaCarona');
             $table->string('emailNotification');
             $table->string('terms');
             $table->timestamps();

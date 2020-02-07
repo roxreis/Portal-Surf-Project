@@ -16,7 +16,7 @@ Portal Surf
                 <div class="efeitoBannerHome">
                     <div id="texto-index"> 
                         <h2 >Aqui todo mundo é local!</h2>
-                        <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
+                        <p class="flex-wrap">Previsão de ondas - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                     
                     </div>
                 </div>                        
@@ -25,7 +25,7 @@ Portal Surf
             <div class="efeitoBannerHome">
                 <div id="texto-index">
                     <h2>Aqui todo mundo é local!</h2>
-                    <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
+                    <p class="flex-wrap">Previsão de ondas - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ Portal Surf
             <div class="efeitoBannerHome">
                 <div id="texto-index"  >
                     <h2>Aqui todo mundo é local!</h2>
-                    <p class="flex-wrap">Previsão de ondas - Carona para praias - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
+                    <p class="flex-wrap">Previsão de ondas - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ Portal Surf
  
     <div class="cards-home" >
         <div class="col-6 texto-index-2"> 
-            <h3 class="font-weight-bold">Caronas</h3>
+            <h3 class="font-weight-bold">Blog</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga nisi rerum porro, amet id asperiores numquam voluptas velit, commodi laboriosam voluptate! Perspiciatis nobis qui praesentium, accusantium molestiae ipsum nam?Lorem ipsum dolor sit amet consectetur.</p>
             <a href="/caronas" class="btn btn-primary btn-lg botao-tres">Dropar</a>
         </div>
