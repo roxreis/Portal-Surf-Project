@@ -65,13 +65,13 @@ Portal Surf - Cadastro Usuario
                 <br>
 
                 <!-- Dados de endereco -->
-                <div class="form-inline mt-3">
+                <!-- <div class="form-inline mt-3">
                     <label for="cep" class="col-sm-2">CEP:</label>
                     <input type="text" class="form-control col-sm-3" id="cep" name="cep" placeholder="Use apenas números.">
                     @error('cep')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-                </div><br>
+                </div><br> -->
 
                 <div class="form-inline mt-3">
                     <label for="state" class="col-sm-2">Estado:</label>
@@ -192,7 +192,7 @@ Portal Surf - Cadastro Usuario
         var password = registerForm.password.value;
         var cpf = registerForm.cpf.value;
         var gender = registerForm.gender.value;
-        var cep = registerForm.cep.value;
+        // var cep = registerForm.cep.value;
         var state = registerForm.state.value;
         var city = registerForm.city.value;
         var phone1 = registerForm.phone1.value;
@@ -226,11 +226,11 @@ Portal Surf - Cadastro Usuario
             registerForm.gender.focus();
             return false;
         }
-        if (cep == "" || cep.length < 8) {
-            alert("Favor preencher um CEP válido.");
-            registerForm.cep.focus();
-            return false;
-        }
+        // if (cep == "" || cep.length < 8) {
+        //     alert("Favor preencher um CEP válido.");
+        //     registerForm.cep.focus();
+        //     return false;
+        // }
         if (state == "") {
             alert("Campo Estado é obrigatório.");
             registerForm.state.focus();

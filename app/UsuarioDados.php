@@ -5,10 +5,10 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Http\Request;
-use App\Desapego;
+use Illuminate\Database\Eloquent\Model;
+use File;
 
-class User extends Authenticatable
+class UsuarioDados extends Model
 {
     use Notifiable;
 
@@ -18,13 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'cpf', 'gender', 'state', 'city', 'phone1', 'phone2', 'emailNotification', 'terms',
-    'user_id'];
-
-    // public function desapego()
-    // {
-    //     return $this->belongsTo('App\Desapego');
-    // }
+        'name', 'email', 'password', 'cpf', 'gender', 'state', 'city', 'phone1', 'phone2', 'emailNotification', 'user_id'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -32,7 +26,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 
     ];
 
     /**
@@ -43,4 +37,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+   // copiado do desapego para pensar em como vincular o usuario logado as informações que precisam retornar na tela
+//    public function user(){
+//        return $this->belongsTo('App\User');
+       
+   }
 }

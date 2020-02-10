@@ -5,200 +5,210 @@ Seus dados
 @endsection
 
 @section('conteudo')
-    <form action="/action_page.php">
+<form action="/action_page.php">
 
-        <!-- opcoes da pagina -->
-        <div class="container mt-5 text-center" id="usuarioTopo">
-            <a href="#dadosPessoais" class="btn encontreBotao">Dados Pessoais</a>
-            <a href="#dadosCarona" class="btn encontreBotao">Dados Carona</a>
-            <a href="#uploadFotos" class="btn encontreBotao">Upload de fotos</a>
-            <a href="./caronas.php"><button type="button" class="btn encontreBotao">Histórico de caronas</button></a>
-            <a href="./desapegoOfertasUsuarioOpcao.php"><button type="button" class="btn encontreBotao">Histórico de
-                    ofertas</button></ </div> <!-- dados pessoais -->
-                <section class="container mt-5 shadow-lg p-3 cardBlog">
+    <section class="container" id="usuarioTopo2">
+        <div class="d-flex h-75">
+            <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister"
+                name="registerForm">
+                @CSRF
+
+                <!-- dados pessoais -->
+                <div style="margin-left: 81px;">
                     <div class="text-center" id="dadosPessoais">
                         <h4>SEUS DADOS PESSOAIS</h4>
                         <br>
                     </div>
 
-                    <div class="text-center">
-                        <div class="form-check-inline">
-                            <label class="form-check-label mt-3">Você é:
-                                <input type="checkbox" class="form-check-input" value="pf">Pessoa física
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="pj">Pessoa jurídica
-                            </label>
-                            <br><br>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-3 font-weight-bold">
-                        <label for="text">Nome completo:</label>
-                        <input type="text" class="form-control" id="nomeUsuario">
-                    </div>
-                    <div class="form-inline">
-                        <label for="text" class="mr-2">Login:</label>
-                        <input type="text" class="form-control" id="login">
-                        <label for="text" class="ml-3 mr-2">Senha:</label>
-                        <input type="text" class="form-control" id="senha">
-                        <label for="text" class="ml-3 mr-2">Confirmar senha:</label>
-                        <input type="text" class="form-control" id="senha">
-                    </div>
+                    <div class="form-inline mt-3">
+                        <label for="name" class="col-sm-2">Nome completo:</label>
+                        <input id="name" type="text" class="col-sm-8 form-control" name="name" required
+                            autocomplete="name" autofocus>
+                        @error('name')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div><br>
 
                     <div class="form-inline mt-3">
-                        <label for="text" class="mr-3">CPF:</label>
-                        <input type="number" class="form-control" id="cpf">
+                        <label for="email" class="col-sm-2">E-mail:</label>
+                        <input id="email" type="email" class="form-control col-sm-4" name="email" required
+                            autocomplete="email">
+                        @error('email')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+
+                        <label for="password" class="col-sm-1">Senha:</label>
+                        <input id="password" type="password" class="form-control col-sm-3" name="password" required
+                            autocomplete="new-password" placeholder="Mínimo de seis caracteres.">
+                        @error('password')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <br>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Gênero</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Feminino</option>
-                            <option>Masculino</option>
-                            <option>Prefiro não declarar</option>
+                    <div class="form-inline mt-3">
+                        <label for="cpf" class="col-sm-2">CPF:</label>
+                        <input type="text" class="form-control col-sm-3" id="cpf" name="cpf"
+                            placeholder="Use apenas números.">
+                        @error('cpf')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+
+                        <label for="gender" class="col-sm-2">Gênero:</label>
+                        <select class="form-control col-sm-3" id="gender" name="gender">
+                            <option disabled selected> </option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="neutro">Prefiro não declarar</option>
                         </select>
+                        @error('gender')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <br>
+
+                    <!-- Dados de endereco -->
+                    <div class="form-inline mt-3">
+                        <label for="state" class="col-sm-2">Estado:</label>
+                        <input type="text" class="form-control col-sm-3" id="state" name="state">
+                        @error('state')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+
+                        <label for="city" class="col-sm-2">Cidade:</label>
+                        <input type="text" class="form-control col-sm-3" id="city" name="city">
+                        @error('city')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <br>
 
                     <div class="form-inline mt-3">
-                        <label for="text" class="ml-3 mr-3">Estado:</label>
-                        <input type="text" class="form-control" id="estado">
-                        <label for="text" class="ml-3 mr-3">Cidade:</label>
-                        <input type="text" class="form-control" id="cidade">
+                        <label for="phone1" class="col-sm-2">Telefone 01:</label>
+                        <input type="text" class="form-control col-sm-3" id="phone1" name="phone1"
+                            placeholder="Inclua DDD, use apenas números.">
+
+                        @error('phone1')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+
+                        <label for="phone2" class="col-sm-2">Telefone 02:</label>
+                        <input type="text" class="form-control col-sm-3" id="phone2" name="phone2"
+                            placeholder="Inclua DDD, use apenas números.">
+
+                        @error('phone2')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <br>
 
-
-                    <div class="form-inline mt-3">
-                        <label for="text" class="mr-4">E-mail:</label>
-                        <input type="text" class="form-control" id="email">
-                        <label for="text" class="ml-3 mr-4">Confirmar e-mail:</label>
-                        <input type="text" class="form-control" id="email">
-                    </div>
-
-                    <div class="form-inline mt-3">
-                        <label for="text" class="mr-4">Telefone 01:</label>
-                        <input type="text" class="form-control" id="telefone01">
-                        <label for="text" class="ml-3 mr-4">Telefone 02:</label>
-                        <input type="text" class="form-control" id="telefone02">
-                    </div>
-
-                </section>
-
-
-                <!-- Dados carona -->
-                <section class="container mt-5 shadow-lg p-3 cardBlog">
-                    <div class="text-center" id="dadosCarona">
-                        <h4>SEUS DADOS DE CARONA</h4>
-                        <br>
-                    </div>
-
-                    <!-- opcao em participar do programa de caronas -->
+                    <!-- opcao em receber notificacos por email -->
                     <div class="font-weight-bold">
-                        <div class="form-check-inline">
-                            <label class="form-check-label mt-3">Você quer participar do programa de caronas?
-                                <input type="checkbox" class="form-check-input" value="caronaSim">Sim
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="caronaNao">Não
-                            </label>
-                            <br>
-                        </div>
-                    </div>
-                    <br><br>
+                        <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber
+                            notificações por e-mail?
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
+                                    for="emailNotification" value="sim">
+                                <label class="form-check-label" for="emailNotification">Sim</label>
+                                <input class="form-check-input ml-2" type="radio" name="emailNotification" id="emailNao"
+                                    for="emailNotification" value="nao">
+                                <label class="form-check-label" for="emailNotification">Não</label>
+                            </div>
 
-                    <div class="font-weight-bold">
-                        <div class="form-check-inline">
-                            <label class="form-check-label mt-3">Você é:
-                                <input type="checkbox" class="form-check-input" value="motorista">Motorista
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="passageiro">Passageiro
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="ambos">Ambos
-                            </label>
-                        </div>
-                    </div>
-                    <br>
+                            @error('emailNotification')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                    </div><br><br>
 
-                    <div class="form-inline" action="/action_page.php">
-                        <label for="text" class="mr-2">Registro da CNH:</label>
-                        <input type="text" class="form-control" id="cnh">
-                        <label for="text" class="ml-3 mr-2">Validade:</label>
-                        <input type="data" class="form-control" id="validadeCnh">
-                        <label for="text" class="ml-3 mr-2">Categoria Habilitação:</label>
-                        <input type="text" class="form-control" id="catCNH">
-                    </div><br>
-
-                    <!-- Seguranca feminina -->
-                    <div class="form-check-inline">
-                        <label class="form-check-label mt-3">
-                            <input type="checkbox" class="form-check-input" value="termos">Sim, aceito oferecer/ receber
-                            caronas de homens.
-                        </label>
-                    </div><br>
-
-                    <!-- Equipamento -->
-                    <div class="form-group mt-5 font-weight-bold">
-                        <label for="text">Equipamento:</label>
-                        <input type="text" class="form-control" id="equipamento">
+                    <!-- aceite de termos e condicoes -->
+                    <div class="form-group">
+                        <label class="font-weight-bold">Termos e Condições do Portal Surf</label>
+                        <textarea class="form-control col-sm-11"
+                            rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
                     </div>
 
-                    <!-- Dados do carro -->
-                    <div class="form-inline" action="/action_page.php">
-                        <label for="text" class="mr-2">Marca do carro:</label>
-                        <input type="text" class="form-control" id="carroMarca">
-                        <label for="text" class="ml-3 mr-2">Modelo do carro:</label>
-                        <input type="text" class="form-control" id="carroModelo">
-                        <label for="text" class="ml-3 mr-2">Ano do carro:</label>
-                        <input type="text" class="form-control" id="carroAno">
-                    </div><br>
-                    <div class="form-inline" action="/action_page.php">
-                        <label for="text" class="mr-2">Cor do carro:</label>
-                        <input type="text" class="form-control" id="carroCor">
-                        <label for="text" class="ml-3 mr-2">Placa do carro:</label>
-                        <input type="text" class="form-control" id="carroPlaca">
-                        <label for="text" class="ml-3 mr-2">Renavam:</label>
-                        <input type="text" class="form-control" id="carroRenavam">
-                    </div><br>
-
-                    <!-- botao  -->
+                    <!-- botao Salvar e Cancelar -->
                     <div class="container mt-5">
-                        <button type="submit" class="btn encontreBotao">Salvar alterações</button>
-                        <button type="submit" class="btn encontreBotao">Cancelar</button>
+                        <button type="submit" class="btn encontreBotao" onclick="return validar_registerForm()">Salvar alterações</button>
+                        <button type="reset" class="btn btn-danger">Cancelar</button>
                     </div>
-                </section>
-    </form>
-
-    <!-- Upload de fotos -->
-    <section class="container mt-5 shadow-lg p-3 cardBlog">
-        <div class="text-center" id="uploadFotos">
-            <h4>UPLOAD DE FOTOS</h4>
-            <br>
-            <form method="post" action="" enctype="multipart/form-data">
-                <label>Carregue sua foto para a galera:</label>
-                <input type="file" name="fotoSurf" />
-                <br><br>
-                <input type="submit" class="btn encontreBotao" value="Dropar" />
+                </div>
             </form>
         </div>
+
     </section>
 
     <!-- botao topo -->
-    <div class="container text-center mt-5">
-        <a href="#usuarioTopo" class="btn encontreBotao">Topo</a>
+    <div class="container text-center mt-5 mb-2">
+        <a href="#usuarioTopo2" class="btn encontreBotao ">Topo</a>
     </div>
 
 
-@endsection
+    <!-- validacao javascript do formulario -->
+    <script type="text/javascript">
+        function validar_registerForm() {
+            var name = registerForm.name.value;
+            var email = registerForm.email.value;
+            var password = registerForm.password.value;
+            var cpf = registerForm.cpf.value;
+            var gender = registerForm.gender.value;
+            var state = registerForm.state.value;
+            var city = registerForm.city.value;
+            var phone1 = registerForm.phone1.value;
+            var emailNotification = registerForm.emailNotification.value;
+
+            if (name == "") {
+                alert("Campo Nome é obrigatório.");
+                registerForm.name.focus();
+                return false;
+            }
+            if (email == "") {
+                alert(
+                    "Campo E-mail é obrigatório. Caso tenha preenchido e retornou este erro, verifique se o endereço é válido ou se não foi utilizado por outro usuário."
+                );
+                registerForm.email.focus();
+                return false;
+            }
+            if (password == "" || password.length <= 5) {
+                alert("Campo Senha é obrigatório. Preencha com no mínimo seis caractéres.");
+                registerForm.password.focus();
+                return false;
+            }
+            if (cpf == "" || cpf.length < 11) {
+                alert("Campo CPF é obrigatório.");
+                registerForm.cpf.focus();
+                return false;
+            }
+            if (gender == "") {
+                alert("Favor preencher o campo Gênero.");
+                registerForm.gender.focus();
+                return false;
+            }
+            if (state == "") {
+                alert("Campo Estado é obrigatório.");
+                registerForm.state.focus();
+                return false;
+            }
+            if (city == "") {
+                alert("Campo Cidade é obrigatório.");
+                registerForm.city.focus();
+                return false;
+            }
+            if (phone1 == "" || phone1.length < 10) {
+                alert("Favor informar um número de telefone válido.");
+                registerForm.phone1.focus();
+                return false;
+            }
+            if (emailNotification == "") {
+                alert(
+                    "Favor informar se aceita receber as nossas notificações por e-mail. Este campo também é importante para as facilitar suas comunicações na sessão Desapego."
+                );
+                // registerForm.emailNotification.focus();
+                return false;
+            }
+        }
+
+    </script>
+
+
+    @endsection

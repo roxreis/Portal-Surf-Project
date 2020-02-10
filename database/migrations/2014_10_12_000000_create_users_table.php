@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password', 300);
             $table->string('cpf');
             $table->string('gender', 10);
-            $table->string('cep', 10);
+            // $table->string('cep', 10);
             $table->string('state', 300);
             $table->string('city', 300);
             $table->string('phone1');

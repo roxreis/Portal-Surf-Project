@@ -70,5 +70,6 @@ Encontre
 <!-- <script src="{{asset('js/encontreTeste.js')}}"></script> -->
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs&callback=iniciarMap"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-23.791516,-45.5627291radius=10000&type=store&keyword=surf&key=AIzaSyAQwuBUVSLoBivCe5CLvcZK7u3izeTmVRs"></script> -->
 
 @endsection
