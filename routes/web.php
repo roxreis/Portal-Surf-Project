@@ -52,7 +52,8 @@ Route::post('/register',"Auth\RegisterController@create");
 
 // Route::post('/seusDados',"Auth\UsuarioController@viewUsuarioDados");
 
-// Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); /*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
+Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); 
+/*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
 
  Auth::routes();
 
