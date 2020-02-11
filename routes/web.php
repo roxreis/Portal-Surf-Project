@@ -61,3 +61,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('ofertaDesapego', 'CrudDesapegoController');
 // Route::resource('/desapegoOfertasUsuario', 'DesapegoController2');
+
+
+
+//Admin´s Routes
+Route::group(['prefix'=>'admin'], function(){
+    Route::get('/cadastro', "AdminController@createAdmin");
+    // ->middleware('checkadmin');
+    Route::post('/cadastro', "AdminController@createAdmin");
+    Route::get('/atualizar/{id?}', "AdminController@updateAdmin");
+    // ->middleware('checkadmin');
+    Route::post('/atualizar', "AdminController@updateAdmin"); 
+    Route::get('/deletar/{id?}',"AdminController@deleteAdmin")->middleware('checkadmin');
+    Route::get('/', "AdminController@viewAllAdmin");
+    // ->middleware('checkadmin');
+    Route::get('/usuario', "AdminController@viewAllUsers")->middleware('checkadmin');
+    Route::get('/ofertas', "AdminController@viewAllOfertas")->middleware('checkadmin');
+});
