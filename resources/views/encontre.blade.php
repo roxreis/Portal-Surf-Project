@@ -32,11 +32,11 @@ Encontre
             <div class="col-lg-3 col-md-3 ml-5 mr-5">
                 <select class="form-control" id="encontreLocal">
                     <option disabled selected>Selecione uma praia!</option>
-                    <option id="encontreLocal" value="guaruja">Guarujá</option>
-                    <option id="encontreLocal" value="maresias">Maresias</option>
-                    <option id="encontreLocal" value="baleia">Baleia</option>
-                    <option id="encontreLocal" value="juquey">Juquey</option>
-                    <option id="encontreLocal" value="camburi">Camburi</option>
+                    <option value='{"lat":-23.7905456, "lng":-45.5657482}'>Maresias</option>
+                    <option value='{"lat":-23.7737363, "lng":-45.6771234}'>Baleia</option>
+                    <option value='{"lat":-23.766204, "lng":-45.736504}'>Juquey</option>
+                    <option value='{"lat":-23.7776892, "lng":-45.6550209}'>Camburi</option>
+                    <option value='{"lat":-24.0142973, "lng":-46.2771556}'>Praia do Tombo</option>
                 </select>
             </div>
 
