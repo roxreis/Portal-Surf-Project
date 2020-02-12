@@ -14,7 +14,7 @@
 
 <body>
     <header class="cabecario">
-    @guest
+        
         <div id='upHeader'>
        
             <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
@@ -37,8 +37,6 @@
                     
 
                     <div class="dropdown-menu dropdown-menu-right menuLogin" aria-labelledby="navbarDropdown">
-                        <a class="ml-4 text-decoration-none" style="color:#090ea996;" href="{{route('ofertaDesapego.index')}}">Suas Vendas</a>
-                        <a class="ml-4 text-decoration-none" style="color:#ce8500ad;" href="{{route('ofertaDesapego.create')}}">Cadastrar uma Venda</a>
                         <a class="dropdown-item" style="color:#373b44a8;" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
