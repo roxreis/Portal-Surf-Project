@@ -216,7 +216,20 @@ Portal Surf - Cadastro Usuario
             registerForm.password.focus();
             return false;
         }
-        if (cpf == "" || cpf.length < 11) {
+        // if ($cpf.ajax({
+        //         type: 'POST',
+        //         dataType: 'json',
+        //         url: '/register',
+        //         async: true,
+        //         data: dados,
+        //         success: function(response) {
+        //             //location.reload();
+        //         }
+        //         alert("CPF já cadastrado por outro usuário.");
+        //         return false;
+        //     });
+        // );
+        if (cpf == "" || cpf.length < 11 ) {
             alert("Campo CPF é obrigatório.");
             registerForm.cpf.focus();
             return false;
