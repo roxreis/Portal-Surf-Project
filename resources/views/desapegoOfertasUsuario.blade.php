@@ -8,7 +8,7 @@
 
 <section class="container d-flex align-items-center flex-column h-auto">
 
-@if(session('delete'))
+    @if(session('delete'))
         <div class=" col-2 alert alert-success d-table" style="margin-top: 21vh;">
             <p>{{session('delete')}}</p>
         </div>
@@ -16,11 +16,10 @@
 
     <div class="img-ofertaDesapegoHistorico">
        
-        
-            
-
-                @foreach($ofertas as $oferta)
-
+       
+            @foreach($ofertas as $oferta)
+                
+              
                     @if(Auth::user()->id == $oferta ->user_id)
                                 
                     <div class="card col-4 cardOfertaDesapego">
@@ -39,9 +38,10 @@
                                         <button class="btn btn-danger" type="submit">Excluir</button>
                                     </form>    
                                 </div>
-                                @if(session('success'))
-                                    <div class="alert alert-success">
-                                        <p>{{session('success')}}</p>
+                         
+                                @if(session('vazio'))
+                                    <div class="alert alert-success mt-5">
+                                        <h2>{{session('vazio')}}</h2>
                                     </div>
                                 @endif
                                 
@@ -50,10 +50,10 @@
 
                     </div>
                              
-                    @endif        
-
-                @endforeach
-           
+                    @endif  
+                         
+            @endforeach
+         
     
    
     </div>

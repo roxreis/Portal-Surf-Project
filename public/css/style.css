@@ -7,6 +7,11 @@ a{
     color: black;
 }
 
+.menuHeader a:hover{
+    color: #b8f500;
+    text-decoration: none;
+}
+
 
 /* css para header */
 body{
@@ -104,6 +109,8 @@ nav ul li a{
 }
 
 
+
+
 #logo{
     height: 92px;
     width: 220px;
@@ -118,7 +125,7 @@ nav ul li a{
     
 background-color: #ebf4f1;
     
-width: 14vw;
+width: auto;
     
 border-radius: 6px;
 }
@@ -408,7 +415,9 @@ text-shadow: #000000 -2px 0px 20px;
 /* fim css home */
 
 
-
+#encontreTopo{
+    margin-top: 100px;
+}
 
 
 /* css para pagina previsao */
@@ -577,7 +586,7 @@ justify-content: flex-end;
     color: black;
     width: 77%;
     text-align: center;
-    margin-top: 36px;
+    margin-top: 94px;
 }
 
 #desapegar4{
@@ -615,7 +624,7 @@ justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #e7e9e9;
+    background-color: #c4c6c6;
     border: none;
 }
 

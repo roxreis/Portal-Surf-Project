@@ -22,8 +22,10 @@ class CreateDesapegoProdutosTable extends Migration
             $table->string('withdrawalNeighborhood', 45);
             $table->string('image', 256)->nullable();
             $table->string('phone', 11);
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->unique();
             $table->foreign('user_id')->references('id')->on('users');
+            $table->string('user_name',300)->unique();
+            $table->foreign('user_name')->references('name')->on('users');
             $table->timestamps();
          
             

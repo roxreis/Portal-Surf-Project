@@ -19,7 +19,7 @@ class Desapego extends Model{
          * @var array
          */
         protected $fillable =
-        ['descriptionProduct', 'priceProduct', 'withdrawalState', 'withdrawalCity', 'withdrawalNeighborhood', 'image','phone','user_id'];
+        ['descriptionProduct', 'priceProduct', 'withdrawalState', 'withdrawalCity', 'withdrawalNeighborhood', 'image','phone','user_id', 'user_name'];
         protected $guarded = ['id', 'created_at', 'update_at'];
         protected $table = 'desapego_produtos';
 

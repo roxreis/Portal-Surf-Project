@@ -12,9 +12,9 @@
     <title>@yield('titulo')</title>
 </head>
 
-<body style="background-color: #efefef;">
+<body style="background-color: #d6d6d6;">
     <header class="cabecario">
-    
+    @guest
         <div id='upHeader'>
        
             <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
@@ -37,11 +37,18 @@
                     
 
                     <div class="dropdown-menu dropdown-menu-right menuLogin" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" style="color:#373b44a8;" href="{{ route('logout') }}"
+                    <a class="dropdown-item " style="color:#373b44a8;" href="{{ route('ofertaDesapego.index') }}">
+                                {{ __('Suas Vendas') }}
+                        </a>
+                        <a class="dropdown-item " style="color:#373b44a8;" href="{{ route('ofertaDesapego.create') }}">
+                                {{ __('Cadastrar uma Oferta') }}
+                        </a>
+                        <a class="dropdown-item " style="color:#373b44a8;" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                         </a>
+       
                         
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none; none;">
                             @csrf
@@ -50,7 +57,7 @@
                 </li>
             
             </div>
-        @endguest
+    @endguest
     
             
 
@@ -62,25 +69,25 @@
             <div class="collapse navbar-collapse d-flex">
                 <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center"
                     style="margin-left:65px; width: 1038px;">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/previsao">Previsão</a>
+                    <li class=menuHeader>
+                        <a  href="/previsao">Previsão</a>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="/caronas">Carona</a>
+                        <a  href="/caronas">Carona</a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/desapego">Desapego</a>
+                    <li class=menuHeader>
+                        <a  href="/desapego">Desapego</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/encontre">Encontre</a>
+                    <li class=menuHeader>
+                        <a  href="/encontre">Encontre</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
+                    <li class=menuHeader>
+                        <a  href="/blog">Blog</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="/noticias">Notícias</a>
+                    <!-- <li class=>
+                        <a  href="/noticias">Notícias</a>
                     </li> -->
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown menuHeader">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -118,7 +125,7 @@
 
 
     </header>
-    <main style="background-color: #efefef;">
+    <main style="background-color: #d6d6d6;">
         <!-- conteudo do site -->
         @yield('conteudo')
     </main>
