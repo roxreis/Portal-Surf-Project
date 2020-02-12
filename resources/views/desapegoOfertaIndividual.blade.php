@@ -12,19 +12,28 @@ Desapego Oferta
             </div>
         </div>
     </section>
-    <section class="d-flex p-3 ofertaIndivid">
+    <section class="d-flex p-3 justify-content-center ofertaIndivid">
        
-            <div class="d-flex" style="margin-top: 18px;">
-                @foreach($ofertas as oferta)
-                    <div class="row col-xl-6 col-lg-12 col-sm-12 w-50 h-50  mr-2">
+            <div class="d-flex p-3" style="margin-top: 18px;">
+                @foreach($ofertas as $oferta)
+                
+                    <div class="row col-xl-6 col-lg-12 col-sm-12 w-50 h-50  mr-5">
                         <img src="{{asset('storage/'.$oferta->image)}}" class="img-fluid border border-dark img-oferta-individual">
                     </div>
+                   
+                 
             
                     <!-- informacoes oferta -->
-                    <div class="row col-xl-6 col-lg-12 col-sm-12 h-25">
-                        <h1 class="font-italic font-weight-bold">{{$oferta -> descriptionProduct}}</h1>
-                        <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
-                        <p class="card-text">Fone: {{$oferta -> phone}}</p>
+                    <div class="row col-xl-6 col-lg-12 col-sm-12 d-flex flex-column">
+                        <h1 class="font-italic font-weight-bold"> {{$oferta->descriptionProduct}}</h1><br>
+                        <h5 class="card-text font-weight-bold">Preço: R$ {{$oferta->priceProduct}} </h5><br> 
+                        <h5>Data oferta:<br>{{$oferta->created_at}} </h5><br>
+                        <h5 class="card-text">Estado: {{$oferta->withdrawalState}}</h5>
+                        <h5 class="card-text">Cidade: {{$oferta->withdrawalCity}}</h5>
+                        <h5 class="card-text">Bairro: {{$oferta->withdrawalNeighborhood}}</h5><br>
+                        <strong><h5 class="card-text  font-weight-bold">Fone: {{$oferta->phone}}</h5></strong>
+
+
                     </div>
                 @endforeach        
             </div>

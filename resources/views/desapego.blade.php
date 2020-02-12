@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section  style="background-color: #cbcece75;height: 360vh;" >
+    <section  class="h-auto" style="background-color: #cbcece75;" >
     <div class="shadow-lg container" id="desapego">
         
        
@@ -44,25 +44,26 @@
             <div class="titulodeSecaoDesapego"> 
                 <h3>Produtos em destaque!</h3>
             </div>
-            <div class="card cardHomeDesapego p-3"> 
+            <div class="card cardHomeDesapego h-auto p-3"> 
                 @foreach($ofertas as $oferta)
-                    <div class="card col-4 cardOfertaDesapego">
+                    <div class="card col-4 cardOfertaDesapego ">
 
                         <img src="{{asset('storage/'.$oferta->image)}}" style="height:55vh; margin-bottom: 10px;margin-top: 10px;" alt="">
         
-                        <p class="card-titlle">ID {{$oferta ->id}}</p>
+                        <p class="card-titlle">Cód. Produto {{$oferta ->id}}</p>
                         <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
                         <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
-                         <a href="{{route('ofertaDesapego.show', $oferta->id)}}">          <input type="button" class="btn     btn-success"value="Detalhes">
+                         <a href="{{route('ofertaDesapego.show', $oferta->id)}}"> <input type="button" class="btn     btn-primary"value="Detalhes">
                         </a>
                     </div>
                 @endforeach
             </div>
    
 
-        <form class="d-flex flex-row" style="margin-top: 100px;" action="{{route('ofertaDesapego.create')}}" method="get">
+        <form class="d-flex flex-row" style="margin-top: 100px;margin-bottom: 76px;" action="{{route('ofertaDesapego.create')}}" method="get">
                 <div id="desapegar4">
-                    <h3 class="font-weight-bold">Também Quer fazer uma grana!? -></h3> <button class="btn btn-success" ype="submit" style="height: 9vh;width: 13vw;font-size: 1.5rem;">Desapegue</button>
+                    <h3 class="font-weight-bold">Também Quer fazer uma grana!? -></h3> 
+                    <button class="btn encontreBotao mb-5" ype="submit" style="height: 9vh;width: 13vw;font-size: 1.5rem;">Desapegue</button>
                 </div>
         </form>
                 

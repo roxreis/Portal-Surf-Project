@@ -6,7 +6,7 @@
 
 @section('conteudo')
 
-<section class="container d-flex align-items-center flex-column" style="height:357vh;" >
+<section class="container d-flex align-items-center flex-column h-auto">
 
 @if(session('delete'))
         <div class=" col-2 alert alert-success d-table" style="margin-top: 21vh;">
@@ -27,7 +27,7 @@
 
                         <img src="{{asset('storage/'.$oferta->image)}}" style="height:55vh; margin-bottom: 10px;margin-top: 10px;" alt="">
                             
-                                <p class="card-titlle">ID {{$oferta ->id}}</p>
+                                <p class="card-titlle">Cód. Produto {{$oferta ->id}}</p>
                                 <h5 class="card-title">{{$oferta -> descriptionProduct}}</h5>
                                 <p class="card-text">R$ {{$oferta -> priceProduct}} <br><br> Data oferta:<br>{{$oferta ->created_at}} </p>
                                 <p class="card-text">Fone: {{$oferta -> phone}}</p>

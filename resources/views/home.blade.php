@@ -8,10 +8,10 @@ Portal Surf
 
 @section('conteudo')
 
-<section class="d-flex" style="height:607px;">
+<section class="d-flex h-auto" >
 
     <div class="carousel slide carousel-fade w-100" data-ride="carousel">
-        <div class="carousel-inner h-100 ">
+        <div class="carousel-inner" style="height: 95vh;">
             <div class="carousel-item active" id="carousel-1"> 
                 <div class="efeitoBannerHome">
                     <div id="texto-index"> 
@@ -41,7 +41,7 @@ Portal Surf
   
 </section>
 
-<section class=" d-flex flex-column flex-nowrap homeSection2" style="height:958px;">
+<section class=" d-flex flex-column flex-nowrap h-auto homeSection2" >
 
     <article class="text-center p-5 d-flex flex-column" style="background:#d7dfea;color: ##404147;">
         <h2 class="font-weight-bold">Quem Somos</h2>

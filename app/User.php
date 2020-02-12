@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'cpf', 'gender', 'cep', 'state', 'city', 'phone1', 'phone2', 'emailNotification', 'terms',
+        'name', 'email', 'password', 'cep', 'cpf', 'gender', 'state', 'city', 'phone1', 'phone2', 'emailNotification', 'terms',
     'user_id'];
 
     // public function desapego()

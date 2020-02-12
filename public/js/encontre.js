@@ -1,28 +1,26 @@
-// exercicio feito com um local estatico
+// localizacao por cidade via geocoordenadas:
 console.log("teste");
 
 var map;
 
 let botaoClick = document.getElementById('botao');
 
-// var guaruja = [
-//     {lat: -24.0022138, lng: -46.282744,14},
-// ]
-
-
 botaoClick.addEventListener('click', () => {
-        // function iniciarMap() {
 
-        // var coord = {
-        //     lat: -23.791516,
-        //     lng: -45.5627291
-        // };
+        var coord = document.getElementById("encontreLocal").value;
+        console.log(coord);
+        var coordParse = JSON.parse(coord);
+        
+        var coordLat = coordParse.lat;
+        var coordLng = coordParse.lng;
 
-        var center = new google.maps.LatLng(-23.791516, -45.5627291)
+        console.log(coordLat, coordLng);
+        var center = new google.maps.LatLng(coordLat, coordLng);
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
-            // center: coord,
             center: center,
+            // radius: 10000,
+            // types: ['surf']
         });
 
         var marker = new google.maps.Marker({
@@ -31,7 +29,6 @@ botaoClick.addEventListener('click', () => {
         });
 
         console.log("oi");
-        // }
     })
 
 

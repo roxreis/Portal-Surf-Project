@@ -7,7 +7,7 @@ Portal Surf - Login
 @section('conteudo')
 
 <!-- aviso de login -->
-<section class="container flex-column d-flex" style="height: 538px; ">
+<section class="container flex-column d-flex h-auto align-items-center">
     <div class="textoLogin">
         <h3 class="text-center flex-wrap"> OPS! VOCÊ PRECISA ESTAR LOGADO
         PARA ACESSAR ESTA PÁGINA!</h3>
@@ -18,9 +18,8 @@ Portal Surf - Login
 
 <!-- campo para login -->
 
-            <div class="row justify-content-center">
-                <div class="cardBlog shadow-lg p-4 bg-white">
-                    <form method="POST" action="{{ route('login') }}">
+                <div class="cardBlog shadow-lg p-4 bg-white h-auto">
+                    <form method="POST" action="{{ route('login') }}" class="h-auto">
                         @csrf
 
                         <div class="form-group row">
@@ -62,7 +61,7 @@ Portal Surf - Login
                                         {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Lembrar de mim.') }}
+                                        {{ __('Lembrar de mim') }}
                                     </label>
                                 </div>
                            
@@ -83,13 +82,15 @@ Portal Surf - Login
                         </div>
                     </form>
            
-        </div>
-    </div>
+                </div>
+   
+
+                <!-- botao para cadastro -->
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <a href="register" class="btn encontreBotao mb-2">Primeiro acesso</a>
+                </div>
 </section>
 
-<!-- botao para cadastro -->
-<div class="d-flex justify-content-center mt-5 mb-5">
-    <a href="register" class="btn encontreBotao mb-2">Primeiro acesso</a>
-</div>
+
 
 @endsection

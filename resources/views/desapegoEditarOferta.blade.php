@@ -70,7 +70,7 @@
 
                     <!-- botoes -->
                     <input type="submit" value="Atualizar" class="btn encontreBotao">
-                    <a href="desapegoOfertasUsuario" class="btn btn-danger">Cancelar</a>
+                    <a href="{{route('ofertaDesapego.index')}}" class="btn btn-danger">Cancelar</a>
 
                 </form>
            
