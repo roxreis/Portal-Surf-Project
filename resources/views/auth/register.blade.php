@@ -5,21 +5,21 @@ Portal Surf - Cadastro Usuario
 @extends('layouts.templateSurf')
 
 @section('conteudo')
-<section class="container" id="usuarioTopo">
-    <div class="d-flex h-75">
-        <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister"
+<section class="container d-flex justify-content-center" >
+    <div class="d-flex h-auto w-75">
+        <form action="/register" method="POST" enctype="multipart/form-data" class="shadow-lg formRegister h-auto"
             name="registerForm">
             @CSRF
 
             <!-- dados pessoais -->
-            <div style="margin-left: 81px;">
-                <div class="text-center" id="dadosPessoais">
+            <div class="form-group row d-flex justify-content-center">
+                <div class="col-sm-12 text-center" id="dadosPessoais">
                     <h4>SEUS DADOS PESSOAIS</h4>
                     <br>
                 </div>
 
-                <div class="form-inline mt-3">
-                    <label for="name" class="col-sm-2">Nome completo:</label>
+                <div class="form-group row text-center col-sm-12">
+                    <label for="name" class="col-sm-3 col-form-label">Nome completo:</label>
                     <input id="name" type="text" class="col-sm-8 form-control" name="name" required autocomplete="name"
                         autofocus>
                     @error('name')
@@ -27,15 +27,15 @@ Portal Surf - Cadastro Usuario
                     @enderror
                 </div><br>
 
-                <div class="form-inline mt-3">
-                    <label for="email" class="col-sm-2">E-mail:</label>
+                <div class="form-group row text-center col-sm-12">
+                    <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
                     <input id="email" type="email" class="form-control col-sm-4" name="email" required
                         autocomplete="email">
                     @error('email')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
 
-                    <label for="password" class="col-sm-1">Senha:</label>
+                    <label for="password" class="col-sm-2 col-form-label">Senha:</label>
                     <input id="password" type="password" class="form-control col-sm-3" name="password" required
                         autocomplete="new-password" placeholder="Mínimo de seis caracteres.">
                     @error('password')
@@ -44,9 +44,9 @@ Portal Surf - Cadastro Usuario
                 </div>
                 <br>
 
-                <div class="form-inline mt-3">
+                <div class="form-group row text-center col-sm-12">
                     <label for="cpf" class="col-sm-2">CPF:</label>
-                    <input type="text" class="form-control col-sm-3" id="cpf" name="cpf" placeholder="Use apenas números.">
+                    <input type="text" class="form-control col-sm-4" id="cpf" name="cpf" placeholder="Use apenas números.">
                     @error('cpf')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -73,9 +73,9 @@ Portal Surf - Cadastro Usuario
                     @enderror
                 </div><br> -->
 
-                <div class="form-inline mt-3">
+                <div class="form-group row text-center col-sm-12">
                     <label for="state" class="col-sm-2">Estado:</label>
-                    <input type="text" class="form-control col-sm-3" id="state" name="state">
+                    <input type="text" class="form-control col-sm-3" id="state" name="state" style="margin-right: 69px;">
                     @error('state')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -88,9 +88,9 @@ Portal Surf - Cadastro Usuario
                 </div>
                 <br>
 
-                <div class="form-inline mt-3">
+                <div class="form-group row text-center col-sm-12">
                     <label for="phone1" class="col-sm-2">Telefone 01:</label>
-                    <input type="text" class="form-control col-sm-3" id="phone1" name="phone1" placeholder="Inclua DDD, use apenas números.">
+                    <input type="text" class="form-control col-sm-3" id="phone1" name="phone1" placeholder="Inclua DDD, use apenas números." style="margin-right: 69px;">
                     
                     @error('phone1')
                     <div class="alert alert-danger">{{ $message }}</div>
@@ -128,10 +128,10 @@ Portal Surf - Cadastro Usuario
                     </div> -->
 
                 <!-- opcao em receber notificacos por email -->
-                <div class="font-weight-bold">
-                    <label class="form-check-label mt-3 col-sm-10" for="emailNotification">Você aceita receber
-                        notificações por e-mail?
-                        <div class="form-check form-check-inline">
+                <div class=" form-group row col-sm-12 pt-4">
+                    <label class="mt-3 ml-4" for="emailNotification">Você aceita receber
+                        notificações por e-mail?</label>
+                        <div class="form-check form-check-inline p-3">
                             <input class="form-check-input" type="radio" name="emailNotification" id="emailSim"
                                 for="emailNotification" value="sim">
                             <label class="form-check-label" for="emailNotification">Sim</label>
@@ -143,12 +143,12 @@ Portal Surf - Cadastro Usuario
                         @error('emailNotification')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
-                </div><br><br>
+                <br><br>
 
                 <!-- aceite de termos e condicoes -->
-                <div>
-                    <div class="form-group">
-                        <label class="font-weight-bold">Termos e Condições do Portal Surf</label>
+                <div class="form-group row col-sm-9 flex-column ml-4 pt-4">
+                    <div class="form-group row">
+                        <label class=>Termos e Condições do Portal Surf</label>
                         <textarea class="form-control col-sm-11"
                             rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste necessitatibus ut alias quo suscipit sed excepturi modi! Eos consequuntur eligendi earum ex odit officiis eius corrupti officia delectus ea! </textarea>
                     </div>
@@ -164,7 +164,7 @@ Portal Surf - Cadastro Usuario
                 </div>
 
                 <!-- botao Salvar e Cancelar -->
-                <div class="container mt-5">
+                <div class="container ml-2">
                     <!-- @empty($programaCarona)
                     <button type="submit" class="btn encontreBotao">Salvar alterações</button>
                     @endempty -->
@@ -172,6 +172,7 @@ Portal Surf - Cadastro Usuario
                         alterações</button>
                     <button type="reset" class="btn btn-danger">Cancelar</button>
                 </div>
+            </div>
             </div>
         </form>
     </div>

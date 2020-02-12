@@ -6,7 +6,7 @@
 
 @section('conteudo')
 
-<section class="container d-flex align-items-center flex-column" style="height:357vh;" >
+<section class="container d-flex align-items-center flex-column h-auto">
 
 @if(session('delete'))
         <div class=" col-2 alert alert-success d-table" style="margin-top: 21vh;">

@@ -12,7 +12,7 @@
     <title>@yield('titulo')</title>
 </head>
 
-<body>
+<body style="background-color: #efefef;">
     <header class="cabecario">
     @guest
         <div id='upHeader'>
@@ -120,7 +120,7 @@
 
 
     </header>
-    <main >
+    <main style="background-color: #efefef;">
         <!-- conteudo do site -->
         @yield('conteudo')
     </main>

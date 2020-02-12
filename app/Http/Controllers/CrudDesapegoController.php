@@ -13,6 +13,10 @@ class CrudDesapegoController extends Controller
 {
     /**
      * Display a listing of the resource.
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
      *
      * @return \Illuminate\Http\Response
      */
@@ -33,8 +37,11 @@ class CrudDesapegoController extends Controller
     public function create()
     {
      
-
+        if (Auth::user()){
         return view('desapegoCadastroOferta');
+        }else{
+            return redirect()->route('login');
+        }
         
         
     }

@@ -83,7 +83,7 @@ body{
     width: 100%;
     /* display: flex; */
     align-items: center;
-    height: 125px;
+    height: 143px;
     z-index: 99;
     position:fixed;
     margin-top: 0px;
@@ -105,8 +105,8 @@ nav ul li a{
 
 
 #logo{
-    height: 79px;
-    width: 205px;
+    height: 92px;
+    width: 220px;
     /* margin-left: 61px; */
     margin-bottom: 10px;
     margin-right: -15px;
@@ -139,7 +139,7 @@ border-radius: 6px;
  #upHeader{
     width: 100%;
     /* background-image: linear-gradient(to left, #f0f0f37a , #ffffff); */
-    height: 92px;
+    height: 102px;
     align-items: center;
     display: flex;
     background-image: url("../imagens/img-home/banner17.jpg");
@@ -262,7 +262,7 @@ border-radius: 6px;
 
 .cards-home{
     display: flex;
-    height: 248px;
+    height: auto;
 }
 
 #texto-index{
@@ -489,10 +489,12 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 #desapego {
-    height: 284vh;
+    height: auto;
     display: flex;
     flex-direction:column;
     background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .cards-desapego{
@@ -500,7 +502,7 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 .cardOfertaDesapego{
-    height: 100vh;
+    height: 103vh;
     max-width: 25vw;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -516,7 +518,7 @@ text-shadow: #000000 -2px 0px 20px;
 
 /* align-items: flex-end; */
 
-color: #ffffff;
+color: #e5e7e7;
 
 font-weight: bold;
 
@@ -524,13 +526,15 @@ display: flex;
 
 /* background-position-y: -29px; */
 
-height: 46vh;
+height: 25vh;
 
 justify-content: center;
 
 align-items: center;
 
 flex-wrap: nowrap;
+
+margin-top: -17px;
 }
 
 /* #desapegar a{
@@ -721,9 +725,9 @@ margin-top: 116px;
     
 width: 100vw;
     
-height: 210vh;
+height: auto;
     
-margin-top: 131px;
+margin-top: 165px;
     
 justify-content: center;
     
@@ -984,7 +988,7 @@ flex-wrap: wrap;
     }
 
     .cards-home{
-        height: 41vh;
+        height: auto;
         display: flex;
     }
 

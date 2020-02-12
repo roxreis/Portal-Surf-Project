@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section  style="background-color: #cbcece75;height: 360vh;" >
+    <section  class="h-auto" style="background-color: #cbcece75;" >
     <div class="shadow-lg container" id="desapego">
         
        
@@ -44,9 +44,9 @@
             <div class="titulodeSecaoDesapego"> 
                 <h3>Produtos em destaque!</h3>
             </div>
-            <div class="card cardHomeDesapego p-3"> 
+            <div class="card cardHomeDesapego h-auto p-3"> 
                 @foreach($ofertas as $oferta)
-                    <div class="card col-4 cardOfertaDesapego">
+                    <div class="card col-4 cardOfertaDesapego ">
 
                         <img src="{{asset('storage/'.$oferta->image)}}" style="height:55vh; margin-bottom: 10px;margin-top: 10px;" alt="">
         
