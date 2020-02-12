@@ -14,7 +14,7 @@
 
 <body>
     <header class="cabecario">
-        
+    
         <div id='upHeader'>
        
             <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
