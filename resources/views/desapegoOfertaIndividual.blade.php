@@ -31,6 +31,9 @@ Desapego Oferta
                         <h5 class="card-text">Estado: {{$oferta->withdrawalState}}</h5>
                         <h5 class="card-text">Cidade: {{$oferta->withdrawalCity}}</h5>
                         <h5 class="card-text">Bairro: {{$oferta->withdrawalNeighborhood}}</h5><br>
+                     
+                        <strong><h5 class="card-text font-weight-bold">{{$oferta->user_name}}</h5></strong>
+                        
                         <strong><h5 class="card-text  font-weight-bold">Fone: {{$oferta->phone}}</h5></strong>
 
 

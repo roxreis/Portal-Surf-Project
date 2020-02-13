@@ -13,16 +13,15 @@ class CrudDesapegoController extends Controller
 {
     /**
      * Display a listing of the resource.
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+  
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {   
         $ofertas = Desapego::all();
+       
+               
         return view('desapegoOfertasUsuario')->with(['ofertas'=>$ofertas]);
        
     
@@ -66,6 +65,8 @@ class CrudDesapegoController extends Controller
             $ofertas->image = $request->input('image');
             $ofertas->phone = $request->input('phone');
             $ofertas['user_id'] = Auth::user()->id;
+            $ofertas['user_name'] = Auth::user()->name;
+            
            
 
            if($request->hasFile('image')){
@@ -73,7 +74,7 @@ class CrudDesapegoController extends Controller
            }
           
             $ofertas->save();
-
+           
             
         
         return redirect()->route('ofertaDesapego.index');
@@ -99,12 +100,14 @@ class CrudDesapegoController extends Controller
     public function show($id){
         
         $ofertas = Desapego::where('id', $id)->get();
-    
-        return view('desapegoOfertaIndividual')->with(["ofertas"=>$ofertas]);
+        
+
+            return view('desapegoOfertaIndividual')->with(["ofertas"=>$ofertas]);
+        
     
 
-    }  
-    
+
+    }
 
 
     /**
@@ -162,7 +165,12 @@ class CrudDesapegoController extends Controller
      */
     public function destroy($id){
         Desapego::where('id',$id)->delete();
+        if($id != 0){
         return redirect()->route('ofertaDesapego.index')->with('delete', 'Oferta deletada');
+        
+        }else{
+            return redirect()->route('ofertaDesapego.index')->with('Vazio', 'Não exitem ofertas nesta pagina!');
+        }
 
        
         }
