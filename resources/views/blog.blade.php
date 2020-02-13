@@ -22,8 +22,7 @@
     <div class="cardBlogGeral">
         <div class="card-body shadow-lg cardBlog row no-gutters">
             <div class="col-4 blogMobile">
-                <img style="max-width: 90%" class="card-img-left blogMobile"
-                    src="./imagens/img-blog/pranchaPraia.jpg" alt="Pranchas para manobras">
+                <img class="card-img-left imgCardBlog" src="./imagens/img-blog/pranchaPraia.jpg" alt="Pranchas para manobras">
             </div>
             <div class="col-8">
                 <div class="card-body">
@@ -31,7 +30,7 @@
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, nisi! Placeat
                         veniam
                         in fugiat voluptatibus nam dolorem reprehenderit, maxime deleniti quibusdam ...</p>
-                    <a href="#" class="card-link textoCardBlog">Saiba mais</a>
+                    <a href="/blog/noticia" class="card-link textoCardBlog">Saiba mais</a>
                 </div>
             </div>
         </div>
@@ -40,7 +39,7 @@
     <div class="cardBlogGeral">
         <div class="card-body shadow-lg cardBlog row no-gutters">
             <div class="col-4 blogMobile">
-                <img style="max-width: 90%" class="card-img-left" src="./imagens/img-blog/protecaoSurf.jpg"
+                <img class="card-img-left imgCardBlog" src="./imagens/img-blog/protecaoSurf.jpg"
                     alt="Equipamentos de segurança">
             </div>
             <div class="col-8">
@@ -50,7 +49,7 @@
                         assumenda,
                         molestiae dolorum cupiditate facere, illo laborum iste laudantium voluptates, sapiente
                         necessitatibus....</p>
-                    <a href="#" class="card-link textoCardBlog">Saiba mais</a>
+                    <a href="/blog/noticia" class="card-link textoCardBlog">Saiba mais</a>
                 </div>
             </div>
         </div>
@@ -59,7 +58,7 @@
     <div class="cardBlogGeral">
         <div class="card-body shadow-lg cardBlog row no-gutters">
             <div class="col-4 blogMobile">
-                <img style="max-width: 90%" class="card-img-left" src="./imagens/img-encontre/surfboard.jpg"
+                <img class="card-img-left imgCardBlog"" src="./imagens/img-encontre/surfboard.jpg"
                     alt="Shaper de Itanhaem">
             </div>
             <div class="col-8">
@@ -70,7 +69,7 @@
                         maiores quasi
                         suscipit, ducimus eligendi, voluptate veritatis, ad tempora placeat delectus earum
                         totam ab...</p>
-                    <a href="#" class="card-link textoCardBlog">Saiba mais</a>
+                    <a href="/blog/noticia" class="card-link textoCardBlog">Saiba mais</a>
                 </div>
             </div>
         </div>

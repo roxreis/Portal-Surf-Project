@@ -9,4 +9,9 @@ class BlogController extends Controller
   public function viewBlog(Request $request){
       return view('blog');
     }
+
+  public function viewBlogNoticia(Request $request){
+    return view('blogNoticia');
+  }
+  
 }

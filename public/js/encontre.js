@@ -19,8 +19,8 @@ botaoClick.addEventListener('click', () => {
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
             center: center,
-            // radius: 10000,
-            // types: ['surf']
+            radius: 10000,
+            types: ['surf']
         });
 
         var marker = new google.maps.Marker({

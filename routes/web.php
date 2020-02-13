@@ -42,17 +42,16 @@ Route::get('/desapego','CrudDesapegoController@homeDesapego');
 Route::get('/encontre', 'EncontreController@viewEncontre');
 
 Route::get('/blog', 'BlogController@viewBlog');
+Route::get('/blog/noticia', 'BlogController@viewBlogNoticia');
 
 // Route::get('/noticias', 'NoticiasController@viewNoticias');
 
 Route::get('/login',"Auth\LoginController@viewLogin");
 
 Route::post('/register',"Auth\RegisterController@create");
-// Route::post('/register',"Auth\RegisterController@viewRegister");
-
-// Route::post('/seusDados',"Auth\UsuarioController@viewUsuarioDados");
 
 Route::get('/usuarioDados',"UsuarioController@viewUsuarioDados"); 
+// Route::post('/seusDados',"Auth\UsuarioController@viewUsuarioDados");
 /*confirmar se nao ha um controller jah criado pelo laravel para isso antes de criar este controller */
 
  Auth::routes();

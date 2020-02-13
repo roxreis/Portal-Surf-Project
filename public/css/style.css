@@ -845,7 +845,19 @@ flex-wrap: wrap;
     color: #1f4ea5;
 }
 
+.imgCardBlog {
+    max-width: 350px;
+    max-height: 190px;
+    width: auto;
+    height: auto;
+}
 
+.imgCardBlog2 {
+    max-width: 500px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
 
 /* css para pagina noticias */
 .noticiasBanner {
