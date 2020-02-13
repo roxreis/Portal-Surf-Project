@@ -84,23 +84,39 @@ body{
     align-items: center;
 }
 
-.cabecario{
-    width: 100%;
-    /* display: flex; */
-    align-items: center;
-    height: 143px;
+.divNav{
+    border-bottom: 4px solid #245371;
+    /* box-shadow: 0px 1px 2px black; */
+    position: fixed;
     z-index: 99;
-    position:fixed;
-    margin-top: 0px;
-    flex-direction:column;
+    width: 100vw;
+    height: 13vh;
 }
 
-#botaoHeader{
-    margin-left: 386px;
+.cabecario{
+    width: 0vw;
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    /* z-index: 99; */
+    /* position:fixed; */
+    margin-top: 0px;
+    justify-content: space-between;
+    padding: 10px;
 }
+
+.cabecario ul{
+    display: flex;
+    justify-content: space-between;
+    width: 64vw;
+    height: 6vh;
+    align-items: center;
+}
+
+
 
 nav ul li a{
-    color: #fff;
+    color: #245b7e;
     font-size: 0.88rem;
     /* font-weight: bold; */
     /* font-family: "roboto-light"; */
@@ -108,17 +124,19 @@ nav ul li a{
     /* text-shadow: #000 1px 0px 3px; */
 }
 
-
+li a{
+    color: lawngreen;
+}
 
 
 #logo{
-    height: 92px;
-    width: 220px;
+    height: 10vh;
+    width: 13vw;
     /* margin-left: 61px; */
-    margin-bottom: 10px;
-    margin-right: -15px;
-    margin-left: 530px;
-    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    margin-right: 23px;
+    margin-left: 95px;
+    /* margin-top: 10px; */
 }
 
 .menuLogin{
@@ -213,57 +231,56 @@ border-radius: 6px;
 
 
 #carousel-1{
-    background-image: url("../imagens/img-home/banner21.jpg");
-    background-position-y: -172px;
-    height: 100%;
+    background-image: url("../imagens/img-home/banner28.jpg");
+    background-position-y: -247px;
+    height: 89vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-top: 107px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 0px; */
+    margin-left: 0px;
+    /* box-shadow: 2px 6px 12px black; */
+    width: 99.8vw;
+    /* border-radius: 7px; */
 }
 
-/* .carousel-gaveta{
-    background-image: linear-gradient(180deg, #6a849e94,  #52505000);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;} */
 
 #carousel-2{
-    background-image: url("../imagens/img-home/banner28.jpg");
-    background-position-y: -314px;
-    height: 100%;
+    background-image: url("../imagens/img-home/banner21.jpg");
+    background-position-y: -135px;
+    height: 89vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-top: 107px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 0px; */
+    margin-left: -14px;
+    /* box-shadow: 2px 6px 12px black; */
+    width: 99.8vw;
 }
 
-#carousel-3{
+    #carousel-3{
     background-image: url("../imagens/img-home/banner23.jpg");
-    background-position-y: -106px;
-    height: 100%;
+    background-position-y: -21px;
+    height: 89vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-top: 108px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 0px; */
+    margin-left: -15px;
+    /* box-shadow: 2px 6px 12px black; */
+    width: 99.8vw;
 }
 
-.efeitoBannerHome{
-    /* background-color:blue; */
-    height: 100%;
-    background-image: linear-gradient(to top, #011a77cf , #002bc700);
-}
+
 
 
 
@@ -278,7 +295,7 @@ color: rgb(31, 29, 29);
 
 height: 177px;
 
-width: 100%;
+/* width: 100%; */
 
 /* margin-left: 257px; */
 
@@ -294,23 +311,25 @@ justify-content: center;
 
 /* font-size: 31px; */
 
-/* padding: 50px; */
+padding: 50px;
 
-margin-top: 124px;
+margin-top: 58px;
 
-margin-bottom: 8px;
+/* margin-bottom: 8px; */
 
-margin-left: 111px;
+margin-left: -196px;
 
 /* align-items: flex-start; */
 
-/* margin-right: 506px; */
+margin-right: 201px;
 
 text-shadow: #000000 -2px 0px 20px;
 
 /* text-align: center; */
 
-/* align-items: center; */
+align-items: center;
+
+/* border-radius: 60px; */
 }
 
 .texto-index-2{
@@ -340,7 +359,7 @@ text-shadow: #000000 -2px 0px 20px;
 
 #texto-index h2{
     font-weight: bold;
-    font-size: 4.0rem;
+    font-size: 3.8rem;
     color: #ffffff;
 }
 #texto-index p{
@@ -1001,7 +1020,10 @@ flex-wrap: wrap;
     }
 
     #logo{
-        margin-left: 397px;
+        /* margin-bottom: 44px; */
+        height: 10vh;
+        width: 37vw;
+        margin-left: 0px;
     }
 
     #botaoHeader{
@@ -1201,15 +1223,47 @@ flex-wrap: wrap;
         }
 
         #logo{
-            height: 16vh;
-            width: 50vw;
+            height: 17vh;
+            width: 58vw;
+            margin-right: 0px;
+            margin-left: 0px;
         }
 
         #upHeader{
             width: 100%;
         }
+        .divNav{
+            border-bottom: 4px solid #245371;
+            /* box-shadow: 0px 1px 2px black; */
+            /* position: fixed; */
+            /* z-index: 99; */
+            width: 100vw;
+            height: auto;
+        }
+
+        .cabecario ul{
+            display: flex;
+            justify-content: space-between;
+            width: 71vw;
+            height: 73vh;
+            align-items: baseline;
+        }
+
+    .cabecario{
+        width: 0vw;
+        display: flex;
+        height: 71vh;
+        /* z-index: 99; */
+        /* position: fixed; */
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: 26px;
     }
 
+    nav ul li a{
+        color: #245b7e;
+        font-size: 1.3rem;
+    }
 
     /* responsivo Desapego */
     @media (max-width: 320px) {
@@ -1232,4 +1286,62 @@ flex-wrap: wrap;
         .historico-caronas{
             display: none;
         }
+
+        #botaoHeader{
+            margin-left: 0px;
+    /* padding: 28px; */
+         width: 100%;
+
+        }
+
+        #botaoHeader1{
+            background-color: #ff8f04;
+        border: #ff8f04;
+        width: 39vw;
+        height: 8vh;
+        margin-bottom: 18px;
+
+        }
+
+        #botaoHeader2{
+            background-color: #376fcd;
+            border: #376fcd;
+            width: 39vw;
+            height: 8vh;
+
+        }
+
+        .divNav{
+            border-bottom: 4px solid #245371;
+            /* box-shadow: 0px 1px 2px black; */
+            /* position: fixed; */
+            /* z-index: 99; */
+            width: 100vw;
+            height: auto;
+        }
+
+        .cabecario ul{
+            display: flex;
+            justify-content: space-between;
+            width: 71vw;
+            height: 73vh;
+            align-items: baseline;
+        }
+
+    .cabecario{
+        width: 0vw;
+        display: flex;
+        height: 74vh;
+        /* z-index: 99; */
+        /* position: fixed; */
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: 26px;
+    }
+
+    nav ul li a{
+        color: #245b7e;
+        font-size: 1.3rem;
+    }
+
     }

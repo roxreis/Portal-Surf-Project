@@ -12,86 +12,39 @@
     <title>@yield('titulo')</title>
 </head>
 
-<body style="background-color: #d6d6d6;">
-    <header class="cabecario">
-    @guest
-        <div id='upHeader'>
-       
-            <a href="/home"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
-       
-            @if (Route::has('register'))
-                <div id="botaoHeader">
-                    <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
-                    <a href="/login" class="btn btn-success" id="botaoHeader2">Login</a>
-                </div>
-            @endif
-        </div>
-        @else
-            <div id='upHeader'>
-                <a href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
-                <li class="nav-item dropdown logado">
-                
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
+<body >
+    <header >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  divNav">
+        
+                <a class="navbar-brand" href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
+                <button class="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse cabecario" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active text-decoration-none">
+                        <a class="text-decoration-none" href="/previsao">Previsão <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-decoration-none">
+                        <a class="text-decoration-none" href="/desapego">Desapego</a>
+                    </li>
+                    <li class="nav-item text-decoration-none">
+                        <a class="text-decoration-none" href="/encontre">Encontre</a>
+                    </li>
+                    <li class="nav-item text-decoration-none">
+                        <a class="text-decoration-none" href="/blog">Blog</a>
+                    </li>
                     
-
-                    <div class="dropdown-menu dropdown-menu-right menuLogin" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item " style="color:#373b44a8;" href="{{ route('ofertaDesapego.index') }}">
-                                {{ __('Suas Vendas') }}
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
                         </a>
-                        <a class="dropdown-item " style="color:#373b44a8;" href="{{ route('ofertaDesapego.create') }}">
-                                {{ __('Cadastrar uma Oferta') }}
-                        </a>
-                        <a class="dropdown-item " style="color:#373b44a8;" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                        </a>
-       
-                        
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none; none;">
-                            @csrf
-                        </form>
-                    </div>
-                </li>
-            
-            </div>
-    @endguest
-    
-            
-
-        <nav class="headerNavbar navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex">
-                <ul class="navbar-nav mt-lg-0 justify-content-between align-items-center"
-                    style="margin-left:65px; width: 1038px;">
-                    <li class=menuHeader>
-                        <a  href="/previsao">Previsão</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a  href="/caronas">Carona</a>
-                    </li> -->
-                    <li class=menuHeader>
-                        <a  href="/desapego">Desapego</a>
-                    </li>
-                    <li class=menuHeader>
-                        <a  href="/encontre">Encontre</a>
-                    </li>
-                    <li class=menuHeader>
-                        <a  href="/blog">Blog</a>
-                    </li>
-                    <!-- <li class=>
-                        <a  href="/noticias">Notícias</a>
-                    </li> -->
-                    <li class="nav-item dropdown menuHeader">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" target=_blank href="https://www.isasurf.org/">ISA</a>
+                            <a class="dropdown-item" target=_blank href="https://www.worldsurfleague.com/">World Surf
+                                League</a>
+                            
                             <a class="dropdown-item" target=_blank href="https://www.worldsurfleague.com/">World Surf
                                 League</a>
                             <a class="dropdown-item" target=_blank href="http://wsllatinamerica.com/">WSL Latin
@@ -100,17 +53,46 @@
                             <a class="dropdown-item" target=_blank href="https://magicseaweed.com/">Magic Sea Weed</a>
                         </div>
                     </li>
-                </ul>
-                <div class="gaveta-icones">
+                    
+                    @guest
+                    @if (Route::has('register'))
+                        <div id="botaoHeader" >
+                            <a href="/register" type="button" class="btn btn-primary" id="botaoHeader1">Cadastro</a>
+                            <a href="/login" class="btn btn-success" id="botaoHeader2">Login</a>
+                        </div>
+                    @endif
+            
+                    @else
 
-                    <i class="fab icone fa-facebook-f" href="#"></i>
-                    <i class="fab icone fa-instagram" href="#"></i>
-                    <i class="fab icone fa-twitter" href="#"></i>
-
-                </div>
-            </div>
-
-        </nav>
+                    <!-- <div class="collapse navbar-collapse d-flex  align-items-center">
+                        <ul class="navbar-nav"> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item " target=_blank  href="{{ route('ofertaDesapego.index') }}">
+                                                {{ __('Suas Vendas') }}
+                                        </a>
+                                        <a class="dropdown-item " target=_blank href="{{ route('ofertaDesapego.create') }}">
+                                                {{ __('Cadastrar uma Oferta') }}
+                                        </a>
+                                        <a class="dropdown-item " target=_blank href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                        </a>
+                    
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none; none;">
+                                            @csrf
+                                        </form>
+                                </div>
+                            </li>
+                    @endguest 
+             
+        </div>
+    </nav>
+ 
 
         <!-- instruçoes de javascript para  funcionar o dropdown -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -125,7 +107,7 @@
 
 
     </header>
-    <main style="background-color: #d6d6d6;">
+    <main >
         <!-- conteudo do site -->
         @yield('conteudo')
     </main>

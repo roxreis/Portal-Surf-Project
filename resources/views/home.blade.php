@@ -8,34 +8,34 @@ Portal Surf
 
 @section('conteudo')
 
-<section class="d-flex h-auto" >
+<section class="d-flex" style="height: 89vh;">
 
     <div class="carousel slide carousel-fade w-100" data-ride="carousel">
         <div class="carousel-inner" style="height: 95vh;">
             <div class="carousel-item active" id="carousel-1"> 
-                <div class="efeitoBannerHome">
+                
                     <div id="texto-index"> 
                         <h2 >Aqui todo mundo é local!</h2>
                         <p class="flex-wrap">Previsão de ondas - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                     
                     </div>
-                </div>                        
+                                       
             </div>
         <div class="carousel-item" id="carousel-2">
-            <div class="efeitoBannerHome">
+            
                 <div id="texto-index">
                     <h2>Aqui todo mundo é local!</h2>
                     <p class="flex-wrap">Previsão de ondas - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                 </div>
-            </div>
+            
         </div>
         <div class="carousel-item" id="carousel-3" >
-            <div class="efeitoBannerHome">
+            
                 <div id="texto-index"  >
                     <h2>Aqui todo mundo é local!</h2>
                     <p class="flex-wrap">Previsão de ondas - Desapego de pranchas e afins, cadastre-se e descubra mais!</p>
                 </div>
-            </div>
+            
         </div>
     </div>
   

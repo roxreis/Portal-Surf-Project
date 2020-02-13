@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section  class="h-auto" style="background-color: #cbcece75;" >
+    <section  class="h-auto"  >
     <div class="shadow-lg container" id="desapego">
         
        
