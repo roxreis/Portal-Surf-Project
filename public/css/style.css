@@ -507,7 +507,7 @@ text-shadow: #000000 -2px 0px 20px;
 }
 
 .cards-desapego{
-    border
+    
 }
 
 .cardOfertaDesapego{
@@ -1233,3 +1233,4 @@ flex-wrap: wrap;
             display: none;
         }
     }
+}
