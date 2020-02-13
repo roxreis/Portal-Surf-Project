@@ -17,7 +17,7 @@ botaoClick.addEventListener('click', () => {
         console.log(coordLat, coordLng);
         var center = new google.maps.LatLng(coordLat, coordLng);
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
+            zoom: 18,
             center: center,
             radius: 10000,
             types: ['surf']

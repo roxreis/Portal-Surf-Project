@@ -22,15 +22,6 @@ class AdminController extends Controller
 
         } else {
 
-            //criando novo user na tabela Users:
-            // $newUser = new User();
-            // $newUser->email = $request->emailAdmin; 
-            // $newUser->password = Hash::make($request->passwordAdmin);
-            // $newUser->user_group_id = $request->user_groupAdmin; // o usuário admin é sempre user_group id = 1
-            // $newUser->status_id = $request->statusAdmin; // o novo usuário começa com o status ativo (id = 1)
-
-            // $result = $newUser->save();
-
             //criando novo usuário admin na tabela Administrators:
             $newAdmin = new Administrator();
             $newAdmin->name = $request->nameAdmin; 

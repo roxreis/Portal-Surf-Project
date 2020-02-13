@@ -38,9 +38,4 @@ class UsuarioDados extends Model
         'email_verified_at' => 'datetime',
     ];
 
-
-   // copiado do desapego para pensar em como vincular o usuario logado as informações que precisam retornar na tela
-//    public function user(){
-//        return $this->belongsTo('App\User');
-       
    }
