@@ -61,7 +61,7 @@ Portal Surf
         <div class="col-6 texto-index-2"> 
             <h3 class="font-weight-bold">Blog</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga nisi rerum porro, amet id asperiores numquam voluptas velit, commodi laboriosam voluptate! Perspiciatis nobis qui praesentium, accusantium molestiae ipsum nam?Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="/caronas" class="btn btn-primary btn-lg botao-tres">Dropar</a>
+            <a href="/blog" class="btn btn-primary btn-lg botao-tres">Dropar</a>
         </div>
         <div class="caronasHome1 col-6"></div>
     </div>

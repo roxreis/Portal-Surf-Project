@@ -62,7 +62,7 @@
 
         <form class="d-flex flex-row" style="margin-top: 100px;margin-bottom: 76px;" action="{{route('ofertaDesapego.create')}}" method="get">
                 <div id="desapegar4">
-                    <h3 class="font-weight-bold">Também Quer fazer uma grana!? -></h3> 
+                    <h3 class="font-weight-bold">Também quer fazer uma grana!? </h3> 
                     <button class="btn encontreBotao mb-5" ype="submit" style="height: 9vh;width: 14vw;font-size: 1.5rem;">Desapegue</button>
                 </div>
         </form>
