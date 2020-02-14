@@ -74,8 +74,8 @@ body{
 }
 
 @font-face{
-    font-family: "gravity";
-    src: url('/font/gravity.ttf');
+    font-family: "teacher";
+    src: url('/font/KGWhattheTeacherWants.ttf');
 }
 
 
@@ -541,7 +541,7 @@ align-items: center;
     margin-right: 10px;
     margin-bottom: 10px;
     box-shadow: 1px 1px 5px grey;
-    color: #255f85;
+    color: #0c0c0c;
 }
 
 
@@ -613,7 +613,7 @@ justify-content: flex-end;
 }
 
 #desapegar3{
-    color: #255f85;
+    color: #131415;
     width: 77%;
     text-align: center;
     margin-top: 94px;
@@ -632,7 +632,7 @@ justify-content: flex-end;
     font-size: 4.2rem;
     margin-right: 10px;
     align-items: center;
-    color: #255f85;
+    color: #101010;
 }
 
 #desapegar3 h4{
