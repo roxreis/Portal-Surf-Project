@@ -327,7 +327,7 @@ margin-left: -196px;
 
 /* align-items: flex-start; */
 
-margin-right: 201px;
+/* margin-right: 201px; */
 
 text-shadow: #000000 -2px 0px 20px;
 
@@ -354,7 +354,7 @@ align-items: center;
 .botao-tres{
     background-color: #376fcd;
     border: #376fcd;
-    width: 6.0vw;
+    /* width: 20vw; */
     font-size: 1.1rem;
     display: flex;
     text-align: center;
@@ -372,7 +372,7 @@ align-items: center;
     font-weight: bold;
     font-size: 1.5rem;
     color: #ffffff;
-    width: 680px;
+    /* width: 680px; */
     margin-left: 41px;
     text-align: center;
     /* text-shadow: #000000 -2px 0px 20px; */
@@ -1235,6 +1235,32 @@ flex-wrap: wrap;
     @media (max-width: 480px) {
 
 
+        .texto-index-2{
+            font-size: small;
+            
+        }
+
+        .h3, h3{
+            font-size: 1.1rem;
+        }
+
+        .footer{
+            width: 100%;
+        }
+
+        .carousel{
+            display: none;
+        }
+
+        .footer p {
+            font-size: x-small;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
+        
+        
         .encontreBanner {
             display: none;
         }
@@ -1287,6 +1313,26 @@ flex-wrap: wrap;
 
     /* responsivo Encontre */
     @media (max-width: 375px) {
+        
+        .section{
+            height: 20vh;
+        }
+
+        .h3, h3{
+            font-size: 1.1rem;
+        }
+
+        .texto-index-2{
+            font-size: xx-small; 
+        }
+
+        .footer p {
+            font-size: x-small;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
         #desapego {
             height: 772vh;
         }
@@ -1360,6 +1406,23 @@ flex-wrap: wrap;
 
     /* responsivo Desapego */
     @media (max-width: 320px) {
+
+
+        .h3, h3{
+            font-size: 1.1rem;
+        }
+
+        .texto-index-2{
+            font-size: xx-small;
+        }
+
+        .footer p {
+            font-size: x-small;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+
         #desapego {
             height: 182vh;
         }
@@ -1438,4 +1501,5 @@ flex-wrap: wrap;
     }
 
     }
+  }
 }
