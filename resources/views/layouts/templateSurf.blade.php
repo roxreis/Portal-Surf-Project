@@ -18,7 +18,7 @@
         
                 <a class="navbar-brand" href="/"><img src="../imagens/Logo_degrade.png" id="logo" alt=""></a>
                 <button class="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" id="btnHamburguer"></span>
                 </button>
 
             <div class="collapse navbar-collapse cabecario" id="navbarSupportedContent">
@@ -71,13 +71,13 @@
                                         {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item " target=_blank  href="{{ route('ofertaDesapego.index') }}">
+                                    <a class="dropdown-item "  href="{{ route('ofertaDesapego.index') }}">
                                                 {{ __('Suas Vendas') }}
                                         </a>
-                                        <a class="dropdown-item " target=_blank href="{{ route('ofertaDesapego.create') }}">
+                                        <a class="dropdown-item "  href="{{ route('ofertaDesapego.create') }}">
                                                 {{ __('Cadastrar uma Oferta') }}
                                         </a>
-                                        <a class="dropdown-item " target=_blank href="{{ route('logout') }}"
+                                        <a class="dropdown-item "  href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
                                                 {{ __('Logout') }}

@@ -59,7 +59,7 @@ Desapego - Cadastro de Oferta
                         placeholder="Ex. Parque City" required>
                 </div>
                 <div class=>
-                    <label for="text" class="ml-3 mr-3 mt-2">Telefone:</label>
+                    <label for="text" class="ml-3 mr-3 mt-3">Telefone:</label>
                     <input type="text" class="form-control" id="ofertaBairro" name="phone"
                         placeholder="Colocar DDD na frente" required>
                 </div>

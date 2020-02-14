@@ -15,7 +15,7 @@ a{
 
 /* css para header */
 body{
-    font-family: manrope;
+    font-family: cocogoose;
 }
 
 @font-face{
@@ -78,6 +78,12 @@ body{
     src: url('/font/gravity.ttf');
 }
 
+
+@font-face{
+    font-family: "cocogoose";
+    src: url('/font/Cocogoose Pro UltraLight Italic-trial.ttf')
+}
+
 .contato{
     height: 7vh;
     background-color: #cecece;
@@ -85,12 +91,12 @@ body{
 }
 
 .divNav{
-    border-bottom: 4px solid #245371;
+    border-bottom: 2px solid #245371;
     /* box-shadow: 0px 1px 2px black; */
     position: fixed;
     z-index: 99;
     width: 100vw;
-    height: 13vh;
+    height: 14vh;
 }
 
 .cabecario{
@@ -108,7 +114,7 @@ body{
 .cabecario ul{
     display: flex;
     justify-content: space-between;
-    width: 64vw;
+    width: 73vw;
     height: 6vh;
     align-items: center;
 }
@@ -117,8 +123,8 @@ body{
 
 nav ul li a{
     color: #245b7e;
-    font-size: 0.88rem;
-    /* font-weight: bold; */
+    font-size: 0.85rem;
+    font-weight: bold;
     /* font-family: "roboto-light"; */
     /* text-transform: uppercase; */
     /* text-shadow: #000 1px 0px 3px; */
@@ -130,12 +136,12 @@ li a{
 
 
 #logo{
-    height: 10vh;
+    height: 12vh;
     width: 13vw;
     /* margin-left: 61px; */
     /* margin-bottom: 10px; */
     margin-right: 23px;
-    margin-left: 95px;
+    margin-left: 41px;
     /* margin-top: 10px; */
 }
 
@@ -465,7 +471,7 @@ align-items: center;
 
 .caronaTextoBanner {
     color: #ffffffe1;
-    font-size: 5.0rem;
+    font-size: 4.6rem;
     filter: drop-shadow(31px 22px 12px black);
     width: 899px;
     height: 100px;
@@ -485,7 +491,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 116px;
+    margin-top: 80px;
 }
 
 .frontBanner{
@@ -530,16 +536,21 @@ align-items: center;
 } */
 
 .cardOfertaDesapego{
-    height: 103vh;
+    height: 83vh;
     max-width: 25vw;
     margin-right: 10px;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 5px grey;
+    color: #255f85;
 }
 
 
 
 .img-oferta-individual {
     width: 50vw;
+    height: 80vh;
+    box-shadow: 1 px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #desapegar{
@@ -602,7 +613,7 @@ justify-content: flex-end;
 }
 
 #desapegar3{
-    color: black;
+    color: #255f85;
     width: 77%;
     text-align: center;
     margin-top: 94px;
@@ -621,6 +632,7 @@ justify-content: flex-end;
     font-size: 4.2rem;
     margin-right: 10px;
     align-items: center;
+    color: #255f85;
 }
 
 #desapegar3 h4{
@@ -643,17 +655,17 @@ justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #c4c6c6;
+    /* background-color: #c4c6c6; */
     border: none;
 }
 
 .titulodeSecaoDesapego{
     /* font-family: aloha; */
     color: #ff8f04;
-    border-bottom: #ff8f04 1px solid;
+    /* border-bottom: #ff8f04 1px solid; */
     height: 39px;
     margin-bottom: 18px;
-    margin-top: 37px;
+    margin-top: 102px;
     /* font-size: 74px; */
     /* font-weight: bold; */
     text-align-last: center;
@@ -687,7 +699,7 @@ justify-content: center;
 
 align-items: center;
 
-margin-top: 116px;
+margin-top: 81px;
 }
 
 
@@ -701,7 +713,7 @@ margin-top: 116px;
 }
 
 .formDesapego{
-    margin-top: 166px;
+    margin-top: 128px;
     border: 1px solid #ced4da;
     border-radius: 20px;
     width: 76%;
@@ -752,7 +764,7 @@ margin-top: 116px;
 
 .img-ofertaDesapegoHistorico {
     
-width: 100vw;
+width: 98vw;
     
 height: auto;
     
@@ -789,7 +801,7 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 116px;
+    margin-top: 80px;
 }
 
 .encontreBotao {
@@ -840,7 +852,7 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 116px;
+    margin-top: 80px;
 }
 
 .cardBlogGeral {
@@ -866,7 +878,7 @@ flex-wrap: wrap;
     height: 183vh;
     width: 150vw;
     background-color: white;
-    margin-top: 150px;
+    margin-top: 118px;
 }
 
 .textoCardBlog {
@@ -907,14 +919,14 @@ flex-wrap: wrap;
 #previsaoBanner {
     background-image: url("../imagens/img-previsao/previgraca.jpeg");
     background-position-y: -257px;
-      width: 100%;
-      height: 210px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 116px;
+    width: 100%;
+    height: 210px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .botaoAzul {
@@ -1053,6 +1065,14 @@ flex-wrap: wrap;
     }
 
     @media (max-width: 768px) {
+        #btnHamburguer{
+            height: 5vh;
+            width: 8vw;
+    /* padding-right: 24px; */
+            margin-right: 10px;
+        }
+
+
         #headerBuscaMobile{
             display: none;
         }
@@ -1136,6 +1156,78 @@ flex-wrap: wrap;
           .historico-caronas{
             display: none;
         }
+
+        #botaoHeader{
+            margin-left: 0px;
+    /* padding: 28px; */
+         width: 100%;
+
+        }
+
+        #botaoHeader1{
+            background-color: #ff8f04;
+            border: #ff8f04;
+            width: 31vw;
+            height: 8vh;
+            margin-bottom: 18px;
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #botaoHeader2{
+            background-color: #376fcd;
+            border: #376fcd;
+            width: 31vw;
+            height: 8vh;
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .divNav{
+            border-bottom: 4px solid #245371;
+            /* box-shadow: 0px 1px 2px black; */
+            /* position: fixed; */
+            /* z-index: 99; */
+            width: 100vw;
+            height: auto;
+        }
+
+        .cabecario ul{
+            display: flex;
+            justify-content: space-between;
+            width: 71vw;
+            height: 73vh;
+            align-items: baseline;
+            /* font-size: 1rem; */
+        }
+
+    .cabecario{
+        width: 0vw;
+        display: flex;
+        height: 74vh;
+        /* z-index: 99; */
+        /* position: fixed; */
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: 26px;
+    }
+
+    nav ul li a{
+        color: #245b7e;
+        font-size: 2.0rem;
+    }
+
+    #logo{
+    height: 13vh;
+    width: 45vw;
+    padding: 10px;
+    }
+
+
 
     }
 

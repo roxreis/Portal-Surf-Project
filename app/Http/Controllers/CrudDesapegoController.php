@@ -20,10 +20,11 @@ class CrudDesapegoController extends Controller
     public function index()
     {   
         $ofertas = Desapego::all();
-       
                
         return view('desapegoOfertasUsuario')->with(['ofertas'=>$ofertas]);
-       
+
+        
+        
     
 
     }
@@ -59,7 +60,7 @@ class CrudDesapegoController extends Controller
             $ofertas->descriptionProduct = $request->input('descriptionProduct');
             $ofertas->priceProduct = $request->input('priceProduct');
             $ofertas->withdrawalState = $request->input('withdrawalState');
-            $ofertas->withdrawalState = $request->input('withdrawalState');
+            
             $ofertas->withdrawalCity = $request->input('withdrawalCity');
             $ofertas->withdrawalNeighborhood = $request->input('withdrawalNeighborhood');
             $ofertas->image = $request->input('image');
@@ -118,11 +119,12 @@ class CrudDesapegoController extends Controller
      */
     public function edit(Request $request, $id=0){
         $ofertas = Desapego::find($id);
+        
         if($ofertas){
             return view('desapegoEditarOferta')->with(["ofertas"=>$ofertas]);
-        }else{
-            return view('desapegoEditarOferta');
         }
+
+        
     }
 
 
@@ -165,17 +167,12 @@ class CrudDesapegoController extends Controller
      */
     public function destroy($id){
         Desapego::where('id',$id)->delete();
-        if($id != 0){
-        return redirect()->route('ofertaDesapego.index')->with('delete', 'Oferta deletada');
-        
-        }else{
-            return redirect()->route('ofertaDesapego.index')->with('Vazio', 'Não exitem ofertas nesta pagina!');
-        }
-
        
-        }
+        return redirect()->route('ofertaDesapego.index')->with('delete', 'Oferta deletada');
+     
     
      
+    }
 }
 
  
